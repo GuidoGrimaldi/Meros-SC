@@ -3,7 +3,7 @@
 title: "SeaGis-CAL-Guide PT/BR"
 subtitle: "Guia do Usuário SeaGis-CAL"
 author: 
-  name: Guido G. Grimaldi, PhD
+  name: Supervisão Pesquisa SC
   email: pesquisasc@merosdobrasil.org
   affiliation: 
     name: Meros do Brasil
