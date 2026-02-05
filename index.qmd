@@ -1,26 +1,18 @@
 ---
 # Metadados
-title: "SeaGis-CAL-Guide PT/BR"
-subtitle: "Guia do Usuário SeaGis-CAL"
+title: "SeaGIS-CAL-Guide PT/BR"
+subtitle: "Guia do Usuário SeaGIS-CAL"
 author: 
-  name: Supervisão Pesquisa SC
+  name: Supervisor de Pesquisa SC
   email: pesquisasc@merosdobrasil.org
   affiliation: 
-    name: Meros do Brasil
+    name: Intituto Meros do Brasil
     url: https://merosdobrasil.org/
 
 abstract: "Essa é uma adaptação da documentação original baseada em minhas percepções e interpretações. Novas secções foram inseridas e reordenadas buscando facilitar o entendimento dos conceitos."
 abstract-title: "About"
 copyright: "©2026, GuidoGrimaldi. All rights reserved."
 license: CC BY-NC-SA
-
-# Sumário -------------------------
-toc: true
-toc-title: "Sumário"
-toc-location: right # -> Só a HTML (right, left , body)
-toc-expand: true
-toc-depth: 2
-number-sections: true
 
 # Fonte ---------------------------
 fontfamily: baskervald
@@ -33,13 +25,6 @@ execute:
 # Layout da página ----------------
 geometry: 
   - margin = 1in
-
-# Formato
-format:
-  html:
-    theme: cerulean
-  pdf: 
-    documentclass: scrreprt
 ---
 
 ***Search Keys***: *ressected*; *bandle*; *object point*; *convergence*; *compute*; *all images*.

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SeaGis-CAL-Guide PT/BR – Projeto Meros do Brasil</title>
+<title>SeaGis-CAL-Guide PT/BR – Pesquisa Meros SC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,8 +83,12 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./meroiconwhite.png" alt="" class="navbar-logo light-content">
+    <img src="./meroiconwhite.png" alt="" class="navbar-logo dark-content">
+    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Projeto Meros do Brasil</span>
+    <span class="navbar-title">Pesquisa Meros SC</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,14 +97,21 @@ ul.task-list li input[type="checkbox"] {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Protocolos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos">    
+        <li>
+    <a class="dropdown-item" href="./index.html">
+ <span class="dropdown-text">SeaGIS CAL</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">About</span></a>
   </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -109,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -155,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="index.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -164,23 +175,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-<div class="quarto-title-meta-author">
+<div class="quarto-title-meta-author column-page-left">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Supervisão Pesquisa SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Supervisor de Pesquisa SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
             <a href="https://merosdobrasil.org/">
-            Meros do Brasil
+            Intituto Meros do Brasil
             </a>
           </p>
       </div>
   </div>
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
       
     <div>
@@ -217,11 +228,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>métron (μέτρον) = medida</p></li>
 </ul>
 <p>Ou seja, “<strong>medida a partir do registro da luz</strong>”.</p>
-<p>A <strong>Fotogrametria Digital</strong> é portanto um método/ técnica de extração de dados feitas a partir de fotografias digitais e softwares, que permitem, a partir dos parâmetros da câmera, calibrar e corrigir as distorções da imagem em um processo denominado de *Restituição Fotigramétrica*</p>
-<p>Em termos conceituais, a fotogrametria permite determinar <strong>forma, dimensão, posição e volume de objetos ou superfícies sem contato direto</strong>, usando imagens bidimensionais para reconstruir informações espaciais 3D.</p>
-<p>fotogrametria interativa (strictu senso) a pessoa precisa realizar o profcesso de calibração da câmera</p>
-<p>E a <strong>Estereoscopia/ Estereofotogrametria</strong> é quando se usam pares de imagens para a reconstrução 3D. ou seja duas fotos do mesmo objeto tiradas de posições ligeiramente distintas mas com grande area de sobreposição das imagens com isso é possivel itendificar um conjunto de pixels homologos, a gente marca e associa pontos em ambas as imagens intidacndo ao programa o conjunto de pixels que são iguais, sendo assim mais preciso do que a mono restituição.</p>
-<p>Fotogrametria digital interativa estereorestitutiva</p>
+<p>A <strong>Fotogrametria Digital</strong> é portanto um método/ técnica de extração de dados feitas a partir de fotografias digitais e softwares, que permitem, a partir dos parâmetros da câmera, calibrar e corrigir as distorções das imagens, em um processo denominado de <em>Restituição Fotogramétrica</em>.</p>
+<p>Quando esse processo de restituição fotogramétrica se dá a partir de <strong>um par de imagens do mesmo objeto</strong> denomina-se <strong>Estereofotogrametria/ Estereoscopia.</strong></p>
+<p>Na <strong>Estereofotogrametria/ Estereoscopia</strong> utiliza-se duas câmeras para se obter duas fotos do mesmo objeto tiradas de posições ligeiramente distintas, mas com grande área de sobreposição das imagens. Com isso é possivel indendificar um conjunto de <em>pixels</em> homólogos.</p>
+<p>Na Estereofotogrametria Interativa, o processo de calibração consiste basicamente em marcar e associar manualmente pontos em ambas imagens indicando ao programa o conjunto de pixels homólogos (iguais). É por isso que na <strong>Fotogrametria Interativa</strong> (<em>strictu senso</em>) o processo de calibração demanda um grande esforço.</p>
 </section>
 <section id="termos-conceitos" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Termos &amp; Conceitos</h1>

@@ -2,26 +2,34 @@ project:
   type: website
   output-dir: docs
 
-date: 05/02/2026
-date-format: long
 website:
-  title: "Projeto Meros do Brasil"
+  title: "Pesquisa Meros SC"
   navbar:
+    logo: meroiconwhite.png
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "Protocolos"
+        menu:
+          - text: "SeaGIS CAL"
+            href: index.qmd
+          - about.qmd
 
+
+page-layout: full
 format:
   html:
     toc: true
+    toc-title: "Índice"
     toc-location: right
+    toc-expand: true
     toc-depth: 2
+    smooth-scroll: false
     number-sections: true
     theme:
       - cerulean
       - brand
     css: styles.css
+  pdf:
+    documentclass: scrreprt
 
 editor: visual
 
