@@ -6,5 +6,9 @@
   "about.qmd": {
     "about.html": "63fdc025",
     "about.tex": "70f6aa18"
+  },
+  "bruv.qmd": {
+    "bruv.html": "516fbaf1",
+    "bruv.tex": "49071c34"
   }
 }

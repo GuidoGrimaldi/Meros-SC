@@ -67,8 +67,6 @@ Na Estereofotogrametria Interativa, o processo de calibração consiste basicame
 
 # Workflow
 
-Complete a inserção de pontos (objetos) em todas as imagens, depois:
-
 ```{mermaid}
 flowchart TD
   id0(Insected all point objects) --> id1(Compute bundle adjustment)
@@ -78,7 +76,7 @@ flowchart TD
 
 ```
 
-*Adjustment: Compute bundle ajustment* \> *Delete reject points* \> *Find target* \> *Compute bundle ajustment\> Delete reject points* \> *Compute bundle ajustment* (Final) *\>*
+Complete a inserção de pontos (objetos) em todas as imagens, depois: *Adjustment: Compute bundle ajustment* \> *Delete reject points* \> *Find target* \> *Compute bundle ajustment\> Delete reject points* \> *Compute bundle ajustment* (Final)
 
 # Manual CAL (pt/br)
 

@@ -7,11 +7,15 @@ website:
   navbar:
     logo: meroiconwhite.png
     left:
-      - text: "Protocolos"
+      - text: "Manuais"
         menu:
           - text: "SeaGIS CAL"
             href: index.qmd
           - about.qmd
+      - text: "Protocolos de Campo"
+        menu:
+          - text: "Bruv"
+            href: bruv.qmd
 
 
 page-layout: full

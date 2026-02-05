@@ -1,0 +1,73 @@
+---
+title: "Projeto Meros do Brasil"
+subtitle: "BRUV: Guia rápido de campo."
+author: 
+  name: Pesquisa Meros SC
+  email: pesquisasc@merosdobrasil.org
+  affiliation: 
+    name: Instituto Meros do Brasil
+    url: https://merosdobrasil.org/
+abstract: "Oi"
+abstract-title: "About"
+
+
+# Fonte ---------------------------
+fontfamily: baskervald
+fontsize: 12pt
+
+# Opções de execução --------------
+execute: 
+  warning: false
+
+# Layout da página ----------------
+geometry: 
+  - margin = 1in
+---
+
+# Procedimentos Pré Campo
+
+-   Verificar carga das baterias.
+
+-   Verificar armazenamento dos cartões de memória.
+
+-   Verificar funcionamento das câmeras.
+
+-   Verificar preseça de todos os componentes e peças do *BRUV*.
+
+-   Verificar presença de todas as porcas para ajuste das .
+
+# Procedimentos de Campo
+
+## Preparação para o lançamento
+
+-   Monte os pés dos BRUVS.
+
+-   Prepare a haste da isca com o cano de armazenamento das iscas, mas **não adicione isca ainda**, para não ficar pingando no barco.
+
+-   Quando for conectar a haste da isca, tenha cuidado com a bóia de flutuação do BRUV. Está deve passar por fora da haste. Lembre-se de levantá-la antes de fixar a haste.
+
+-   Ligue as câmeras e verifique a ação.
+
+-   Conecte o cabo de lançamento ao BRUV.
+
+-   Tenha a disposição uma quantidade
+
+-   Amarrar a bóia de sinalização ao cabo de lançamento.
+
+-   Não passar o cabo SOMENTE no D-ring plástico da boía para não forçar.
+
+-   Passe também por dentro de uma dos tirantes horizontais da bóia como backup de segurança para caso do D-ring quebre.
+
+-   
+
+## Lançamento na água
+
+## Que informações anotar?
+
+## Remoção da água
+
+# Procedimentos Pós Campo
+
+## Lavagem
+
+## Cartões de memória & Baterias
