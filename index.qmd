@@ -13,10 +13,23 @@ abstract: "Essa é uma adaptação da documentação original baseada em minhas 
 abstract-title: "About"
 copyright: "©2026, GuidoGrimaldi. All rights reserved."
 license: CC BY-NC-SA
+page-layout: article
 
 # Fonte ---------------------------
 fontfamily: baskervald
 fontsize: 12pt
+
+# Formato
+format:
+  html:
+    toc-title: "Índice"
+    toc: true
+    toc-location: right
+    number-depth: 2
+    toc-depth: 2
+    number-sections: true
+    smooth-scroll: true
+
 
 # Opções de execução --------------
 execute: 

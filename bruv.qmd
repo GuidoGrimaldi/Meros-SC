@@ -10,6 +10,15 @@ author:
 abstract: "Oi"
 abstract-title: "About"
 
+# Formato
+format:
+  html:
+    toc-title: "Conteúdo"
+    toc: true
+    toc-location: right
+    toc-expand: true
+    toc-depth: 1
+    number-sections: true
 
 # Fonte ---------------------------
 fontfamily: baskervald
@@ -24,7 +33,7 @@ geometry:
   - margin = 1in
 ---
 
-# Procedimentos Pré Campo
+# Procedimentos Pré-Campo
 
 -   Verificar carga das baterias.
 

@@ -14,20 +14,14 @@ website:
           - about.qmd
       - text: "Protocolos de Campo"
         menu:
-          - text: "Bruv"
+          - text: "BRUV"
             href: bruv.qmd
+          - text: "Plano de Emergência"
+            href: emergence.qmd
+  back-to-top-navigation: true
 
-
-page-layout: full
 format:
   html:
-    toc: true
-    toc-title: "Índice"
-    toc-location: right
-    toc-expand: true
-    toc-depth: 2
-    smooth-scroll: false
-    number-sections: true
     theme:
       - cerulean
       - brand
