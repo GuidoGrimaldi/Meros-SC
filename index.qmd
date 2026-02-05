@@ -8,11 +8,9 @@ author:
   affiliation: 
     name: Meros do Brasil
     url: https://merosdobrasil.org/
-date: today
-date-format: medium
-abstract: "Essa é uma adaptação da documentação original baseada em minhas percepções e interpretações."
+
+abstract: "Essa é uma adaptação da documentação original baseada em minhas percepções e interpretações. Novas secções foram inseridas e reordenadas buscando facilitar o entendimento dos conceitos."
 abstract-title: "About"
-thanks: "obrigado"
 copyright: "©2026, GuidoGrimaldi. All rights reserved."
 license: CC BY-NC-SA
 
@@ -44,6 +42,34 @@ format:
     documentclass: scrreprt
 ---
 
+***Search Keys***: *ressected*; *bandle*; *object point*; *convergence*; *compute*; *all images*.
+
+# Introdução
+
+O software de calibração produzido pela [SeaGIS](https://www.seagis.com.au/index.html#about) é baseado no processo de *Fotogrametria Digital Interativa Estereorestitutiva*.
+
+A **Fotogrametria** (*Phothogrammetry*) é a arte, ciência ou tecnologia de **obter medições e informações precisas de objetos físicos e do meio ambiente a partir de imagens**, em especial fotografias.
+
+Seu desenvolvimento decorre do fato de que **fotografias são representações distorcidas da realidade**, provocadas pela curvatura da lente e da perspectiva de onde o registro foi feito, que geralmente se distanciam do plano ortografico ideal. Dessa forma, imagens registradas por câmeras não são somente influenciadas pelas caracteristicas dos objetos e da luz do ambiente, mas também das propriedades caracteristicas da câmera.
+
+Etimologicamente, o termo vem do grego:
+
+-   phōtós (φῶς) = luz
+
+-   grámma (γράμμα) = registro, escrita
+
+-   métron (μέτρον) = medida
+
+Ou seja, “**medida a partir do registro da luz**”.
+
+A **Fotogrametria Digital** é portanto um método/ técnica de extração de dados feitas a partir de fotografias digitais e softwares, que permitem, a partir dos parâmetros da câmera, calibrar e corrigir as distorções das imagens, em um processo denominado de *Restituição Fotogramétrica*.
+
+Quando esse processo de restituição fotogramétrica se dá a partir de **um par de imagens do mesmo objeto** denomina-se **Estereofotogrametria/ Estereoscopia.**
+
+Na **Estereofotogrametria/ Estereoscopia** utiliza-se duas câmeras para se obter duas fotos do mesmo objeto tiradas de posições ligeiramente distintas, mas com grande área de sobreposição das imagens. Com isso é possivel indendificar um conjunto de *pixels* homólogos.
+
+Na Estereofotogrametria Interativa, o processo de calibração consiste basicamente em marcar e associar manualmente pontos em ambas imagens indicando ao programa o conjunto de pixels homólogos (iguais). É por isso que na **Fotogrametria Interativa** (*strictu senso*) o processo de calibração demanda um grande esforço.
+
 # Termos & Conceitos
 
 -   ***Ressected***: Ressecção.
@@ -53,15 +79,6 @@ format:
 -   ***Eligible image measurements***: Medições de imagem elegíveis
 
 -   ***Eligible distance measurements**:* Medições de distância elegíveis
-
--   <!--# Face posterior, esclarecer e representar -->
-
-# *Search Keys*
-
-|               |           |                |
-|---------------|-----------|----------------|
-| *ressected*   | *bandle*  | *object point* |
-| *convergence* | *compute* | *all images*   |
 
 # Workflow
 

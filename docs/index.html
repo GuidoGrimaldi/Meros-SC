@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SeaGis-CAL-Guide PT/BR – SeaGis Cal Guide pt/br</title>
+<title>SeaGis-CAL-Guide PT/BR – Projeto Meros do Brasil</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">SeaGis Cal Guide pt/br</span>
+    <span class="navbar-title">Projeto Meros do Brasil</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -117,8 +117,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sumário</h2>
    
   <ul class="collapse">
-  <li><a href="#termos-conceitos" id="toc-termos-conceitos" class="nav-link active" data-scroll-target="#termos-conceitos"><span class="header-section-number">1</span> Termos &amp; Conceitos</a></li>
-  <li><a href="#search-keys" id="toc-search-keys" class="nav-link" data-scroll-target="#search-keys"><span class="header-section-number">2</span> <em>Search Keys</em></a></li>
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1</span> Introdução</a></li>
+  <li><a href="#termos-conceitos" id="toc-termos-conceitos" class="nav-link" data-scroll-target="#termos-conceitos"><span class="header-section-number">2</span> Termos &amp; Conceitos</a></li>
   <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="header-section-number">3</span> Workflow</a></li>
   <li><a href="#manual-cal-ptbr" id="toc-manual-cal-ptbr" class="nav-link" data-scroll-target="#manual-cal-ptbr"><span class="header-section-number">4</span> Manual CAL (pt/br)</a>
   <ul class="collapse">
@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#apêndices" id="toc-apêndices" class="nav-link" data-scroll-target="#apêndices"><span class="header-section-number">5</span> Apêndices</a></li>
   <li><a href="#termos-conceitos-1" id="toc-termos-conceitos-1" class="nav-link" data-scroll-target="#termos-conceitos-1"><span class="header-section-number">6</span> Termos &amp; Conceitos</a></li>
-  <li><a href="#search-keys-1" id="toc-search-keys-1" class="nav-link" data-scroll-target="#search-keys-1"><span class="header-section-number">7</span> <em>Search Keys</em></a></li>
+  <li><a href="#search-keys" id="toc-search-keys" class="nav-link" data-scroll-target="#search-keys"><span class="header-section-number">7</span> <em>Search Keys</em></a></li>
   <li><a href="#workflow-1" id="toc-workflow-1" class="nav-link" data-scroll-target="#workflow-1"><span class="header-section-number">8</span> Workflow</a></li>
   <li><a href="#manual-cal-ptbr-1" id="toc-manual-cal-ptbr-1" class="nav-link" data-scroll-target="#manual-cal-ptbr-1"><span class="header-section-number">9</span> Manual CAL (pt/br)</a>
   <ul class="collapse">
@@ -204,32 +204,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="termos-conceitos" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Termos &amp; Conceitos</h1>
+<p><strong><em>Search Keys</em></strong>: <em>ressected</em>; <em>bandle</em>; <em>object point</em>; <em>convergence</em>; <em>compute</em>; <em>all images</em>.</p>
+<section id="introdução" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introdução</h1>
+<p>O software de calibração produzido pela <a href="https://www.seagis.com.au/index.html#about">SeaGIS</a> é baseado no processo de <em>Fotogrametria Digital Interativa Estereorestitutiva</em>.</p>
+<p>A <strong>Fotogrametria</strong> (<em>Phothogrammetry</em>) é a arte, ciência ou tecnologia de <strong>obter medições e informações precisas de objetos físicos e do meio ambiente a partir de imagens</strong>, em especial fotografias.</p>
+<p>Seu desenvolvimento decorre do fato de que <strong>fotografias são representações distorcidas da realidade</strong>, provocadas pela curvatura da lente e da perspectiva de onde o registro foi feito, que geralmente se distanciam do plano ortografico ideal. Dessa forma, imagens registradas por câmeras não são somente influenciadas pelas caracteristicas dos objetos e da luz do ambiente, mas também das propriedades caracteristicas da câmera.</p>
+<p>Etimologicamente, o termo vem do grego:</p>
+<ul>
+<li><p>phōtós (φῶς) = luz</p></li>
+<li><p>grámma (γράμμα) = registro, escrita</p></li>
+<li><p>métron (μέτρον) = medida</p></li>
+</ul>
+<p>Ou seja, “<strong>medida a partir do registro da luz</strong>”.</p>
+<p>A <strong>Fotogrametria Digital</strong> é portanto um método/ técnica de extração de dados feitas a partir de fotografias digitais e softwares, que permitem, a partir dos parâmetros da câmera, calibrar e corrigir as distorções da imagem em um processo denominado de *Restituição Fotigramétrica*</p>
+<p>Em termos conceituais, a fotogrametria permite determinar <strong>forma, dimensão, posição e volume de objetos ou superfícies sem contato direto</strong>, usando imagens bidimensionais para reconstruir informações espaciais 3D.</p>
+<p>fotogrametria interativa (strictu senso) a pessoa precisa realizar o profcesso de calibração da câmera</p>
+<p>E a <strong>Estereoscopia/ Estereofotogrametria</strong> é quando se usam pares de imagens para a reconstrução 3D. ou seja duas fotos do mesmo objeto tiradas de posições ligeiramente distintas mas com grande area de sobreposição das imagens com isso é possivel itendificar um conjunto de pixels homologos, a gente marca e associa pontos em ambas as imagens intidacndo ao programa o conjunto de pixels que são iguais, sendo assim mais preciso do que a mono restituição.</p>
+<p>Fotogrametria digital interativa estereorestitutiva</p>
+</section>
+<section id="termos-conceitos" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Termos &amp; Conceitos</h1>
 <ul>
 <li><p><strong><em>Ressected</em></strong>: Ressecção.</p></li>
 <li><p><strong><em>Bandle adjustment</em></strong>: Ajuste do pacote.</p></li>
 <li><p><strong><em>Eligible image measurements</em></strong>: Medições de imagem elegíveis</p></li>
 <li><p><em><strong>Eligible distance measurements</strong>:</em> Medições de distância elegíveis</p></li>
-<li><!--# Face posterior, esclarecer e representar --></li>
 </ul>
-</section>
-<section id="search-keys" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> <em>Search Keys</em></h1>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><em>ressected</em></td>
-<td><em>bandle</em></td>
-<td><em>object point</em></td>
-</tr>
-<tr class="even">
-<td><em>convergence</em></td>
-<td><em>compute</em></td>
-<td><em>all images</em></td>
-</tr>
-</tbody>
-</table>
 </section>
 <section id="workflow" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Workflow</h1>
@@ -788,7 +789,7 @@ Note
 <li><!--# Face posterior, esclarecer e representar --></li>
 </ul>
 </section>
-<section id="search-keys-1" class="level1" data-number="7">
+<section id="search-keys" class="level1" data-number="7">
 <h1 data-number="7"><span class="header-section-number">7</span> <em>Search Keys</em></h1>
 <table class="caption-top table">
 <tbody>

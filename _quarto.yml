@@ -2,8 +2,10 @@ project:
   type: website
   output-dir: docs
 
+date: 05/02/2026
+date-format: long
 website:
-  title: "SeaGis Cal Guide pt/br"
+  title: "Projeto Meros do Brasil"
   navbar:
     left:
       - href: index.qmd
