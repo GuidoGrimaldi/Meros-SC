@@ -11,7 +11,8 @@ website:
         menu:
           - text: "SeaGIS CAL"
             href: index.qmd
-          - about.qmd
+          - text: "EventMeasure"
+            href: eventmeasure.qmd
       - text: "Protocolos de Campo"
         menu:
           - text: "BRUV"
