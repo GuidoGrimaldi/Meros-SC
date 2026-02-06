@@ -27,6 +27,7 @@ fontsize: 12pt
 # Opções de execução --------------
 execute: 
   warning: false
+  freeze: auto
 
 # Layout da página ----------------
 geometry: 

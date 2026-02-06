@@ -17,6 +17,9 @@ format:
     toc-depth: 3
     number-sections: true
     smooth-scroll: true
+
+execute: 
+  freeze: auto
 ---
 
 # Termos & Conceitos
@@ -207,6 +210,44 @@ Quando uma medição recebe informações de **Family**, **Genus** e **Species**
 O **visualizador de imagens de referência** também utiliza as informações do arquivo de espécies para buscar valores de família (ver **Using the viewer**). O *EventMeasure* também fornece um utilitário para **aplicar um novo arquivo de espécies a um conjunto existente de medições** (ver **Refresh all codes**)
 
 ### Assigning/ editing attributes {#sec-assingning-edit-att}
+
+Esta seção descreve o processo de atribuição ou edição de atributos associados a uma medição.
+
+A janela do **editor de atributos** exibe os **cabeçalhos dos atributos** no lado esquerdo da janela e fornece **caixas de combinação (combo boxes)** no lado direito, permitindo a seleção ou inserção dos atributos correspondentes. Observe que o atributo **Code** não pode ser editado; seu valor é preenchido automaticamente pelo *EventMeasure* com base no arquivo de espécies atualmente carregado (ver **Editing and loading species and attribute files**).
+
+A janela do editor de atributos pode ser redimensionada. Ao redimensioná-la verticalmente, é possível **ocultar atributos que não estão sendo utilizados no momento**. Por exemplo, se você não estiver usando os três últimos atributos configuráveis pelo usuário, redimensione a janela para ocultá-los. Observe que ocultar atributos dessa forma **não exclui nem altera** nenhum atributo; eles apenas deixam de ser exibidos. A divisão entre os cabeçalhos dos atributos e as caixas de combinação usadas para exibir e editar os atributos também pode ser ajustada. Posicione o mouse na área entre os cabeçalhos dos atributos e as caixas de combinação; o ponteiro do mouse se transformará em uma **seta de duas pontas**. Quando isso ocorrer, pressione e mantenha pressionado o botão esquerdo do mouse e arraste para alterar o layout da janela. O tamanho, o layout e a posição da janela do editor de atributos são **memorizados** quando a janela é fechada e, na próxima vez em que for exibida, essas configurações serão restauradas.
+
+Para editar os atributos de um **ponto/caixa delimitadora**, **comprimento** ou **ponto 3D** existente na visualização padrão de imagem única:
+
+-   Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão esquerdo do mouse**. Isso exibirá a janela do editor de atributos.
+
+-   Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão direito do mouse**. Um menu pop-up será exibido; selecione **Edit attributes** e a janela do editor de atributos será aberta.
+
+No **modo de medição estéreo**, o botão esquerdo do mouse é utilizado para realizar medições de comprimento e pontos 3D. Portanto:
+
+-   Clique sobre ou próximo ao ponto, ao canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão direito do mouse**. Um menu pop-up será exibido; selecione **Edit attributes** e a janela do editor de atributos será aberta.
+
+No modo de medição estéreo, também é possível editar os atributos das medições na **imagem da direita** usando o mesmo método (clique com o botão direito do mouse sobre ou próximo a um ponto de medição e selecione **Edit attributes** no menu pop-up).
+
+Também é possível editar os atributos de uma medição a partir da **janela Data**. Nas visualizações **Points** ou **3D Measurements** da janela Data, selecione a medição desejada e pressione a tecla **e** do teclado, ou dê um **duplo clique com o botão direito** do mouse sobre a medição. Observe que a edição dos atributos **não leva automaticamente** até a medição. Para exibir a medição primeiro, na janela Data dê um **duplo clique** sobre a medição ou selecione-a e pressione a tecla **Enter**.
+
+Se você estiver adicionando novos **pontos/caixas delimitadoras**, **pontos 3D** ou **comprimentos**, a janela do editor de atributos será exibida com valores padrão para alguns campos:
+
+-   **Number:** 1
+
+-   **Stage:** AD
+
+-   **Activity:** Passing
+
+A janela será exibida com o campo **Species** destacado. Na maioria dos casos, você já saberá a espécie e poderá começar a digitar o nome da espécie (dica: digite a primeira ou as duas primeiras letras de **Species** e depois abra a lista para ver espécies semelhantes e fazer a seleção). Quando a seleção de **Species** for concluída, o EventMeasure utiliza automaticamente os dados do arquivo de espécies para tentar completar **Family** e **Genus**. Se **Family** e **Genus** puderem ser completados automaticamente de forma única, seus valores serão exibidos; caso contrário, o EventMeasure preencherá a caixa **Genus** com um conjunto reduzido de valores possíveis. Selecione o **Genus** e o **Family** será preenchido.
+
+Observe que sempre que você fizer uma seleção de **Family**, **Genus** ou **Species**, o EventMeasure **limitará automaticamente** as opções disponíveis com base nas informações lidas do arquivo de espécies. Se você fizer uma seleção incorreta ou quiser reiniciar o processo de seleção, a forma mais simples é **limpar as seleções atuais** escolhendo “”“” em cada um dos campos **Family**, **Genus** ou **Species** (para fazer isso rapidamente, selecione a caixa de combinação desejada e pressione a tecla **Home** do teclado).
+
+À medida que você faz as seleções de **Family**, **Genus** e **Species**, o EventMeasure **atualiza automaticamente o Code** com base nas informações do arquivo de espécies.
+
+Você pode selecionar ou alterar os valores dos **demais atributos** conforme necessário.
+
+Observe que o EventMeasure **restringe os valores** que podem ser inseridos para seus atributos fixos. Isso significa que:
 
 ## Measurement summaries {#sec-measurement-summaries}
 

@@ -127,6 +127,18 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pesquisasc@merosdobrasil.org"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://merosdobrasil.org/"> <i class="bi bi-globe" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -454,6 +466,31 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="sec-assingning-edit-att" class="level3">
 <h3 class="anchored" data-anchor-id="sec-assingning-edit-att">Assigning/ editing attributes</h3>
+<p>Esta seção descreve o processo de atribuição ou edição de atributos associados a uma medição.</p>
+<p>A janela do <strong>editor de atributos</strong> exibe os <strong>cabeçalhos dos atributos</strong> no lado esquerdo da janela e fornece <strong>caixas de combinação (combo boxes)</strong> no lado direito, permitindo a seleção ou inserção dos atributos correspondentes. Observe que o atributo <strong>Code</strong> não pode ser editado; seu valor é preenchido automaticamente pelo <em>EventMeasure</em> com base no arquivo de espécies atualmente carregado (ver <strong>Editing and loading species and attribute files</strong>).</p>
+<p>A janela do editor de atributos pode ser redimensionada. Ao redimensioná-la verticalmente, é possível <strong>ocultar atributos que não estão sendo utilizados no momento</strong>. Por exemplo, se você não estiver usando os três últimos atributos configuráveis pelo usuário, redimensione a janela para ocultá-los. Observe que ocultar atributos dessa forma <strong>não exclui nem altera</strong> nenhum atributo; eles apenas deixam de ser exibidos. A divisão entre os cabeçalhos dos atributos e as caixas de combinação usadas para exibir e editar os atributos também pode ser ajustada. Posicione o mouse na área entre os cabeçalhos dos atributos e as caixas de combinação; o ponteiro do mouse se transformará em uma <strong>seta de duas pontas</strong>. Quando isso ocorrer, pressione e mantenha pressionado o botão esquerdo do mouse e arraste para alterar o layout da janela. O tamanho, o layout e a posição da janela do editor de atributos são <strong>memorizados</strong> quando a janela é fechada e, na próxima vez em que for exibida, essas configurações serão restauradas.</p>
+<p>Para editar os atributos de um <strong>ponto/caixa delimitadora</strong>, <strong>comprimento</strong> ou <strong>ponto 3D</strong> existente na visualização padrão de imagem única:</p>
+<ul>
+<li><p>Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o <strong>botão esquerdo do mouse</strong>. Isso exibirá a janela do editor de atributos.</p></li>
+<li><p>Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o <strong>botão direito do mouse</strong>. Um menu pop-up será exibido; selecione <strong>Edit attributes</strong> e a janela do editor de atributos será aberta.</p></li>
+</ul>
+<p>No <strong>modo de medição estéreo</strong>, o botão esquerdo do mouse é utilizado para realizar medições de comprimento e pontos 3D. Portanto:</p>
+<ul>
+<li>Clique sobre ou próximo ao ponto, ao canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o <strong>botão direito do mouse</strong>. Um menu pop-up será exibido; selecione <strong>Edit attributes</strong> e a janela do editor de atributos será aberta.</li>
+</ul>
+<p>No modo de medição estéreo, também é possível editar os atributos das medições na <strong>imagem da direita</strong> usando o mesmo método (clique com o botão direito do mouse sobre ou próximo a um ponto de medição e selecione <strong>Edit attributes</strong> no menu pop-up).</p>
+<p>Também é possível editar os atributos de uma medição a partir da <strong>janela Data</strong>. Nas visualizações <strong>Points</strong> ou <strong>3D Measurements</strong> da janela Data, selecione a medição desejada e pressione a tecla <strong>e</strong> do teclado, ou dê um <strong>duplo clique com o botão direito</strong> do mouse sobre a medição. Observe que a edição dos atributos <strong>não leva automaticamente</strong> até a medição. Para exibir a medição primeiro, na janela Data dê um <strong>duplo clique</strong> sobre a medição ou selecione-a e pressione a tecla <strong>Enter</strong>.</p>
+<p>Se você estiver adicionando novos <strong>pontos/caixas delimitadoras</strong>, <strong>pontos 3D</strong> ou <strong>comprimentos</strong>, a janela do editor de atributos será exibida com valores padrão para alguns campos:</p>
+<ul>
+<li><p><strong>Number:</strong> 1</p></li>
+<li><p><strong>Stage:</strong> AD</p></li>
+<li><p><strong>Activity:</strong> Passing</p></li>
+</ul>
+<p>A janela será exibida com o campo <strong>Species</strong> destacado. Na maioria dos casos, você já saberá a espécie e poderá começar a digitar o nome da espécie (dica: digite a primeira ou as duas primeiras letras de <strong>Species</strong> e depois abra a lista para ver espécies semelhantes e fazer a seleção). Quando a seleção de <strong>Species</strong> for concluída, o EventMeasure utiliza automaticamente os dados do arquivo de espécies para tentar completar <strong>Family</strong> e <strong>Genus</strong>. Se <strong>Family</strong> e <strong>Genus</strong> puderem ser completados automaticamente de forma única, seus valores serão exibidos; caso contrário, o EventMeasure preencherá a caixa <strong>Genus</strong> com um conjunto reduzido de valores possíveis. Selecione o <strong>Genus</strong> e o <strong>Family</strong> será preenchido.</p>
+<p>Observe que sempre que você fizer uma seleção de <strong>Family</strong>, <strong>Genus</strong> ou <strong>Species</strong>, o EventMeasure <strong>limitará automaticamente</strong> as opções disponíveis com base nas informações lidas do arquivo de espécies. Se você fizer uma seleção incorreta ou quiser reiniciar o processo de seleção, a forma mais simples é <strong>limpar as seleções atuais</strong> escolhendo “”“” em cada um dos campos <strong>Family</strong>, <strong>Genus</strong> ou <strong>Species</strong> (para fazer isso rapidamente, selecione a caixa de combinação desejada e pressione a tecla <strong>Home</strong> do teclado).</p>
+<p>À medida que você faz as seleções de <strong>Family</strong>, <strong>Genus</strong> e <strong>Species</strong>, o EventMeasure <strong>atualiza automaticamente o Code</strong> com base nas informações do arquivo de espécies.</p>
+<p>Você pode selecionar ou alterar os valores dos <strong>demais atributos</strong> conforme necessário.</p>
+<p>Observe que o EventMeasure <strong>restringe os valores</strong> que podem ser inseridos para seus atributos fixos. Isso significa que:</p>
 </section>
 </section>
 <section id="sec-measurement-summaries" class="level2" data-number="5.5">
@@ -883,6 +920,25 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/GuidoGrimaldi">
+<p>Created by Dr.&nbsp;Guido Grimaldi</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Projeto Meros do Brasil.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 

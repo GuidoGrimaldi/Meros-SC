@@ -7,6 +7,9 @@ author:
   affiliation: 
     name: Intituto Meros do Brasil
     url: https://merosdobrasil.org/
+
+execute: 
+  freeze: auto
 ---
 
 ## O QUE FAZER EM CASO DE ACIDENTE EMBARCADO ?

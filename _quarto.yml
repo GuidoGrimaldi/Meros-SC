@@ -13,13 +13,26 @@ website:
             href: index.qmd
           - text: "EventMeasure"
             href: eventmeasure.qmd
+
       - text: "Protocolos de Campo"
         menu:
           - text: "BRUV"
             href: bruv.qmd
           - text: "Plano de Emergência"
             href: emergence.qmd
+    right:
+      - icon: envelope
+        href: mailto:pesquisasc@merosdobrasil.org
+      - icon: globe
+        href: https://merosdobrasil.org/
+
   back-to-top-navigation: true
+
+  page-footer:
+    left:
+      - text: "Created by Dr. Guido Grimaldi"
+        href: https://github.com/GuidoGrimaldi
+    center: "© 2026 Projeto Meros do Brasil."
 
 format:
   html:
@@ -29,6 +42,8 @@ format:
     css: styles.css
   pdf:
     documentclass: scrreprt
+
+
 
 editor: visual
 
