@@ -171,9 +171,9 @@ Se houver dificuldades para chegar a esse ponto, consulte ***Creating new projec
 
 Note, todas as operações de menu mencionadas nesta seção estão em *Measurement* \| *Stereo constraints*.
 
-1.  Configure as restrições estéreo usando *Configure stereo constraints* . Nesta caixa de diálogo, geralmente basta garantir que a câmera esquerda e a câmera direita estejam selecionadas corretamente e, em seguida, clicar no botão \*Automatic\* para gerar os pares esquerda/direita. Você receberá uma mensagem de erro se houver um número diferente de imagens esquerda e direita medidas, pois o software não consegue criar pares estéreo – você precisará encontrar e corrigir a imagem esquerda/direita que não possui uma imagem direita/esquerda correspondente (consulte Configurando restrições).
+1.  Configure as restrições estéreo usando *Configure stereo constraints* . Nesta caixa de diálogo, geralmente basta garantir que a câmera esquerda e a câmera direita estejam selecionadas corretamente e, em seguida, clicar no botão *Automatic* para gerar os pares esquerda/direita. Você receberá uma mensagem de erro se houver um número diferente de imagens esquerda e direita medidas, pois o software não consegue criar pares estéreo – você precisará encontrar e corrigir a imagem esquerda/direita que não possui uma imagem direita/esquerda correspondente (consulte Configurando restrições).
 
-2.  Estime as restrições usando \*Estimating constraints\* (consulte Estimando restrições). Um aviso será exibido se mais de quatro pares estéreo forem excluídos (consulte os comentários na próxima etapa).
+2.  Estime as restrições usando *Estimating constraints* (consulte Estimando restrições). Um aviso será exibido se mais de quatro pares estéreo forem excluídos (consulte os comentários na próxima etapa).
 
 3.  Verifique a orientação relativa usando *View stereo constraints*. Verifique se os resíduos de restrição são aceitáveis ​​e se não houve muitas restrições que foram excluídas do cálculo (coluna *Exclusions*). **Se mais de quatro restrições forem rejeitadas, verifique novamente a sincronização estéreo.** Para mais detalhes, consulte Visualizando as restrições.
 
@@ -253,9 +253,9 @@ Quando uma nova câmera estiver sendo calibrada (isto é, não existe um arquivo
 
 ## *Object points and distances*
 
-## *Measurement*
+## Medições
 
-> *Medições*
+> *Measurement*
 
 Esta seção aborda o processo de realização de medições de pontos, bem como descreve o uso dos itens do menu *Measurement*.
 

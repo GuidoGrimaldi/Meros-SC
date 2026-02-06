@@ -14,5 +14,9 @@
   "emergence.qmd": {
     "emergence.html": "2dbee45d",
     "emergence.tex": "4825f6f6"
+  },
+  "eventmeasure.qmd": {
+    "eventmeasure.html": "4734b2cb",
+    "eventmeasure.tex": "128cbc61"
   }
 }

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Supervisão de Pesquisa SC">
+
+<title>Projeto Meros do Brasil – Pesquisa Meros SC</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-870b6070356b2f6ba798b4fc2bd491a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./meroiconwhite.png" alt="" class="navbar-logo light-content">
+    <img src="./meroiconwhite.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Pesquisa Meros SC</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manuais" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Manuais</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-manuais">    
+        <li>
+    <a class="dropdown-item" href="./index.html">
+ <span class="dropdown-text">SeaGIS CAL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">About</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos-de-campo" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Protocolos de Campo</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos-de-campo">    
+        <li>
+    <a class="dropdown-item" href="./bruv.html">
+ <span class="dropdown-text">BRUV</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./emergence.html">
+ <span class="dropdown-text">Plano de Emergência</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#termos-conceitos" id="toc-termos-conceitos" class="nav-link active" data-scroll-target="#termos-conceitos"><span class="header-section-number">1</span> Termos &amp; Conceitos</a></li>
+  <li><a href="#guia-rápido" id="toc-guia-rápido" class="nav-link" data-scroll-target="#guia-rápido"><span class="header-section-number">2</span> Guia Rápido</a>
+  <ul class="collapse">
+  <li><a href="#para-iniciar-um-novo-arquivo-de-medida-projeto" id="toc-para-iniciar-um-novo-arquivo-de-medida-projeto" class="nav-link" data-scroll-target="#para-iniciar-um-novo-arquivo-de-medida-projeto"><span class="header-section-number">2.1</span> Para iniciar um novo arquivo de medida/ projeto</a></li>
+  </ul></li>
+  <li><a href="#data-organization" id="toc-data-organization" class="nav-link" data-scroll-target="#data-organization"><span class="header-section-number">3</span> Data organization</a>
+  <ul class="collapse">
+  <li><a href="#sec-location-extensions" id="toc-sec-location-extensions" class="nav-link" data-scroll-target="#sec-location-extensions"><span class="header-section-number">3.1</span> File location and extensions</a></li>
+  </ul></li>
+  <li><a href="#measurement" id="toc-measurement" class="nav-link" data-scroll-target="#measurement"><span class="header-section-number">4</span> Measurement</a>
+  <ul class="collapse">
+  <li><a href="#sec-information-field" id="toc-sec-information-field" class="nav-link" data-scroll-target="#sec-information-field"><span class="header-section-number">4.1</span> Information field</a>
+  <ul class="collapse">
+  <li><a href="#editing-field-names-and-values" id="toc-editing-field-names-and-values" class="nav-link" data-scroll-target="#editing-field-names-and-values">Editing field names and values</a></li>
+  <li><a href="#batch-change-information-data" id="toc-batch-change-information-data" class="nav-link" data-scroll-target="#batch-change-information-data">Batch change information data</a></li>
+  </ul></li>
+  <li><a href="#sec-new-measurement-files" id="toc-sec-new-measurement-files" class="nav-link" data-scroll-target="#sec-new-measurement-files"><span class="header-section-number">4.2</span> New measurement files</a></li>
+  <li><a href="#sec-point-bounding" id="toc-sec-point-bounding" class="nav-link" data-scroll-target="#sec-point-bounding"><span class="header-section-number">4.3</span> Points and bounding boxes</a></li>
+  <li><a href="#sec-measurement-summaries" id="toc-sec-measurement-summaries" class="nav-link" data-scroll-target="#sec-measurement-summaries"><span class="header-section-number">4.4</span> Measurement summaries</a></li>
+  <li><a href="#sec-ref-images" id="toc-sec-ref-images" class="nav-link" data-scroll-target="#sec-ref-images"><span class="header-section-number">4.5</span> Creating reference images</a></li>
+  </ul></li>
+  <li><a href="#stereo-measurements" id="toc-stereo-measurements" class="nav-link" data-scroll-target="#stereo-measurements"><span class="header-section-number">5</span> Stereo measurements</a>
+  <ul class="collapse">
+  <li><a href="#sec-making-length-measure" id="toc-sec-making-length-measure" class="nav-link" data-scroll-target="#sec-making-length-measure"><span class="header-section-number">5.1</span> Making length measurements</a></li>
+  <li><a href="#sec-making-3d-point" id="toc-sec-making-3d-point" class="nav-link" data-scroll-target="#sec-making-3d-point"><span class="header-section-number">5.2</span> Making 3D point measurements</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Projeto Meros do Brasil</h1>
+<p class="subtitle lead">EventMeasure Pt/Br</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Supervisão de Pesquisa SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://merosdobrasil.org/">
+            Intituto Meros do Brasil
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="termos-conceitos" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Termos &amp; Conceitos</h1>
+<ul>
+<li><p><strong>Arquivo espécie</strong> (<em>Species file</em>): é um <strong>arquivo de referência</strong> usado pelo software <em>EventMeasure</em> para definir e padronizar as espécies ou categorias biológicas que podem ser registradas durante as medições.</p></li>
+<li><p><strong>Arquivo de medição</strong> (<em>Measurement file</em>): é o <strong>arquivo central do projeto</strong> no EventMeasure. Ele funciona como um contêiner de dados, onde ficam armazenadas todas as informações produzidas durante a análise de imagens ou vídeos.</p></li>
+<li><p><strong>Profundidade de Implantação</strong> (<em>Depth of deployment</em>): profundidade à qual o equipamento/ sistema de operação foi colocado ou utilizado na água.</p></li>
+</ul>
+</section>
+<section id="guia-rápido" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Guia Rápido</h1>
+<section id="para-iniciar-um-novo-arquivo-de-medida-projeto" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="para-iniciar-um-novo-arquivo-de-medida-projeto"><span class="header-section-number">2.1</span> Para iniciar um novo arquivo de medida/ projeto</h2>
+<ol type="1">
+<li><p>Certifique-se de que todas as imagens a serem utilizadas estejam localizadas em um <strong>único diretório</strong> (ver <a href="#sec-location-extensions" class="quarto-xref">Section&nbsp;3.1</a>).</p></li>
+<li><p>Caso ainda não esteja em execução, inicie o aplicativo <strong>EventMeasure</strong>.</p></li>
+<li><p>Crie um novo arquivo de medição usando <em>Measurement | New measurement file</em> (ver <a href="#sec-new-measurement-files" class="quarto-xref">Section&nbsp;4.2</a>). Você será solicitado a salvar o arquivo de medição atual, se necessário.</p></li>
+<li><p>Defina os nomes e valores dos campos de informação usando <em>Measurement | Information fields | Edit field names</em> e <em>Measurement | Information fields | Edit field values</em> (ver <a href="#sec-information-field" class="quarto-xref">Section&nbsp;4.1</a>). É obrigatório informar, no mínimo, valores para <strong>OpCode</strong> e <strong>TapeReader</strong>.</p></li>
+<li><p>Revise as informações atuais de atributos e o arquivo de espécies. O arquivo de espécies e os nomes de atributos definidos pelo usuário, bem como seus arquivos, <strong>permanecerão carregados de usos anteriores</strong>. Certifique-se de que o arquivo de espécies correto esteja carregado usando <em>Measurement | Attributes | Edit/load</em>. Configure os atributos definidos pelo usuário e carregue seus arquivos de atributos, se necessário (use <em>Measurement | Attributes | Attribute headers</em> e <em>Measurement | Attributes | Edit/load species files</em>). Consulte <em>Setting attribute headers</em> e <em>Editing and loading species and attribute files</em>.</p></li>
+<li><p>Defina o diretório das imagens usando <em>Picture | Set picture directory (ver <strong>Setting the picture directory</strong></em>).</p></li>
+<li><p>Carregue uma imagem usando <em>Picture | Load picture</em> (ver <strong><em>Loading images</em></strong>). Se a imagem for um vídeo e não fizer parte da definição da sequência de vídeos, ela será adicionada automaticamente e a sequência de vídeos será exibida. Se houver múltiplos vídeos na sequência, verifique se estão corretamente ordenados e clique em <em>OK</em>. (Alternativamente, é possível definir a sequência de vídeos manualmente usando <em>Picture | Define movie sequence</em>. Também é possível especificar um horário de início “real” para o vídeo, bem como selecionar o formato de tempo utilizado. Ver <em><strong>Movie sequences</strong>.</em>)</p></li>
+<li><p>Se estiver utilizando o modo de medição estéreo, alterne para o modo estéreo usando o botão <em>Toggle view</em> (ver <strong><em>Stereo layout and toggling between stereo and single modes</em></strong>) e carregue uma imagem para a câmera direita usando <em>Stereo | Picture | Load picture</em> (ver <strong><em>Loading right camera images</em></strong>). Se a imagem for um vídeo e não fizer parte da definição da sequência de vídeos da câmera direita, ela será adicionada automaticamente e a definição da sequência será exibida. Se houver múltiplos vídeos, verifique se estão corretamente ordenados e clique em <em>OK</em>. (Alternativamente, você pode definir manualmente a sequência de vídeo correta usando <em>Estéreo | Imagem | Definir sequência de vídeo</em>; consulte Sequência de vídeo para a câmera direita.)</p></li>
+<li><p>Se estiver usando o modo de medição estéreo, sincronize e bloqueie as imagens esquerda e direita (consulte A função “Bloquear”).</p></li>
+<li><p>Se estiver usando o modo de medição estéreo, carregue os arquivos das câmeras esquerda e direita usando Estéreo | Câmeras | Esquerda | Carregar arquivo da câmera e Estéreo | Câmeras | Direita | Carregar arquivo da câmera.</p></li>
+<li><p>Salve o novo arquivo de medição. Use Medição | Salvar (consulte Abrindo e salvando medições). Como sugestão, nomeie seu arquivo de medição usando o OpCode dos campos de Informação.</p></li>
+</ol>
+</section>
+</section>
+<section id="data-organization" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Data organization</h1>
+<section id="sec-location-extensions" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-location-extensions"><span class="header-section-number">3.1</span> File location and extensions</h2>
+</section>
+</section>
+<section id="measurement" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Measurement</h1>
+<section id="sec-information-field" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-information-field"><span class="header-section-number">4.1</span> Information field</h2>
+<p>O arquivo de medição possui 12 campos de informações associados a ele. Esses campos são salvos no arquivo de medição e devem ser utilizados para armazenar informações que se aplicam a todas as medições (pense nisso como metadados). Os valores desses campos de informação são exportados nos diversos relatórios em arquivos de texto que o EventMeasure gera (ver <a href="#sec-measurement-summaries" class="quarto-xref">Section&nbsp;4.4</a>).</p>
+<section id="editing-field-names-and-values" class="level3">
+<h3 class="anchored" data-anchor-id="editing-field-names-and-values">Editing field names and values</h3>
+<p>Os quatro primeiros campos de informação têm nomes fixos: <strong>OpCode</strong> (Código da Operação), <strong>TapeReader</strong>, <strong>Depth</strong> (Profundidade) e <strong>Comment</strong> (Comentário). Os 8 campos de informação restantes podem ser configurados pelo usuário para armazenar informações personalizadas.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Information field</th>
+<th>Default name</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>OpCode</td>
+<td>Identificador único para este conjunto de medições, geralmente associado a uma implantação/ lançamento de câmera.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>TapeReader</td>
+<td>Nome da pessoa que realiza as medições.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Depth</td>
+<td>Profundidade de implantação.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Comment</td>
+<td>Comentários.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="odd">
+<td>11</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>Spare</td>
+<td>Definível pelo usuário.</td>
+</tr>
+</tbody>
+</table>
+<p>Os campos de informação 5 a 12 podem ser alterados para atender a qualquer aplicação específica. Utilize o comando de menu <em>Measurement | Information fields | Edit field names</em>. Isso abre um editor que permite a edição dos nomes dos campos (o nome padrão é <em>Spare</em>).</p>
+<p>Para editar os valores dos campos, utilize o comando de menu <em>Measurement | Information fields | Edit field values</em>. Isso abre um editor que permite alterar os valores atuais dos campos. Nesse editor, os valores dos campos são exibidos de acordo com os nomes de campos atualmente definidos.</p>
+<p>Observe que é obrigatório inserir valores para OpCode e TapeReader antes que o EventMeasure permita realizar qualquer medição (ver <a href="#sec-point-bounding" class="quarto-xref">Section&nbsp;4.3</a>, <a href="#sec-making-length-measure" class="quarto-xref">Section&nbsp;5.1</a>, <a href="#sec-making-3d-point" class="quarto-xref">Section&nbsp;5.2</a>) ou salvar quaisquer imagens de referência (ver <a href="#sec-ref-images" class="quarto-xref">Section&nbsp;4.5</a>).</p>
+</section>
+<section id="batch-change-information-data" class="level3">
+<h3 class="anchored" data-anchor-id="batch-change-information-data">Batch change information data</h3>
+</section>
+</section>
+<section id="sec-new-measurement-files" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-new-measurement-files"><span class="header-section-number">4.2</span> New measurement files</h2>
+</section>
+<section id="sec-point-bounding" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-point-bounding"><span class="header-section-number">4.3</span> Points and bounding boxes</h2>
+</section>
+<section id="sec-measurement-summaries" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-measurement-summaries"><span class="header-section-number">4.4</span> Measurement summaries</h2>
+</section>
+<section id="sec-ref-images" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-ref-images"><span class="header-section-number">4.5</span> Creating reference images</h2>
+</section>
+</section>
+<section id="stereo-measurements" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Stereo measurements</h1>
+<section id="sec-making-length-measure" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-making-length-measure"><span class="header-section-number">5.1</span> Making length measurements</h2>
+</section>
+<section id="sec-making-3d-point" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-making-3d-point"><span class="header-section-number">5.2</span> Making 3D point measurements</h2>
+
+
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

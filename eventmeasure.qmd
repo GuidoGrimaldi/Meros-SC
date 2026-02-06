@@ -1,0 +1,223 @@
+---
+title: "Projeto Meros do Brasil"
+subtitle: "EventMeasure Guide pt/br"
+author: 
+  name: "Supervisão de Pesquisa SC"
+  email: pesquisasc@merosdobrasil.org
+  affiliation: 
+    name: Intituto Meros do Brasil
+    url: https://merosdobrasil.org/
+
+format:
+  html:
+    toc-title: "Índice"
+    toc: true
+    toc-location: right
+    number-depth: 2
+    toc-depth: 3
+    number-sections: true
+    smooth-scroll: true
+---
+
+# Termos & Conceitos
+
+-   **Arquivo de atributo** (*Attribute file*): é o arquivo que armazena os atributos (variáveis descritivas) associados às medições.
+
+-   **Arquivo de espécie** (*Species file*): é um **arquivo de referência** usado pelo software *EventMeasure* para definir e padronizar as espécies ou categorias biológicas que podem ser registradas durante as medições.
+
+-   **Arquivos de imagem** (*Image files*): São os arquivos de imagem ou vídeos brutos que você irá analisar.
+
+-   **Arquivo de medição** (*Measurement file*): é o **arquivo central do projeto** no EventMeasure. Ele funciona como um contêiner de dados, onde ficam armazenadas todas as informações produzidas durante a análise de imagens ou vídeos.
+
+-   **Imagens de referência** (*Reference images*): São imagens criadas pelo EventMeasure ou importadas externamentos de parceiros que servem como padrão de comparação durante as medições, não é um dado de medição em si.
+
+-   **Profundidade de Implantação** (*Depth of deployment*): profundidade à qual o equipamento/ sistema de operação foi colocado ou utilizado na água.
+
+# Guia Rápido
+
+## Para iniciar um novo arquivo de medida/ projeto
+
+1.  Certifique-se de que todas as imagens a serem utilizadas estejam localizadas em um **único diretório** (ver @sec-location-extensions).
+
+2.  Caso ainda não esteja em execução, inicie o aplicativo **EventMeasure**.
+
+3.  Crie um novo arquivo de medição usando *Measurement \| New measurement file* (ver @sec-new-measurement-files). Você será solicitado a salvar o arquivo de medição atual, se necessário.
+
+4.  Defina os nomes e valores dos campos de informação usando *Measurement \| Information fields \| Edit field names* e *Measurement \| Information fields \| Edit field values* (ver @sec-information-field). É obrigatório informar, no mínimo, valores para **OpCode** e **TapeReader**.
+
+5.  Revise as informações atuais de atributos e o arquivo de espécies. O arquivo de espécies e os nomes de atributos definidos pelo usuário, bem como seus arquivos, **permanecerão carregados de usos anteriores**. Certifique-se de que o arquivo de espécies correto esteja carregado usando *Measurement \| Attributes \| Edit/load*. Configure os atributos definidos pelo usuário e carregue seus arquivos de atributos, se necessário (use *Measurement \| Attributes \| Attribute headers* e *Measurement \| Attributes \| Edit/load species files*). Consulte @sec-setting-attribute-headers e @sec-editing-loading-species-attributes-files.
+
+6.  Defina o diretório das imagens usando *Picture \| Set picture directory (ver **Setting the picture directory***).
+
+7.  Carregue uma imagem usando *Picture \| Load picture* (ver ***Loading images***). Se a imagem for um vídeo e não fizer parte da definição da sequência de vídeos, ela será adicionada automaticamente e a sequência de vídeos será exibida. Se houver múltiplos vídeos na sequência, verifique se estão corretamente ordenados e clique em *OK*. (Alternativamente, é possível definir a sequência de vídeos manualmente usando *Picture \| Define movie sequence*. Também é possível especificar um horário de início “real” para o vídeo, bem como selecionar o formato de tempo utilizado. Ver ***Movie sequences**.*)
+
+8.  Se estiver utilizando o modo de medição estéreo, alterne para o modo estéreo usando o botão *Toggle view* (ver ***Stereo layout and toggling between stereo and single modes***) e carregue uma imagem para a câmera direita usando *Stereo \| Picture \| Load picture* (ver ***Loading right camera images***). Se a imagem for um vídeo e não fizer parte da definição da sequência de vídeos da câmera direita, ela será adicionada automaticamente e a definição da sequência será exibida. Se houver múltiplos vídeos, verifique se estão corretamente ordenados e clique em *OK*. (Alternativamente, você pode definir manualmente a sequência de vídeo correta usando *Estéreo \| Imagem \| Definir sequência de vídeo*; consulte Sequência de vídeo para a câmera direita.)
+
+9.  Se estiver usando o modo de medição estéreo, sincronize e bloqueie as imagens esquerda e direita (consulte A função "Bloquear").
+
+10. Se estiver usando o modo de medição estéreo, carregue os arquivos das câmeras esquerda e direita usando Estéreo \| Câmeras \| Esquerda \| Carregar arquivo da câmera e Estéreo \| Câmeras \| Direita \| Carregar arquivo da câmera.
+
+11. Salve o novo arquivo de medição. Use Medição \| Salvar (consulte Abrindo e salvando medições). Como sugestão, nomeie seu arquivo de medição usando o OpCode dos campos de Informação.
+
+# Data organization
+
+## File location and extensions {#sec-location-extensions}
+
+O software *EvenMeasure* produz e utiliza os seguintes tipos de arquivos:
+
+| File type                         | Typical file extension |
+|-----------------------------------|------------------------|
+| Measurement file                  | .EMObs                 |
+| Automatic measurement file backup | .EMObs_AUTO            |
+| Attribute/ species files          | .SPC, .TAB, .TXT       |
+
+O arquivo de medição contém os campos de informação e todas as medições associadas às imagens. O arquivo de atributos armazena os atributos utilizados no arquivo de medição e permite que esses atributos sejam salvos e reutilizados em diferentes projetos de medição.
+
+**Todas as imagens a serem utilizadas em um determinado arquivo de medição devem estar localizadas no mesmo diretório.** Quando o *EventMeasure* armazena informações das imagens em um arquivo de medição (.EMObs), ele salva os nomes dos arquivos de imagem sem as informações de caminho. O caminho para todas as imagens também é armazenado. Esse arranjo permite que os arquivos de imagem sejam movidos para um diretório ou computador diferente — **se os arquivos forem movidos, tudo o que precisa ser alterado no arquivo de medição é o diretório das imagens** (ver ***Setting the picture directory***).
+
+Como orientação geral, todas as imagens e o arquivo de medição do EventMeasure (.EMObs) associados a elas podem ser armazenados no mesmo diretório. **Uma exceção a essa sugestão ocorre quando se pretende utilizar o utilitário de geração de relatórios em lote** (***Batch text file report generation***) ou a função de exportação para banco de dados (***Database export***); nesse caso, é útil manter todos os arquivos de medição do EventMeasure (.EMObs) no mesmo diretório.
+
+De modo geral, os arquivos de atributos e de espécies serão comuns a vários arquivos de medição diferentes e devem ser armazenados em seu próprio diretório.
+
+As imagens de referência usadas ou criadas pelo *EventMeasure* normalmente são compartilhadas entre diferentes usuários em computadores distintos e devem ser armazenadas em um local comum. Para mais informações, consulte o **Reference image viewer**.
+
+Se você possuir o componente de medição estéreo, o *EventMeasure* também exigirá arquivos de calibração de câmera produzidos pelo pacote de software **CAL** (estes são os mesmos arquivos utilizados pelo **PhotoMeasure** e pelo **StereoLib**)
+
+# Program menu
+
+## Species file generation {#sec-species-file-generation}
+
+# Measurement
+
+## Information field {#sec-information-field}
+
+O arquivo de medição possui 12 campos de informações associados a ele. Esses campos são salvos no arquivo de medição e devem ser utilizados para armazenar informações que se aplicam a todas as medições (pense nisso como metadados). Os valores desses campos de informação são exportados nos diversos relatórios em arquivos de texto que o EventMeasure gera (ver @sec-measurement-summaries).
+
+### Editing field names and values
+
+Os quatro primeiros campos de informação têm nomes fixos: **OpCode** (Código da Operação), **TapeReader**, **Depth** (Profundidade) e **Comment** (Comentário). Os 8 campos de informação restantes podem ser configurados pelo usuário para armazenar informações personalizadas.
+
+| Information field | Default name | Use |
+|-------------------|-------------------|----------------------------------|
+| 1 | OpCode | Identificador único para este conjunto de medições, geralmente associado a uma implantação/ lançamento de câmera. |
+| 2 | TapeReader | Nome da pessoa que realiza as medições. |
+| 3 | Depth | Profundidade de implantação. |
+| 4 | Comment | Comentários. |
+| 5 | Spare | Definível pelo usuário. |
+| 6 | Spare | Definível pelo usuário. |
+| 7 | Spare | Definível pelo usuário. |
+| 8 | Spare | Definível pelo usuário. |
+| 9 | Spare | Definível pelo usuário. |
+| 10 | Spare | Definível pelo usuário. |
+| 11 | Spare | Definível pelo usuário. |
+| 12 | Spare | Definível pelo usuário. |
+
+Os campos de informação 5 a 12 podem ser alterados para atender a qualquer aplicação específica. Utilize o comando de menu *Measurement \| Information fields \| Edit field names*. Isso abre um editor que permite a edição dos nomes dos campos (o nome padrão é *Spare*).
+
+Para editar os valores dos campos, utilize o comando de menu *Measurement \| Information fields \| Edit field values*. Isso abre um editor que permite alterar os valores atuais dos campos. Nesse editor, os valores dos campos são exibidos de acordo com os nomes de campos atualmente definidos.
+
+Observe que é obrigatório inserir valores para OpCode e TapeReader antes que o EventMeasure permita realizar qualquer medição (ver @sec-point-bounding, @sec-making-length-measure, @sec-making-3d-point) ou salvar quaisquer imagens de referência (ver @sec-ref-images).
+
+### Batch change information data
+
+## New measurement files {#sec-new-measurement-files}
+
+Um novo arquivo de medição pode ser criado usando o comando de menu *Measurement \| New measurement file*. Criar um novo arquivo de medição irá:
+
+-   Excluir todas as medições atuais.
+
+-   Limpar os valores dos campos de informação (os nomes dos campos de informação permanecem inalterados).
+
+-   Limpar o nome do arquivo de medição.
+
+-   Limpar o diretório de imagens atual.
+
+-   Limpar a imagem atualmente exibida.
+
+-   Limpar qualquer definição de sequência de vídeo.
+
+-   Limpar quaisquer definições de período.
+
+Se estiver utilizando **medição estéreo**, a criação de um novo arquivo de medição irá:
+
+-   Excluir todas as medições de comprimento atuais.
+
+-   Excluir todas as medições atuais de pontos 3D.
+
+-   Limpar a imagem da câmera direita atualmente exibida.
+
+-   Limpar qualquer definição de sequência de vídeo da câmera direita.
+
+-   Limpar as informações de calibração da câmera.
+
+-   Desmarcar o bloqueio estéreo (*Stereo Lock*).
+
+Todas as demais configurações do programa permanecem inalteradas (por exemplo, os nomes atuais dos campos de informação, cabeçalhos de atributos, cores e os arquivos atuais de espécies e atributos).
+
+Caso o arquivo de medição atual precise ser salvo, você será solicitado a salvá-lo antes que o novo arquivo de medição seja criado.
+
+Compare esta funcionalidade com ***Delete all measurements***.
+
+## Points and bounding boxes {#sec-point-bounding}
+
+## Attributes
+
+Atributos são valores associados as medidas de: pontos/caixas delimitadoras, comprimentos ou pontos 3D (compare com @sec-information-field). O *EventMeasure* permite que **10 atributos diferentes** sejam associados a cada medição de ponto/caixa delimitadora, comprimento ou ponto 3D. Os **7 primeiros atributos** são **fixos** no *EventMeasure*. Os **3 atributos restantes** podem ser configurados pelo usuário. **Os valores dos atributos são armazenados no arquivo de medição**.
+
+### Setting attribute headers {#sec-setting-attribute-headers}
+
+Os **7 primeiros atributos** são fixos no *EventMeasure*: Family, Genus, Species, Code, Number, Stage e Activity. Os **3 atributos restantes** podem ser configurados. Para editar os nomes dos atributos, utilize o comando de menu *Measurement \| Attributes \| Attribute headers.*
+
+(Observe que o **8º atributo** tem como nome padrão **Comment**, mas pode ser alterado. O 8º atributo é utilizado no *PhotoMeasure* para preencher o campo de comentário em medições de comprimento — trata-se de um recurso legado.)
+
+Esse comando abre uma janela que permite a edição dos cabeçalhos de atributos.
+
+Os cabeçalhos de atributos são armazenados no arquivo de medição.
+
+### Editing and loading species and attributes files {#sec-editing-loading-species-attributes-files}
+
+O *EventMeasure* utiliza um *arquivo de espécies* para associar combinações de Family, Genus e Species a um valor de Code. Em aplicações australianas, os códigos usados em um arquivo de espécies geralmente são códigos CAAB (<http://www.cmar.csiro.au/caab>). O código pode ser qualquer sequência alfabética, numérica ou alfanumérica mista. **Cada linha do arquivo de espécies deve possuir um código único**.
+
+Cada linha do arquivo de espécies pode conter, de forma opcional, informações de comprimento e contagem:
+
+-   Comprimento mínimo
+
+-   Comprimento máximo.
+
+-   Comprimento médio.
+
+-   Desvio-padrão do comprimento.
+
+-   Contagem máxima.
+
+-   Contagem média.
+
+-   Desvio-padrão da contagem.
+
+Essas informações adicionais são usadas para **verificar medições de comprimento quanto a erros grosseiros** durante o processo de medição e para a **geração de relatórios estatísticos** (@sec-count-statistic e @sec-length-statistic). **As unidades dos dados de comprimento devem corresponder àquelas utilizadas na calibração do sistema de câmeras** (essas serão as mesmas unidades que o *EventMeasure* utiliza para relatar medições tridimensionais e, geralmente, são **milímetros**).
+
+::: {.callout-caution appearance="simple"}
+Em nosso caso, as medições são em **centímetro**!
+:::
+
+O *EventMeasure* pode **gerar arquivos de espécies a partir de dados existentes** (arquivos *.EMObs*), incluindo as informações adicionais de comprimento e contagem (ver @sec-species-file-generation).
+
+Quando uma medição recebe informações de **Family**, **Genus** e **Species**, o *EventMeasure* procura o **código apropriado** com base no arquivo de espécies atualmente carregado (ver @sec-assingning-edit-att).
+
+O **visualizador de imagens de referência** também utiliza as informações do arquivo de espécies para buscar valores de família (ver **Using the viewer**). O *EventMeasure* também fornece um utilitário para **aplicar um novo arquivo de espécies a um conjunto existente de medições** (ver **Refresh all codes**)
+
+### Assigning/ editing attributes {#sec-assingning-edit-att}
+
+## Measurement summaries {#sec-measurement-summaries}
+
+### Count statistic {#sec-count-statistic}
+
+### Length statistic {#sec-length-statistic}
+
+## Creating reference images {#sec-ref-images}
+
+# Stereo measurements
+
+## Making length measurements {#sec-making-length-measure}
+
+## Making 3D point measurements {#sec-making-3d-point}
