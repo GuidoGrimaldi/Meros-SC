@@ -1,0 +1,30 @@
+---
+title: "Biblioteca Meros Brasil - BMB"
+subtitle: "Política de Uso"
+author: 
+  name: "Sistema Zotero"
+  email: zotero@merosdobrasil.org
+  affiliation:
+    name: Instituto Meros do Brasil
+    url: https://institutomeros.org/
+---
+
+**Política de Uso para o Banco de Referências**
+
+1.  Seja colaborativo e organizado;
+
+2.  O Banco de Referências da Biblioteca Meros do Brasil (BMB) é um espaço de uso coletivo, em comum à todos.
+
+3.  Adicione apenas as referências/ citações. Arquivos .pdf devem ser armazenados no Google Drive do Sistema Zotero.
+
+4.  Se for adicionar um arquivo .pdf no drive, respeite os direitos de uso e propriedade intelectual de terceiros (Ver: Política de Propriedade Intelectual)
+
+5.  É de responsabilidade do remetente verificar a categoria de licença a que cada artigo está vinculado, sendo, em total teor, sua a responsabilidade pelo compartilhamento, devendo o mesmo responder legalmente, em caso de necessidade, por delitos, infrações e transgressões ao direito autoral e de permissão de uso, que cometa, na aquisição e/ou compartilhamento do artigo (arquivo PDF).
+
+6.  Ao adicionar uma referência no Zotero, verifique se as informações foram importadas corretamente (Ver: Painel de Informações) e corrija, se necessário . Não faça as coisas pela metade. Se você achar que não vai dar tempo de se debruçar sobre uma ou mais referências para organizá-las, conforme necessário, é melhor não adicionar a citação à biblioteca.
+
+7.  Desabilite a configuração automática de etiquetas e arquivos para os itens salvos (Ver: Configurações) Exclua etiquetas anexadas automaticamente no momento da importação.
+
+8.   É obrigatório associar etiquetas a toda e qualquer referência adicionada por você, de acordo com as seguintes diretrizes básicas: Não há limites para a quantidade de etiquetas em um determinado item, quanto mais etiquetas, melhor. Contudo, seja consistente e evite variações que dificultam a pesquisa e a organização. Todas as etiquetas devem estar em língua inglesa americana. Todas as etiquetas devem estar no singular. Apenas a primeira letra deve estar em Maiúsculo (Ex: Correto: “Fish”; Errado: “FISH”, “fish”, “Fishes”.
+
+9.  Constatou um erro, corrija. Exclua duplicatas, mas antes confira qual das citações possui uma maior quantidade de informações atreladas e/ou anexos atrelados.

@@ -22,5 +22,13 @@
   "intelectual-prop.qmd": {
     "intelectual-prop.html": "d8a10a55",
     "intelectual-prop.tex": "ebbee1dc"
+  },
+  "uso.qmd": {
+    "uso.html": "8906baf4",
+    "uso.tex": "d1292a85"
+  },
+  "sobre.qmd": {
+    "sobre.html": "6f57fb7e",
+    "sobre.tex": "3ded650a"
   }
 }

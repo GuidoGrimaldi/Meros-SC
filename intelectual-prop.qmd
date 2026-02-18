@@ -1,4 +1,14 @@
 ---
-title: "intelectual-proprities"
-author: "Guido G. Grimaldi, Dr."
+title: "Biblioteca Meros Brasil - BMB"
+subtitle: "Política de Propriedade Intelectual"
+author:
+  name: "Sistema Zotero"
+  email: zotero@merosdobrasil.org
+  affiliation: 
+    name: Instituto Meros do Brasil - IMB
+    url: https://institutomeros.org/
 ---
+
+# Política de Propriedade Intelectual
+
+Respeitamos os direitos de propriedade intelectual de terceiros e pedimos que você faça o mesmo. Lembre-se, você é responsável por qualquer conteúdo que enviar ou compartilhar conosco, por isso é importante verificar com antecedência se você possui todos os direitos necessários para fazê-lo. Se você tiver alguma dúvida sobre sua permissão para enviar ou compartilhar um artigo científico específico, recomendamos fortemente que você revise a licença do artigo pretendido e qualquer informação disponibilizada pela editora em seu site antes de carregar o conteúdo. Em geral, se você for o autor, você pode ter permissão para publicar certas versões do seu artigo, mas não outras, e compartilhar privadamente determinado conteúdo com outros. No entanto, muitos periódicos restringem a publicação de versões finais e impõem limitações ao compartilhamento privado. Em caso de dúvida, entre em contato com sua editora.

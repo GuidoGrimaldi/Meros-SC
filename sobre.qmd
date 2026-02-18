@@ -1,0 +1,46 @@
+---
+title: "Biblioteca Meros do Brasil - BMB"
+subtitle: Banco de Referências Institucional
+author: 
+  name: "Sistema Zotero"
+  email: zotero@merosdobrasil.org
+  affiliation: 
+    name: Instituto Meros do Brasil - IMB
+    url: https://institutomeros.org/
+---
+
+# Biblioteca Meros
+
+## O quê?
+
+A **Biblioteca Meros do Brasil - BMB** ou "*Biblioteca Meros*" é uma biblioteca *virtual* de caráter *institucional*, portanto *sem fins lucrativos*, que fornece armazenamento e acesso gratuito a referências bibliogáficas acadêmico-científicas à todos os membros, equipes e parceiros de projetos relacionados ao **Instituto Meros do Brasil - IMB**, ou seja, a toda **Rede Meros.**
+
+## Missão
+
+Oferecer um espaço colaborativo gratuito e confiável para consulta, sistematização e organização de referências bibliográficas relevantes para os membros da **Rede Meros**, apoiando, assim, o desenvolvimento de projetos, pesquisas e ações de conservação promovidas pelo IMB.
+
+## Visão
+
+Consolidar-se **colaborativamente** como um repositório virtual estratégico para o Meros do Brasil, promovendo excelência no acesso à informação e a produção do saber científico.
+
+## Valores
+
+-   Honestidade
+
+-   Solidariedade
+
+-   Responsabilidade
+
+-   Justiça
+
+-   Transparência
+
+-   Reprodutibilidade
+
+## Princípios
+
+-   Princípio Ético-Legal: Respeito aos direitos autorais, às licenças de uso, à propriedade intelectual e às normas acadêmicas vigentes.
+
+-   Princípio Colaborativo: Fomento à cooperação entre pesquisadores, projetos e instituições e redes acadêmicas, estimulando a produção e validação coletiva do conhecimento.
+
+-   Princípio da Reprodutibilidade: Comprometimento em assegurar que dados, métodos, códigos, protocolos e procedimentos técnicos sejam documentados de forma completa, transparente e acessível, permitindo a verificação independente, a replicação dos resultados momentos e a validação das conclusões por terceiros qualificados.

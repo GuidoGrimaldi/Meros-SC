@@ -20,6 +20,14 @@ website:
             href: bruv.qmd
           - text: "Plano de Emergência"
             href: emergence.qmd
+
+      - text: "Biblioteca Mero"
+        menu:
+          - text: "1. Política de Propriedade Intelectual"
+            href: intelectual-prop.qmd
+          - text: "2. Política de Uso"
+            href: uso.qmd
+
     right:
       - icon: envelope
         href: mailto:pesquisasc@merosdobrasil.org
@@ -30,7 +38,7 @@ website:
 
   page-footer:
     left:
-      - text: "Created by Dr. Guido Grimaldi"
+      - text: "Created by Guido Grimaldi, Dr."
         href: https://github.com/GuidoGrimaldi
     center: "© 2026 Projeto Meros do Brasil."
 
