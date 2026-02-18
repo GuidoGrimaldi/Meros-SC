@@ -23,10 +23,13 @@ website:
 
       - text: "Biblioteca Mero"
         menu:
-          - text: "1. Política de Propriedade Intelectual"
-            href: intelectual-prop.qmd
+          - text: "1. Sobre"
+            href: sobre.qmd
           - text: "2. Política de Uso"
             href: uso.qmd
+          - text: "3. Política de Propriedade Intelectual"
+            href: intelectual-prop.qmd
+
 
     right:
       - icon: envelope
@@ -38,7 +41,7 @@ website:
 
   page-footer:
     left:
-      - text: "Created by Guido Grimaldi, Dr."
+      - text: "Created by Guido Grimaldi, PhD."
         href: https://github.com/GuidoGrimaldi
     center: "© 2026 Projeto Meros do Brasil."
 
