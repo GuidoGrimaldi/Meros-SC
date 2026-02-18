@@ -186,7 +186,7 @@
     "href": "bruv.html#preparação-para-o-lançamento",
     "title": "Projeto Meros do Brasil",
     "section": "2.1 Preparação para o lançamento",
-    "text": "2.1 Preparação para o lançamento\n\nMonte os pés dos BRUVS.\nPrepare a haste da isca com o cano de armazenamento das iscas, mas não adicione isca ainda, para não ficar pingando no barco.\nQuando for conectar a haste da isca, tenha cuidado com a bóia de flutuação do BRUV. Está deve passar por fora da haste. Lembre-se de levantá-la antes de fixar a haste.\nLigue as câmeras e verifique a ação.\nConecte o cabo de lançamento ao BRUV.\nTenha a disposição uma quantidade\nAmarrar a bóia de sinalização ao cabo de lançamento.\nNão passar o cabo SOMENTE no D-ring plástico da boía para não forçar.\nPasse também por dentro de uma dos tirantes horizontais da bóia como backup de segurança para caso do D-ring quebre."
+    "text": "2.1 Preparação para o lançamento\n\nMonte os pés do BRUV.\nPrepare a haste da isca com o cano de armazenamento.\n\n\n\n\n\n\nNão adicione a isca ainda, para não ficar pingando no barco. Deixe para pôr no último momento.\n\n\n\nLibere o cabo vermelho em comformidade com a profudidade local estimada. Ex: para 15m de profundidade, libere 17 braças ( 1 braça ~1.5m).\nAmare a ponta solta do cabo de lançamento (corda vermelha) na argola da bóia de meia água do BRUV.\nAmarre a bóia de sinalização de superfície (bóia laranja) ao cabo de lançamento.\n\n\n\n\n\n\nNÃO passe o cabo SOMENTE no D-ring plástico da bóia de sinalização, Passe também por dentro do tirante horizontal da bóia como backup de segurança para caso do D-ring quebre.\n\n\n\nRetire ambas as câmeras e ligue-as (Pressione o botão lateral).\nConecte a câmera ao celular via bluetooth (Ver Quick GoPro App.)\nFormate os cartões de memória.\nPonha para gravar.\nVerifique se de fato está gravando.\n\n\n\n\n\n\nTip\n\n\n\nVeja o monitor. Quando está gravando, a GoPro emite um luz vermelha intermitente.\n\n\nDevolva as câmaras aos seus RESPECTIVOS cases.\nCuidado para não por de cabeça para baixo!\n\n\n\n\n\n\nSe atente as marcações no bruv, elas devem coincidir. Lembre-se vermelho é bombordo (esquerda) e verde é boreste (direita).\n\n\n\nAdicione a isca ao cano e acople a haste da isca no BRUV.\n\n\n\n\n\n\nCaution\n\n\n\nQuando for conectar a haste da isca, tenha cuidado com a bóia de meia água do BRUV. Está deve passar por fora da haste. Lembre-se de levantá-la antes de fixar a haste.\n\n\nVERIFIQUE SE O PROFUDIMETRO ESTA MARCANDO 0m. Caso não esteja, retorne o ponteiro a marcação inicial."
   },
   {
     "objectID": "bruv.html#lançamento-na-água",
@@ -214,14 +214,14 @@
     "href": "bruv.html#lavagem",
     "title": "Projeto Meros do Brasil",
     "section": "3.1 Lavagem",
-    "text": "3.1 Lavagem"
+    "text": "3.1 Lavagem\n\nLave toda a estrutura dos bruvs com água doce.\nFaça com que a água entre nos tubos dos pés."
   },
   {
     "objectID": "bruv.html#cartões-de-memória-baterias",
     "href": "bruv.html#cartões-de-memória-baterias",
     "title": "Projeto Meros do Brasil",
     "section": "3.2 Cartões de memória & Baterias",
-    "text": "3.2 Cartões de memória & Baterias"
+    "text": "3.2 Cartões de memória & Baterias\n\nRetire a bateria da câmera, isso facilita o acesso ao cartão de memória.\nRetire o cartão de memória da câmera.\nCopie todos os arquivos do cartão para o drive externo do Meros SC (Ver Transferindo arquivos ao HD.\n\n\n\n\n\n\n\nTip\n\n\n\nFaça o quanto antes! Não deixe para fazer depois, pois terá dificuldade de se lembrar dos metadados de campo.\n\n\n\nNÃO formate os cartões pelo computador. Isso deve ser feito via celular (Ver: Quick GoPro App).\nDevolva os cartões as suas respectivas câmeras (Ver Foto).\n\n\n\n\n\n\nTip\n\n\n\nA dica é fazer este processo individualmente para cada BRUV. Escolha um dos lados para começar (E/D), depois realize cada etapa desta seção na câmera escolhida e só após concluido o passo-a-passo, siga para o outro lado. Assim você não irá se perder e cometer erros no trato das informações.\n\n\nGuarde a bateria no case de campo no compartimento “A carregar”.\n\n\n\n\n\n\nFacilite. Deixe as baterias já carregadas e prontas para o próximo campo."
   },
   {
     "objectID": "eventmeasure.html",
@@ -306,5 +306,12 @@
     "title": "Projeto Meros do Brasil",
     "section": "6.2 Making 3D point measurements",
     "text": "6.2 Making 3D point measurements"
+  },
+  {
+    "objectID": "intelectual-prop.html",
+    "href": "intelectual-prop.html",
+    "title": "intelectual-proprities",
+    "section": "",
+    "text": "Back to top"
   }
 ]

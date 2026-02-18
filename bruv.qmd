@@ -50,25 +50,53 @@ geometry:
 
 ## Preparação para o lançamento
 
--   Monte os pés dos BRUVS.
+-   Monte os pés do BRUV.
 
--   Prepare a haste da isca com o cano de armazenamento das iscas, mas **não adicione isca ainda**, para não ficar pingando no barco.
+-   Prepare a haste da isca com o cano de armazenamento.
 
--   Quando for conectar a haste da isca, tenha cuidado com a bóia de flutuação do BRUV. Está deve passar por fora da haste. Lembre-se de levantá-la antes de fixar a haste.
+-   ::: {.callout-tip appearance="simple"}
+    **Não adicione a isca ainda, para não ficar pingando no barco. Deixe para pôr no último momento.**
+    :::
 
--   Ligue as câmeras e verifique a ação.
+-   Libere o cabo vermelho em comformidade com a profudidade local estimada. Ex: para 15m de profundidade, libere 17 braças ( 1 braça \~1.5m).
 
--   Conecte o cabo de lançamento ao BRUV.
+-   Amare a **ponta solta** do cabo de lançamento (**corda vermelha**) na argola da bóia de meia água do BRUV.
 
--   Tenha a disposição uma quantidade
+-   Amarre a bóia de sinalização de superfície (**bóia laranja**) ao cabo de lançamento.
 
--   Amarrar a bóia de sinalização ao cabo de lançamento.
+-   ::: {.callout-caution appearance="minimal"}
+    NÃO passe o cabo SOMENTE no D-ring plástico da bóia de sinalização, Passe também por dentro do tirante horizontal da bóia como backup de segurança para caso do D-ring quebre.
+    :::
 
--   Não passar o cabo SOMENTE no D-ring plástico da boía para não forçar.
+-   Retire ambas as câmeras e ligue-as (**Pressione o botão lateral**).
 
--   Passe também por dentro de uma dos tirantes horizontais da bóia como backup de segurança para caso do D-ring quebre.
+-   Conecte a câmera ao celular **via bluetooth** (Ver Quick GoPro App.)
 
--   
+-   **Formate os cartões de memória**.
+
+-   Ponha para gravar.
+
+-   Verifique se de fato está gravando.
+
+-   ::: callout-tip
+    Veja o monitor. Quando está gravando, a GoPro emite um luz vermelha intermitente.
+    :::
+
+-   Devolva as câmaras aos seus RESPECTIVOS cases.
+
+-   **Cuidado para não por de cabeça para baixo!**
+
+-   ::: {.callout-tip appearance="simple"}
+    Se atente as marcações no bruv, elas devem coincidir. Lembre-se **vermelho** é bombordo (esquerda) e **verde** é boreste (direita).
+    :::
+
+-   Adicione a isca ao cano e acople a haste da isca no BRUV.
+
+-   ::: callout-caution
+    Quando for conectar a haste da isca, tenha cuidado com a bóia de meia água do BRUV. Está deve passar por fora da haste. Lembre-se de levantá-la antes de fixar a haste.
+    :::
+
+-   VERIFIQUE SE O PROFUDIMETRO ESTA MARCANDO 0m. Caso não esteja, retorne o ponteiro a marcação inicial.
 
 ## Lançamento na água
 
@@ -76,8 +104,36 @@ geometry:
 
 ## Remoção da água
 
-# Procedimentos Pós Campo
+# Pós-Campo
 
 ## Lavagem
 
+-   Lave toda a estrutura dos bruvs com água doce.
+
+-   Faça com que a água entre nos tubos dos pés.
+
 ## Cartões de memória & Baterias
+
+-   Retire a bateria da câmera, isso facilita o acesso ao cartão de memória.
+
+-   Retire o cartão de memória da câmera.
+
+-   **Copie** todos os arquivos do cartão para o **drive externo** do Meros SC (Ver Transferindo arquivos ao HD.
+
+::: callout-tip
+**Faça o quanto antes! Não deixe para fazer depois, pois terá dificuldade de se lembrar dos metadados de campo.**
+:::
+
+-   **NÃO formate os cartões pelo computador.** Isso deve ser feito via celular (Ver: Quick GoPro App).
+
+-   Devolva os cartões as suas respectivas câmeras (Ver Foto).
+
+    ::: callout-tip
+    A dica é fazer este processo individualmente para cada BRUV. Escolha um dos lados para começar (E/D), depois realize cada etapa desta seção na câmera escolhida e só após concluido o passo-a-passo, siga para o outro lado. Assim você não irá se perder e cometer erros no trato das informações.
+    :::
+
+-   Guarde a bateria no case de campo no compartimento "A carregar".
+
+    ::: {.callout-tip appearance="simple"}
+    **Facilite. Deixe as baterias já carregadas e prontas para o próximo campo.**
+    :::
