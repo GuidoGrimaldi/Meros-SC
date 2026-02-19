@@ -30,5 +30,8 @@
   "sobre.qmd": {
     "sobre.html": "6f57fb7e",
     "sobre.tex": "3ded650a"
+  },
+  "seagis-cal.qmd": {
+    "seagis-cal.html": "44ef712f"
   }
 }

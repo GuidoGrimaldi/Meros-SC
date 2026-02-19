@@ -1,0 +1,1846 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>SeaGis-CAL-Guide PT/BR – Pesquisa Meros SC</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-7a81ce7734a0974cc35de15b4406bdce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./meroiconwhite.png" alt="" class="navbar-logo light-content">
+    <img src="./meroiconwhite.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Pesquisa Meros SC</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manuais" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Manuais</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-manuais">    
+        <li>
+    <a class="dropdown-item" href="./index.html">
+ <span class="dropdown-text">SeaGIS CAL</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./eventmeasure.html">
+ <span class="dropdown-text">EventMeasure</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos-de-campo" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Protocolos de Campo</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos-de-campo">    
+        <li>
+    <a class="dropdown-item" href="./bruv.html">
+ <span class="dropdown-text">BRUV</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./emergence.html">
+ <span class="dropdown-text">Plano de Emergência</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-biblioteca-mero" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Biblioteca Mero</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-biblioteca-mero">    
+        <li>
+    <a class="dropdown-item" href="./sobre.html">
+ <span class="dropdown-text">1. Sobre</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./uso.html">
+ <span class="dropdown-text">2. Política de Uso</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./intelectual-prop.html">
+ <span class="dropdown-text">3. Política de Propriedade Intelectual</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pesquisasc@merosdobrasil.org"> <i class="bi bi-envelope" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://merosdobrasil.org/"> <i class="bi bi-globe" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Sumário</h2>
+   
+  <ul class="collapse">
+  <li><a href="#introdução" id="toc-introdução" class="nav-link active" data-scroll-target="#introdução"><span class="header-section-number">1</span> Introdução</a></li>
+  <li><a href="#termos-conceitos" id="toc-termos-conceitos" class="nav-link" data-scroll-target="#termos-conceitos"><span class="header-section-number">2</span> Termos &amp; Conceitos</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="header-section-number">3</span> Workflow</a></li>
+  <li><a href="#manual-cal-ptbr" id="toc-manual-cal-ptbr" class="nav-link" data-scroll-target="#manual-cal-ptbr"><span class="header-section-number">4</span> Manual CAL (pt/br)</a>
+  <ul class="collapse">
+  <li><a href="#quick-guide" id="toc-quick-guide" class="nav-link" data-scroll-target="#quick-guide"><span class="header-section-number">4.1</span> <em>Quick Guide</em></a></li>
+  <li><a href="#general" id="toc-general" class="nav-link" data-scroll-target="#general"><span class="header-section-number">4.2</span> <em>General</em></a></li>
+  <li><a href="#installation-details" id="toc-installation-details" class="nav-link" data-scroll-target="#installation-details"><span class="header-section-number">4.3</span> <em>Installation details</em></a></li>
+  <li><a href="#project-files" id="toc-project-files" class="nav-link" data-scroll-target="#project-files"><span class="header-section-number">4.4</span> <em>Project files</em></a></li>
+  <li><a href="#sec-cameras" id="toc-sec-cameras" class="nav-link" data-scroll-target="#sec-cameras"><span class="header-section-number">4.5</span> <em>Cameras</em></a></li>
+  <li><a href="#pictures" id="toc-pictures" class="nav-link" data-scroll-target="#pictures"><span class="header-section-number">4.6</span> <em>Pictures</em></a></li>
+  <li><a href="#images-and-orientations" id="toc-images-and-orientations" class="nav-link" data-scroll-target="#images-and-orientations"><span class="header-section-number">4.7</span> <em>Images and orientations</em></a></li>
+  <li><a href="#object-points-and-distances" id="toc-object-points-and-distances" class="nav-link" data-scroll-target="#object-points-and-distances"><span class="header-section-number">4.8</span> <em>Object points and distances</em></a></li>
+  <li><a href="#medições-1" id="toc-medições-1" class="nav-link" data-scroll-target="#medições-1"><span class="header-section-number">4.9</span> Medições</a></li>
+  <li><a href="#ajuste-1" id="toc-ajuste-1" class="nav-link" data-scroll-target="#ajuste-1"><span class="header-section-number">4.10</span> <strong>Ajuste</strong></a></li>
+  </ul></li>
+  <li><a href="#apêndices" id="toc-apêndices" class="nav-link" data-scroll-target="#apêndices"><span class="header-section-number">5</span> Apêndices</a></li>
+  <li><a href="#termos-conceitos-1" id="toc-termos-conceitos-1" class="nav-link" data-scroll-target="#termos-conceitos-1"><span class="header-section-number">6</span> Termos &amp; Conceitos</a></li>
+  <li><a href="#search-keys" id="toc-search-keys" class="nav-link" data-scroll-target="#search-keys"><span class="header-section-number">7</span> <em>Search Keys</em></a></li>
+  <li><a href="#workflow-1" id="toc-workflow-1" class="nav-link" data-scroll-target="#workflow-1"><span class="header-section-number">8</span> Workflow</a></li>
+  <li><a href="#manual-cal-ptbr-1" id="toc-manual-cal-ptbr-1" class="nav-link" data-scroll-target="#manual-cal-ptbr-1"><span class="header-section-number">9</span> Manual CAL (pt/br)</a>
+  <ul class="collapse">
+  <li><a href="#quick-guide-1" id="toc-quick-guide-1" class="nav-link" data-scroll-target="#quick-guide-1"><span class="header-section-number">9.1</span> <em>Quick Guide</em></a></li>
+  <li><a href="#general-1" id="toc-general-1" class="nav-link" data-scroll-target="#general-1"><span class="header-section-number">9.2</span> <em>General</em></a></li>
+  <li><a href="#installation-details-1" id="toc-installation-details-1" class="nav-link" data-scroll-target="#installation-details-1"><span class="header-section-number">9.3</span> <em>Installation details</em></a></li>
+  <li><a href="#project-files-1" id="toc-project-files-1" class="nav-link" data-scroll-target="#project-files-1"><span class="header-section-number">9.4</span> <em>Project files</em></a></li>
+  <li><a href="#cameras" id="toc-cameras" class="nav-link" data-scroll-target="#cameras"><span class="header-section-number">9.5</span> <em>Cameras</em></a></li>
+  <li><a href="#pictures-1" id="toc-pictures-1" class="nav-link" data-scroll-target="#pictures-1"><span class="header-section-number">9.6</span> <em>Pictures</em></a></li>
+  <li><a href="#images-and-orientations-1" id="toc-images-and-orientations-1" class="nav-link" data-scroll-target="#images-and-orientations-1"><span class="header-section-number">9.7</span> <em>Images and orientations</em></a></li>
+  <li><a href="#object-points-and-distances-1" id="toc-object-points-and-distances-1" class="nav-link" data-scroll-target="#object-points-and-distances-1"><span class="header-section-number">9.8</span> <em>Object points and distances</em></a></li>
+  <li><a href="#measurement" id="toc-measurement" class="nav-link" data-scroll-target="#measurement"><span class="header-section-number">9.9</span> <em>Measurement</em></a></li>
+  <li><a href="#ajuste-3" id="toc-ajuste-3" class="nav-link" data-scroll-target="#ajuste-3"><span class="header-section-number">9.10</span> <strong>Ajuste</strong></a></li>
+  </ul></li>
+  <li><a href="#apêndices-1" id="toc-apêndices-1" class="nav-link" data-scroll-target="#apêndices-1"><span class="header-section-number">10</span> Apêndices</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="seagis-cal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">SeaGis-CAL-Guide PT/BR</h1>
+<p class="subtitle lead">Guia do Usuário SeaGis-CAL</p>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Supervisor de Pesquisa SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://merosdobrasil.org/">
+            Intituto Meros do Brasil
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">today</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">About</div>
+    Essa é uma adaptação da documentação original baseada em minhas percepções e interpretações.
+  </div>
+</div>
+
+
+</header>
+
+
+<p><strong><em>Search Keys</em></strong>: <em>ressected</em>; <em>bandle</em>; <em>object point</em>; <em>convergence</em>; <em>compute</em>; <em>all images</em>.</p>
+<section id="introdução" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introdução</h1>
+<p>O software de calibração produzido pela <a href="https://www.seagis.com.au/index.html#about">SeaGIS</a> é baseado no processo de <em>Fotogrametria Digital Interativa Estereorestitutiva</em>.</p>
+<p>A <strong>Fotogrametria</strong> (<em>Phothogrammetry</em>) é a arte, ciência ou tecnologia de <strong>obter medições e informações precisas de objetos físicos e do meio ambiente a partir de imagens</strong>, em especial fotografias.</p>
+<p>Seu desenvolvimento decorre do fato de que <strong>fotografias são representações distorcidas da realidade</strong>, provocadas pela curvatura da lente e da perspectiva de onde o registro foi feito, que geralmente se distanciam do plano ortografico ideal. Dessa forma, imagens registradas por câmeras não são somente influenciadas pelas caracteristicas dos objetos e da luz do ambiente, mas também das propriedades caracteristicas da câmera.</p>
+<p>Etimologicamente, o termo vem do grego:</p>
+<ul>
+<li><p>phōtós (φῶς) = luz</p></li>
+<li><p>grámma (γράμμα) = registro, escrita</p></li>
+<li><p>métron (μέτρον) = medida</p></li>
+</ul>
+<p>Ou seja, “<strong>medida a partir do registro da luz</strong>”.</p>
+<p>A <strong>Fotogrametria Digital</strong> é portanto um método/ técnica de extração de dados feitas a partir de fotografias digitais e softwares, que permitem, a partir dos parâmetros da câmera, calibrar e corrigir as distorções das imagens, em um processo denominado de <em>Restituição Fotogramétrica</em>.</p>
+<p>Quando esse processo de restituição fotogramétrica se dá a partir de <strong>um par de imagens do mesmo objeto</strong> denomina-se <strong>Estereofotogrametria/ Estereoscopia.</strong></p>
+<p>Na <strong>Estereofotogrametria/ Estereoscopia</strong> utiliza-se duas câmeras para se obter duas fotos do mesmo objeto tiradas de posições ligeiramente distintas, mas com grande área de sobreposição das imagens. Com isso é possivel indendificar um conjunto de <em>pixels</em> homólogos.</p>
+<p>Na Estereofotogrametria Interativa, o processo de calibração consiste basicamente em marcar e associar manualmente pontos em ambas imagens indicando ao programa o conjunto de pixels homólogos (iguais). É por isso que na <strong>Fotogrametria Interativa</strong> (<em>strictu senso</em>) o processo de calibração demanda um grande esforço.</p>
+</section>
+<section id="termos-conceitos" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Termos &amp; Conceitos</h1>
+<ul>
+<li><p><strong><em>Ressected</em></strong>: Ressecção.</p></li>
+<li><p><strong><em>Bandle adjustment</em></strong>: Ajuste do pacote.</p></li>
+<li><p><strong><em>Eligible image measurements</em></strong>: Medições de imagem elegíveis</p></li>
+<li><p><em><strong>Eligible distance measurements</strong>:</em> Medições de distância elegíveis</p></li>
+</ul>
+</section>
+<section id="workflow" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Workflow</h1>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  id0(Insected all point objects) --&gt; id1(Compute bundle adjustment)
+  id1 --&gt; id2(Delete reject points)
+  id2 --&gt; id3(Find all target)
+  id3 --&gt; id1
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p>Complete a inserção de pontos (objetos) em todas as imagens, depois: <em>Adjustment: Compute bundle ajustment</em> &gt; <em>Delete reject points</em> &gt; <em>Find target</em> &gt; <em>Compute bundle ajustment&gt; Delete reject points</em> &gt; <em>Compute bundle ajustment</em> (Final)</p>
+</section>
+<section id="manual-cal-ptbr" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Manual CAL (pt/br)</h1>
+<section id="quick-guide" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="quick-guide"><span class="header-section-number">4.1</span> <em>Quick Guide</em></h2>
+<blockquote class="blockquote">
+<p>Guia Rápido</p>
+</blockquote>
+<p>Utilize este guia para percorrer, passo a passo, o processo de calibração de um sistema de câmeras estéreo. Após capturar e transferir as imagens de um cubo de calibração, siga as etapas descritas a seguir.</p>
+<p>Este guia pressupõe que você já possui arquivos de câmera (<strong>.CamCAL</strong>) para iniciar a calibração. Caso isso não seja verdade, consulte a página de download do software (<a href="https://www.seagis.com.au/download.php">aqui</a>) para encontrar arquivos de câmera comumente utilizados, entre em contato conosco para obter assistência ou consulte a seção <a href="#sec-cameras" class="quarto-xref">Section&nbsp;4.5</a> para criar os arquivos necessários.</p>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>É importante iniciar com arquivos de câmera que você saiba que estão corretos.</p>
+</div>
+</div>
+</div>
+<section id="organize-the-data" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="organize-the-data"><span class="header-section-number">4.1.1</span> <em>Organize the data</em></h3>
+<blockquote class="blockquote">
+<p><em>Organize os dados</em></p>
+</blockquote>
+<ol type="1">
+<li><p>Usando o <strong>Explorador de Arquivos do Windows</strong>, crie um novo diretório (pasta) para o projeto.</p></li>
+<li><p>Copie todos os arquivos de imagem associados à calibração para o novo diretório (nova pasta). Normalmente, serão dois arquivos de vídeo: um da câmera esquerda e outro da câmera direita.</p></li>
+<li><p>Copie para esse diretório o arquivo de pontos do objeto (<strong>.PtsCAL</strong>) do cubo de calibração. <u>Esse arquivo deve ser sempre uma cópia limpa do arquivo original.</u></p></li>
+<li><p>Copie para esse diretório os arquivos da câmera esquerda e direita (<strong>.CamCAL</strong>). Esses arquivos geralmente são provenientes da calibração anterior mais recente.</p></li>
+</ol>
+</section>
+<section id="create-a-new-project" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="create-a-new-project"><span class="header-section-number">4.1.2</span> <em>Create a new project</em></h3>
+<blockquote class="blockquote">
+<p><em>Crie um novo projeto</em></p>
+</blockquote>
+<ol type="1">
+<li><p>No CAL, crie um novo projeto usando <strong><em>Project | New project</em></strong>. Se necessário, você será solicitado a salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, <strong>“<strong><em>Calibration</em></strong>”</strong>) e salve o arquivo do projeto no novo diretório que você acabou de criar para este projeto.</p></li>
+<li><p>A criação de um novo projeto inicia um processo de assistente (<em>wizard process</em>) que solicita a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.</p></li>
+<li><p>Carregue os arquivos da câmera esquerda e direita (<strong>.CamCAL</strong>), conforme solicitado.</p></li>
+<li><p>Carregue o arquivo do cubo de calibração (<strong>.PtsCAL</strong>), conforme solicitado.</p></li>
+<li><p>Defina o diretório de imagens conforme solicitado. O diretório de imagens é automaticamente definido como o mesmo diretório do arquivo do projeto; portanto, se todos os arquivos da calibração estiverem em um único diretório, basta verificar e clicar em <strong>OK</strong>.</p></li>
+<li><p>Salve o novo arquivo de medições conforme solicitado. Será necessário atribuir um nome a esse arquivo (por exemplo, <strong>“<strong><em>Measurements</em></strong>”</strong>), e ele será o local onde as medições da calibração serão armazenadas.</p></li>
+<li><p>Carregue a imagem da câmera esquerda. Normalmente, esse será o arquivo de vídeo da câmera esquerda, e ele será automaticamente adicionado à configuração da sequência de filmes (Movie sequence) da câmera esquerda. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver <strong>Sequências de filmes</strong>). Em seguida, clique em <strong>OK</strong>.</p></li>
+<li><p>Carregue a imagem da câmera direita. Normalmente, esse será o arquivo de vídeo da câmera direita, e ele será automaticamente adicionado à configuração da sequência de filmes da câmera direita. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver <strong>Sequências de filmes</strong>). Em seguida, clique em <strong>OK</strong>.</p></li>
+<li><p>A janela <strong><em>Current project files</em></strong> (<em>Arquivos do projeto atual</em>) será exibida. Todos os campos devem estar preenchidos, e todos os itens listados devem estar no mesmo diretório. Clique em <strong><em>Close dialog</em></strong> (<em>Fechar diálogo</em>).</p></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se houver dificuldades para chegar a esse ponto, consulte <strong><em>Creating new projects and data organization</em></strong>(), que fornece mais detalhes ou mostra como configurar o projeto manualmente.</p>
+</div>
+</div>
+</section>
+<section id="medições" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="medições"><span class="header-section-number">4.1.3</span> Medições</h3>
+</section>
+<section id="ajuste" class="level3" data-number="4.1.4">
+<h3 data-number="4.1.4" class="anchored" data-anchor-id="ajuste"><span class="header-section-number">4.1.4</span> Ajuste</h3>
+<ol type="1">
+<li><p>Após concluir todas as medições de imagem, calcule o ajuste de feixe usando Ajuste | Calcular ajuste de feixe.</p></li>
+<li><p>Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto. Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.</p></li>
+<li><p>Quando o ajuste for bem-sucedido, siga os passos abaixo para produzir um conjunto “limpo” de medições de imagem, sem rejeições:</p>
+<ol type="1">
+<li><p>i. Aceite os resultados do ajuste (usando o botão Aceitar resultados).</p></li>
+<li><p>ii. Exclua as medições rejeitadas usando Medição | Excluir medições de ponto rejeitadas.</p></li>
+<li><p>iii. Procure por alvos ausentes usando Medição | Encontrar alvos em todas as imagens.</p></li>
+<li><p>iv. Calcule outro ajuste de feixe (Ajuste | Calcular ajuste de feixe) e aceite os resultados.</p></li>
+<li><p>v. Exclua as medições rejeitadas usando Medição | Excluir medições de ponto rejeitadas.</p></li>
+<li><p>vi. Calcule um ajuste de feixe final (Ajuste | Calcular ajuste de feixe). Neste ponto, você deverá ter um ajuste de feixe correto. Verifique o seguinte no resumo de Ajuste (uma mensagem de aviso alertará sobre possíveis problemas de medição de distância e precisão relativa). Você deverá ter <strong>zero</strong> <em>Eligible image measurements</em> excluídas e <strong>zero</strong> <em>Eligible distance measurements</em> excluídas. Medições de distância excluídas podem ser causadas por um cubo montado incorretamente, cubo danificado ou medição de locais de pontos de ressecção incorretos – este problema deve ser corrigido. Verifique se o valor de precisão relativa está de acordo com o esperado para o seu sistema de câmera e método de calibração. O CAL possui alguns avisos integrados com base em cenários típicos de calibração: geralmente melhor que <strong>1:10.000</strong> para uma calibração estéreo de um sistema de câmera de alta definição usando o hardware de calibração SeaGIS. Valores mais baixos podem ser causados ​​por baixa visibilidade, imagens desfocadas, iluminação inadequada (baixo contraste do alvo), número insuficiente de pontos medidos ou cubo muito distante das câmeras. Clique em Aceitar resultados.</p></li>
+</ol></li>
+</ol>
+<p><strong>Observe que o ajuste do feixe precisa ter qualidade aceitável antes de prosseguir.</strong></p>
+</section>
+<section id="geração-de-arquivos-de-câmera-estéreo" class="level3" data-number="4.1.5">
+<h3 data-number="4.1.5" class="anchored" data-anchor-id="geração-de-arquivos-de-câmera-estéreo"><span class="header-section-number">4.1.5</span> Geração de arquivos de câmera estéreo</h3>
+<p>Note, todas as operações de menu mencionadas nesta seção estão em <em>Measurement</em> | <em>Stereo constraints</em>.</p>
+<ol type="1">
+<li><p>Configure as restrições estéreo usando <em>Configure stereo constraints</em> . Nesta caixa de diálogo, geralmente basta garantir que a câmera esquerda e a câmera direita estejam selecionadas corretamente e, em seguida, clicar no botão <em>Automatic</em> para gerar os pares esquerda/direita. Você receberá uma mensagem de erro se houver um número diferente de imagens esquerda e direita medidas, pois o software não consegue criar pares estéreo – você precisará encontrar e corrigir a imagem esquerda/direita que não possui uma imagem direita/esquerda correspondente (consulte Configurando restrições).</p></li>
+<li><p>Estime as restrições usando <em>Estimating constraints</em> (consulte Estimando restrições). Um aviso será exibido se mais de quatro pares estéreo forem excluídos (consulte os comentários na próxima etapa).</p></li>
+<li><p>Verifique a orientação relativa usando <em>View stereo constraints</em>. Verifique se os resíduos de restrição são aceitáveis ​​e se não houve muitas restrições que foram excluídas do cálculo (coluna <em>Exclusions</em>). <strong>Se mais de quatro restrições forem rejeitadas, verifique novamente a sincronização estéreo.</strong> Para mais detalhes, consulte Visualizando as restrições.</p></li>
+<li><p>Gere os arquivos da câmera estéreo usando Exportar arquivos da câmera estéreo (consulte Exportando arquivos da câmera estéreo).</p></li>
+</ol>
+</section>
+<section id="salvando-resultados" class="level3" data-number="4.1.6">
+<h3 data-number="4.1.6" class="anchored" data-anchor-id="salvando-resultados"><span class="header-section-number">4.1.6</span> Salvando resultados</h3>
+<p>A maneira mais simples de salvar o projeto e todos os dados associados é fechar o CAL. O programa solicitará que você salve todos os dados não salvos.</p>
+</section>
+<section id="carregando-calibrações-anteriores" class="level3" data-number="4.1.7">
+<h3 data-number="4.1.7" class="anchored" data-anchor-id="carregando-calibrações-anteriores"><span class="header-section-number">4.1.7</span> Carregando calibrações anteriores</h3>
+<p>Calibrações anteriores podem ser carregadas clicando duas vezes em um arquivo de projeto CAL (.PrjCAL) no Explorador de Arquivos do Windows ou usando o menu CAL &gt; Projeto | Ler do arquivo.</p>
+<p>Se arquivos (como arquivos de câmera, arquivo de pontos do objeto ou arquivo de medição) originalmente associados ao projeto tiverem sido movidos para uma unidade e/ou pasta diferente, o projeto será corrompido e você precisará recriá-lo manualmente, localizando e carregando os arquivos necessários. Consulte Recriando um projeto de calibração a partir de dados existentes.</p>
+</section>
+</section>
+<section id="general" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="general"><span class="header-section-number">4.2</span> <em>General</em></h2>
+</section>
+<section id="installation-details" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="installation-details"><span class="header-section-number">4.3</span> <em>Installation details</em></h2>
+</section>
+<section id="project-files" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="project-files"><span class="header-section-number">4.4</span> <em>Project files</em></h2>
+<p>Reading and writing to file</p>
+</section>
+<section id="sec-cameras" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-cameras"><span class="header-section-number">4.5</span> <em>Cameras</em></h2>
+<blockquote class="blockquote">
+<p><em>Câmeras</em></p>
+</blockquote>
+<p>O acesso às informações da câmera e às operações específicas da câmera é feito por meio do menu <strong><em>Camera</em></strong>.</p>
+<p>As informações da câmera são armazenadas em um arquivo (um arquivo separado para cada câmera). Os nomes dos arquivos de câmera atuais são armazenados no arquivo do projeto e são carregados automaticamente quando o CAL é iniciado. Observe que esses arquivos de câmera possuem a extensão <strong>.CamCAL</strong>. Esses arquivos são diferentes dos arquivos de câmera estéreo (com extensão <strong>.Cam</strong>), que o CAL exporta para uso em softwares de medição estéreo, como o <strong>EventMeasure</strong> ou o <strong>StereoLib</strong>.</p>
+<section id="reading-and-writing-to-file" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="reading-and-writing-to-file"><span class="header-section-number">4.5.1</span> <em>Reading and writing to file</em></h3>
+<blockquote class="blockquote">
+<p><em>Leitura e gravação em arquivo</em></p>
+</blockquote>
+<p>As informações da câmera podem ser gravadas em um arquivo ou lidas a partir de um arquivo. Para ler ou gravar um arquivo de câmera, utilize o comando de menu <strong><em>Camera | Left | Read from file</em></strong> ou <strong><em>Camera | Left | Write to file</em></strong>. Comandos idênticos estão disponíveis para a câmera direita.</p>
+<p>Se uma nova câmera for lida a partir de um arquivo ou salva em um arquivo com um nome diferente, essa alteração será atualizada no arquivo de projeto atual.</p>
+</section>
+<section id="sec-editing-camera-parameters" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="sec-editing-camera-parameters"><span class="header-section-number">4.5.2</span> <em>Editing camera parameters</em></h3>
+<blockquote class="blockquote">
+<p><em>Edição de parâmetros da câmera</em></p>
+</blockquote>
+<p>Para visualizar ou editar os parâmetros de uma câmera, utilize o comando de menu <strong>Camera | Left | Edit parameters</strong> (ou <strong>Camera | Right | Edit parameters</strong> para a câmera direita). Será exibida uma janela com os seguintes itens:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Itens com um visto verde ao lado podem ser editados dando um duplo clique no item e digitando um novo valor. Os itens na coluna <strong>Units</strong> indicam as unidades do parâmetro. Os valores na coluna <strong>Precision</strong> podem ser <strong>“Fixed parameter”</strong> (parâmetro fixo) ou um valor numérico. A ausência de valor indica que o parâmetro da câmera ainda não foi estimado por um ajuste de feixe; já um valor numérico indica que o parâmetro foi estimado pelo ajuste de feixe, e esse valor corresponde à precisão do parâmetro.</p>
+<p>Os parâmetros <strong>X Pixel size</strong> e <strong>Y Pixel size</strong> são propriedades da câmera e, em geral, podem ser encontrados no site do fabricante ou em uma ficha técnica ou folha de especificações da câmera. Frequentemente, o tamanho do pixel precisa ser derivado a partir do tamanho do sensor da câmera e do formato da imagem. Normalmente, o fabricante informa esses valores em unidades de micrômetros. Certifique-se de converter os valores para milímetros (mm) ao inseri-los como parâmetros da câmera.</p>
+<p>Para calibrações de câmera subaquáticas utilizando uma porta plana do invólucro da câmera, o valor da distância focal em água será aproximadamente <strong>4/3</strong> do valor no ar (por exemplo, uma lente com distância focal de 4,8 mm no ar terá aproximadamente 6,4 mm na água). Certifique-se de considerar o efeito de quaisquer adaptadores de lente grande-angular.</p>
+<p>Quando uma nova câmera estiver sendo calibrada (isto é, não existe um arquivo <strong>.CamCAL</strong> prévio), será necessário especificar: <strong>Image rows</strong>, <strong>Image columns</strong>, <strong>X Pixel size</strong>, <strong>Y Pixel size</strong>, e estimar a <strong>Focal length</strong>. Todos os demais parâmetros da câmera podem ser inicialmente estimados como zero, tendo seus valores determinados durante o processo de calibração.</p>
+</section>
+<section id="fixing-camera-parameters" class="level3" data-number="4.5.3">
+<h3 data-number="4.5.3" class="anchored" data-anchor-id="fixing-camera-parameters"><span class="header-section-number">4.5.3</span> <em>Fixing camera parameters</em></h3>
+</section>
+</section>
+<section id="pictures" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="pictures"><span class="header-section-number">4.6</span> <em>Pictures</em></h2>
+</section>
+<section id="images-and-orientations" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="images-and-orientations"><span class="header-section-number">4.7</span> <em>Images and orientations</em></h2>
+</section>
+<section id="object-points-and-distances" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="object-points-and-distances"><span class="header-section-number">4.8</span> <em>Object points and distances</em></h2>
+</section>
+<section id="medições-1" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="medições-1"><span class="header-section-number">4.9</span> Medições</h2>
+<blockquote class="blockquote">
+<p><em>Measurement</em></p>
+</blockquote>
+<p>Esta seção aborda o processo de realização de medições de pontos, bem como descreve o uso dos itens do menu <em>Measurement</em>.</p>
+<section id="sec-pontos-medida" class="level3" data-number="4.9.1">
+<h3 data-number="4.9.1" class="anchored" data-anchor-id="sec-pontos-medida"><span class="header-section-number">4.9.1</span> Pontos de Medida</h3>
+<p><em>Point measurement</em></p>
+</section>
+<section id="salvando-e-lendo-as-medidas" class="level3" data-number="4.9.2">
+<h3 data-number="4.9.2" class="anchored" data-anchor-id="salvando-e-lendo-as-medidas"><span class="header-section-number">4.9.2</span> Salvando e lendo as medidas</h3>
+<p><em>Saving and reading measurements</em></p>
+</section>
+<section id="convertendo-vídeos-para-jpeg" class="level3" data-number="4.9.3">
+<h3 data-number="4.9.3" class="anchored" data-anchor-id="convertendo-vídeos-para-jpeg"><span class="header-section-number">4.9.3</span> Convertendo vídeos para JPEG</h3>
+<blockquote class="blockquote">
+<p><em>Convert movie to JPEG</em></p>
+</blockquote>
+</section>
+<section id="frames-deslocados" class="level3" data-number="4.9.4">
+<h3 data-number="4.9.4" class="anchored" data-anchor-id="frames-deslocados"><span class="header-section-number">4.9.4</span> Frames deslocados</h3>
+<p><em>Offset frames</em></p>
+</section>
+<section id="visualizar-dados-de-orientação" class="level3" data-number="4.9.5">
+<h3 data-number="4.9.5" class="anchored" data-anchor-id="visualizar-dados-de-orientação"><span class="header-section-number">4.9.5</span> Visualizar dados de orientação</h3>
+<p><em>View orientation data</em></p>
+</section>
+<section id="visualizar-excluir-medições-de-imagem" class="level3" data-number="4.9.6">
+<h3 data-number="4.9.6" class="anchored" data-anchor-id="visualizar-excluir-medições-de-imagem"><span class="header-section-number">4.9.6</span> Visualizar/ Excluir medições de imagem</h3>
+<p><em>View/ delete image measurement</em></p>
+</section>
+<section id="resumo-das-medições-de-imagem" class="level3" data-number="4.9.7">
+<h3 data-number="4.9.7" class="anchored" data-anchor-id="resumo-das-medições-de-imagem"><span class="header-section-number">4.9.7</span> Resumo das medições de imagem</h3>
+<p><em>Image measurement summary</em></p>
+</section>
+<section id="excluir-medições-da-face-posterior" class="level3" data-number="4.9.8">
+<h3 data-number="4.9.8" class="anchored" data-anchor-id="excluir-medições-da-face-posterior"><span class="header-section-number">4.9.8</span> Excluir medições da face posterior</h3>
+<blockquote class="blockquote">
+<p><em>Delete back face measurement</em></p>
+</blockquote>
+<p>Ao utilizar um cubo de calibração padrão da SeaGIS, é possível usar <strong><em>Measurement</em></strong> <strong>| <em>Delete back face measurement</em></strong> para remover todas as medições de imagem associadas a pontos na face posterior do cubo. Essa função é uma ferramenta útil para lidar com ajustes de feixe (bundle adjustments) que não convergem; ver <a href="#sec-falha-ajustes" class="quarto-xref">Section&nbsp;4.10.5</a>.</p>
+</section>
+<section id="cálculo-do-centróide" class="level3" data-number="4.9.9">
+<h3 data-number="4.9.9" class="anchored" data-anchor-id="cálculo-do-centróide"><span class="header-section-number">4.9.9</span> Cálculo do centróide</h3>
+<p><em>Centroiding</em></p>
+</section>
+<section id="restrições-estereoscópicas" class="level3" data-number="4.9.10">
+<h3 data-number="4.9.10" class="anchored" data-anchor-id="restrições-estereoscópicas"><span class="header-section-number">4.9.10</span> Restrições Estereoscópicas</h3>
+<p><em>Stereo constraints</em></p>
+<p>Esta seção aborda as opções de menu disponíveis em <em>Measurement | Stereo constraints</em>. Essas operações são utilizadas para configurar restrições estereoscópicas e calcular a <strong>orientação relativa</strong> de um par de câmeras estereoscópicas (a orientação relativa descreve a posição e a orientação de uma câmera em relação à outra e é necessária para realizar medições com um sistema de câmeras estereoscópicas). Essas opções são fornecidas principalmente para gerar arquivos de câmera estereoscópica (extensão <strong>.cam</strong>) para uso com <em>PhotoMeasure</em>, <em>EventMeasure</em> e <em>StereoLib</em>.</p>
+<p>Em calibrações de câmeras estereoscópicas, a câmera 1 refere-se à câmera esquerda e a câmera 2 refere-se à câmera direita. O CAL mantém um sistema de numeração, em vez de utilizar os termos “Esquerda” e “Direita”, para facilitar calibrações genéricas em sistemas com mais de duas câmeras.</p>
+<section id="configuração-das-restrições" class="level4" data-number="4.9.10.1">
+<h4 data-number="4.9.10.1" class="anchored" data-anchor-id="configuração-das-restrições"><span class="header-section-number">4.9.10.1</span> <strong>Configuração das restrições</strong></h4>
+<p><em>Configure constraints</em></p>
+<p>Use o comando de menu <em>Configure stereo constraints</em> para definir as restrições. Uma janela será exibida. O principal objetivo dessa janela é permitir a definição de pares estereoscópicos de imagens esquerda e direita, a partir dos quais a orientação relativa das câmeras pode ser determinada.</p>
+<p>Selecione a câmera esquerda (<em>Left camera</em>) e a câmera direita (<em>Right camera</em>) apropriadas usando as caixas de seleção. Na maioria dos casos, o restante da configuração pode ser realizado utilizando o botão <em>Automatic</em>. Ao clicar em <em>Automatic</em>, a lista de pareamentos será preenchida com combinações de nome do arquivo da esquerda (nº do frame, nº da câmera) e nome do arquivo da direita (nº do frame, nº da câmera). Verifique se os pareamentos representam pares estereoscópicos válidos; caso contrário, será necessário editar a lista manualmente. Observe que, em calibrações estereoscópicas padrão, a câmera 1 corresponde à câmera esquerda e a câmera 2 à câmera direita.</p>
+<p>Para excluir um pareamento, selecione-o e clique no botão <em>Delete</em>. Para adicionar um pareamento manualmente, selecione um <strong>Filename</strong> da câmera esquerda (nº do frame, nº da câmera) e um <strong>Filename</strong> da câmera direita (nº do frame, nº da câmera) e clique em <strong>Add</strong>. Se algum dos dados recém-adicionados já estiver presente na lista atual de pareamentos, ele será automaticamente removido e substituído pelo novo pareamento estereoscópico.</p>
+<p>Clique em <strong>OK</strong> para aceitar a nova configuração ou em <strong>Cancel</strong> para ignorar as alterações.</p>
+</section>
+<section id="sec-estimate.constraint" class="level4" data-number="4.9.10.2">
+<h4 data-number="4.9.10.2" class="anchored" data-anchor-id="sec-estimate.constraint"><span class="header-section-number">4.9.10.2</span> <strong>Estimar restrições</strong></h4>
+<p><em>Estimate constraints</em></p>
+<p>Depois que as restrições estiverem configuradas, a <strong>orientação relativa</strong> pode ser estimada. Utilize o comando de menu <em>Estimate constraints</em>. Uma janela será exibida mostrando a orientação relativa calculada. Os detalhes dessa janela são explicados na seção <strong>Viewing the relative orientation</strong>.</p>
+<p>Se <strong>mais de quatro</strong> pares estereoscópicos apresentarem exclusões associadas, será exibida uma mensagem de aviso. A presença de mais de quatro pares estereoscópicos com exclusões indica possíveis problemas de <strong>sincronização estereoscópica</strong> ou, alternativamente, problemas no <strong>ajuste de feixe</strong> (ver <strong><em>Viewing the constraints</em></strong> {<a href="#sec-view.constraint" class="quarto-xref">Section&nbsp;4.9.10.3</a>} abaixo).</p>
+</section>
+<section id="sec-view.constraint" class="level4" data-number="4.9.10.3">
+<h4 data-number="4.9.10.3" class="anchored" data-anchor-id="sec-view.constraint"><span class="header-section-number">4.9.10.3</span> <strong>Visualização das restrições</strong></h4>
+<p><strong><em>Viewing the constraints</em></strong></p>
+<p>Depois que as restrições estereoscópicas forem configuradas (ver <strong>Configuring constraints</strong>) e estimadas (ver <strong>Estimating constraints</strong>, ou estimadas durante um ajuste de feixe), a qualidade da estimativa pode ser avaliada usando o comando de menu <em>View stereo constraints</em>. Esse comando abre uma janela que exibe cada pareamento estereoscópico em uma linha, iniciando com o <em>Filename</em> da câmera esquerda e da câmera direita (número do frame, número da câmera).</p>
+<p>As colunas seguintes apresentam os <strong>resíduos</strong> para <em>Base</em>, <em>Delta omega</em>, <em>Left phi</em>, <em>Left kappa</em>, <em>Right phi</em> e <strong><em>Right kappa</em></strong>. Os resíduos correspondem à diferença entre a orientação relativa de cada par estereoscópico esquerda/direita individual e a <strong>orientação relativa média</strong> calculada a partir de todos os pares estereoscópicos.</p>
+<p>A coluna final lista quaisquer componentes que tenham sido automaticamente excluídos do cálculo da orientação relativa com base em seus resíduos (ver <em>Stereo constraints</em> para a definição dos limiares dessas exclusões e para saber quando esses limiares podem precisar ser ajustados). A magnitude dos resíduos das restrições estereoscópicas depende, em grande parte, da qualidade da sincronização das câmeras estereoscópicas. Se uma das restrições apresentar muitos componentes excluídos, deve-se suspeitar que a sincronização estereoscópica desse pareamento esquerda/direita esteja incorreta. Isso frequentemente ocorre devido a movimento excessivo do sistema de câmeras e/ou da estrutura de calibração, em combinação com um pequeno erro de sincronização — possivelmente inferior a um frame — ou ainda devido a um erro na seleção do par estereoscópico durante a configuração das restrições (ver <strong>Configuring constraints</strong>).</p>
+<p>Se muitos dos pares estereoscópicos estiverem sendo excluídos e a sincronização e a configuração dos pares estiverem corretas, pode ser necessário <strong>aumentar os limiares de exclusão</strong>. Para isso, aumente os valores de <em>Critical value for base rejection</em> e/ou <em>Critical value for orientation rejection</em> em <strong>Stereo constraints</strong>, e então reestime as restrições conforme descrito em <strong>Estimating constraints</strong>. Sempre investigue a sincronização das imagens estereoscópicas e o pareamento das imagens como a principal causa das rejeições antes de ajustar esses limiares.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>É impossível obter uma sincronização consistentemente perfeita em sistemas de câmeras de vídeo estereoscópicas que dependem de sincronização visual. Nesses sistemas, o erro de sincronização pode chegar, no pior caso, a meio frame. Esse erro de sincronização, em combinação com o movimento do sistema de câmeras e/ou da estrutura de calibração, inevitavelmente resultará em exclusões nas restrições estereoscópicas. Em função desse erro de sincronização, é aceitável que até quatro pares estereoscópicos apresentem exclusões.</p>
+</div>
+</div>
+</section>
+<section id="vis.rel.orient" class="level4" data-number="4.9.10.4">
+<h4 data-number="4.9.10.4" class="anchored" data-anchor-id="vis.rel.orient"><span class="header-section-number">4.9.10.4</span> <strong>Visualização da orientação relativa</strong></h4>
+<p><em>View relative orientation</em></p>
+<p>Utilize o comando de menu <em>View relative orientation</em> para visualizar os parâmetros atuais da orientação relativa. Uma janela será exibida. Nessa janela, a origem dos parâmetros(<em>Parameter source</em>) será indicada como <em>Bundle adjustment</em> se os parâmetros tiverem sido estimados no ajuste de feixe (ver <strong><em>Stereo constraints</em></strong>); caso contrário, será exibido <em>Camera positions and orientations</em>, o que significa que a orientação relativa foi derivada das posições e orientações atuais das câmeras. O número de restrições será igual ao número de restrições configuradas em <strong><em>Configuring constraints</em></strong>.</p>
+<p>A separação da base, <em>Base separation</em> (X), representa a separação física entre as câmeras. Em configurações estereoscópicas típicas, <em>Delta omega</em>, <em>Left kappa</em> e <em>Right kappa</em> tendem a ser <strong>próximos de zero</strong>, enquanto <em>Left phi</em> e <em>Right phi</em> representam o grau de convergência interna de cada câmera (embora esses valores também fiquem próximos de zero se as câmeras não convergirem). Cada parâmetro possui uma precisão associada ao seu cálculo.</p>
+</section>
+<section id="sec-exp.stereo.files" class="level4" data-number="4.9.10.5">
+<h4 data-number="4.9.10.5" class="anchored" data-anchor-id="sec-exp.stereo.files"><span class="header-section-number">4.9.10.5</span> <strong>Exportando os arquivos de câmera estereoscópica</strong></h4>
+<p><em>Exporting stereo camera files</em></p>
+<p>Para exportar arquivos de câmera estereoscópica, as restrições estereoscópicas devem estar configuradas (ver <strong><em>Configuring constraints</em></strong>), estimadas (ver <strong><em>Estimating constraints</em></strong>, ou estimadas durante um ajuste de feixe) e os resultados verificados (ver <strong><em>Viewing the constraints</em></strong>). Em seguida, os arquivos de câmera estereoscópica podem ser criados usando o comando de menu <em>Export stereo camera files</em>.</p>
+<p>Se as restrições não tiverem sido configuradas ou estimadas, será exibida uma mensagem de erro. Inicialmente, os parâmetros da câmera esquerda serão mostrados em uma janela. Clique no botão <em>Close</em> da caixa de diálogo e uma mensagem solicitará que você salve os parâmetros da câmera esquerda. Clique em <em>Yes</em>, e uma janela padrão do Windows será exibida, permitindo selecionar o nome do arquivo de câmera estereoscópica para a câmera esquerda.</p>
+<p>Após o salvamento do arquivo da câmera esquerda, uma nova janela será exibida com os parâmetros da câmera direita. Clique no botão <strong>Close</strong> da caixa de diálogo, e uma mensagem solicitará que você salve os parâmetros da câmera direita. Clique em <strong>Yes</strong> para abrir a janela do Windows, na qual será possível selecionar o nome do arquivo da câmera direita.</p>
+</section>
+</section>
+<section id="ressecção-de-todas-as-imagens" class="level3" data-number="4.9.11">
+<h3 data-number="4.9.11" class="anchored" data-anchor-id="ressecção-de-todas-as-imagens"><span class="header-section-number">4.9.11</span> Ressecção de todas as imagens</h3>
+<p>O comando de menu Medição | Ressecção de todas as imagens na janela principal do CAL calcula uma ressecção em todas as imagens associadas ao projeto atual. Ao término do processo de ressecção, uma janela com um relatório resumido é exibida. A janela lista todas as imagens envolvidas na operação de ressecção, se a ressecção foi bem-sucedida e o erro RMS associado à ressecção. Consulte os botões Ressecção e Encontrar alvos automaticamente para obter mais informações sobre ressecções. Observe que pelo menos quatro pontos de ressecção devem ser medidos em uma imagem antes que ela possa ser ressecada.</p>
+<p>Essa opção geralmente não é usada, pois as imagens normalmente são ressecadas individualmente à medida que são medidas.</p>
+</section>
+<section id="encontrar-alvos-em-todas-as-imagens" class="level3" data-number="4.9.12">
+<h3 data-number="4.9.12" class="anchored" data-anchor-id="encontrar-alvos-em-todas-as-imagens"><span class="header-section-number">4.9.12</span> Encontrar alvos em todas as imagens</h3>
+<p>O comando de menu Medição | Encontrar alvos em todas as imagens executa um processo automático no qual todas as imagens do projeto atual são carregadas e uma tentativa é feita para medir quaisquer pontos de objeto não medidos em cada imagem. Enquanto esse processo estiver em execução, uma janela de progresso será exibida. O processo pode ser cancelado a qualquer momento clicando no botão Cancelar na janela de progresso.</p>
+<p>Essa opção geralmente é usada após um ajuste de feixe bem-sucedido. Após um ajuste de feixe, os parâmetros da câmera apresentam melhor qualidade e é provável que mais pontos de objeto possam ser medidos automaticamente. O procedimento geral consiste em excluir as medições excluídas pelo ajuste de feixe e, em seguida, executar esse processo para medir automaticamente quaisquer pontos de objeto não medidos. O ajuste de feixe pode então ser recalculado (consulte mais detalhes em Calculando o ajuste).</p>
+<p>Observe que esse processo tentará encontrar (em cada imagem) apenas os pontos de objeto que atualmente não possuem medição. Se um ponto já estiver medido, a medição atual do ponto será mantida sem alterações.</p>
+</section>
+<section id="intersecção-de-todos-os-pontos" class="level3" data-number="4.9.13">
+<h3 data-number="4.9.13" class="anchored" data-anchor-id="intersecção-de-todos-os-pontos"><span class="header-section-number">4.9.13</span> Intersecção de todos os pontos</h3>
+<p>O comando de menu Medição | Intersecção de todos os pontos utiliza as posições e orientações atuais da câmera para todas as imagens e intersecta todas as medições da imagem para calcular as coordenadas do objeto. Essa funcionalidade é usada para estimar as coordenadas do espaço do objeto para pontos recém-medidos.</p>
+<p>Ao realizar ajustes de feixe com cubos de calibração, essa opção não é utilizada.</p>
+</section>
+<section id="excluir-medições-de-pontos-rejeitadas" class="level3" data-number="4.9.14">
+<h3 data-number="4.9.14" class="anchored" data-anchor-id="excluir-medições-de-pontos-rejeitadas"><span class="header-section-number">4.9.14</span> Excluir medições de pontos rejeitadas</h3>
+<p>O comando de menu Medição | Excluir medições de pontos rejeitadas excluirá todas as medições de pontos que foram marcadas como rejeitadas (as medições de pontos podem ser rejeitadas por ressecções, intersecções ou ajuste de feixe; consulte Cores de pontos, Valores para rejeição de medição). Essa função é normalmente usada após um ajuste de feixe para excluir todas as medições de pontos rejeitadas.</p>
+<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+</section>
+</section>
+<section id="ajuste-1" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="ajuste-1"><span class="header-section-number">4.10</span> <strong>Ajuste</strong></h2>
+<blockquote class="blockquote">
+<p><em>Adjustment</em></p>
+</blockquote>
+<p>Esta seção trata dos comandos de menu disponíveis no menu <strong><em>Adjustment</em></strong>. Esses comandos são usados para configurar e executar um ajuste do fardo das imagens (<em>bundle adjustment</em>). Antes de calcular um ajuste de fardo, é necessário realizar a <strong>resseção</strong> de todas as imagens, ver <a href="#sec-pontos-medida" class="quarto-xref">Section&nbsp;4.9.1</a>, e medir a maioria dos alvos na maioria das imagens (preferencialmente, todos os alvos visíveis em todas as imagens).</p>
+<section id="critérios-de-convergência" class="level3" data-number="4.10.1">
+<h3 data-number="4.10.1" class="anchored" data-anchor-id="critérios-de-convergência"><span class="header-section-number">4.10.1</span> Critérios de convergência</h3>
+<blockquote class="blockquote">
+<p><em>Convergence criteria</em></p>
+</blockquote>
+<p>Durante o ajuste do fardo, os parâmetros (coordenadas dos pontos do objeto, posições e orientações da câmera e parâmetros de calibração da câmera) convergem para um valor final. O grau de convergência pode ser ajustado com precisão, se necessário. Consulte também <a href="#sec-cal-ajuste" class="quarto-xref">Section&nbsp;4.10.3</a>.</p>
+<section id="object-points" class="level4" data-number="4.10.1.1">
+<h4 data-number="4.10.1.1" class="anchored" data-anchor-id="object-points"><span class="header-section-number">4.10.1.1</span> <em>Object points</em></h4>
+<blockquote class="blockquote">
+<p><em>Pontos do objeto</em></p>
+</blockquote>
+<p>Para ajustar os <em>critérios de convergência</em> dos pontos do objeto, use o comando de menu <strong><em>Adjustment | Object point convergence criteria</em></strong>. Uma janela será exibida, permitindo o ajuste dos critérios de convergência. Esse valor geralmente pode ser definido como 1/1000 das unidades do espaço do objeto, por exemplo, 1 mícron se as unidades do espaço do objeto forem milímetros.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+</section>
+<section id="camera-positions-and-orientations" class="level4" data-number="4.10.1.2">
+<h4 data-number="4.10.1.2" class="anchored" data-anchor-id="camera-positions-and-orientations"><span class="header-section-number">4.10.1.2</span> <em>Camera positions and orientations</em></h4>
+<blockquote class="blockquote">
+<p><em>Posições e orientações da câmera</em></p>
+</blockquote>
+<p>Para ajustar os <em>critérios de convergência</em> da posição e orientação da câmera, use o comando de menu <strong><em>Adjustment | Camera position and orientation convergence criteria</em></strong>. Uma janela será exibida, permitindo o ajuste dos critérios de convergência. Há dois valores: um para as orientações da câmera em unidades de segundos de arco e outro para a posição da câmera. As unidades para a posição da câmera serão em unidades do espaço do objeto x 1000. Os valores padrão são 1 segundo de arco para orientação e 1/1000 das unidades do espaço do objeto para posição (por exemplo, 1 mícron se as unidades do espaço do objeto forem milímetros).</p>
+</section>
+<section id="camera-parameters" class="level4" data-number="4.10.1.3">
+<h4 data-number="4.10.1.3" class="anchored" data-anchor-id="camera-parameters"><span class="header-section-number">4.10.1.3</span> <em>Camera parameters</em></h4>
+<blockquote class="blockquote">
+<p><em>Parâmetros da câmera</em></p>
+</blockquote>
+<p>Os <em>critérios de convergência</em> para os parâmetros da câmera podem ser definidos usando o comando de menu <strong><em>Adjustment | Camera convergence criteria</em></strong>. Cada um dos parâmetros da câmera (consulte <a href="#sec-editing-camera-parameters" class="quarto-xref">Section&nbsp;4.5.2</a>) possui <u>seus próprios critérios de convergência</u>. A tabela a seguir fornece os valores padrão para os critérios de convergência da câmera.</p>
+</section>
+</section>
+<section id="ajustes-de-configuração" class="level3" data-number="4.10.2">
+<h3 data-number="4.10.2" class="anchored" data-anchor-id="ajustes-de-configuração"><span class="header-section-number">4.10.2</span> Ajustes de configuração</h3>
+<blockquote class="blockquote">
+<p><em>Adjustment settings</em></p>
+</blockquote>
+</section>
+<section id="sec-cal-ajuste" class="level3" data-number="4.10.3">
+<h3 data-number="4.10.3" class="anchored" data-anchor-id="sec-cal-ajuste"><span class="header-section-number">4.10.3</span> Cálculo do Ajuste</h3>
+<blockquote class="blockquote">
+<p><em>Computing the adjustment</em></p>
+</blockquote>
+<p>Após todas as imagens serem ressecadas e os alvos medidos em todas elas, o ajuste de feixe pode ser calculado. Para executar o ajuste de feixe, use o comando de menu Ajuste | Calcular ajuste de feixe na janela principal do CAL. Uma janela de progresso é exibida com um botão Cancelar. O ajuste pode ser cancelado a qualquer momento clicando no botão Cancelar (o processo não será cancelado até que a iteração atual seja calculada). A janela exibe informações sobre o progresso do ajuste (o número da iteração) e o sigma zero (que indica a qualidade do ajuste e idealmente deve estar próximo de 1). O ajuste primeiro calcula uma solução inicial, seguida por uma série de soluções de reponderação, onde as medições de baixa qualidade são removidas automaticamente do ajuste. Finalmente, as precisões e correlações dos parâmetros são calculadas.</p>
+<p>Nesta etapa, haverá um ajuste convergido com sucesso ou um ajuste que não convergiu. Uma nova janela será exibida. Essa janela contém duas caixas de listagem: a caixa de listagem superior exibe um resumo do ajuste em texto, e a caixa de listagem inferior exibe detalhes sobre o ajuste.</p>
+<p>Uma caixa de mensagem pode ser exibida com avisos sobre medições de distância excluídas e/ou baixa precisão relativa. Os avisos são baseados em cenários típicos de calibração de câmeras estéreo usando o hardware de calibração SeaGIS. Nesses casos, o ajuste final do feixe não deve apresentar medições de distância excluídas, e há expectativas em relação à precisão relativa. Veja detalhes nos tópicos a seguir. Ignore o aviso se ele não se aplicar especificamente ao seu uso do CAL.</p>
+<p>Considerando o resumo do ajuste, a primeira linha indicará se o ajuste convergiu com sucesso ou se houve falha. Outras informações fornecidas serão:</p>
+<ul>
+<li>Indica se as observações da imagem foram reponderadas para obter um sigma zero de 1 (consulte Precisão da medição da imagem) e se a reponderação foi bem-sucedida. O valor de sigma zero é fornecido, assim como a nova estimativa da precisão da medição da imagem.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Indica se algum aspecto do processo de ajuste falhou e, em caso afirmativo, fornece uma indicação do que deu errado. Isso pode incluir falha na convergência dentro do número máximo de iterações (consulte Ajuste) ou falha na resolução das equações normais (isso geralmente indica que não foram medidos pontos de objeto suficientes em imagens suficientes ou pode ser causado por restrições de pontos de objeto sem sentido).</li>
+</ul>
+<!-- -->
+<ul>
+<li>O resíduo médio da imagem (<strong>geralmente deve ser sempre menor que 0,3 pixels</strong>).</li>
+</ul>
+<!-- -->
+<ul>
+<li>O número total de parâmetros do modelo de ajuste, parâmetros restritos e redundâncias. <strong>O número de redundâncias para uma calibração de câmera estéreo geralmente será da ordem de 5.000</strong>.</li>
+</ul>
+<!-- -->
+<ul>
+<li>O número de medições de imagem e distância elegíveis e excluídas, e restrições de pontos de objeto. As medições excluídas não atenderam aos parâmetros definidos em Valores para rejeição de medição. Após um ajuste inicial, pode haver muitas medições de imagem elegíveis excluídas. Isso é normal. Ao usar o hardware de calibração do SeaGIS (um cubo), não deve haver nenhuma medição de distância elegível excluída – isso pode indicar: um cubo montado incorretamente, um cubo danificado ou localizações de pontos de ressecção medidas incorretamente.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver pontos no espaço do objeto que não possuem coordenadas estimadas. Isso ocorrerá se novos pontos do objeto forem adicionados sem estimativas de coordenadas (isso nunca deve acontecer com projetos de cubo de calibração). Use a interseção para estimar as coordenadas (consulte Interseccionar todos os pontos).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver distâncias medidas para pontos do objeto que não existem ou para pontos do objeto que não possuem coordenadas estimadas.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver posições de câmera não selecionadas (consulte Medição de ponto).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver medições de imagem feitas para pontos de objeto que não existem ou para pontos de objeto que não possuem uma coordenada estimada.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver medições associadas a uma câmera que não faz parte de um projeto (pode ocorrer se uma câmera for excluída de um projeto existente, mas ainda houver medições associadas à câmera excluída).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se forem usadas restrições estéreo e as restrições não tiverem sido estimadas ou envolverem posições de câmera inválidas ou não estimadas (consulte Restrições estéreo).</li>
+</ul>
+<!-- -->
+<ul>
+<li>A precisão relativa (consulte View object point summary). Para a calibração estéreo de um sistema de câmera de alta definição usando o hardware de calibração do SeaGIS (um cubo), <strong>esse valor deve ser em torno de 1:10.000</strong> ou melhor. A precisão relativa pode ser prejudicada por: baixa visibilidade, iluminação inadequada (baixo contraste do alvo), imagens desfocadas, número insuficiente de pontos medidos ou cubo muito distante das câmeras.</li>
+</ul>
+<p>Se o ajuste não convergir, os parâmetros que não estão convergindo serão relatados. A não convergência geralmente está associada a uma geometria de rede inadequada ou a um número insuficiente de medições em imagens suficientemente diferentes (isso nunca deve ocorrer com redes de calibração que envolvem cubos de calibração, como no Apêndice A - Orientações do cubo de calibração). Para forçar a convergência do ajuste, os critérios de convergência para os parâmetros que estão falhando podem ser ajustados para forçar a rede a convergir (consulte Critérios de convergência) ou o número máximo de iterações para o ajuste do feixe pode ser aumentado temporariamente (consulte Ajuste).</p>
+<p>A caixa de listagem Detalhes fornece informações mais detalhadas sobre os resultados do ajuste. Todos os itens listados podem ser visualizados com mais detalhes clicando duas vezes sobre o item. As seguintes informações são fornecidas:</p>
+<ul>
+<li>Parâmetros da câmera: Para cada câmera, um resumo dos parâmetros da câmera. Essas informações são as mesmas exibidas em Edição de parâmetros da câmera. Certifique-se de que a distância focal esteja correta. Todos os outros parâmetros devem ter uma magnitude pequena – parâmetros com grande magnitude indicam um problema.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Resumo dos pontos do objeto. Essas informações são as mesmas exibidas em Visualização do resumo dos pontos do objeto. <strong>Verifique se a precisão relativa está correta. O número de pontos não estimados deve ser 0. O intervalo entre os desvios padrão máximo e mínimo dos pontos deve ser pequeno.</strong> Se o desvio padrão máximo dos pontos for muito grande, isso indica que alguns pontos do objeto não foram medidos o suficiente para estimar as coordenadas com precisão. Esses pontos devem ser identificados e mais medições de imagem devem ser feitas nesses pontos.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Coordenadas/precisões dos pontos do objeto. Essas informações são as mesmas exibidas em Viewing and manipulating object space points (Visualização e manipulação de pontos no espaço do objeto). <strong>Nesta janela, identifique os pontos que apresentam desvios padrão maiores que a média (sX, sY, sZ)</strong>. Geralmente, eles terão um número menor de medições (Nº de Obs.) em comparação com outros pontos. É necessário realizar mais medições de imagem nesses pontos. Verifique rapidamente se as coordenadas dos pontos do objeto estão dentro do intervalo esperado.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Orientação e posições da câmera (e observações da imagem). Essas informações são as mesmas exibidas em Dados de orientação da imagem. Nesta janela, examine todas as posições e orientações da câmera e certifique-se de que os valores sejam razoáveis ​​(observe especialmente as posições da câmera que não se encaixam). <strong>Observe a precisão das posições da câmera (sX, sY, sZ) e das orientações (sOmega, sPhi, sKappa), bem como o número de medições em cada imagem (Nº de obs.)</strong>. Esses valores devem ter magnitude semelhante em todas as imagens. Se uma imagem apresentar um desempenho particularmente pior, pode ser porque ela não possui medições suficientes dos pontos do objeto ou porque a qualidade da imagem pode ser inferior. Você também pode examinar as medições e os resíduos de uma imagem específica clicando duas vezes nela, embora o Resumo de resíduos da imagem abaixo possa ser mais útil.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Resumo de resíduos da imagem. Estas são as mesmas informações descritas em Resumo de medições da imagem. <strong>Analise os resíduos médios da imagem e identifique quaisquer imagens que apresentem uma média visivelmente maior do que as demais.</strong> Investigue as medições e/ou a qualidade da imagem associadas a essas imagens. Frequentemente, uma imagem com uma média alta pode ter pontos de ressecção mal identificados ou medições feitas em alvos mal identificados. Nesses casos, é prudente excluir todas as medições da imagem com uma média alta e medi-la novamente. Uma média alta também pode ser causada por baixa qualidade da imagem (geralmente desfoque de movimento).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Todas as medições da imagem. Estas são as mesmas informações exibidas em Visualizar/excluir medições da imagem. Classifique os dados nesta janela clicando duas vezes na coluna Rejeitadas para trazer todas as medições rejeitadas para o topo. Observe se as medições rejeitadas tendem a estar associadas a um ou mais pontos do objeto. Nesse caso, investigue todas as medições até o(s) ponto(s) específico(s) do objeto, pois a medição pode ter sido feita no ponto errado.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Medições de distância. Esta opção só será exibida se houver medições de distância. As informações são as mesmas exibidas em Visualizando e manipulando distâncias. Verifique se alguma distância está sendo excluída (isso não deve acontecer com um cubo de calibração e indica que o cubo ou os alvos nele contidos podem ter sido danificados fisicamente).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Visualizar correlações. Clicar duas vezes neste item abre outra janela que permite visualizar as correlações entre os parâmetros. Insira o coeficiente de correlação desejado; quaisquer parâmetros acima do coeficiente de correlação especificado serão relatados. Você pode optar por incluir ou excluir os parâmetros de posição e orientação (orientação externa) da câmera, conforme necessário. Após a configuração, clique no botão Fechar caixa de diálogo e uma nova janela será exibida mostrando quaisquer parâmetros correlacionados. Se a janela estiver vazia, não havia parâmetros acima dos limites prescritos.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Restrições estéreo e resíduos. Esses dados só aparecerão se você usar restrições estéreo no ajuste de feixe (consulte Restrições estéreo). As informações e a interpretação são as mesmas que em Visualizando as restrições. Se muitos dos componentes de restrição estéreo estiverem sendo excluídos, a ponderação da restrição pode precisar ser relaxada (consulte Restrições estéreo).</li>
+</ul>
+<!-- -->
+<ul>
+<li>&nbsp;Restrições estéreo – orientação relativa. Esses dados só aparecerão se você usar restrições estéreo no ajuste de feixe (consulte Restrições estéreo). As informações e a interpretação são as mesmas que em Visualizando a orientação relativa.</li>
+</ul>
+<p>Se o ajuste for bem-sucedido, o botão Aceitar na parte inferior da janela será habilitado. Após avaliar os resultados do ajuste e certificar-se de que o resultado é válido, clique no botão Aceitar para adotar o resultado do ajuste de feixe. Ao clicar no botão Aceitar, os parâmetros da câmera, as coordenadas dos pontos do objeto e as posições e orientações da câmera são atualizados com os resultados calculados no ajuste de feixe. Se o ajuste falhar ou o resultado não for satisfatório, clique no botão Cancelar para ignorar os resultados do ajuste. <strong>Nunca aceite os resultados de um ajuste de feixe questionável</strong>.</p>
+<p>Após concluir um ajuste de feixe bem-sucedido, é recomendável excluir as medições de imagem que foram excluídas pelo ajuste (consulte Excluir medições de pontos rejeitadas).</p>
+<p>Se houver muitos pontos do objeto que não foram medidos com sucesso (como geralmente ocorre quando não há informações de calibração anteriores para uma câmera), esses pontos agora devem ser medidos automaticamente com sucesso. Assim que o ajuste de feixe for calculado com sucesso, haverá parâmetros de calibração da câmera melhores, permitindo que os alvos não medidos sejam medidos automaticamente. O procedimento para medição automática de todas as imagens do projeto é descrito em Encontrar alvos em todas as imagens. Após a medição de mais alvos, o ajuste do feixe pode ser recalculado. Observe que nunca será possível medir todos os alvos em todas as imagens, pois alguns alvos inevitavelmente estarão ocluídos.</p>
+</section>
+<section id="razões-pelas-quais-um-ajuste-de-feixe-pode-falhar" class="level3" data-number="4.10.4">
+<h3 data-number="4.10.4" class="anchored" data-anchor-id="razões-pelas-quais-um-ajuste-de-feixe-pode-falhar"><span class="header-section-number">4.10.4</span> Razões pelas quais um ajuste de feixe pode falhar</h3>
+<p>Às vezes, o ajuste de feixe pode falhar, e pode ser difícil identificar exatamente por que isso está acontecendo. A seguir estão algumas razões e soluções comuns:</p>
+<ul>
+<li>O ajuste pode não convergir devido a uma ou duas medições realmente ruins. Se for possível forçar o ajuste a convergir ao menos uma vez, essas medições problemáticas serão identificadas e removidas.</li>
+</ul>
+<p><em>Ajuste o máximo de interações usando o</em> Ajustment | Ajustment <em>settings e ponha o</em> Maximum iterations <em>em 500.</em></p>
+<ul>
+<li>Medições insuficientes para pontos suficientes. Às vezes, há uma tendência de calcular o ajuste de feixe antes de realizar medições suficientes em um número adequado de pontos do objeto e em imagens suficientes. Quando isso ocorre, o ajuste de feixe pode falhar completamente ou não convergir. Nesse caso, é simplesmente necessário realizar mais medições. O ajuste de feixe depende de redundância (muitas medições) para detectar e eliminar de forma confiável medições errôneas. Se não houver medições suficientes, a detecção correta dessas medições incorretas torna-se difícil e pode levar à falha do ajuste de feixe.</li>
+</ul>
+<p><em>Não se preocupe em calcular o ajuste de feixe até que toda a sequência de calibração tenha sido medida (ver</em> Apêndice A — Orientações do cubo de calibração<em>). Se o processo de centroiding não estiver encontrando muitos pontos, tente ajustar o brilho e o contraste da imagem para realçar os alvos</em> (Brightness and contrast). <em>Também pode ser necessário ajustar a configuração de centróide “Minimum Pixel Intensity Range”, reduzindo esse valor (</em>Editing and fine tuning settings<em>).</em></p>
+<ul>
+<li>Um ajuste pode falhar se pontos medidos tiverem sido atribuídos a um ID de ponto incorreto. Se um ponto for medido de forma consistente e receber um ID incorreto em muitas imagens, isso causará confusão no ajuste de feixe (ou seja, o ajuste de feixe não conseguirá identificar com precisão que o ponto incorreto foi medido). Isso pode se tornar um problema sério se os pontos iniciais de resseção forem identificados incorretamente, pois, nesse caso, todos os demais pontos do objeto medidos automaticamente na imagem provavelmente também serão identificados de forma incorreta.</li>
+</ul>
+<p><em>Percorra todas as imagens e verifique cuidadosamente se os pontos de resseção estão corretamente identificados em cada imagem. Se você encontrar uma imagem com pontos de resseção medidos incorretamente, a forma mais simples é excluir a imagem e medi-la novamente.</em></p>
+<ul>
+<li>Se você estiver tendo dificuldades com um ajuste de feixe, especialmente se tiver aceitado os resultados de um ajuste ruim, é recomendável recarregar o arquivo original de pontos do objeto (uma versão “limpa” do arquivo, e não aquela criada pelo ajuste que está causando problemas; ver Reading the object point file).</li>
+</ul>
+<p><em>Após recarregar uma versão “limpa” do arquivo de pontos do objeto, utilize o comando de menu <strong>Measurement | Resect all images</strong> e, em seguida, calcule novamente o ajuste de feixe</em>.</p>
+<p><em>Se isso não for bem-sucedido, recarregue uma versão limpa do arquivo de pontos do objeto usando <strong>Object points | Read from file</strong>. Exclua todas as medições, exceto os pontos de resseção: <strong>Measurement | View/delete image measurements</strong>, ordene pela coluna <strong>Point ID</strong> e apague todas as medições de pontos, mantendo apenas os pontos de resseção (nos cubos SeaGIS, estes correspondem aos pontos 100, 101, 102, 103 e 104).</em></p>
+<p><em>Em seguida, faça a resseção de todas as imagens com <strong>Measurement | Resect all images</strong>, depois localize os alvos com <strong>Measurement | Find targets in all images</strong> e, por fim, recalcule o ajuste de feixe</em></p>
+<ul>
+<li>Quando um ajuste não converge, examine o <strong>relatório resumo dos resíduos de imagem</strong> na janela <strong>Adjustment results</strong>. Observe os campos <strong>Valid points</strong> e <strong>Average magnitude</strong>.</li>
+</ul>
+<p><em>Investigue qualquer imagem que apresente um <strong>Average magnitude</strong> mais alto do que o habitual (qualquer valor superior a três vezes a média) e qualquer imagem que tenha um número de <strong>Valid points</strong> inferior ao esperado (menos da metade dos alvos medidos). Em geral, a maneira mais simples é excluir essas imagens e medi-las novamente.</em></p>
+<p>Veja também a seção a seguir.</p>
+</section>
+<section id="sec-falha-ajustes" class="level3" data-number="4.10.5">
+<h3 data-number="4.10.5" class="anchored" data-anchor-id="sec-falha-ajustes"><span class="header-section-number">4.10.5</span> Falha de ajustes com um cubo de calibração SeaGIS</h3>
+<p>Frequentemente, a razão para a falha de um ajuste de feixe está relacionada a <strong>estimativas inadequadas dos parâmetros da câmera</strong>, o que resulta em medições automáticas de imagem de baixa qualidade. Quando se dispõem de boas estimativas dos parâmetros da câmera (obtidas a partir de calibrações anteriores), geralmente não há problemas na execução do ajuste. Quando o ajuste falha ao utilizar um <strong>cubo de calibração de duas faces</strong>, uma estratégia útil é realizar a calibração usando <strong>apenas a face frontal do cubo</strong>. Isso fornece boas estimativas dos parâmetros da câmera, permitindo que, posteriormente, seja calculada uma calibração utilizando ambas as faces do cubo.</p>
+<p>Para chegar ao ponto em que o ajuste de feixe está falhando, presume-se que você já tenha realizado um conjunto de medições no material de calibração. As instruções abaixo assumem que um projeto já foi criado e que existe um conjunto completo de medições:</p>
+<ul>
+<li><p>Salve uma cópia das medições realizadas até o momento usando <strong>Measurement | Write measurement file</strong>. Nomeie o arquivo como <em>“Complete”</em>, ou algo similar, para indicar que se trata do conjunto original completo de medições.</p></li>
+<li><p>Carregue uma cópia original “limpa” do arquivo do cubo de calibração (.PtsCAL) usando <strong>Object points | Read from file</strong>.</p></li>
+<li><p>Exclua as medições referentes aos pontos da face traseira do cubo usando <strong>Measurement | Delete back face measurements</strong>.</p></li>
+<li><p>Realize a resseção de todas as imagens usando <strong>Measurement | Resect all images</strong>.</p></li>
+<li><p>Calcule o ajuste de feixe em <strong>Adjustment | Compute bundle adjustment</strong>.</p></li>
+<li><p>Supondo que o ajuste de feixe seja bem-sucedido, exclua as medições de pontos rejeitadas usando <strong>Measurement | Delete rejected point measurements</strong>.</p></li>
+<li><p>Reintroduza a face traseira do cubo utilizando <strong>Measurement | Find targets in all images</strong>.</p></li>
+<li><p>Execute um novo ajuste de feixe (agora utilizando os pontos medidos nas faces frontal e traseira do cubo) e prossiga da forma habitual após a conclusão bem-sucedida do ajuste de feixe.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="apêndices" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Apêndices</h1>
+</section>
+<section id="termos-conceitos-1" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Termos &amp; Conceitos</h1>
+<ul>
+<li><p><strong><em>Ressected</em></strong>: Ressecção.</p></li>
+<li><p><strong><em>Bandle adjustment</em></strong>: Ajuste do pacote.</p></li>
+<li><p><strong><em>Eligible image measurements</em></strong>: Medições de imagem elegíveis</p></li>
+<li><p><em><strong>Eligible distance measurements</strong>:</em> Medições de distância elegíveis</p></li>
+<li><!--# Face posterior, esclarecer e representar --></li>
+</ul>
+</section>
+<section id="search-keys" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> <em>Search Keys</em></h1>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><em>ressected</em></td>
+<td><em>bandle</em></td>
+<td><em>object point</em></td>
+</tr>
+<tr class="even">
+<td><em>convergence</em></td>
+<td><em>compute</em></td>
+<td><em>all images</em></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="workflow-1" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Workflow</h1>
+<p>Complete a inserção de pontos (objetos) em todas as imagens, depois:</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+  id0(Insected all point objects) --&gt; id1(Compute bundle adjustment)
+  id1 --&gt; id2(Delete reject points)
+  id2 --&gt; id3(Find all target)
+  id3 --&gt; id1
+
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<p><em>Adjustment: Compute bundle ajustment</em> &gt; <em>Delete reject points</em> &gt; <em>Find target</em> &gt; <em>Compute bundle ajustment&gt; Delete reject points</em> &gt; <em>Compute bundle ajustment</em> (Final) <em>&gt;</em></p>
+</section>
+<section id="manual-cal-ptbr-1" class="level1" data-number="9">
+<h1 data-number="9"><span class="header-section-number">9</span> Manual CAL (pt/br)</h1>
+<section id="quick-guide-1" class="level2" data-number="9.1">
+<h2 data-number="9.1" class="anchored" data-anchor-id="quick-guide-1"><span class="header-section-number">9.1</span> <em>Quick Guide</em></h2>
+<blockquote class="blockquote">
+<p>Guia Rápido</p>
+</blockquote>
+<p>Utilize este guia para percorrer, passo a passo, o processo de calibração de um sistema de câmeras estéreo. Após capturar e transferir as imagens de um cubo de calibração, siga as etapas descritas a seguir.</p>
+<p>Este guia pressupõe que você já possui arquivos de câmera (<strong>.CamCAL</strong>) para iniciar a calibração. Caso isso não seja verdade, consulte a página de download do software (<a href="https://www.seagis.com.au/download.php">aqui</a>) para encontrar arquivos de câmera comumente utilizados, entre em contato conosco para obter assistência ou consulte a seção <a href="#sec-cameras" class="quarto-xref">Section&nbsp;4.5</a> para criar os arquivos necessários.</p>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>É importante iniciar com arquivos de câmera que você saiba que estão corretos.</p>
+</div>
+</div>
+</div>
+<section id="organize-the-data-1" class="level3" data-number="9.1.1">
+<h3 data-number="9.1.1" class="anchored" data-anchor-id="organize-the-data-1"><span class="header-section-number">9.1.1</span> <em>Organize the data</em></h3>
+<blockquote class="blockquote">
+<p><em>Organize os dados</em></p>
+</blockquote>
+<ol type="1">
+<li><p>Usando o <strong>Explorador de Arquivos do Windows</strong>, crie um novo diretório (pasta) para o projeto.</p></li>
+<li><p>Copie todos os arquivos de imagem associados à calibração para o novo diretório (nova pasta). Normalmente, serão dois arquivos de vídeo: um da câmera esquerda e outro da câmera direita.</p></li>
+<li><p>Copie para esse diretório o arquivo de pontos do objeto (<strong>.PtsCAL</strong>) do cubo de calibração. <u>Esse arquivo deve ser sempre uma cópia limpa do arquivo original.</u></p></li>
+<li><p>Copie para esse diretório os arquivos da câmera esquerda e direita (<strong>.CamCAL</strong>). Esses arquivos geralmente são provenientes da calibração anterior mais recente.</p></li>
+</ol>
+</section>
+<section id="create-a-new-project-1" class="level3" data-number="9.1.2">
+<h3 data-number="9.1.2" class="anchored" data-anchor-id="create-a-new-project-1"><span class="header-section-number">9.1.2</span> <em>Create a new project</em></h3>
+<blockquote class="blockquote">
+<p><em>Crie um novo projeto</em></p>
+</blockquote>
+<ol type="1">
+<li><p>No CAL, crie um novo projeto usando <strong><em>Project | New project</em></strong>. Se necessário, você será solicitado a salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, <strong>“<strong><em>Calibration</em></strong>”</strong>) e salve o arquivo do projeto no novo diretório que você acabou de criar para este projeto.</p></li>
+<li><p>A criação de um novo projeto inicia um processo de assistente (<em>wizard process</em>) que solicita a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.</p></li>
+<li><p>Carregue os arquivos da câmera esquerda e direita (<strong>.CamCAL</strong>), conforme solicitado.</p></li>
+<li><p>Carregue o arquivo do cubo de calibração (<strong>.PtsCAL</strong>), conforme solicitado.</p></li>
+<li><p>Defina o diretório de imagens conforme solicitado. O diretório de imagens é automaticamente definido como o mesmo diretório do arquivo do projeto; portanto, se todos os arquivos da calibração estiverem em um único diretório, basta verificar e clicar em <strong>OK</strong>.</p></li>
+<li><p>Salve o novo arquivo de medições conforme solicitado. Será necessário atribuir um nome a esse arquivo (por exemplo, <strong>“<strong><em>Measurements</em></strong>”</strong>), e ele será o local onde as medições da calibração serão armazenadas.</p></li>
+<li><p>Carregue a imagem da câmera esquerda. Normalmente, esse será o arquivo de vídeo da câmera esquerda, e ele será automaticamente adicionado à configuração da sequência de filmes (Movie sequence) da câmera esquerda. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver <strong>Sequências de filmes</strong>). Em seguida, clique em <strong>OK</strong>.</p></li>
+<li><p>Carregue a imagem da câmera direita. Normalmente, esse será o arquivo de vídeo da câmera direita, e ele será automaticamente adicionado à configuração da sequência de filmes da câmera direita. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver <strong>Sequências de filmes</strong>). Em seguida, clique em <strong>OK</strong>.</p></li>
+<li><p>A janela <strong><em>Current project files</em></strong> (<em>Arquivos do projeto atual</em>) será exibida. Todos os campos devem estar preenchidos, e todos os itens listados devem estar no mesmo diretório. Clique em <strong><em>Close dialog</em></strong> (<em>Fechar diálogo</em>).</p></li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se houver dificuldades para chegar a esse ponto, consulte <strong><em>Creating new projects and data organization</em></strong>(), que fornece mais detalhes ou mostra como configurar o projeto manualmente.</p>
+</div>
+</div>
+</section>
+<section id="medições-2" class="level3" data-number="9.1.3">
+<h3 data-number="9.1.3" class="anchored" data-anchor-id="medições-2"><span class="header-section-number">9.1.3</span> Medições</h3>
+</section>
+<section id="ajuste-2" class="level3" data-number="9.1.4">
+<h3 data-number="9.1.4" class="anchored" data-anchor-id="ajuste-2"><span class="header-section-number">9.1.4</span> Ajuste</h3>
+<ol type="1">
+<li><p>Após concluir todas as medições de imagem, calcule o ajuste de feixe usando Ajuste | Calcular ajuste de feixe.</p></li>
+<li><p>Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto. Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.</p></li>
+<li><p>Quando o ajuste for bem-sucedido, siga os passos abaixo para produzir um conjunto “limpo” de medições de imagem, sem rejeições:</p>
+<ol type="1">
+<li><p>i. Aceite os resultados do ajuste (usando o botão Aceitar resultados).</p></li>
+<li><p>ii. Exclua as medições rejeitadas usando Medição | Excluir medições de ponto rejeitadas.</p></li>
+<li><p>iii. Procure por alvos ausentes usando Medição | Encontrar alvos em todas as imagens.</p></li>
+<li><p>iv. Calcule outro ajuste de feixe (Ajuste | Calcular ajuste de feixe) e aceite os resultados.</p></li>
+<li><p>v. Exclua as medições rejeitadas usando Medição | Excluir medições de ponto rejeitadas.</p></li>
+<li><p>vi. Calcule um ajuste de feixe final (Ajuste | Calcular ajuste de feixe). Neste ponto, você deverá ter um ajuste de feixe correto. Verifique o seguinte no resumo de Ajuste (uma mensagem de aviso alertará sobre possíveis problemas de medição de distância e precisão relativa). Você deverá ter <strong>zero</strong> <em>Eligible image measurements</em> excluídas e <strong>zero</strong> <em>Eligible distance measurements</em> excluídas. Medições de distância excluídas podem ser causadas por um cubo montado incorretamente, cubo danificado ou medição de locais de pontos de ressecção incorretos – este problema deve ser corrigido. Verifique se o valor de precisão relativa está de acordo com o esperado para o seu sistema de câmera e método de calibração. O CAL possui alguns avisos integrados com base em cenários típicos de calibração: geralmente melhor que <strong>1:10.000</strong> para uma calibração estéreo de um sistema de câmera de alta definição usando o hardware de calibração SeaGIS. Valores mais baixos podem ser causados ​​por baixa visibilidade, imagens desfocadas, iluminação inadequada (baixo contraste do alvo), número insuficiente de pontos medidos ou cubo muito distante das câmeras. Clique em Aceitar resultados.</p></li>
+</ol></li>
+</ol>
+<p><strong>Observe que o ajuste do feixe precisa ter qualidade aceitável antes de prosseguir.</strong></p>
+</section>
+<section id="geração-de-arquivos-de-câmera-estéreo-1" class="level3" data-number="9.1.5">
+<h3 data-number="9.1.5" class="anchored" data-anchor-id="geração-de-arquivos-de-câmera-estéreo-1"><span class="header-section-number">9.1.5</span> Geração de arquivos de câmera estéreo</h3>
+<p>Note, todas as operações de menu mencionadas nesta seção estão em <em>Measurement</em> | <em>Stereo constraints</em>.</p>
+<ol type="1">
+<li><p>Configure as restrições estéreo usando <em>Configure stereo constraints</em> . Nesta caixa de diálogo, geralmente basta garantir que a câmera esquerda e a câmera direita estejam selecionadas corretamente e, em seguida, clicar no botão *Automatic* para gerar os pares esquerda/direita. Você receberá uma mensagem de erro se houver um número diferente de imagens esquerda e direita medidas, pois o software não consegue criar pares estéreo – você precisará encontrar e corrigir a imagem esquerda/direita que não possui uma imagem direita/esquerda correspondente (consulte Configurando restrições).</p></li>
+<li><p>Estime as restrições usando *Estimating constraints* (consulte Estimando restrições). Um aviso será exibido se mais de quatro pares estéreo forem excluídos (consulte os comentários na próxima etapa).</p></li>
+<li><p>Verifique a orientação relativa usando <em>View stereo constraints</em>. Verifique se os resíduos de restrição são aceitáveis ​​e se não houve muitas restrições que foram excluídas do cálculo (coluna <em>Exclusions</em>). <strong>Se mais de quatro restrições forem rejeitadas, verifique novamente a sincronização estéreo.</strong> Para mais detalhes, consulte Visualizando as restrições.</p></li>
+<li><p>Gere os arquivos da câmera estéreo usando Exportar arquivos da câmera estéreo (consulte Exportando arquivos da câmera estéreo).</p></li>
+</ol>
+</section>
+<section id="salvando-resultados-1" class="level3" data-number="9.1.6">
+<h3 data-number="9.1.6" class="anchored" data-anchor-id="salvando-resultados-1"><span class="header-section-number">9.1.6</span> Salvando resultados</h3>
+<p>A maneira mais simples de salvar o projeto e todos os dados associados é fechar o CAL. O programa solicitará que você salve todos os dados não salvos.</p>
+</section>
+<section id="carregando-calibrações-anteriores-1" class="level3" data-number="9.1.7">
+<h3 data-number="9.1.7" class="anchored" data-anchor-id="carregando-calibrações-anteriores-1"><span class="header-section-number">9.1.7</span> Carregando calibrações anteriores</h3>
+<p>Calibrações anteriores podem ser carregadas clicando duas vezes em um arquivo de projeto CAL (.PrjCAL) no Explorador de Arquivos do Windows ou usando o menu CAL &gt; Projeto | Ler do arquivo.</p>
+<p>Se arquivos (como arquivos de câmera, arquivo de pontos do objeto ou arquivo de medição) originalmente associados ao projeto tiverem sido movidos para uma unidade e/ou pasta diferente, o projeto será corrompido e você precisará recriá-lo manualmente, localizando e carregando os arquivos necessários. Consulte Recriando um projeto de calibração a partir de dados existentes.</p>
+</section>
+</section>
+<section id="general-1" class="level2" data-number="9.2">
+<h2 data-number="9.2" class="anchored" data-anchor-id="general-1"><span class="header-section-number">9.2</span> <em>General</em></h2>
+</section>
+<section id="installation-details-1" class="level2" data-number="9.3">
+<h2 data-number="9.3" class="anchored" data-anchor-id="installation-details-1"><span class="header-section-number">9.3</span> <em>Installation details</em></h2>
+</section>
+<section id="project-files-1" class="level2" data-number="9.4">
+<h2 data-number="9.4" class="anchored" data-anchor-id="project-files-1"><span class="header-section-number">9.4</span> <em>Project files</em></h2>
+<p>Reading and writing to file</p>
+</section>
+<section id="cameras" class="level2" data-number="9.5">
+<h2 data-number="9.5" class="anchored" data-anchor-id="cameras"><span class="header-section-number">9.5</span> <em>Cameras</em></h2>
+<blockquote class="blockquote">
+<p><em>Câmeras</em></p>
+</blockquote>
+<p>O acesso às informações da câmera e às operações específicas da câmera é feito por meio do menu <strong><em>Camera</em></strong>.</p>
+<p>As informações da câmera são armazenadas em um arquivo (um arquivo separado para cada câmera). Os nomes dos arquivos de câmera atuais são armazenados no arquivo do projeto e são carregados automaticamente quando o CAL é iniciado. Observe que esses arquivos de câmera possuem a extensão <strong>.CamCAL</strong>. Esses arquivos são diferentes dos arquivos de câmera estéreo (com extensão <strong>.Cam</strong>), que o CAL exporta para uso em softwares de medição estéreo, como o <strong>EventMeasure</strong> ou o <strong>StereoLib</strong>.</p>
+<section id="reading-and-writing-to-file-1" class="level3" data-number="9.5.1">
+<h3 data-number="9.5.1" class="anchored" data-anchor-id="reading-and-writing-to-file-1"><span class="header-section-number">9.5.1</span> <em>Reading and writing to file</em></h3>
+<blockquote class="blockquote">
+<p><em>Leitura e gravação em arquivo</em></p>
+</blockquote>
+<p>As informações da câmera podem ser gravadas em um arquivo ou lidas a partir de um arquivo. Para ler ou gravar um arquivo de câmera, utilize o comando de menu <strong><em>Camera | Left | Read from file</em></strong> ou <strong><em>Camera | Left | Write to file</em></strong>. Comandos idênticos estão disponíveis para a câmera direita.</p>
+<p>Se uma nova câmera for lida a partir de um arquivo ou salva em um arquivo com um nome diferente, essa alteração será atualizada no arquivo de projeto atual.</p>
+</section>
+<section id="editing-camera-parameters" class="level3" data-number="9.5.2">
+<h3 data-number="9.5.2" class="anchored" data-anchor-id="editing-camera-parameters"><span class="header-section-number">9.5.2</span> <em>Editing camera parameters</em></h3>
+<blockquote class="blockquote">
+<p><em>Edição de parâmetros da câmera</em></p>
+</blockquote>
+<p>Para visualizar ou editar os parâmetros de uma câmera, utilize o comando de menu <strong>Camera | Left | Edit parameters</strong> (ou <strong>Camera | Right | Edit parameters</strong> para a câmera direita). Será exibida uma janela com os seguintes itens:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Itens com um visto verde ao lado podem ser editados dando um duplo clique no item e digitando um novo valor. Os itens na coluna <strong>Units</strong> indicam as unidades do parâmetro. Os valores na coluna <strong>Precision</strong> podem ser <strong>“Fixed parameter”</strong> (parâmetro fixo) ou um valor numérico. A ausência de valor indica que o parâmetro da câmera ainda não foi estimado por um ajuste de feixe; já um valor numérico indica que o parâmetro foi estimado pelo ajuste de feixe, e esse valor corresponde à precisão do parâmetro.</p>
+<p>Os parâmetros <strong>X Pixel size</strong> e <strong>Y Pixel size</strong> são propriedades da câmera e, em geral, podem ser encontrados no site do fabricante ou em uma ficha técnica ou folha de especificações da câmera. Frequentemente, o tamanho do pixel precisa ser derivado a partir do tamanho do sensor da câmera e do formato da imagem. Normalmente, o fabricante informa esses valores em unidades de micrômetros. Certifique-se de converter os valores para milímetros (mm) ao inseri-los como parâmetros da câmera.</p>
+<p>Para calibrações de câmera subaquáticas utilizando uma porta plana do invólucro da câmera, o valor da distância focal em água será aproximadamente <strong>4/3</strong> do valor no ar (por exemplo, uma lente com distância focal de 4,8 mm no ar terá aproximadamente 6,4 mm na água). Certifique-se de considerar o efeito de quaisquer adaptadores de lente grande-angular.</p>
+<p>Quando uma nova câmera estiver sendo calibrada (isto é, não existe um arquivo <strong>.CamCAL</strong> prévio), será necessário especificar: <strong>Image rows</strong>, <strong>Image columns</strong>, <strong>X Pixel size</strong>, <strong>Y Pixel size</strong>, e estimar a <strong>Focal length</strong>. Todos os demais parâmetros da câmera podem ser inicialmente estimados como zero, tendo seus valores determinados durante o processo de calibração.</p>
+</section>
+<section id="fixing-camera-parameters-1" class="level3" data-number="9.5.3">
+<h3 data-number="9.5.3" class="anchored" data-anchor-id="fixing-camera-parameters-1"><span class="header-section-number">9.5.3</span> <em>Fixing camera parameters</em></h3>
+</section>
+</section>
+<section id="pictures-1" class="level2" data-number="9.6">
+<h2 data-number="9.6" class="anchored" data-anchor-id="pictures-1"><span class="header-section-number">9.6</span> <em>Pictures</em></h2>
+</section>
+<section id="images-and-orientations-1" class="level2" data-number="9.7">
+<h2 data-number="9.7" class="anchored" data-anchor-id="images-and-orientations-1"><span class="header-section-number">9.7</span> <em>Images and orientations</em></h2>
+</section>
+<section id="object-points-and-distances-1" class="level2" data-number="9.8">
+<h2 data-number="9.8" class="anchored" data-anchor-id="object-points-and-distances-1"><span class="header-section-number">9.8</span> <em>Object points and distances</em></h2>
+</section>
+<section id="measurement" class="level2" data-number="9.9">
+<h2 data-number="9.9" class="anchored" data-anchor-id="measurement"><span class="header-section-number">9.9</span> <em>Measurement</em></h2>
+<blockquote class="blockquote">
+<p><em>Medições</em></p>
+</blockquote>
+<p>Esta seção aborda o processo de realização de medições de pontos, bem como descreve o uso dos itens do menu <em>Measurement</em>.</p>
+<section id="pontos-de-medida" class="level3" data-number="9.9.1">
+<h3 data-number="9.9.1" class="anchored" data-anchor-id="pontos-de-medida"><span class="header-section-number">9.9.1</span> Pontos de Medida</h3>
+<p><em>Point measurement</em></p>
+</section>
+<section id="salvando-e-lendo-as-medidas-1" class="level3" data-number="9.9.2">
+<h3 data-number="9.9.2" class="anchored" data-anchor-id="salvando-e-lendo-as-medidas-1"><span class="header-section-number">9.9.2</span> Salvando e lendo as medidas</h3>
+<p><em>Saving and reading measurements</em></p>
+</section>
+<section id="convertendo-vídeos-para-jpeg-1" class="level3" data-number="9.9.3">
+<h3 data-number="9.9.3" class="anchored" data-anchor-id="convertendo-vídeos-para-jpeg-1"><span class="header-section-number">9.9.3</span> Convertendo vídeos para JPEG</h3>
+<blockquote class="blockquote">
+<p><em>Convert movie to JPEG</em></p>
+</blockquote>
+</section>
+<section id="frames-deslocados-1" class="level3" data-number="9.9.4">
+<h3 data-number="9.9.4" class="anchored" data-anchor-id="frames-deslocados-1"><span class="header-section-number">9.9.4</span> Frames deslocados</h3>
+<p><em>Offset frames</em></p>
+</section>
+<section id="visualizar-dados-de-orientação-1" class="level3" data-number="9.9.5">
+<h3 data-number="9.9.5" class="anchored" data-anchor-id="visualizar-dados-de-orientação-1"><span class="header-section-number">9.9.5</span> Visualizar dados de orientação</h3>
+<p><em>View orientation data</em></p>
+</section>
+<section id="visualizar-excluir-medições-de-imagem-1" class="level3" data-number="9.9.6">
+<h3 data-number="9.9.6" class="anchored" data-anchor-id="visualizar-excluir-medições-de-imagem-1"><span class="header-section-number">9.9.6</span> Visualizar/ Excluir medições de imagem</h3>
+<p><em>View/ delete image measurement</em></p>
+</section>
+<section id="resumo-das-medições-de-imagem-1" class="level3" data-number="9.9.7">
+<h3 data-number="9.9.7" class="anchored" data-anchor-id="resumo-das-medições-de-imagem-1"><span class="header-section-number">9.9.7</span> Resumo das medições de imagem</h3>
+<p><em>Image measurement summary</em></p>
+</section>
+<section id="excluir-medições-da-face-posterior-1" class="level3" data-number="9.9.8">
+<h3 data-number="9.9.8" class="anchored" data-anchor-id="excluir-medições-da-face-posterior-1"><span class="header-section-number">9.9.8</span> Excluir medições da face posterior</h3>
+<blockquote class="blockquote">
+<p><em>Delete back face measurement</em></p>
+</blockquote>
+<p>Ao utilizar um cubo de calibração padrão da SeaGIS, é possível usar <strong><em>Measurement</em></strong> <strong>| <em>Delete back face measurement</em></strong> para remover todas as medições de imagem associadas a pontos na face posterior do cubo. Essa função é uma ferramenta útil para lidar com ajustes de feixe (bundle adjustments) que não convergem; ver <a href="#sec-falha-ajustes" class="quarto-xref">Section&nbsp;4.10.5</a>.</p>
+</section>
+<section id="cálculo-do-centróide-1" class="level3" data-number="9.9.9">
+<h3 data-number="9.9.9" class="anchored" data-anchor-id="cálculo-do-centróide-1"><span class="header-section-number">9.9.9</span> Cálculo do centróide</h3>
+<p><em>Centroiding</em></p>
+</section>
+<section id="restrições-estereoscópicas-1" class="level3" data-number="9.9.10">
+<h3 data-number="9.9.10" class="anchored" data-anchor-id="restrições-estereoscópicas-1"><span class="header-section-number">9.9.10</span> Restrições Estereoscópicas</h3>
+<p><em>Stereo constraints</em></p>
+<p>Esta seção aborda as opções de menu disponíveis em <em>Measurement | Stereo constraints</em>. Essas operações são utilizadas para configurar restrições estereoscópicas e calcular a <strong>orientação relativa</strong> de um par de câmeras estereoscópicas (a orientação relativa descreve a posição e a orientação de uma câmera em relação à outra e é necessária para realizar medições com um sistema de câmeras estereoscópicas). Essas opções são fornecidas principalmente para gerar arquivos de câmera estereoscópica (extensão <strong>.cam</strong>) para uso com <em>PhotoMeasure</em>, <em>EventMeasure</em> e <em>StereoLib</em>.</p>
+<p>Em calibrações de câmeras estereoscópicas, a câmera 1 refere-se à câmera esquerda e a câmera 2 refere-se à câmera direita. O CAL mantém um sistema de numeração, em vez de utilizar os termos “Esquerda” e “Direita”, para facilitar calibrações genéricas em sistemas com mais de duas câmeras.</p>
+<section id="configuração-das-restrições-1" class="level4" data-number="9.9.10.1">
+<h4 data-number="9.9.10.1" class="anchored" data-anchor-id="configuração-das-restrições-1"><span class="header-section-number">9.9.10.1</span> <strong>Configuração das restrições</strong></h4>
+<p><em>Configure constraints</em></p>
+<p>Use o comando de menu <em>Configure stereo constraints</em> para definir as restrições. Uma janela será exibida. O principal objetivo dessa janela é permitir a definição de pares estereoscópicos de imagens esquerda e direita, a partir dos quais a orientação relativa das câmeras pode ser determinada.</p>
+<p>Selecione a câmera esquerda (<em>Left camera</em>) e a câmera direita (<em>Right camera</em>) apropriadas usando as caixas de seleção. Na maioria dos casos, o restante da configuração pode ser realizado utilizando o botão <em>Automatic</em>. Ao clicar em <em>Automatic</em>, a lista de pareamentos será preenchida com combinações de nome do arquivo da esquerda (nº do frame, nº da câmera) e nome do arquivo da direita (nº do frame, nº da câmera). Verifique se os pareamentos representam pares estereoscópicos válidos; caso contrário, será necessário editar a lista manualmente. Observe que, em calibrações estereoscópicas padrão, a câmera 1 corresponde à câmera esquerda e a câmera 2 à câmera direita.</p>
+<p>Para excluir um pareamento, selecione-o e clique no botão <em>Delete</em>. Para adicionar um pareamento manualmente, selecione um <strong>Filename</strong> da câmera esquerda (nº do frame, nº da câmera) e um <strong>Filename</strong> da câmera direita (nº do frame, nº da câmera) e clique em <strong>Add</strong>. Se algum dos dados recém-adicionados já estiver presente na lista atual de pareamentos, ele será automaticamente removido e substituído pelo novo pareamento estereoscópico.</p>
+<p>Clique em <strong>OK</strong> para aceitar a nova configuração ou em <strong>Cancel</strong> para ignorar as alterações.</p>
+</section>
+<section id="estimar-restrições" class="level4" data-number="9.9.10.2">
+<h4 data-number="9.9.10.2" class="anchored" data-anchor-id="estimar-restrições"><span class="header-section-number">9.9.10.2</span> <strong>Estimar restrições</strong></h4>
+<p><em>Estimate constraints</em></p>
+<p>Depois que as restrições estiverem configuradas, a <strong>orientação relativa</strong> pode ser estimada. Utilize o comando de menu <em>Estimate constraints</em>. Uma janela será exibida mostrando a orientação relativa calculada. Os detalhes dessa janela são explicados na seção <strong>Viewing the relative orientation</strong>.</p>
+<p>Se <strong>mais de quatro</strong> pares estereoscópicos apresentarem exclusões associadas, será exibida uma mensagem de aviso. A presença de mais de quatro pares estereoscópicos com exclusões indica possíveis problemas de <strong>sincronização estereoscópica</strong> ou, alternativamente, problemas no <strong>ajuste de feixe</strong> (ver <strong><em>Viewing the constraints</em></strong> {<a href="#sec-view.constraint" class="quarto-xref">Section&nbsp;4.9.10.3</a>} abaixo).</p>
+</section>
+<section id="visualização-das-restrições" class="level4" data-number="9.9.10.3">
+<h4 data-number="9.9.10.3" class="anchored" data-anchor-id="visualização-das-restrições"><span class="header-section-number">9.9.10.3</span> <strong>Visualização das restrições</strong></h4>
+<p><strong><em>Viewing the constraints</em></strong></p>
+<p>Depois que as restrições estereoscópicas forem configuradas (ver <strong>Configuring constraints</strong>) e estimadas (ver <strong>Estimating constraints</strong>, ou estimadas durante um ajuste de feixe), a qualidade da estimativa pode ser avaliada usando o comando de menu <em>View stereo constraints</em>. Esse comando abre uma janela que exibe cada pareamento estereoscópico em uma linha, iniciando com o <em>Filename</em> da câmera esquerda e da câmera direita (número do frame, número da câmera).</p>
+<p>As colunas seguintes apresentam os <strong>resíduos</strong> para <em>Base</em>, <em>Delta omega</em>, <em>Left phi</em>, <em>Left kappa</em>, <em>Right phi</em> e <strong><em>Right kappa</em></strong>. Os resíduos correspondem à diferença entre a orientação relativa de cada par estereoscópico esquerda/direita individual e a <strong>orientação relativa média</strong> calculada a partir de todos os pares estereoscópicos.</p>
+<p>A coluna final lista quaisquer componentes que tenham sido automaticamente excluídos do cálculo da orientação relativa com base em seus resíduos (ver <em>Stereo constraints</em> para a definição dos limiares dessas exclusões e para saber quando esses limiares podem precisar ser ajustados). A magnitude dos resíduos das restrições estereoscópicas depende, em grande parte, da qualidade da sincronização das câmeras estereoscópicas. Se uma das restrições apresentar muitos componentes excluídos, deve-se suspeitar que a sincronização estereoscópica desse pareamento esquerda/direita esteja incorreta. Isso frequentemente ocorre devido a movimento excessivo do sistema de câmeras e/ou da estrutura de calibração, em combinação com um pequeno erro de sincronização — possivelmente inferior a um frame — ou ainda devido a um erro na seleção do par estereoscópico durante a configuração das restrições (ver <strong>Configuring constraints</strong>).</p>
+<p>Se muitos dos pares estereoscópicos estiverem sendo excluídos e a sincronização e a configuração dos pares estiverem corretas, pode ser necessário <strong>aumentar os limiares de exclusão</strong>. Para isso, aumente os valores de <em>Critical value for base rejection</em> e/ou <em>Critical value for orientation rejection</em> em <strong>Stereo constraints</strong>, e então reestime as restrições conforme descrito em <strong>Estimating constraints</strong>. Sempre investigue a sincronização das imagens estereoscópicas e o pareamento das imagens como a principal causa das rejeições antes de ajustar esses limiares.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>É impossível obter uma sincronização consistentemente perfeita em sistemas de câmeras de vídeo estereoscópicas que dependem de sincronização visual. Nesses sistemas, o erro de sincronização pode chegar, no pior caso, a meio frame. Esse erro de sincronização, em combinação com o movimento do sistema de câmeras e/ou da estrutura de calibração, inevitavelmente resultará em exclusões nas restrições estereoscópicas. Em função desse erro de sincronização, é aceitável que até quatro pares estereoscópicos apresentem exclusões.</p>
+</div>
+</div>
+</section>
+<section id="visualização-da-orientação-relativa" class="level4" data-number="9.9.10.4">
+<h4 data-number="9.9.10.4" class="anchored" data-anchor-id="visualização-da-orientação-relativa"><span class="header-section-number">9.9.10.4</span> <strong>Visualização da orientação relativa</strong></h4>
+<p><em>View relative orientation</em></p>
+<p>Utilize o comando de menu <em>View relative orientation</em> para visualizar os parâmetros atuais da orientação relativa. Uma janela será exibida. Nessa janela, a origem dos parâmetros(<em>Parameter source</em>) será indicada como <em>Bundle adjustment</em> se os parâmetros tiverem sido estimados no ajuste de feixe (ver <strong><em>Stereo constraints</em></strong>); caso contrário, será exibido <em>Camera positions and orientations</em>, o que significa que a orientação relativa foi derivada das posições e orientações atuais das câmeras. O número de restrições será igual ao número de restrições configuradas em <strong><em>Configuring constraints</em></strong>.</p>
+<p>A separação da base, <em>Base separation</em> (X), representa a separação física entre as câmeras. Em configurações estereoscópicas típicas, <em>Delta omega</em>, <em>Left kappa</em> e <em>Right kappa</em> tendem a ser <strong>próximos de zero</strong>, enquanto <em>Left phi</em> e <em>Right phi</em> representam o grau de convergência interna de cada câmera (embora esses valores também fiquem próximos de zero se as câmeras não convergirem). Cada parâmetro possui uma precisão associada ao seu cálculo.</p>
+</section>
+<section id="exportando-os-arquivos-de-câmera-estereoscópica" class="level4" data-number="9.9.10.5">
+<h4 data-number="9.9.10.5" class="anchored" data-anchor-id="exportando-os-arquivos-de-câmera-estereoscópica"><span class="header-section-number">9.9.10.5</span> <strong>Exportando os arquivos de câmera estereoscópica</strong></h4>
+<p><em>Exporting stereo camera files</em></p>
+<p>Para exportar arquivos de câmera estereoscópica, as restrições estereoscópicas devem estar configuradas (ver <strong><em>Configuring constraints</em></strong>), estimadas (ver <strong><em>Estimating constraints</em></strong>, ou estimadas durante um ajuste de feixe) e os resultados verificados (ver <strong><em>Viewing the constraints</em></strong>). Em seguida, os arquivos de câmera estereoscópica podem ser criados usando o comando de menu <em>Export stereo camera files</em>.</p>
+<p>Se as restrições não tiverem sido configuradas ou estimadas, será exibida uma mensagem de erro. Inicialmente, os parâmetros da câmera esquerda serão mostrados em uma janela. Clique no botão <em>Close</em> da caixa de diálogo e uma mensagem solicitará que você salve os parâmetros da câmera esquerda. Clique em <em>Yes</em>, e uma janela padrão do Windows será exibida, permitindo selecionar o nome do arquivo de câmera estereoscópica para a câmera esquerda.</p>
+<p>Após o salvamento do arquivo da câmera esquerda, uma nova janela será exibida com os parâmetros da câmera direita. Clique no botão <strong>Close</strong> da caixa de diálogo, e uma mensagem solicitará que você salve os parâmetros da câmera direita. Clique em <strong>Yes</strong> para abrir a janela do Windows, na qual será possível selecionar o nome do arquivo da câmera direita.</p>
+</section>
+</section>
+<section id="ressecção-de-todas-as-imagens-1" class="level3" data-number="9.9.11">
+<h3 data-number="9.9.11" class="anchored" data-anchor-id="ressecção-de-todas-as-imagens-1"><span class="header-section-number">9.9.11</span> Ressecção de todas as imagens</h3>
+<p>O comando de menu Medição | Ressecção de todas as imagens na janela principal do CAL calcula uma ressecção em todas as imagens associadas ao projeto atual. Ao término do processo de ressecção, uma janela com um relatório resumido é exibida. A janela lista todas as imagens envolvidas na operação de ressecção, se a ressecção foi bem-sucedida e o erro RMS associado à ressecção. Consulte os botões Ressecção e Encontrar alvos automaticamente para obter mais informações sobre ressecções. Observe que pelo menos quatro pontos de ressecção devem ser medidos em uma imagem antes que ela possa ser ressecada.</p>
+<p>Essa opção geralmente não é usada, pois as imagens normalmente são ressecadas individualmente à medida que são medidas.</p>
+</section>
+<section id="encontrar-alvos-em-todas-as-imagens-1" class="level3" data-number="9.9.12">
+<h3 data-number="9.9.12" class="anchored" data-anchor-id="encontrar-alvos-em-todas-as-imagens-1"><span class="header-section-number">9.9.12</span> Encontrar alvos em todas as imagens</h3>
+<p>O comando de menu Medição | Encontrar alvos em todas as imagens executa um processo automático no qual todas as imagens do projeto atual são carregadas e uma tentativa é feita para medir quaisquer pontos de objeto não medidos em cada imagem. Enquanto esse processo estiver em execução, uma janela de progresso será exibida. O processo pode ser cancelado a qualquer momento clicando no botão Cancelar na janela de progresso.</p>
+<p>Essa opção geralmente é usada após um ajuste de feixe bem-sucedido. Após um ajuste de feixe, os parâmetros da câmera apresentam melhor qualidade e é provável que mais pontos de objeto possam ser medidos automaticamente. O procedimento geral consiste em excluir as medições excluídas pelo ajuste de feixe e, em seguida, executar esse processo para medir automaticamente quaisquer pontos de objeto não medidos. O ajuste de feixe pode então ser recalculado (consulte mais detalhes em Calculando o ajuste).</p>
+<p>Observe que esse processo tentará encontrar (em cada imagem) apenas os pontos de objeto que atualmente não possuem medição. Se um ponto já estiver medido, a medição atual do ponto será mantida sem alterações.</p>
+</section>
+<section id="intersecção-de-todos-os-pontos-1" class="level3" data-number="9.9.13">
+<h3 data-number="9.9.13" class="anchored" data-anchor-id="intersecção-de-todos-os-pontos-1"><span class="header-section-number">9.9.13</span> Intersecção de todos os pontos</h3>
+<p>O comando de menu Medição | Intersecção de todos os pontos utiliza as posições e orientações atuais da câmera para todas as imagens e intersecta todas as medições da imagem para calcular as coordenadas do objeto. Essa funcionalidade é usada para estimar as coordenadas do espaço do objeto para pontos recém-medidos.</p>
+<p>Ao realizar ajustes de feixe com cubos de calibração, essa opção não é utilizada.</p>
+</section>
+<section id="excluir-medições-de-pontos-rejeitadas-1" class="level3" data-number="9.9.14">
+<h3 data-number="9.9.14" class="anchored" data-anchor-id="excluir-medições-de-pontos-rejeitadas-1"><span class="header-section-number">9.9.14</span> Excluir medições de pontos rejeitadas</h3>
+<p>O comando de menu Medição | Excluir medições de pontos rejeitadas excluirá todas as medições de pontos que foram marcadas como rejeitadas (as medições de pontos podem ser rejeitadas por ressecções, intersecções ou ajuste de feixe; consulte Cores de pontos, Valores para rejeição de medição). Essa função é normalmente usada após um ajuste de feixe para excluir todas as medições de pontos rejeitadas.</p>
+<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
+</section>
+</section>
+<section id="ajuste-3" class="level2" data-number="9.10">
+<h2 data-number="9.10" class="anchored" data-anchor-id="ajuste-3"><span class="header-section-number">9.10</span> <strong>Ajuste</strong></h2>
+<blockquote class="blockquote">
+<p><em>Adjustment</em></p>
+</blockquote>
+<p>Esta seção trata dos comandos de menu disponíveis no menu <strong><em>Adjustment</em></strong>. Esses comandos são usados para configurar e executar um ajuste do fardo das imagens (<em>bundle adjustment</em>). Antes de calcular um ajuste de fardo, é necessário realizar a <strong>resseção</strong> de todas as imagens, ver <a href="#sec-pontos-medida" class="quarto-xref">Section&nbsp;4.9.1</a>, e medir a maioria dos alvos na maioria das imagens (preferencialmente, todos os alvos visíveis em todas as imagens).</p>
+<section id="critérios-de-convergência-1" class="level3" data-number="9.10.1">
+<h3 data-number="9.10.1" class="anchored" data-anchor-id="critérios-de-convergência-1"><span class="header-section-number">9.10.1</span> Critérios de convergência</h3>
+<blockquote class="blockquote">
+<p><em>Convergence criteria</em></p>
+</blockquote>
+<p>Durante o ajuste do fardo, os parâmetros (coordenadas dos pontos do objeto, posições e orientações da câmera e parâmetros de calibração da câmera) convergem para um valor final. O grau de convergência pode ser ajustado com precisão, se necessário. Consulte também <a href="#sec-cal-ajuste" class="quarto-xref">Section&nbsp;4.10.3</a>.</p>
+<section id="object-points-1" class="level4" data-number="9.10.1.1">
+<h4 data-number="9.10.1.1" class="anchored" data-anchor-id="object-points-1"><span class="header-section-number">9.10.1.1</span> <em>Object points</em></h4>
+<blockquote class="blockquote">
+<p><em>Pontos do objeto</em></p>
+</blockquote>
+<p>Para ajustar os <em>critérios de convergência</em> dos pontos do objeto, use o comando de menu <strong><em>Adjustment | Object point convergence criteria</em></strong>. Uma janela será exibida, permitindo o ajuste dos critérios de convergência. Esse valor geralmente pode ser definido como 1/1000 das unidades do espaço do objeto, por exemplo, 1 mícron se as unidades do espaço do objeto forem milímetros.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+<section id="camera-positions-and-orientations-1" class="level4" data-number="9.10.1.2">
+<h4 data-number="9.10.1.2" class="anchored" data-anchor-id="camera-positions-and-orientations-1"><span class="header-section-number">9.10.1.2</span> <em>Camera positions and orientations</em></h4>
+<blockquote class="blockquote">
+<p><em>Posições e orientações da câmera</em></p>
+</blockquote>
+<p>Para ajustar os <em>critérios de convergência</em> da posição e orientação da câmera, use o comando de menu <strong><em>Adjustment | Camera position and orientation convergence criteria</em></strong>. Uma janela será exibida, permitindo o ajuste dos critérios de convergência. Há dois valores: um para as orientações da câmera em unidades de segundos de arco e outro para a posição da câmera. As unidades para a posição da câmera serão em unidades do espaço do objeto x 1000. Os valores padrão são 1 segundo de arco para orientação e 1/1000 das unidades do espaço do objeto para posição (por exemplo, 1 mícron se as unidades do espaço do objeto forem milímetros).</p>
+</section>
+<section id="camera-parameters-1" class="level4" data-number="9.10.1.3">
+<h4 data-number="9.10.1.3" class="anchored" data-anchor-id="camera-parameters-1"><span class="header-section-number">9.10.1.3</span> <em>Camera parameters</em></h4>
+<blockquote class="blockquote">
+<p><em>Parâmetros da câmera</em></p>
+</blockquote>
+<p>Os <em>critérios de convergência</em> para os parâmetros da câmera podem ser definidos usando o comando de menu <strong><em>Adjustment | Camera convergence criteria</em></strong>. Cada um dos parâmetros da câmera (consulte <a href="#sec-editing-camera-parameters" class="quarto-xref">Section&nbsp;4.5.2</a>) possui <u>seus próprios critérios de convergência</u>. A tabela a seguir fornece os valores padrão para os critérios de convergência da câmera.</p>
+</section>
+</section>
+<section id="ajustes-de-configuração-1" class="level3" data-number="9.10.2">
+<h3 data-number="9.10.2" class="anchored" data-anchor-id="ajustes-de-configuração-1"><span class="header-section-number">9.10.2</span> Ajustes de configuração</h3>
+<blockquote class="blockquote">
+<p><em>Adjustment settings</em></p>
+</blockquote>
+</section>
+<section id="cálculo-do-ajuste" class="level3" data-number="9.10.3">
+<h3 data-number="9.10.3" class="anchored" data-anchor-id="cálculo-do-ajuste"><span class="header-section-number">9.10.3</span> Cálculo do Ajuste</h3>
+<blockquote class="blockquote">
+<p><em>Computing the adjustment</em></p>
+</blockquote>
+<p>Após todas as imagens serem ressecadas e os alvos medidos em todas elas, o ajuste de feixe pode ser calculado. Para executar o ajuste de feixe, use o comando de menu Ajuste | Calcular ajuste de feixe na janela principal do CAL. Uma janela de progresso é exibida com um botão Cancelar. O ajuste pode ser cancelado a qualquer momento clicando no botão Cancelar (o processo não será cancelado até que a iteração atual seja calculada). A janela exibe informações sobre o progresso do ajuste (o número da iteração) e o sigma zero (que indica a qualidade do ajuste e idealmente deve estar próximo de 1). O ajuste primeiro calcula uma solução inicial, seguida por uma série de soluções de reponderação, onde as medições de baixa qualidade são removidas automaticamente do ajuste. Finalmente, as precisões e correlações dos parâmetros são calculadas.</p>
+<p>Nesta etapa, haverá um ajuste convergido com sucesso ou um ajuste que não convergiu. Uma nova janela será exibida. Essa janela contém duas caixas de listagem: a caixa de listagem superior exibe um resumo do ajuste em texto, e a caixa de listagem inferior exibe detalhes sobre o ajuste.</p>
+<p>Uma caixa de mensagem pode ser exibida com avisos sobre medições de distância excluídas e/ou baixa precisão relativa. Os avisos são baseados em cenários típicos de calibração de câmeras estéreo usando o hardware de calibração SeaGIS. Nesses casos, o ajuste final do feixe não deve apresentar medições de distância excluídas, e há expectativas em relação à precisão relativa. Veja detalhes nos tópicos a seguir. Ignore o aviso se ele não se aplicar especificamente ao seu uso do CAL.</p>
+<p>Considerando o resumo do ajuste, a primeira linha indicará se o ajuste convergiu com sucesso ou se houve falha. Outras informações fornecidas serão:</p>
+<ul>
+<li>Indica se as observações da imagem foram reponderadas para obter um sigma zero de 1 (consulte Precisão da medição da imagem) e se a reponderação foi bem-sucedida. O valor de sigma zero é fornecido, assim como a nova estimativa da precisão da medição da imagem.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Indica se algum aspecto do processo de ajuste falhou e, em caso afirmativo, fornece uma indicação do que deu errado. Isso pode incluir falha na convergência dentro do número máximo de iterações (consulte Ajuste) ou falha na resolução das equações normais (isso geralmente indica que não foram medidos pontos de objeto suficientes em imagens suficientes ou pode ser causado por restrições de pontos de objeto sem sentido).</li>
+</ul>
+<!-- -->
+<ul>
+<li>O resíduo médio da imagem (<strong>geralmente deve ser sempre menor que 0,3 pixels</strong>).</li>
+</ul>
+<!-- -->
+<ul>
+<li>O número total de parâmetros do modelo de ajuste, parâmetros restritos e redundâncias. <strong>O número de redundâncias para uma calibração de câmera estéreo geralmente será da ordem de 5.000</strong>.</li>
+</ul>
+<!-- -->
+<ul>
+<li>O número de medições de imagem e distância elegíveis e excluídas, e restrições de pontos de objeto. As medições excluídas não atenderam aos parâmetros definidos em Valores para rejeição de medição. Após um ajuste inicial, pode haver muitas medições de imagem elegíveis excluídas. Isso é normal. Ao usar o hardware de calibração do SeaGIS (um cubo), não deve haver nenhuma medição de distância elegível excluída – isso pode indicar: um cubo montado incorretamente, um cubo danificado ou localizações de pontos de ressecção medidas incorretamente.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver pontos no espaço do objeto que não possuem coordenadas estimadas. Isso ocorrerá se novos pontos do objeto forem adicionados sem estimativas de coordenadas (isso nunca deve acontecer com projetos de cubo de calibração). Use a interseção para estimar as coordenadas (consulte Interseccionar todos os pontos).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver distâncias medidas para pontos do objeto que não existem ou para pontos do objeto que não possuem coordenadas estimadas.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver posições de câmera não selecionadas (consulte Medição de ponto).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver medições de imagem feitas para pontos de objeto que não existem ou para pontos de objeto que não possuem uma coordenada estimada.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se houver medições associadas a uma câmera que não faz parte de um projeto (pode ocorrer se uma câmera for excluída de um projeto existente, mas ainda houver medições associadas à câmera excluída).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Avisos se forem usadas restrições estéreo e as restrições não tiverem sido estimadas ou envolverem posições de câmera inválidas ou não estimadas (consulte Restrições estéreo).</li>
+</ul>
+<!-- -->
+<ul>
+<li>A precisão relativa (consulte View object point summary). Para a calibração estéreo de um sistema de câmera de alta definição usando o hardware de calibração do SeaGIS (um cubo), <strong>esse valor deve ser em torno de 1:10.000</strong> ou melhor. A precisão relativa pode ser prejudicada por: baixa visibilidade, iluminação inadequada (baixo contraste do alvo), imagens desfocadas, número insuficiente de pontos medidos ou cubo muito distante das câmeras.</li>
+</ul>
+<p>Se o ajuste não convergir, os parâmetros que não estão convergindo serão relatados. A não convergência geralmente está associada a uma geometria de rede inadequada ou a um número insuficiente de medições em imagens suficientemente diferentes (isso nunca deve ocorrer com redes de calibração que envolvem cubos de calibração, como no Apêndice A - Orientações do cubo de calibração). Para forçar a convergência do ajuste, os critérios de convergência para os parâmetros que estão falhando podem ser ajustados para forçar a rede a convergir (consulte Critérios de convergência) ou o número máximo de iterações para o ajuste do feixe pode ser aumentado temporariamente (consulte Ajuste).</p>
+<p>A caixa de listagem Detalhes fornece informações mais detalhadas sobre os resultados do ajuste. Todos os itens listados podem ser visualizados com mais detalhes clicando duas vezes sobre o item. As seguintes informações são fornecidas:</p>
+<ul>
+<li>Parâmetros da câmera: Para cada câmera, um resumo dos parâmetros da câmera. Essas informações são as mesmas exibidas em Edição de parâmetros da câmera. Certifique-se de que a distância focal esteja correta. Todos os outros parâmetros devem ter uma magnitude pequena – parâmetros com grande magnitude indicam um problema.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Resumo dos pontos do objeto. Essas informações são as mesmas exibidas em Visualização do resumo dos pontos do objeto. <strong>Verifique se a precisão relativa está correta. O número de pontos não estimados deve ser 0. O intervalo entre os desvios padrão máximo e mínimo dos pontos deve ser pequeno.</strong> Se o desvio padrão máximo dos pontos for muito grande, isso indica que alguns pontos do objeto não foram medidos o suficiente para estimar as coordenadas com precisão. Esses pontos devem ser identificados e mais medições de imagem devem ser feitas nesses pontos.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Coordenadas/precisões dos pontos do objeto. Essas informações são as mesmas exibidas em Viewing and manipulating object space points (Visualização e manipulação de pontos no espaço do objeto). <strong>Nesta janela, identifique os pontos que apresentam desvios padrão maiores que a média (sX, sY, sZ)</strong>. Geralmente, eles terão um número menor de medições (Nº de Obs.) em comparação com outros pontos. É necessário realizar mais medições de imagem nesses pontos. Verifique rapidamente se as coordenadas dos pontos do objeto estão dentro do intervalo esperado.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Orientação e posições da câmera (e observações da imagem). Essas informações são as mesmas exibidas em Dados de orientação da imagem. Nesta janela, examine todas as posições e orientações da câmera e certifique-se de que os valores sejam razoáveis ​​(observe especialmente as posições da câmera que não se encaixam). <strong>Observe a precisão das posições da câmera (sX, sY, sZ) e das orientações (sOmega, sPhi, sKappa), bem como o número de medições em cada imagem (Nº de obs.)</strong>. Esses valores devem ter magnitude semelhante em todas as imagens. Se uma imagem apresentar um desempenho particularmente pior, pode ser porque ela não possui medições suficientes dos pontos do objeto ou porque a qualidade da imagem pode ser inferior. Você também pode examinar as medições e os resíduos de uma imagem específica clicando duas vezes nela, embora o Resumo de resíduos da imagem abaixo possa ser mais útil.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Resumo de resíduos da imagem. Estas são as mesmas informações descritas em Resumo de medições da imagem. <strong>Analise os resíduos médios da imagem e identifique quaisquer imagens que apresentem uma média visivelmente maior do que as demais.</strong> Investigue as medições e/ou a qualidade da imagem associadas a essas imagens. Frequentemente, uma imagem com uma média alta pode ter pontos de ressecção mal identificados ou medições feitas em alvos mal identificados. Nesses casos, é prudente excluir todas as medições da imagem com uma média alta e medi-la novamente. Uma média alta também pode ser causada por baixa qualidade da imagem (geralmente desfoque de movimento).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Todas as medições da imagem. Estas são as mesmas informações exibidas em Visualizar/excluir medições da imagem. Classifique os dados nesta janela clicando duas vezes na coluna Rejeitadas para trazer todas as medições rejeitadas para o topo. Observe se as medições rejeitadas tendem a estar associadas a um ou mais pontos do objeto. Nesse caso, investigue todas as medições até o(s) ponto(s) específico(s) do objeto, pois a medição pode ter sido feita no ponto errado.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Medições de distância. Esta opção só será exibida se houver medições de distância. As informações são as mesmas exibidas em Visualizando e manipulando distâncias. Verifique se alguma distância está sendo excluída (isso não deve acontecer com um cubo de calibração e indica que o cubo ou os alvos nele contidos podem ter sido danificados fisicamente).</li>
+</ul>
+<!-- -->
+<ul>
+<li>Visualizar correlações. Clicar duas vezes neste item abre outra janela que permite visualizar as correlações entre os parâmetros. Insira o coeficiente de correlação desejado; quaisquer parâmetros acima do coeficiente de correlação especificado serão relatados. Você pode optar por incluir ou excluir os parâmetros de posição e orientação (orientação externa) da câmera, conforme necessário. Após a configuração, clique no botão Fechar caixa de diálogo e uma nova janela será exibida mostrando quaisquer parâmetros correlacionados. Se a janela estiver vazia, não havia parâmetros acima dos limites prescritos.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Restrições estéreo e resíduos. Esses dados só aparecerão se você usar restrições estéreo no ajuste de feixe (consulte Restrições estéreo). As informações e a interpretação são as mesmas que em Visualizando as restrições. Se muitos dos componentes de restrição estéreo estiverem sendo excluídos, a ponderação da restrição pode precisar ser relaxada (consulte Restrições estéreo).</li>
+</ul>
+<!-- -->
+<ul>
+<li>&nbsp;Restrições estéreo – orientação relativa. Esses dados só aparecerão se você usar restrições estéreo no ajuste de feixe (consulte Restrições estéreo). As informações e a interpretação são as mesmas que em Visualizando a orientação relativa.</li>
+</ul>
+<p>Se o ajuste for bem-sucedido, o botão Aceitar na parte inferior da janela será habilitado. Após avaliar os resultados do ajuste e certificar-se de que o resultado é válido, clique no botão Aceitar para adotar o resultado do ajuste de feixe. Ao clicar no botão Aceitar, os parâmetros da câmera, as coordenadas dos pontos do objeto e as posições e orientações da câmera são atualizados com os resultados calculados no ajuste de feixe. Se o ajuste falhar ou o resultado não for satisfatório, clique no botão Cancelar para ignorar os resultados do ajuste. <strong>Nunca aceite os resultados de um ajuste de feixe questionável</strong>.</p>
+<p>Após concluir um ajuste de feixe bem-sucedido, é recomendável excluir as medições de imagem que foram excluídas pelo ajuste (consulte Excluir medições de pontos rejeitadas).</p>
+<p>Se houver muitos pontos do objeto que não foram medidos com sucesso (como geralmente ocorre quando não há informações de calibração anteriores para uma câmera), esses pontos agora devem ser medidos automaticamente com sucesso. Assim que o ajuste de feixe for calculado com sucesso, haverá parâmetros de calibração da câmera melhores, permitindo que os alvos não medidos sejam medidos automaticamente. O procedimento para medição automática de todas as imagens do projeto é descrito em Encontrar alvos em todas as imagens. Após a medição de mais alvos, o ajuste do feixe pode ser recalculado. Observe que nunca será possível medir todos os alvos em todas as imagens, pois alguns alvos inevitavelmente estarão ocluídos.</p>
+</section>
+<section id="razões-pelas-quais-um-ajuste-de-feixe-pode-falhar-1" class="level3" data-number="9.10.4">
+<h3 data-number="9.10.4" class="anchored" data-anchor-id="razões-pelas-quais-um-ajuste-de-feixe-pode-falhar-1"><span class="header-section-number">9.10.4</span> Razões pelas quais um ajuste de feixe pode falhar</h3>
+<p>Às vezes, o ajuste de feixe pode falhar, e pode ser difícil identificar exatamente por que isso está acontecendo. A seguir estão algumas razões e soluções comuns:</p>
+<ul>
+<li>O ajuste pode não convergir devido a uma ou duas medições realmente ruins. Se for possível forçar o ajuste a convergir ao menos uma vez, essas medições problemáticas serão identificadas e removidas.</li>
+</ul>
+<p><em>Ajuste o máximo de interações usando o</em> Ajustment | Ajustment <em>settings e ponha o</em> Maximum iterations <em>em 500.</em></p>
+<ul>
+<li>Medições insuficientes para pontos suficientes. Às vezes, há uma tendência de calcular o ajuste de feixe antes de realizar medições suficientes em um número adequado de pontos do objeto e em imagens suficientes. Quando isso ocorre, o ajuste de feixe pode falhar completamente ou não convergir. Nesse caso, é simplesmente necessário realizar mais medições. O ajuste de feixe depende de redundância (muitas medições) para detectar e eliminar de forma confiável medições errôneas. Se não houver medições suficientes, a detecção correta dessas medições incorretas torna-se difícil e pode levar à falha do ajuste de feixe.</li>
+</ul>
+<p><em>Não se preocupe em calcular o ajuste de feixe até que toda a sequência de calibração tenha sido medida (ver</em> Apêndice A — Orientações do cubo de calibração<em>). Se o processo de centroiding não estiver encontrando muitos pontos, tente ajustar o brilho e o contraste da imagem para realçar os alvos</em> (Brightness and contrast). <em>Também pode ser necessário ajustar a configuração de centróide “Minimum Pixel Intensity Range”, reduzindo esse valor (</em>Editing and fine tuning settings<em>).</em></p>
+<ul>
+<li>Um ajuste pode falhar se pontos medidos tiverem sido atribuídos a um ID de ponto incorreto. Se um ponto for medido de forma consistente e receber um ID incorreto em muitas imagens, isso causará confusão no ajuste de feixe (ou seja, o ajuste de feixe não conseguirá identificar com precisão que o ponto incorreto foi medido). Isso pode se tornar um problema sério se os pontos iniciais de resseção forem identificados incorretamente, pois, nesse caso, todos os demais pontos do objeto medidos automaticamente na imagem provavelmente também serão identificados de forma incorreta.</li>
+</ul>
+<p><em>Percorra todas as imagens e verifique cuidadosamente se os pontos de resseção estão corretamente identificados em cada imagem. Se você encontrar uma imagem com pontos de resseção medidos incorretamente, a forma mais simples é excluir a imagem e medi-la novamente.</em></p>
+<ul>
+<li>Se você estiver tendo dificuldades com um ajuste de feixe, especialmente se tiver aceitado os resultados de um ajuste ruim, é recomendável recarregar o arquivo original de pontos do objeto (uma versão “limpa” do arquivo, e não aquela criada pelo ajuste que está causando problemas; ver Reading the object point file).</li>
+</ul>
+<p><em>Após recarregar uma versão “limpa” do arquivo de pontos do objeto, utilize o comando de menu <strong>Measurement | Resect all images</strong> e, em seguida, calcule novamente o ajuste de feixe</em>.</p>
+<p><em>Se isso não for bem-sucedido, recarregue uma versão limpa do arquivo de pontos do objeto usando <strong>Object points | Read from file</strong>. Exclua todas as medições, exceto os pontos de resseção: <strong>Measurement | View/delete image measurements</strong>, ordene pela coluna <strong>Point ID</strong> e apague todas as medições de pontos, mantendo apenas os pontos de resseção (nos cubos SeaGIS, estes correspondem aos pontos 100, 101, 102, 103 e 104).</em></p>
+<p><em>Em seguida, faça a resseção de todas as imagens com <strong>Measurement | Resect all images</strong>, depois localize os alvos com <strong>Measurement | Find targets in all images</strong> e, por fim, recalcule o ajuste de feixe</em></p>
+<ul>
+<li>Quando um ajuste não converge, examine o <strong>relatório resumo dos resíduos de imagem</strong> na janela <strong>Adjustment results</strong>. Observe os campos <strong>Valid points</strong> e <strong>Average magnitude</strong>.</li>
+</ul>
+<p><em>Investigue qualquer imagem que apresente um <strong>Average magnitude</strong> mais alto do que o habitual (qualquer valor superior a três vezes a média) e qualquer imagem que tenha um número de <strong>Valid points</strong> inferior ao esperado (menos da metade dos alvos medidos). Em geral, a maneira mais simples é excluir essas imagens e medi-las novamente.</em></p>
+<p>Veja também a seção a seguir.</p>
+</section>
+<section id="falha-de-ajustes-com-um-cubo-de-calibração-seagis" class="level3" data-number="9.10.5">
+<h3 data-number="9.10.5" class="anchored" data-anchor-id="falha-de-ajustes-com-um-cubo-de-calibração-seagis"><span class="header-section-number">9.10.5</span> Falha de ajustes com um cubo de calibração SeaGIS</h3>
+<p>Frequentemente, a razão para a falha de um ajuste de feixe está relacionada a <strong>estimativas inadequadas dos parâmetros da câmera</strong>, o que resulta em medições automáticas de imagem de baixa qualidade. Quando se dispõem de boas estimativas dos parâmetros da câmera (obtidas a partir de calibrações anteriores), geralmente não há problemas na execução do ajuste. Quando o ajuste falha ao utilizar um <strong>cubo de calibração de duas faces</strong>, uma estratégia útil é realizar a calibração usando <strong>apenas a face frontal do cubo</strong>. Isso fornece boas estimativas dos parâmetros da câmera, permitindo que, posteriormente, seja calculada uma calibração utilizando ambas as faces do cubo.</p>
+<p>Para chegar ao ponto em que o ajuste de feixe está falhando, presume-se que você já tenha realizado um conjunto de medições no material de calibração. As instruções abaixo assumem que um projeto já foi criado e que existe um conjunto completo de medições:</p>
+<ul>
+<li><p>Salve uma cópia das medições realizadas até o momento usando <strong>Measurement | Write measurement file</strong>. Nomeie o arquivo como <em>“Complete”</em>, ou algo similar, para indicar que se trata do conjunto original completo de medições.</p></li>
+<li><p>Carregue uma cópia original “limpa” do arquivo do cubo de calibração (.PtsCAL) usando <strong>Object points | Read from file</strong>.</p></li>
+<li><p>Exclua as medições referentes aos pontos da face traseira do cubo usando <strong>Measurement | Delete back face measurements</strong>.</p></li>
+<li><p>Realize a resseção de todas as imagens usando <strong>Measurement | Resect all images</strong>.</p></li>
+<li><p>Calcule o ajuste de feixe em <strong>Adjustment | Compute bundle adjustment</strong>.</p></li>
+<li><p>Supondo que o ajuste de feixe seja bem-sucedido, exclua as medições de pontos rejeitadas usando <strong>Measurement | Delete rejected point measurements</strong>.</p></li>
+<li><p>Reintroduza a face traseira do cubo utilizando <strong>Measurement | Find targets in all images</strong>.</p></li>
+<li><p>Execute um novo ajuste de feixe (agora utilizando os pontos medidos nas faces frontal e traseira do cubo) e prossiga da forma habitual após a conclusão bem-sucedida do ajuste de feixe.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="apêndices-1" class="level1" data-number="10">
+<h1 data-number="10"><span class="header-section-number">10</span> Apêndices</h1>
+
+
+</section>
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Portanto, 10 mícrons se a unidade de espaço do objeto for em centímetros (1 cm = 10000 mícrons).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Portanto, 10 mícrons se a unidade de espaço do objeto for em centímetros (1 cm = 10000 mícrons).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>©2026, GuidoGrimaldi. All rights reserved.</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/GuidoGrimaldi">
+<p>Created by Guido Grimaldi, PhD.</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Projeto Meros do Brasil.</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -7,10 +7,12 @@ website:
   navbar:
     logo: meroiconwhite.png
     left:
+      - text: "About"
+        href: index.qmd
       - text: "Manuais"
         menu:
           - text: "SeaGIS CAL"
-            href: index.qmd
+            href: seagis-cal.qmd
           - text: "EventMeasure"
             href: eventmeasure.qmd
 
