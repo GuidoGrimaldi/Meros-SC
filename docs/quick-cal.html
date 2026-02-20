@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Supervisor de Pesquisa SC">
 
-<title>Pesquisa Meros SC</title>
+<title>Guia Rápido CAL/ SeaGIS – Pesquisa Meros SC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7a81ce7734a0974cc35de15b4406bdce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-870b6070356b2f6ba798b4fc2bd491a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,7 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -96,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -171,24 +171,177 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-cal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="docs/team.png" class="img-fluid quarto-figure quarto-figure-center figure-img" alt="texte"></p>
-</figure>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Guia Rápido CAL/ SeaGIS</h1>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Supervisor de Pesquisa SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://merosdobrasil.org/">
+            Intituto Meros do Brasil
+            </a>
+          </p>
+      </div>
+  </div>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>©2026, GuidoGrimaldi. All rights reserved.</div></div></section></div></main> <!-- /main -->
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    Este Guia Rápido foi criado parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração.
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="organize-se" class="level2">
+<h2 class="anchored" data-anchor-id="organize-se">Organize-se!</h2>
+<ol type="1">
+<li><p>Crie um novo diretório (pasta) para armazenar seus projetos de calibração.</p>
+<p><img src="images/clipboard-2973557940.png" class="img-fluid"></p></li>
+<li><p>Dentro desta pasta, crie novos diretório (multiplas pastas) para cada configuração de BRUV. Estas distinções se baseiam principalmente na resolução da câmera utilizada e no campo de visão (<em>Field of View</em>).</p></li>
+</ol>
+<p><img src="images/clipboard-387526838.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><p>Dentro das respectivas pastas de BRUV, <strong>cole</strong> os respectivos os arquivos de vídeo (<strong>.MP4</strong>). Lembre-se, serão dois, um da câmera esquerda (E) e outro da câmera direita (D).</p>
+<p><img src="images/clipboard-2873460924.png" class="img-fluid"></p>
+<p><img src="images/clipboard-328657837.png" class="img-fluid"></p></li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Para facilitar, <strong>renomei</strong> os arquivos de vídeo (.MP4) conforme a <strong>ID do BRUV</strong>, o <strong>lado da câmera</strong> e a <strong>resolução</strong> utilizada, seguindo nescessáriamente esta ordem. Ao final, <strong>mantenha o nome do arquivo original</strong> gerado pela câmera. Não utilize espaços nem caracteres especiais.</p>
+<p>Ex: B2_D_2160_GX010364 (<em>bruvID_lado_resolucao_nome original</em>).</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>Na mesma pasta de trabalho, adicione também a <strong>cópia</strong> do arquivo de calibração do cubo (<strong>.PtsCAL</strong>).</p>
+<p><img src="images/clipboard-1271673136.png" class="img-fluid"></p>
+<p><img src="images/clipboard-3344884228.png" class="img-fluid"></p></li>
+</ol>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>O arquivo de calibração do cubo (<strong>.PtsCAL</strong>) variam de acordo com o modelo de cubo de calibração utilizado. Estes arquivos são fornecidos pela SeaGIS no momento da compra. Se necessário, contacte a representação da empresa.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li><p>Além disso, adicione o arquivo de parâmetros da câmera (<strong>.CamCAL</strong>), conforme modelo e configuração empregada. Estes arquivos são fornecidos pela SeaGIS, no site: <a href="https://www.seagis.com.au/download.php" class="uri">https://www.seagis.com.au/download.php</a>.</p>
+<p><img src="images/clipboard-1271673136.png" class="img-fluid"></p>
+<p><img src="images/clipboard-742698619.png" class="img-fluid"></p></li>
+<li><p>Ao final, você terá, normalmente, 04 (quatro) arquivos:</p></li>
+</ol>
+<pre><code>-   Vídeo da Câmera Esquerda (.MP4);
+
+-   Vídeo da Câmera Direita (.MP4);
+
+-   Arquivo de calibração do cubo (.PtsCAL), conforme modelo.
+
+-   Arquivo de parâmetros da câmera (.CamCAL), conforme modelo e resolução.</code></pre>
+<ol start="7" type="1">
+<li><p>Com o PEN-DRIVE fornecido pela SeaGIS conectado ao seu computador, inicie o programa de calibração CAL (Downloads: <a href="https://www.seagis.com.au/download.php" class="uri">https://www.seagis.com.au/download.php</a>)</p></li>
+<li><p>No CAL, crie um novo projeto através do menu: <em>Project | New project</em></p>
+<p><img src="images/clipboard-3423544538.png" class="img-fluid"></p></li>
+<li><p>Você será solicitado para salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, <strong>“<strong><em>ProjCAL_B2_2160</em></strong>”</strong>) e salve o arquivo do projeto no diretório que você acabou de criar para este projeto.</p></li>
+</ol>
+<pre><code>![](images/clipboard-1271673136.png)
+
+![](images/clipboard-3448108106.png)
+
+::: {.callout-note appearance="simple"}
+A criação de um novo projeto inicia um processo de assistente do próprio programa que irá solicitar a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.
+:::</code></pre>
+<ol start="10" type="1">
+<li><p>Carregue os arquivos de parâmetro da câmera esquerda e direita (<strong>.CamCAL</strong>), conforme solicitado.</p>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Atenção! É um mesmo arquivo (<strong>.CamCAL</strong>) para ambas as câmeras, pois utilizamos em cada lado do BRUV câmeras de mesmo modelo e mesma configuração.</p>
+</div>
+</div>
+</div></li>
+<li><p>Carregue o arquivo do cubo de calibração (<strong>.PtsCAL</strong>), conforme solicitado.</p></li>
+<li><p>Defina o diretório de imagens conforme solicitado.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>O diretório de imagens é automaticamente definido como o mesmo diretório do arquivo do projeto</strong>; portanto, se todos os arquivos da calibração estiverem em um único diretório, basta verificar e clicar em <strong>OK</strong>.</p>
+</div>
+</div>
+</div></li>
+<li><p>O programe pedirá para que salve o novo arquivo de medições (<strong>.ObsCAL</strong>) que será atrelado ao projeto. <strong>Basta atribuir um nome a esse arquivo</strong> (por exemplo, <strong>“<strong><em>MeasureCAL_B2_2160</em></strong>”</strong>). Este arquivo será o local onde as medições da calibração serão armazenadas.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>O programa também irá gerar um arquivo de <em>backup</em> automático das medições (<strong>.ObsCAL_AUTO</strong>).</p>
+</div>
+</div>
+</div>
+<p><img src="images/clipboard-1271673136.png" class="img-fluid"></p>
+<p><img src="images/clipboard-3041673086.png" class="img-fluid"></p></li>
+<li><p>Carregue o arquivo de vídeo da câmera <strong>ESQUERDA</strong>. Ele será automaticamente adicionado à configuração da sequência de filmes. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver <strong>Sequências de filmes</strong>). Em seguida, clique em <strong>OK</strong>.</p></li>
+<li><p>Carregue o arquivo de vídeo da câmera <strong>DIREITA</strong>. Idem.</p></li>
+<li><p>A janela <em>Current project files</em> (<em>Arquivos do projeto atual</em>) será exibida. <strong>Todos os campos devem estar preenchidos</strong> e todos os itens listados devem estar no <strong>mesmo diretório</strong>. Clique em <em>Close dialog</em> (<em>Fechar diálogo</em>).</p>
+<p><img src="images/clipboard-3162917403.png" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="explore-mais" class="level2">
+<h2 class="anchored" data-anchor-id="explore-mais">Explore mais!</h2>
+<ul>
+<li><p>Se for em <em>Camera | Left/Right | Edit parameters</em>, você terá acesso as características ópticas da câmara.</p>
+<p><img src="images/clipboard-175649103.png" class="img-fluid"></p></li>
+<li><p>Essas informações são importantes quando se trabalha cientificamente com a visão.</p>
+<p><img src="images/clipboard-1832882555.png" class="img-fluid"></p></li>
+<li><p>É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.</p></li>
+</ul>
+</section>
+<section id="começando-os-trabalhos" class="level2">
+<h2 class="anchored" data-anchor-id="começando-os-trabalhos">Começando os trabalhos</h2>
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -613,5 +766,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

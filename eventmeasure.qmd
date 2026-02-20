@@ -101,7 +101,7 @@ O arquivo de medição possui 12 campos de informações associados a ele. Esses
 Os quatro primeiros campos de informação têm nomes fixos: **OpCode** (Código da Operação), **TapeReader**, **Depth** (Profundidade) e **Comment** (Comentário). Os 8 campos de informação restantes podem ser configurados pelo usuário para armazenar informações personalizadas.
 
 | Information field | Default name | Use |
-|-------------------|-------------------|----------------------------------|
+|----|----|----|
 | 1 | OpCode | Identificador único para este conjunto de medições, geralmente associado a uma implantação/ lançamento de câmera. |
 | 2 | TapeReader | Nome da pessoa que realiza as medições. |
 | 3 | Depth | Profundidade de implantação. |

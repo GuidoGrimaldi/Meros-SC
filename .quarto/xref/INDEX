@@ -33,5 +33,9 @@
   },
   "seagis-cal.qmd": {
     "seagis-cal.html": "44ef712f"
+  },
+  "quick-cal.qmd": {
+    "quick-cal.html": "ac5b1f35",
+    "quick-cal.tex": "2942e32e"
   }
 }

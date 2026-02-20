@@ -1,0 +1,125 @@
+---
+title: "Guia Rápido CAL/ SeaGIS"
+
+author: 
+  name: Supervisor de Pesquisa SC
+  email: pesquisasc@merosdobrasil.org
+  affiliation: 
+    name: Intituto Meros do Brasil
+    url: https://merosdobrasil.org/
+    
+execute: 
+  freeze: auto
+
+abstract: "Este Guia Rápido foi criado parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração."
+---
+
+## Organize-se!
+
+1.  Crie um novo diretório (pasta) para armazenar seus projetos de calibração.
+
+    ![](images/clipboard-2973557940.png)
+
+2.  Dentro desta pasta, crie novos diretório (multiplas pastas) para cada configuração de BRUV. Estas distinções se baseiam principalmente na resolução da câmera utilizada e no campo de visão (*Field of View*).
+
+![](images/clipboard-387526838.png)
+
+3.  Dentro das respectivas pastas de BRUV, **cole** os respectivos os arquivos de vídeo (**.MP4**). Lembre-se, serão dois, um da câmera esquerda (E) e outro da câmera direita (D).
+
+    ![](images/clipboard-2873460924.png)
+
+    ![](images/clipboard-328657837.png)
+
+::: {.callout-tip appearance="simple"}
+Para facilitar, **renomei** os arquivos de vídeo (.MP4) conforme a **ID do BRUV**, o **lado da câmera** e a **resolução** utilizada, seguindo nescessáriamente esta ordem. Ao final, **mantenha o nome do arquivo original** gerado pela câmera. Não utilize espaços nem caracteres especiais.
+
+Ex: B2_D_2160_GX010364 (*bruvID_lado_resolucao_nome original*).
+:::
+
+4.  Na mesma pasta de trabalho, adicione também a **cópia** do arquivo de calibração do cubo (**.PtsCAL**).
+
+    ![](images/clipboard-1271673136.png)
+
+    ![](images/clipboard-3344884228.png)
+
+::: {.callout-caution appearance="simple"}
+O arquivo de calibração do cubo (**.PtsCAL**) variam de acordo com o modelo de cubo de calibração utilizado. Estes arquivos são fornecidos pela SeaGIS no momento da compra. Se necessário, contacte a representação da empresa.
+:::
+
+5.  Além disso, adicione o arquivo de parâmetros da câmera (**.CamCAL**), conforme modelo e configuração empregada. Estes arquivos são fornecidos pela SeaGIS, no site: <https://www.seagis.com.au/download.php>.
+
+    ![](images/clipboard-1271673136.png)
+
+    ![](images/clipboard-742698619.png)
+
+6.   Ao final, você terá, normalmente, 04 (quatro) arquivos:
+
+    -   Vídeo da Câmera Esquerda (.MP4);
+
+    -   Vídeo da Câmera Direita (.MP4);
+
+    -   Arquivo de calibração do cubo (.PtsCAL), conforme modelo.
+
+    -   Arquivo de parâmetros da câmera (.CamCAL), conforme modelo e resolução.
+
+7.  Com o PEN-DRIVE fornecido pela SeaGIS conectado ao seu computador, inicie o programa de calibração CAL (Downloads: <https://www.seagis.com.au/download.php>)
+
+8.  No CAL, crie um novo projeto através do menu: *Project \| New project*
+
+    ![](images/clipboard-3423544538.png)
+
+9.   Você será solicitado para salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, **“***ProjCAL_B2_2160***”**) e salve o arquivo do projeto no diretório que você acabou de criar para este projeto.
+
+    ![](images/clipboard-1271673136.png)
+
+    ![](images/clipboard-3448108106.png)
+
+    ::: {.callout-note appearance="simple"}
+    A criação de um novo projeto inicia um processo de assistente do próprio programa que irá solicitar a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.
+    :::
+
+10. Carregue os arquivos de parâmetro da câmera esquerda e direita (**.CamCAL**), conforme solicitado.
+
+    ::: {.callout-caution appearance="simple"}
+    Atenção! É um mesmo arquivo (**.CamCAL**) para ambas as câmeras, pois utilizamos em cada lado do BRUV câmeras de mesmo modelo e mesma configuração.
+    :::
+
+11. Carregue o arquivo do cubo de calibração (**.PtsCAL**), conforme solicitado.
+
+12. Defina o diretório de imagens conforme solicitado.
+
+    ::: {.callout-note appearance="simple"}
+    **O diretório de imagens é automaticamente definido como o mesmo diretório do arquivo do projeto**; portanto, se todos os arquivos da calibração estiverem em um único diretório, basta verificar e clicar em **OK**.
+    :::
+
+13. O programe pedirá para que salve o novo arquivo de medições (**.ObsCAL**) que será atrelado ao projeto. **Basta atribuir um nome a esse arquivo** (por exemplo, **“***MeasureCAL_B2_2160***”**). Este arquivo será o local onde as medições da calibração serão armazenadas.
+
+    ::: {.callout-note appearance="simple"}
+    O programa também irá gerar um arquivo de *backup* automático das medições (**.ObsCAL_AUTO**).
+    :::
+
+    ![](images/clipboard-1271673136.png)
+
+    ![](images/clipboard-3041673086.png)
+
+14. Carregue o arquivo de vídeo da câmera **ESQUERDA**. Ele será automaticamente adicionado à configuração da sequência de filmes. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver **Sequências de filmes**). Em seguida, clique em **OK**.
+
+15. Carregue o arquivo de vídeo da câmera **DIREITA**. Idem.
+
+16. A janela *Current project files* (*Arquivos do projeto atual*) será exibida. **Todos os campos devem estar preenchidos** e todos os itens listados devem estar no **mesmo diretório**. Clique em *Close dialog* (*Fechar diálogo*).
+
+    ![](images/clipboard-3162917403.png)
+
+## Explore mais!
+
+-   Se for em *Camera \| Left/Right \| Edit parameters*, você terá acesso as características ópticas da câmara.
+
+    ![](images/clipboard-175649103.png)
+
+-   Essas informações são importantes quando se trabalha cientificamente com a visão.
+
+    ![](images/clipboard-1832882555.png)
+
+-   É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.
+
+## Começando os trabalhos
