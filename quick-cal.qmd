@@ -236,7 +236,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
 4.  Aperte *Shift* e um pequeno quadrado irá aparecer, este é o **Centroíde.**
 
-    ![](images/WhatsApp Image 2026-02-24 at 10.27.30.jpeg)
+    ![](images/WhatsApp%20Image%202026-02-24%20at%2010.27.30.jpeg)
 
     ::: {.callout-note appearance="simple"}
     O centróide serve como um alvo que facilita a realização da medida. Realizar a medida via centróide é 10x melhor do que realizar apenas clicando diretamente (*point and click).*
@@ -282,12 +282,16 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
     ![](images/clipboard-1103650313.png)
 
-16.  Quanto mais pontos (*No. points*) encontrar, mais precisa será, em teoria, a calibração.
+16. Quanto mais pontos (*No. points*) encontrar, mais preciso será a calibração, em teoria.
 
-    ::: {.callout-tip appearance="simple"}
-    Busco, particularmente, frames que me permitam acima de 70 pontos.
-    :::
+```         
+::: {.callout-tip appearance="simple"}
+Busco, particularmente, frames que me permitam acima de 70 pontos.
+:::
+```
 
-17. 
+17. Pontos ressectíveis vermelhos é um mau sinal. Quanto mais
 
-18. Vermelho é ruim e azul é beleza,
+    ![](images/clipboard-2138859243.png)
+
+18. 

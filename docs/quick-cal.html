@@ -403,8 +403,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <p><img src="images/clipboard-1804368135.png" class="img-fluid"></p></li>
 <li><p>Encontre o momento <em>clap</em> e cliquei em <em>Close player and update position</em></p>
 <p><img src="images/clipboard-3998749045.png" class="img-fluid"></p></li>
-<li><p>Agora sim, começaremos os trabalhos.</p>
-<h2 id="começando-os-trabalhos" class="anchored">Começando os trabalhos</h2></li>
+<li><p>Agora sim, começaremos os trabalhos.</p></li>
 <li><p>Ative o botão <em>Lock</em></p>
 <p><img src="images/clipboard-3929359159.png" class="img-fluid"></p></li>
 <li><p>Aperte <em>Play movie</em> na câmera esquerda, abrirá a janela do <em>Movie player control</em>. Aumente o <em>Rate</em> (ex: 3) e clique em <em>Playback</em> ▶️. Pause no momento que antecede os movimentos sequenciais (são 20 ao todo) que o quadrado de calibração precisa fazer para calibrar (Ver manual).</p>
@@ -420,7 +419,12 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 </div>
 </div></li>
 <li><p>Aperte <em>Close player and update position</em> e perceba que ambas as câmeras irão atualizar para o frame em questão. Isso se deve por termos selecionado o botão <em>Lock</em>.</p></li>
-<li><p>Agora, vamos marcar os pontos na câmera esquerda e depois na câmera direita, conforme o esquema do manual (abaixo).</p>
+</ol>
+</section>
+<section id="começando-os-trabalhos" class="level2">
+<h2 class="anchored" data-anchor-id="começando-os-trabalhos">Começando os trabalhos</h2>
+<ol type="1">
+<li><p>Agora, vamos começar marcar os pontos. Comece pelo frame da câmera esquerda. Este processo precisara se feitos em ambas as câmeras (02) para cada sequência de frame (20), no mínimo (20*2=40), seguindo o esquema de ponto, <strong>conforme o modelo do seu cubo de calibração</strong> (Ex: Cubo 142, abaixo):</p>
 <p><img src="images/clipboard-2197934981.png" class="img-fluid"></p></li>
 <li><p>Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os <strong>pontos de ressecção</strong> (<em>ressection points</em>). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.</p>
 <div class="callout callout-style-simple callout-tip">
@@ -445,13 +449,55 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 </div>
 </div>
 </div></li>
-<li><p>Aperte <em>Shift</em></p>
-<p><img src="images/clipboard-3749170590.png" class="img-fluid"></p></li>
-<li><p>ee</p></li>
-<li><p><img src="images/clipboard-517648823.png" class="img-fluid"></p></li>
-<li><p>d</p></li>
-<li><p>d</p></li>
-<li><p>ddd</p></li>
+<li><p>Aperte <em>Shift</em> e um pequeno quadrado irá aparecer, este é o <strong>Centroíde.</strong></p>
+<p><img src="images/WhatsApp Image 2026-02-24 at 10.27.30.jpeg" class="img-fluid"></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>O centróide serve como um alvo que facilita a realização da medida. Realizar a medida via centróide é 10x melhor do que realizar apenas clicando diretamente (<em>point and click).</em></p>
+</div>
+</div>
+</div></li>
+<li><p>Ainda com o <em>Shift</em> pressionado, aponte a flecha do mouse no centro e clique com o botão esquerdo do mouse para marcar um ponto.</p>
+<p><img src="images/clipboard-3599675830.png" class="img-fluid"></p></li>
+<li><p>Marque os pontos ressecionáis (conforme já mencionado anteriormente).</p></li>
+<li><p>Em um determinado momento o CAL irá tentar plotar os demais pontos automáticamente.</p>
+<p><img src="images/clipboard-444453288.png" class="img-fluid"></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Ele acertará muitos e errará outros tantos. Alguns ele não irá encontrar, em especial os do segundo plano (200, 201…). Independente disso você terá que verificar e corrigir cada um deles pontualmente.</p>
+</div>
+</div>
+</div></li>
+<li><p>Pontos ressecionáis (100,101,102,103 e 104) verdes indicam que foram bem calibrados.</p>
+<p><img src="images/clipboard-1275978551.png" class="img-fluid"></p></li>
+<li><p>Quantos mais pontos verdes em cada frame, melhor!</p></li>
+<li><p>Se o ponto gerado pelo CAL cair no lugar errado, delete.</p>
+<p><img src="images/clipboard-1478588733.png" class="img-fluid"></p></li>
+<li><p>Ponha o cursor do mouse sobre o ponto e clique com o botão direito do mouse.</p>
+<p><img src="images/clipboard-1315559121.png" class="img-fluid"></p></li>
+<li><p>Plote você manualmente. Zoom in (Ctrl+mouse) &gt; Centroiding (Shift) &gt; Point (mouse esquerdo)</p></li>
+<li><p>Provavelmente sairá outra numeração que não a correta. <img src="images/clipboard-3014583428.png" class="img-fluid"></p></li>
+<li><p>Clique com o botão direito do mouse sobre ele e renomei para a numeração que você achar que é. Aperte *OK*.</p>
+<p><img src="images/clipboard-3952036695.png" class="img-fluid"></p></li>
+<li><p>Tente encontrar o máximo de pontos que conseguir. As informações ficaram registradas abaixo da tela esquerda:</p>
+<p><img src="images/clipboard-1103650313.png" class="img-fluid"></p></li>
+<li><p>Quanto mais pontos (<em>No.&nbsp;points</em>) encontrar, mais preciso será a calibração, em teoria.</p></li>
+</ol>
+<pre><code>::: {.callout-tip appearance="simple"}
+Busco, particularmente, frames que me permitam acima de 70 pontos.
+:::</code></pre>
+<ol start="17" type="1">
+<li><p>Pontos ressectíveis vermelhos é um mau sinal. Quanto mais</p>
+<p><img src="images/clipboard-2138859243.png" class="img-fluid"></p></li>
+<li></li>
 </ol>
 
 
