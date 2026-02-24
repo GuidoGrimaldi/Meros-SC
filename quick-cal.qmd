@@ -126,7 +126,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
 -   É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.
 
-## Começando os trabalhos
+## Sincronizando Câmeras
 
 1.  Plug o pen-drive no USB.
 
@@ -172,7 +172,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
     ![](images/clipboard-2924529957.png)
 
-8.  Aperte *Play* ▶️
+8.  Aperte *Playback* ▶️
 
 9.  Agora busque o momento sublime do *clap* (ou *clap clap*).
 
@@ -186,6 +186,108 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
     ![](images/clipboard-10482523.png)
 
-12. Agora reduza o *Rate* para 1 e vá avançando no *Frame stepping* até o *clap.*
+12. Agora reduza o *Rate* para 1 e vá avançando no *Frame stepping* até o momento *clap* e clique em *Close player and update position*.
 
-13. Aperte o OP
+    ![](images/clipboard-3408781496.png)
+
+13. Agora faça o mesmo para a câmera da direita. Aperte *Play movie*.
+
+    ![](images/clipboard-1804368135.png)
+
+14. Encontre o momento *clap* e cliquei em *Close player and update position*
+
+    ![](images/clipboard-3998749045.png)
+
+15. Agora sim, começaremos os trabalhos.
+
+16. Ative o botão *Lock*
+
+    ![](images/clipboard-3929359159.png)
+
+17. Aperte *Play movie* na câmera esquerda, abrirá a janela do *Movie player control*. Aumente o *Rate* (ex: 3) e clique em *Playback* ▶️. Pause no momento que antecede os movimentos sequenciais (são 20 ao todo) que o quadrado de calibração precisa fazer para calibrar (Ver manual).
+
+    ![](images/clipboard-2925575631.png)
+
+    ::: {.callout-caution appearance="simple"}
+    Perceba que na situação ilustrativa acima, o quadro de calibração se encontra relativamente distante em relação as câmeras. É preciso buscar um melhor enquadramento.
+    :::
+
+18. Aperte *Close player and update position* e perceba que ambas as câmeras irão atualizar para o frame em questão. Isso se deve por termos selecionado o botão *Lock*.
+
+## Começando os trabalhos
+
+1.  Agora, vamos começar marcar os pontos. Comece pelo frame da câmera esquerda. Este processo precisara se feitos em ambas as câmeras (02) para cada sequência de frame (20), no mínimo (20\*2=40), seguindo o esquema de ponto, **conforme o modelo do seu cubo de calibração** (Ex: Cubo 142, abaixo):
+
+    ![](images/clipboard-2197934981.png)
+
+2.  Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os **pontos de ressecção** (*ressection points*). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.
+
+    ::: {.callout-tip appearance="simple"}
+    Utilize o material de apoio que eleboramos para você não se perder, tanto na sequência do quadrado como na posição dos pontos (POR LINK).
+    :::
+
+3.  Um dica é apertar *Ctrl* no teclado e avançar com o mouse para frente, isso irá dar zoom.
+
+    ![](images/clipboard-308469490.png)
+
+    ::: {.callout-warning appearance="simple"}
+    É, não dá para usar a bala de rolagem do mouse.
+    :::
+
+4.  Aperte *Shift* e um pequeno quadrado irá aparecer, este é o **Centroíde.**
+
+    ![](images/WhatsApp Image 2026-02-24 at 10.27.30.jpeg)
+
+    ::: {.callout-note appearance="simple"}
+    O centróide serve como um alvo que facilita a realização da medida. Realizar a medida via centróide é 10x melhor do que realizar apenas clicando diretamente (*point and click).*
+    :::
+
+5.  Ainda com o *Shift* pressionado, aponte a flecha do mouse no centro e clique com o botão esquerdo do mouse para marcar um ponto.
+
+    ![](images/clipboard-3599675830.png)
+
+6.  Marque os pontos ressecionáis (conforme já mencionado anteriormente).
+
+7.  Em um determinado momento o CAL irá tentar plotar os demais pontos automáticamente.
+
+    ![](images/clipboard-444453288.png)
+
+    ::: {.callout-note appearance="simple"}
+    Ele acertará muitos e errará outros tantos. Alguns ele não irá encontrar, em especial os do segundo plano (200, 201...). Independente disso você terá que verificar e corrigir cada um deles pontualmente.
+    :::
+
+8.  Pontos ressecionáis (100,101,102,103 e 104) verdes indicam que foram bem calibrados.
+
+    ![](images/clipboard-1275978551.png)
+
+9.  Quantos mais pontos verdes em cada frame, melhor!
+
+10. Se o ponto gerado pelo CAL cair no lugar errado, delete.
+
+    ![](images/clipboard-1478588733.png)
+
+11. Ponha o cursor do mouse sobre o ponto e clique com o botão direito do mouse.
+
+    ![](images/clipboard-1315559121.png)
+
+12. Plote você manualmente. Zoom in (Ctrl+mouse) \> Centroiding (Shift) \> Point (mouse esquerdo)
+
+13. Provavelmente sairá outra numeração que não a correta. ![](images/clipboard-3014583428.png)
+
+14. Clique com o botão direito do mouse sobre ele e renomei para a numeração que você achar que é. Aperte \*OK\*.
+
+    ![](images/clipboard-3952036695.png)
+
+15. Tente encontrar o máximo de pontos que conseguir. As informações ficaram registradas abaixo da tela esquerda:
+
+    ![](images/clipboard-1103650313.png)
+
+16.  Quanto mais pontos (*No. points*) encontrar, mais precisa será, em teoria, a calibração.
+
+    ::: {.callout-tip appearance="simple"}
+    Busco, particularmente, frames que me permitam acima de 70 pontos.
+    :::
+
+17. 
+
+18. Vermelho é ruim e azul é beleza,
