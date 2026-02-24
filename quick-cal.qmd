@@ -52,15 +52,17 @@ O arquivo de calibração do cubo (**.PtsCAL**) variam de acordo com o modelo de
 
     ![](images/clipboard-742698619.png)
 
-6.   Ao final, você terá, normalmente, 04 (quatro) arquivos:
+6.  Ao final, você terá, normalmente, 04 (quatro) arquivos:
 
-    -   Vídeo da Câmera Esquerda (.MP4);
+```         
+-   Vídeo da Câmera Esquerda (.MP4);
 
-    -   Vídeo da Câmera Direita (.MP4);
+-   Vídeo da Câmera Direita (.MP4);
 
-    -   Arquivo de calibração do cubo (.PtsCAL), conforme modelo.
+-   Arquivo de calibração do cubo (.PtsCAL), conforme modelo.
 
-    -   Arquivo de parâmetros da câmera (.CamCAL), conforme modelo e resolução.
+-   Arquivo de parâmetros da câmera (.CamCAL), conforme modelo e resolução.
+```
 
 7.  Com o PEN-DRIVE fornecido pela SeaGIS conectado ao seu computador, inicie o programa de calibração CAL (Downloads: <https://www.seagis.com.au/download.php>)
 
@@ -68,15 +70,17 @@ O arquivo de calibração do cubo (**.PtsCAL**) variam de acordo com o modelo de
 
     ![](images/clipboard-3423544538.png)
 
-9.   Você será solicitado para salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, **“***ProjCAL_B2_2160***”**) e salve o arquivo do projeto no diretório que você acabou de criar para este projeto.
+9.  Você será solicitado para salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, **“***ProjCAL_B2_2160***”**) e salve o arquivo do projeto no diretório que você acabou de criar para este projeto.
 
-    ![](images/clipboard-1271673136.png)
+```         
+![](images/clipboard-1271673136.png)
 
-    ![](images/clipboard-3448108106.png)
+![](images/clipboard-3448108106.png)
 
-    ::: {.callout-note appearance="simple"}
-    A criação de um novo projeto inicia um processo de assistente do próprio programa que irá solicitar a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.
-    :::
+::: {.callout-note appearance="simple"}
+A criação de um novo projeto inicia um processo de assistente do próprio programa que irá solicitar a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.
+:::
+```
 
 10. Carregue os arquivos de parâmetro da câmera esquerda e direita (**.CamCAL**), conforme solicitado.
 
@@ -123,3 +127,65 @@ O arquivo de calibração do cubo (**.PtsCAL**) variam de acordo com o modelo de
 -   É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.
 
 ## Começando os trabalhos
+
+1.  Plug o pen-drive no USB.
+
+2.  Abra o programa CAL no seu computador (Downloads: <https://www.seagis.com.au/download.php>)
+
+![](images/clipboard-316596302.png)
+
+3.  Se você já tinha um projeto salvo, o programa abrirá automaticamente nele. Ele sempre reinicia no último projeto que você trabalhou.
+
+    ::: {.callout-note appearance="simple"}
+    Acho que dá para mudar isso nas configurações, é bom rever manual!
+    :::
+
+4.  Agora a gente vai sincronizar a câmera. Para isso clique em *Play movie* na câmera **esquerda**
+
+    ![](images/clipboard-1011136995.png)
+
+5.  É para esse momento que serve o bater palmas ou os dedos (movimentos de *clap*). Servindo de claquete para marcar o início da tomada, para gerarmos oo sincronismo audiovisual entre imagem e som.
+
+    ::: {.callout-warning appearance="simple"}
+    Antenção! Aviso das Galáxias!
+
+    PRESTE MUITA ATENÇÃO A ESSE MOVIMENTO. ELE É UM MOVIMENTO FUNDAMENTAL PARA SINCRONIZAÇÃO DA FOTOGRAMETRIA.
+
+    PODEMOS INVIABILIZAR TODA A AMOSTRAGEM E DESPEDIÇAR TODO O ESFORÇO DE CAMPO SE NÃO CONSEGUIRMOS SINCRONIZAR AS CÂMERAS.
+
+    PERCEBERÁ QUE A AUSÊNCIA DESSE MOVIMENTO NA CALIBRAÇÃO DESPENDIRÁ DE SUA PARTE MUITO MAIS CAPRICHO E TEMPO PARA REALIZAR SEU TRABALHO.
+
+    ESSE É UM ERRO COMUM DURANTE AS OPERAÇÕES DE CAMPO, POIS A UMA SERIES DE PASSOS QUE PRECISA SER SEGUIDOS E ACABAMOS POR NOS ESQUECER DOS MAIS SIMPLES.
+
+    PORTANTO, NUNCA ESQUEÇA DE REALIZAR SEU CLAP ANTES DE LANÇAR OS BRUVS
+
+    SUGIRO ATÉ QUE DESENVOLVA UM PRÓPRIO. BUSQUE MOVIMENTOS RÁPIDOS E PRECISOS, MAS LEMBRE-SE DOS DIFERENTES ÂNGULOS DAS CÂMERAS, VOCÊ PODE ACABAR TAPANDO A VISUALIZAÇÃO DE UMA DELAS. POR ISSO MESMO IREI PRATICAR A UTILIZAÇÃO DO CLAP CLAP INVEZ DO CLAP PARA SABER SE É MELHOR, POIS ASSIM TEMOS DUAS CHANCES.
+
+    A DICA É CARANGUEJO. 🦀
+    :::
+
+6.  Uma nova tela abrirá:
+
+    ![](images/clipboard-1263872465.png)
+
+7.  Aumente o *Rate* para 5 (ou mude de acordo com a distância).
+
+    ![](images/clipboard-2924529957.png)
+
+8.  Aperte *Play* ▶️
+
+9.  Agora busque o momento sublime do *clap* (ou *clap clap*).
+
+    ::: {.callout-tip appearance="simple"}
+    Não use a barra de rolagem do vídeo. Até dá para usar de forma grosseira para tentar chegar o mais perto do momento clap. Assim, que você tentar, verá que ela não tem movimentos preciso e atrapalha mais do que ajuda.
+    :::
+
+10. Quando passar ou estiver próximo, *Pause!*
+
+11. Use o *Frame stepping* para avançar ou retroceder no momento antecessor ao *clap*.
+
+    ![](images/clipboard-10482523.png)
+
+12. Agora reduza o *Rate* para 1 e vá avançando no *Frame stepping* até o *clap.*
+
+13. Aperte o OP
