@@ -30,4 +30,4 @@ geometry:
   - margin = 1in
 ---
 
-![](docs/team.png){fig-alt="texte" fig-align="center"}
+![](images/team.png){fig-alt="texte" fig-align="center"}
