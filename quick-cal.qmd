@@ -286,12 +286,60 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
 ```         
 ::: {.callout-tip appearance="simple"}
-Busco, particularmente, frames que me permitam acima de 70 pontos.
+Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso o frame em questão não atinja tal valor, siga com a calibração até o fim e caso não alcance uma boa precisão ao final, busque novos frames que permita acima de 70 ponto, para cada posição do cubo. 
 :::
 ```
 
-17. Pontos ressectíveis vermelhos é um mau sinal. Quanto mais
+17. Pontos ressectíveis vermelhos é um mau sinal. Quanto maior o número deles pior.
 
     ![](images/clipboard-2138859243.png)
 
-18. 
+18. Após realizar a marcação de ambos os frames (Esquerda e Direita), siga para uma nova posição do cubo, conforme traz o manual de calibração:
+
+    ![](images/clipboard-2299725427.png)
+
+19. Para isso, aperte mais uma vez o botão *Play movie* e a janela do *Movie player control*, aperte *Playback* ▶️ para o video seguir seu curso. Aperte *Pause* quando o cubo estiver na próxima posição da sequência de calibração e aperte *Close players and update position*.
+
+    ::: {.callout-important appearance="simple"}
+    Pause no ângulo que maximize a exposição dos pontos do plano posterior (201, 202...), evitando que as barras do primeiro plano se sobreponha as pontos do segundo plano. Contudo, em alguma das câmera sempre haverá algum ponto que será coberto.
+    :::
+
+    ![](images/clipboard-2605035701.png)![](images/clipboard-3247803596.png)
+
+20. Remarque todos os pontos mais uma vez (Esquerda e Direita) e repita a operação para toda a sequência de posições do cubo. 😅
+
+21. Um dica para não se perder no processo é ir marcando as posições do cubo que já foram realizadas, conforme abaixo:
+
+    ![](images/clipboard-44037176.png)
+
+22. Tenho esse arquivo (.ppt) disponível para ser compartilhado no drive do PMB.
+
+23. As linhas pretas representam a linha branca de referência do cubo. Por exemplo, a imagem abaixo representa a quarta linha da segunda coluna do esquema de calibração ilustrado acima.
+
+    ![](images/clipboard-1368029145.png)
+
+24. Atenção! Durante as operações de piscina, o operador do cubo e o supervisor da operação precisam tem muito cuidado durante o manuseio do cubo para que as mão do operador não cubram algum dos pontos do cubo. Conforme aconteceu abaixo, onde a mão direita do operador está encobrindo o ponto 240:
+
+    ![](images/clipboard-1918781238.png)
+
+## Mudando as cores
+
+Você pode mudar as cores dos pontos, já que a cor dos pontos não residuais (pontos azuis) é de difícil distinção no fundo azul da piscina. Isso irá ajudar a minimizar os erros. Se quiser mudar, vá em *Ajustement* \> *Point colors...*
+
+![](images/clipboard-3756644147.png)
+
+Uma pequena janela se abrirá mostrando as cores padrões:
+
+![](images/clipboard-3887801960.png)
+
+Clique em *Point colour, no residual* e altere para a cor que desejar (ex: amarelo):
+
+![](images/clipboard-2013230235.png)
+
+Antes:
+
+![](images/clipboard-168867011.png)
+
+Depois:
+
+![](images/clipboard-4114342458.png)
