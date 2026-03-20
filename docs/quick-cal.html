@@ -492,18 +492,88 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <li><p>Quanto mais pontos (<em>No.&nbsp;points</em>) encontrar, mais preciso será a calibração, em teoria.</p></li>
 </ol>
 <pre><code>::: {.callout-tip appearance="simple"}
-Busco, particularmente, frames que me permitam acima de 70 pontos.
+Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso o frame em questão não atinja tal valor, siga com a calibração até o fim e caso não alcance uma boa precisão ao final, busque novos frames que permita acima de 70 ponto, para cada posição do cubo. 
 :::</code></pre>
 <ol start="17" type="1">
-<li><p>Pontos ressectíveis vermelhos é um mau sinal. Quanto mais</p>
+<li><p>Pontos ressectíveis vermelhos é um mau sinal. Quanto maior o número deles pior.</p>
 <p><img src="images/clipboard-2138859243.png" class="img-fluid"></p></li>
-<li></li>
+<li><p>Após realizar a marcação de ambos os frames (Esquerda e Direita), siga para uma nova posição do cubo, conforme traz o manual de calibração:</p>
+<p><img src="images/clipboard-2299725427.png" class="img-fluid"></p></li>
+<li><p>Para isso, aperte mais uma vez o botão <em>Play movie</em> e a janela do <em>Movie player control</em>, aperte <em>Playback</em> ▶️ para o video seguir seu curso. Aperte <em>Pause</em> quando o cubo estiver na próxima posição da sequência de calibração e aperte <em>Close players and update position</em>.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Pause no ângulo que maximize a exposição dos pontos do plano posterior (201, 202…), evitando que as barras do primeiro plano se sobreponha as pontos do segundo plano. Contudo, em alguma das câmera sempre haverá algum ponto que será coberto.</p>
+</div>
+</div>
+</div>
+<p><img src="images/clipboard-2605035701.png" class="img-fluid"><img src="images/clipboard-3247803596.png" class="img-fluid"></p></li>
+<li><p>Remarque todos os pontos mais uma vez (Esquerda e Direita) e repita a operação para toda a sequência de posições do cubo. 😅</p></li>
+<li><p>Um dica para não se perder no processo é ir marcando as posições do cubo que já foram realizadas, conforme abaixo:</p>
+<p><img src="images/clipboard-44037176.png" class="img-fluid"></p></li>
+<li><p>Tenho esse arquivo (.ppt) disponível para ser compartilhado no drive do PMB.</p></li>
+<li><p>As linhas pretas representam a linha branca de referência do cubo. Por exemplo, a imagem abaixo representa a quarta linha da segunda coluna do esquema de calibração ilustrado acima.</p>
+<p><img src="images/clipboard-1368029145.png" class="img-fluid"></p></li>
+<li><p>Atenção! Durante as operações de piscina, o operador do cubo e o supervisor da operação precisam tem muito cuidado durante o manuseio do cubo para que as mão do operador não cubram algum dos pontos do cubo. Conforme aconteceu abaixo, onde a mão direita do operador está encobrindo o ponto 240:</p>
+<p><img src="images/clipboard-1918781238.png" class="img-fluid"></p></li>
 </ol>
+</section>
+<section id="mudando-as-cores" class="level2">
+<h2 class="anchored" data-anchor-id="mudando-as-cores">Mudando as cores</h2>
+<p>Você pode mudar as cores dos pontos, já que a cor dos pontos não residuais (pontos azuis) é de difícil distinção no fundo azul da piscina. Isso irá ajudar a minimizar os erros. Se quiser mudar, vá em <em>Ajustement</em> &gt; <em>Point colors…</em></p>
+<p><img src="images/clipboard-3756644147.png" class="img-fluid"></p>
+<p>Uma pequena janela se abrirá mostrando as cores padrões:</p>
+<p><img src="images/clipboard-3887801960.png" class="img-fluid"></p>
+<p>Clique em <em>Point colour, no residual</em> e altere para a cor que desejar (ex: amarelo):</p>
+<p><img src="images/clipboard-2013230235.png" class="img-fluid"></p>
+<p>Antes:</p>
+<p><img src="images/clipboard-168867011.png" class="img-fluid"></p>
+<p>Depois:</p>
+<p><img src="images/clipboard-4114342458.png" class="img-fluid"></p>
+</section>
+<section id="finalizando-os-trabalhos" class="level2">
+<h2 class="anchored" data-anchor-id="finalizando-os-trabalhos">Finalizando os trabalhos</h2>
+<section id="ajuste-do-feixe1" class="level3">
+<h3 class="anchored" data-anchor-id="ajuste-do-feixe1">Ajuste do Feixe<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h3>
+<ol type="1">
+<li><p>Após concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando <em>Adjustment</em> | <em>Compute bundle adjustment…</em></p>
+<p><img src="images/clipboard-959548070.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O QUE É “FEIXE” (<em>BUNDLE</em>)?</p>
+<p>Cada ponto 3D projeta um conjunto de linha (x, y, z) (ou um feixe/ pacote de raios) em direção às diferentes câmeras.</p>
+</div>
+</div></li>
+<li><p>Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto. Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.</p></li>
+</ol>
+</section>
+</section>
+<section id="glossário" class="level2">
+<h2 class="anchored" data-anchor-id="glossário">Glossário</h2>
+<p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.</p>
+<p>Feixe (“<em>Bundle”</em>):</p>
 
 
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -220,7 +220,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
     ![](images/clipboard-2197934981.png)
 
-2.  Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os **pontos de ressecção** (*ressection points*). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.
+2.  Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os **pontos de** [^1] (*ressection points*). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.
 
     ::: {.callout-tip appearance="simple"}
     Utilize o material de apoio que eleboramos para você não se perder, tanto na sequência do quadrado como na posição dos pontos (POR LINK).
@@ -284,6 +284,8 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
 16. Quanto mais pontos (*No. points*) encontrar, mais preciso será a calibração, em teoria.
 
+[^1]: Ressecção: É uma processo/ técnica da visão computacional e fotogrametria utilizada para determinar a posição e orientação da câmera no espaço a partir de pontos conhecidos no mundo (objeto).
+
 ```         
 ::: {.callout-tip appearance="simple"}
 Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso o frame em questão não atinja tal valor, siga com a calibração até o fim e caso não alcance uma boa precisão ao final, busque novos frames que permita acima de 70 ponto, para cada posição do cubo. 
@@ -343,3 +345,65 @@ Antes:
 Depois:
 
 ![](images/clipboard-4114342458.png)
+
+## Finalizando os trabalhos
+
+1.  Ao final do processo de medição (marcações de pontos), você deverá ter um total de 40 images (20 câmera esquerda e 20 câmera direita). Você poder ver isso na própria tela principal do programa, onde há um campo descrito como *Images measured:*
+
+![](images/WhatsApp%20Image%202026-03-19%20at%2009.56.23.jpeg){fig-align="center"}
+
+2.  Estando tudo certo, iremos partir para o **ajuste do feixe**[^2] ou *bundle adjustment.*
+
+3.  Mas antes é importante saber que você pode ajustar os parâmentros do ajuste (*bundle adjustment*) no menu *Adjustment \| Adjustment setting...*
+
+    ![](images/clipboard-554416799.png)
+
+4.  Acho que o mais importante aqui é avisar ao programa que estamos utilizando um sistema estéreo (*Stereo*-BRUV) e, portanto, exigir dele um restrição estéreo (*stereo constraint*)
+
+    ::: {.callout-tip appearance="simple"}
+    Se você não sabe se o BRUV que está utilizando é estéreo, assista esse pequeno vídeo para noções basicas de fotogrametria: <https://www.youtube.com/watch?v=BZdzyzMjAjc>
+    :::
+
+5.  Clicando em *Adjustment \| Adjustment setting*, abrirá um a janela (*Adjustment and photogrammetry settings)* contendo uma tabela com quatro colunas:
+
+    ![](images/clipboard-1526197752.png)
+
+6.  Perceba que essa tabela possui quatro seções:
+
+    ![](images/image.png)
+
+7.  Na seção roxa ou 3° seção (*Stereo constraints*), temos na primeira linha (*Use stereo constraint)* como padrão (*default*), *False.*
+
+[^2]: Ajuste do Feixe: Tradução livre de *Bundle Adjustement,* termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.
+
+```         
+::: {.callout-warning appearance="simple"}
+Perceba que isso que falo não está expresso nas duas ultimas fotos anteriores, pois já havia realizado a mudança quando realizei o recorte, mas mantive para me poupar trabalho.
+:::
+```
+
+8.  Selecione a célula da coluna *Data* e mude para ***True*** (escreva!).
+
+    ![](images/image%20(1).png)
+
+9.  Isso impõe condições matemáticas ao *bundle adjustment* que obrigam os pares de imagens (esquerda/direita) a manter a mesma orientação relativa ao longo de todo conjunto de imagens, forçando consistência na geometria relativa entre as duas câmeras (par estéreo).
+
+10. Se esse for seu caso (Stereo-Bruvs), feito isso, seguimos para o ajuste de feixe.
+
+### Ajuste do Feixe
+
+1.  Após concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando *Adjustment* \| *Compute bundle adjustment...*
+
+    ![](images/clipboard-959548070.png)
+
+    ::: callout-note
+    O QUE É "FEIXE" (*BUNDLE*)?
+
+    Cada ponto 3D projeta um conjunto de linha (x, y, z) (ou um feixe/ pacote de raios) em direção às diferentes câmeras.
+    :::
+
+2.  Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto. Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.
+
+## Glossário
+
+Ajuste do Feixe: Tradução livre de *Bundle Adjustement,* termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.

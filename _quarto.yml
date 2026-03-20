@@ -18,9 +18,9 @@ website:
           - text: "CAL Quick Guide"
             href: quick-cal.qmd
 
-      - text: "Protocolos de Campo"
+      - text: "Protocolos"
         menu:
-          - text: "BRUV"
+          - text: "BRUV/ Campo"
             href: bruv.qmd
           - text: "Plano de Emergência"
             href: emergence.qmd
