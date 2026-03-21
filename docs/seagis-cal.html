@@ -121,17 +121,28 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos-de-campo" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Protocolos de Campo</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Protocolos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos-de-campo">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos">    
         <li>
     <a class="dropdown-item" href="./bruv.html">
- <span class="dropdown-text">BRUV</span></a>
+ <span class="dropdown-text">BRUV/ Campo</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./emergence.html">
  <span class="dropdown-text">Plano de Emergência</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pesquisa" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pesquisa</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pesquisa">    
+        <li>
+    <a class="dropdown-item" href="http://guidogrimaldi.shinyapps.io/Mydivelog">
+ <span class="dropdown-text">Stereo-BRUV</span></a>
   </li>  
     </ul>
   </li>
@@ -380,6 +391,10 @@ Note
 </section>
 <section id="medições" class="level3" data-number="4.1.3">
 <h3 data-number="4.1.3" class="anchored" data-anchor-id="medições"><span class="header-section-number">4.1.3</span> Medições</h3>
+<p>Ao realizar uma calibração de câmeras estéreo, é importante que as imagens utilizadas na calibração sejam pares estéreo. Se as imagens usadas na calibração não forem pares estéreo, a segunda etapa da calibração — que determina a orientação relativa (configuração estéreo) das câmeras — irá falhar.</p>
+<p>Ao trabalhar com imagens estáticas, carregue um par estéreo e utilize a função <em>Lock</em>. No caso de arquivos de vídeo, utilize o reprodutor de vídeo e/ou o avanço quadro a quadro para sincronizar os vídeos esquerdo e direito, e então utilize a função <em>Lock</em> nos vídeos (veja: a função <em>Lock</em>, avanço em vídeos e imagens estáticas, e o reprodutor de vídeo).</p>
+<p>Repita esse procedimento para cada uma das imagens de calibração. Em geral, devem ser utilizadas 20 imagens para cada câmera (veja o Apêndice A — Orientações do cubo de calibração).</p>
+<p>A aba <strong>Images measured</strong> na janela principal do CAL indicará quantas imagens foram medidas (ao final, esse número deve ser 40: 20 imagens da câmera esquerda e 20 da câmera direita).</p>
 </section>
 <section id="ajuste" class="level3" data-number="4.1.4">
 <h3 data-number="4.1.4" class="anchored" data-anchor-id="ajuste"><span class="header-section-number">4.1.4</span> Ajuste</h3>
@@ -580,12 +595,12 @@ Note
 </section>
 <section id="restrições-estereoscópicas" class="level3" data-number="4.9.10">
 <h3 data-number="4.9.10" class="anchored" data-anchor-id="restrições-estereoscópicas"><span class="header-section-number">4.9.10</span> Restrições Estereoscópicas</h3>
-<p><em>Stereo constraints</em></p>
-<p>Esta seção aborda as opções de menu disponíveis em <em>Measurement | Stereo constraints</em>. Essas operações são utilizadas para configurar restrições estereoscópicas e calcular a <strong>orientação relativa</strong> de um par de câmeras estereoscópicas (a orientação relativa descreve a posição e a orientação de uma câmera em relação à outra e é necessária para realizar medições com um sistema de câmeras estereoscópicas). Essas opções são fornecidas principalmente para gerar arquivos de câmera estereoscópica (extensão <strong>.cam</strong>) para uso com <em>PhotoMeasure</em>, <em>EventMeasure</em> e <em>StereoLib</em>.</p>
+<div class="line-block"><em>Stereo constraints</em></div>
+<p>Esta seção aborda as opções de menu disponíveis em <em>Measurement | Stereo constraints</em>. Essas operações são utilizadas para configurar <strong>restrições estereoscópicas</strong> e calcular a <strong>orientação relativa</strong> de um par de câmeras estereoscópicas (a orientação relativa descreve a posição e a orientação de uma câmera em relação à outra e é necessária para realizar medições com um sistema de câmeras estereoscópicas). Essas opções são fornecidas principalmente para gerar arquivos de câmera estereoscópica (extensão <strong>.cam</strong>) para uso com <em>PhotoMeasure</em>, <em>EventMeasure</em> e <em>StereoLib</em>.</p>
 <p>Em calibrações de câmeras estereoscópicas, a câmera 1 refere-se à câmera esquerda e a câmera 2 refere-se à câmera direita. O CAL mantém um sistema de numeração, em vez de utilizar os termos “Esquerda” e “Direita”, para facilitar calibrações genéricas em sistemas com mais de duas câmeras.</p>
 <section id="configuração-das-restrições" class="level4" data-number="4.9.10.1">
 <h4 data-number="4.9.10.1" class="anchored" data-anchor-id="configuração-das-restrições"><span class="header-section-number">4.9.10.1</span> <strong>Configuração das restrições</strong></h4>
-<p><em>Configure constraints</em></p>
+<div class="line-block"><em>Configure constraints</em></div>
 <p>Use o comando de menu <em>Configure stereo constraints</em> para definir as restrições. Uma janela será exibida. O principal objetivo dessa janela é permitir a definição de pares estereoscópicos de imagens esquerda e direita, a partir dos quais a orientação relativa das câmeras pode ser determinada.</p>
 <p>Selecione a câmera esquerda (<em>Left camera</em>) e a câmera direita (<em>Right camera</em>) apropriadas usando as caixas de seleção. Na maioria dos casos, o restante da configuração pode ser realizado utilizando o botão <em>Automatic</em>. Ao clicar em <em>Automatic</em>, a lista de pareamentos será preenchida com combinações de nome do arquivo da esquerda (nº do frame, nº da câmera) e nome do arquivo da direita (nº do frame, nº da câmera). Verifique se os pareamentos representam pares estereoscópicos válidos; caso contrário, será necessário editar a lista manualmente. Observe que, em calibrações estereoscópicas padrão, a câmera 1 corresponde à câmera esquerda e a câmera 2 à câmera direita.</p>
 <p>Para excluir um pareamento, selecione-o e clique no botão <em>Delete</em>. Para adicionar um pareamento manualmente, selecione um <strong>Filename</strong> da câmera esquerda (nº do frame, nº da câmera) e um <strong>Filename</strong> da câmera direita (nº do frame, nº da câmera) e clique em <strong>Add</strong>. Se algum dos dados recém-adicionados já estiver presente na lista atual de pareamentos, ele será automaticamente removido e substituído pelo novo pareamento estereoscópico.</p>
@@ -634,7 +649,8 @@ Note
 </section>
 <section id="ressecção-de-todas-as-imagens" class="level3" data-number="4.9.11">
 <h3 data-number="4.9.11" class="anchored" data-anchor-id="ressecção-de-todas-as-imagens"><span class="header-section-number">4.9.11</span> Ressecção de todas as imagens</h3>
-<p>O comando de menu Medição | Ressecção de todas as imagens na janela principal do CAL calcula uma ressecção em todas as imagens associadas ao projeto atual. Ao término do processo de ressecção, uma janela com um relatório resumido é exibida. A janela lista todas as imagens envolvidas na operação de ressecção, se a ressecção foi bem-sucedida e o erro RMS associado à ressecção. Consulte os botões Ressecção e Encontrar alvos automaticamente para obter mais informações sobre ressecções. Observe que pelo menos quatro pontos de ressecção devem ser medidos em uma imagem antes que ela possa ser ressecada.</p>
+<div class="line-block"><em>Resect all images</em></div>
+<p>O comando de menu <em>Measurement | Resect all images</em> na janela principal do CAL calcula uma ressecção em cada uma das imagens associadas ao projeto atual. Ao término do processo de ressecção, uma janela com um relatório resumido é exibida. A janela lista todas as imagens envolvidas na operação de ressecção, se a ressecção foi bem-sucedida e o erro RMS associado à ressecção. Consulte os botões Ressecção e Encontrar alvos automaticamente para obter mais informações sobre ressecções. Observe que pelo menos quatro pontos de ressecção devem ser medidos em uma imagem antes que ela possa ser ressecada.</p>
 <p>Essa opção geralmente não é usada, pois as imagens normalmente são ressecadas individualmente à medida que são medidas.</p>
 </section>
 <section id="encontrar-alvos-em-todas-as-imagens" class="level3" data-number="4.9.12">
@@ -693,13 +709,69 @@ Note
 <blockquote class="blockquote">
 <p><em>Adjustment settings</em></p>
 </blockquote>
+<p>As configurações do <em>bundle adjustment</em> são controladas por meio do comando de menu <strong><em>Adjustment | Adjustment settings</em></strong>. Uma janela é exibida, permitindo configurar os parâmetros do ajuste. A seguir, são descritas as configurações e apresentados valores padrão recomendados.</p>
+<section id="valores-para-medida-de-rejeição" class="level4" data-number="4.10.2.1">
+<h4 data-number="4.10.2.1" class="anchored" data-anchor-id="valores-para-medida-de-rejeição"><span class="header-section-number">4.10.2.1</span> Valores para medida de rejeição</h4>
+<div class="line-block"><em>Values for measurement rejection</em></div>
+<p>Esses valores controlam a exclusão automática de medições de determinados cálculos quando se determina que a medição provavelmente contém erro.</p>
+<ul>
+<li><p><strong>Nome:</strong> Valor crítico para rejeição na ressecção.<br>
+<strong>Padrão:</strong> 3,00 pixels.<br>
+<strong>Descrição:</strong> Quando um ponto medido é utilizado em um cálculo de ressecção e o resíduo resultante é maior que esse valor, ele é excluído do cálculo. Quando isso ocorre, a cor do ponto é alterada para <strong>Point colour, residual failed</strong> (veja <em>Point colours</em>).</p></li>
+<li><p><strong>Nome:</strong> Valor crítico para rejeição na interseção.<br>
+<strong>Padrão:</strong> 3,00 pixels.<br>
+<strong>Descrição:</strong> Quando um ponto medido é utilizado em um cálculo de interseção e o resíduo resultante é maior que esse valor, ele é excluído do cálculo. Quando isso ocorre, a cor do ponto é alterada para <strong>Point colour, residual failed</strong> (veja <em>Point colours</em>).</p></li>
+<li><p><strong>Nome:</strong> Valor crítico para rejeição no <em>bundle adjustment</em>.<br>
+<strong>Padrão:</strong> 2,50 pixels.<br>
+<strong>Descrição:</strong> Quando um ponto medido é utilizado no <em>bundle adjustment</em> e o resíduo resultante é maior que esse valor, ele é excluído do ajuste. Quando isso ocorre, a cor do ponto é alterada para <strong>Point colour, residual failed</strong> (veja <em>Point colours</em>).</p></li>
+<li><p><strong>Nome:</strong> Fator de rejeição para distâncias no espaço do objeto.<br>
+<strong>Padrão:</strong> 5,00.<br>
+<strong>Descrição:</strong> Esse fator é usado para definir um valor crítico (valor crítico = desvio padrão da medição de distância × fator de rejeição para distâncias no espaço do objeto) para remover distâncias de um <em>bundle adjustment</em>. Quando o resíduo de uma distância no <em>bundle adjustment</em> excede esse valor crítico, ela é excluída do ajuste.</p></li>
+<li><p><strong>Nome:</strong> Fator de rejeição para restrições de coordenadas.<br>
+<strong>Padrão:</strong> 5,00.<br>
+<strong>Descrição:</strong> Esse fator é usado para definir um valor crítico (valor crítico = desvio padrão da restrição de coordenadas × fator de rejeição para restrições de coordenadas) para remover restrições de coordenadas de um <em>bundle adjustment</em>. Quando o resíduo de uma restrição de coordenadas no <em>bundle adjustment</em> excede esse valor crítico, ela é excluída do ajuste.</p></li>
+<li><p><strong>Nome:</strong> % do valor crítico para cor de ponto de aviso.<br>
+<strong>Padrão:</strong> 80,0%.<br>
+<strong>Descrição:</strong> Veja <em>Point colours</em>. Esse valor pode ser configurado na janela de cores dos pontos e é descrito lá.</p></li>
+</ul>
+</section>
+<section id="precisão-de-medição-de-imagem" class="level4" data-number="4.10.2.2">
+<h4 data-number="4.10.2.2" class="anchored" data-anchor-id="precisão-de-medição-de-imagem"><span class="header-section-number">4.10.2.2</span> <strong>Precisão de medição de imagem</strong></h4>
+<div class="line-block"><em>Image measurement precision</em></div>
+<ul>
+<li><p><strong>Nome:</strong> Desvio padrão da medição de imagem.<br>
+<strong>Padrão:</strong> 0,10 pixels.<br>
+<strong>Descrição:</strong> Define o desvio padrão para as medições na imagem. Como regra geral, utilize 0,10 pixels para medições feitas com <em>centroiding</em> e entre 0,50 e 1,00 pixels para medições feitas manualmente (apenas com o uso do mouse). Esse valor influencia a precisão dos parâmetros estimados no <em>bundle adjustment</em> APENAS se o parâmetro a seguir estiver definido como <strong>FALSE</strong>. Definir corretamente esse valor é importante para simulações.</p></li>
+<li><p><strong>Nome:</strong> Reponderar observações de imagem usando sigma zero.<br>
+<strong>Padrão:</strong> True.<br>
+<strong>Descrição:</strong> Quando definido como <strong>true</strong> e ao executar um <em>bundle adjustment</em>, o desvio padrão das medições de imagem (descrito acima) será automaticamente ajustado para produzir um valor de sigma zero igual a 1 (± 0,05). Isso fornece automaticamente a “melhor” estimativa das precisões dos parâmetros. Esse valor normalmente deve ser mantido como <strong>true</strong>, a menos que você esteja realizando uma simulação. Note que apenas os desvios padrão das medições de imagem são alterados (o desvio padrão das medições de distância ou das restrições de coordenadas não é alterado). A nova estimativa do desvio padrão da medição de imagem é exibida no resumo dos resultados do ajuste (veja <em>Computing the adjustment</em>).</p></li>
+</ul>
+</section>
+<section id="restrições-estéreo" class="level4" data-number="4.10.2.3">
+<h4 data-number="4.10.2.3" class="anchored" data-anchor-id="restrições-estéreo"><span class="header-section-number">4.10.2.3</span> Restrições estéreo</h4>
+<p>Os parâmetros a seguir são relevantes apenas quando o objetivo do <em>bundle adjustment</em> é estimar os parâmetros de uma configuração de câmera estéreo.</p>
+<ul>
+<li><p><strong>Nome:</strong> Usar restrição estéreo.<br>
+<strong>Padrão:</strong> False.<br>
+<strong>Descrição:</strong> Quando definido como <strong>true</strong>, os parâmetros de orientação relativa são estimados (ou, mais precisamente, restringidos) durante o <em>bundle adjustment</em>. Na prática, cada par de imagens esquerda/direita é forçado a resultar na mesma orientação relativa, dentro dos limites definidos por <strong>SD for stereo base constraint</strong> e <strong>SD for stereo orientation constraint</strong> (veja abaixo).</p></li>
+<li><p><strong>Nome:</strong> Valor crítico para rejeição da base.<br>
+<strong>Padrão:</strong> 5000,0 micrômetros.<br>
+<strong>Descrição:</strong> Durante o cálculo da orientação relativa (seja como parte do <em>bundle adjustment</em> ou usando <em>Estimating constraints</em>), qualquer componente da base que exceda esse valor para um par de imagens esquerda/direita será ignorado. As unidades utilizadas para esse parâmetro dependem do projeto atual. Esse valor pode precisar ser aumentado caso a sincronização estéreo das câmeras não seja perfeita (comum em sistemas de vídeo).</p></li>
+<li><p><strong>Nome:</strong> Valor crítico para rejeição da orientação.<br>
+<strong>Padrão:</strong> 1800 segundos de arco.<br>
+<strong>Descrição:</strong> Durante o cálculo da orientação relativa (seja como parte do <em>bundle adjustment</em> ou usando <em>Estimating constraints</em>), qualquer componente de orientação que exceda esse valor para um par de imagens esquerda/direita será ignorado. Esse valor pode precisar ser aumentado caso a sincronização estéreo das câmeras não seja perfeita (comum em sistemas de vídeo).</p></li>
+<li><p><strong>Nome:</strong> Desvio padrão (SD) para restrição da base estéreo.<br>
+<strong>Padrão:</strong> 100,0 micrômetros.<br>
+<strong>Descrição:</strong> Quando <strong>Use stereo constraint</strong> (veja acima) está definido como <strong>true</strong>, este é o valor de restrição aplicado a todos os pares de imagens esquerda/direita para o componente da base da orientação relativa. As unidades desse parâmetro dependem das unidades do projeto atual. Essa restrição pode precisar ser relaxada caso a sincronização estéreo das câmeras não seja perfeita (comum em sistemas de vídeo).</p></li>
+</ul>
+</section>
 </section>
 <section id="sec-cal-ajuste" class="level3" data-number="4.10.3">
 <h3 data-number="4.10.3" class="anchored" data-anchor-id="sec-cal-ajuste"><span class="header-section-number">4.10.3</span> Cálculo do Ajuste</h3>
 <blockquote class="blockquote">
 <p><em>Computing the adjustment</em></p>
 </blockquote>
-<p>Após todas as imagens serem ressecadas e os alvos medidos em todas elas, o ajuste de feixe pode ser calculado. Para executar o ajuste de feixe, use o comando de menu Ajuste | Calcular ajuste de feixe na janela principal do CAL. Uma janela de progresso é exibida com um botão Cancelar. O ajuste pode ser cancelado a qualquer momento clicando no botão Cancelar (o processo não será cancelado até que a iteração atual seja calculada). A janela exibe informações sobre o progresso do ajuste (o número da iteração) e o sigma zero (que indica a qualidade do ajuste e idealmente deve estar próximo de 1). O ajuste primeiro calcula uma solução inicial, seguida por uma série de soluções de reponderação, onde as medições de baixa qualidade são removidas automaticamente do ajuste. Finalmente, as precisões e correlações dos parâmetros são calculadas.</p>
+<p>Após todas as imagens serem ressecadas e os alvos medidos em todas elas, o ajuste de feixe pode ser calculado. Para executar o ajuste de feixe, use o comando de menu <em>Adjustment | Compute bundle adjustment</em> na janela principal do CAL. Uma janela de progresso é exibida com um botão Cancelar. O ajuste pode ser cancelado a qualquer momento clicando no botão Cancelar (o processo não será cancelado até que a iteração atual seja calculada). A janela exibe informações sobre o progresso do ajuste (o número da iteração) e o sigma zero (que indica a qualidade do ajuste e idealmente deve estar próximo de 1). O ajuste primeiro calcula uma solução inicial, seguida por uma série de soluções de reponderação, onde as medições de baixa qualidade são removidas automaticamente do ajuste. Finalmente, as precisões e correlações dos parâmetros são calculadas.</p>
 <p>Nesta etapa, haverá um ajuste convergido com sucesso ou um ajuste que não convergiu. Uma nova janela será exibida. Essa janela contém duas caixas de listagem: a caixa de listagem superior exibe um resumo do ajuste em texto, e a caixa de listagem inferior exibe detalhes sobre o ajuste.</p>
 <p>Uma caixa de mensagem pode ser exibida com avisos sobre medições de distância excluídas e/ou baixa precisão relativa. Os avisos são baseados em cenários típicos de calibração de câmeras estéreo usando o hardware de calibração SeaGIS. Nesses casos, o ajuste final do feixe não deve apresentar medições de distância excluídas, e há expectativas em relação à precisão relativa. Veja detalhes nos tópicos a seguir. Ignore o aviso se ele não se aplicar especificamente ao seu uso do CAL.</p>
 <p>Considerando o resumo do ajuste, a primeira linha indicará se o ajuste convergiu com sucesso ou se houve falha. Outras informações fornecidas serão:</p>

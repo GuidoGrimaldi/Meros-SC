@@ -119,17 +119,28 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos-de-campo" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Protocolos de Campo</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Protocolos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos-de-campo">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos">    
         <li>
     <a class="dropdown-item" href="./bruv.html">
- <span class="dropdown-text">BRUV</span></a>
+ <span class="dropdown-text">BRUV/ Campo</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./emergence.html">
  <span class="dropdown-text">Plano de Emergência</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pesquisa" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Pesquisa</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pesquisa">    
+        <li>
+    <a class="dropdown-item" href="http://guidogrimaldi.shinyapps.io/Mydivelog">
+ <span class="dropdown-text">Stereo-BRUV</span></a>
   </li>  
     </ul>
   </li>
@@ -426,7 +437,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <ol type="1">
 <li><p>Agora, vamos começar marcar os pontos. Comece pelo frame da câmera esquerda. Este processo precisara se feitos em ambas as câmeras (02) para cada sequência de frame (20), no mínimo (20*2=40), seguindo o esquema de ponto, <strong>conforme o modelo do seu cubo de calibração</strong> (Ex: Cubo 142, abaixo):</p>
 <p><img src="images/clipboard-2197934981.png" class="img-fluid"></p></li>
-<li><p>Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os <strong>pontos de ressecção</strong> (<em>ressection points</em>). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.</p>
+<li><p>Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os <strong>pontos de</strong> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> (<em>ressection points</em>). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.</p>
 <div class="callout callout-style-simple callout-tip">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -536,8 +547,46 @@ Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso 
 </section>
 <section id="finalizando-os-trabalhos" class="level2">
 <h2 class="anchored" data-anchor-id="finalizando-os-trabalhos">Finalizando os trabalhos</h2>
-<section id="ajuste-do-feixe1" class="level3">
-<h3 class="anchored" data-anchor-id="ajuste-do-feixe1">Ajuste do Feixe<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></h3>
+<ol type="1">
+<li>Ao final do processo de medição (marcações de pontos), você deverá ter um total de 40 images (20 câmera esquerda e 20 câmera direita). Você poder ver isso na própria tela principal do programa, onde há um campo descrito como <em>Images measured:</em></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/WhatsApp Image 2026-03-19 at 09.56.23.jpeg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li><p>Estando tudo certo, iremos partir para o <strong>ajuste do feixe</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> ou <em>bundle adjustment.</em></p></li>
+<li><p>Mas antes é importante saber que você pode ajustar os parâmentros do ajuste (<em>bundle adjustment</em>) no menu <em>Adjustment | Adjustment setting…</em></p>
+<p><img src="images/clipboard-554416799.png" class="img-fluid"></p></li>
+<li><p>Acho que o mais importante aqui é avisar ao programa que estamos utilizando um sistema estéreo (<em>Stereo</em>-BRUV) e, portanto, exigir dele um restrição estéreo (<em>stereo constraint</em>)</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Se você não sabe se o BRUV que está utilizando é estéreo, assista esse pequeno vídeo para noções basicas de fotogrametria: <a href="https://www.youtube.com/watch?v=BZdzyzMjAjc" class="uri">https://www.youtube.com/watch?v=BZdzyzMjAjc</a></p>
+</div>
+</div>
+</div></li>
+<li><p>Clicando em <em>Adjustment | Adjustment setting</em>, abrirá um a janela (<em>Adjustment and photogrammetry settings)</em> contendo uma tabela com quatro colunas:</p>
+<p><img src="images/clipboard-1526197752.png" class="img-fluid"></p></li>
+<li><p>Perceba que essa tabela possui quatro seções:</p>
+<p><img src="images/image.png" class="img-fluid"></p></li>
+<li><p>Na seção roxa ou 3° seção (<em>Stereo constraints</em>), temos na primeira linha (<em>Use stereo constraint)</em> como padrão (<em>default</em>), <em>False.</em></p></li>
+</ol>
+<pre><code>::: {.callout-warning appearance="simple"}
+Perceba que isso que falo não está expresso nas duas ultimas fotos anteriores, pois já havia realizado a mudança quando realizei o recorte, mas mantive para me poupar trabalho.
+:::</code></pre>
+<ol start="8" type="1">
+<li><p>Selecione a célula da coluna <em>Data</em> e mude para <strong><em>True</em></strong> (escreva!).</p>
+<p><img src="images/image (1).png" class="img-fluid"></p></li>
+<li><p>Isso impõe condições matemáticas ao <em>bundle adjustment</em> que obrigam os pares de imagens (esquerda/direita) a manter a mesma orientação relativa ao longo de todo conjunto de imagens, forçando consistência na geometria relativa entre as duas câmeras (par estéreo).</p></li>
+<li><p>Se esse for seu caso (Stereo-Bruvs), feito isso, seguimos para o ajuste de feixe.</p></li>
+</ol>
+<section id="ajuste-do-feixe" class="level3">
+<h3 class="anchored" data-anchor-id="ajuste-do-feixe">Ajuste do Feixe</h3>
 <ol type="1">
 <li><p>Após concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando <em>Adjustment</em> | <em>Compute bundle adjustment…</em></p>
 <p><img src="images/clipboard-959548070.png" class="img-fluid"></p>
@@ -562,7 +611,6 @@ Note
 <section id="glossário" class="level2">
 <h2 class="anchored" data-anchor-id="glossário">Glossário</h2>
 <p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.</p>
-<p>Feixe (“<em>Bundle”</em>):</p>
 
 
 </section>
@@ -571,7 +619,8 @@ Note
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Ressecção: É uma processo/ técnica da visão computacional e fotogrametria utilizada para determinar a posição e orientação da câmera no espaço a partir de pontos conhecidos no mundo (objeto).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

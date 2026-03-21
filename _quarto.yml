@@ -25,6 +25,11 @@ website:
           - text: "Plano de Emergência"
             href: emergence.qmd
 
+      - text: "Pesquisa"
+        menu:
+          - text: "Stereo-BRUV"
+            href: http://guidogrimaldi.shinyapps.io/Mydivelog
+
       - text: "Biblioteca Mero"
         menu:
           - text: "1. Sobre"
