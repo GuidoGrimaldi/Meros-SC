@@ -25,6 +25,6 @@ author:
 
 7.  Desabilite a configuração automática de etiquetas e arquivos para os itens salvos (Ver: Configurações) Exclua etiquetas anexadas automaticamente no momento da importação.
 
-8.   É obrigatório associar etiquetas a toda e qualquer referência adicionada por você, de acordo com as seguintes diretrizes básicas: Não há limites para a quantidade de etiquetas em um determinado item, quanto mais etiquetas, melhor. Contudo, seja consistente e evite variações que dificultam a pesquisa e a organização. Todas as etiquetas devem estar em língua inglesa americana. Todas as etiquetas devem estar no singular. Apenas a primeira letra deve estar em Maiúsculo (Ex: Correto: “Fish”; Errado: “FISH”, “fish”, “Fishes”.
+8.  É obrigatório associar etiquetas a toda e qualquer referência adicionada por você, de acordo com as seguintes diretrizes básicas: Não há limites para a quantidade de etiquetas em um determinado item, quanto mais etiquetas, melhor. Contudo, seja consistente e evite variações que dificultam a pesquisa e a organização. Todas as etiquetas devem estar em língua inglesa americana. Todas as etiquetas devem estar no singular. Apenas a primeira letra deve estar em Maiúsculo (Ex: Correto: “Fish”; Errado: “FISH”, “fish”, “Fishes”.
 
 9.  Constatou um erro, corrija. Exclua duplicatas, mas antes confira qual das citações possui uma maior quantidade de informações atreladas e/ou anexos atrelados.

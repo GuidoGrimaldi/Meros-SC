@@ -7,7 +7,8 @@ author:
   affiliation: 
     name: Instituto Meros do Brasil
     url: https://merosdobrasil.org/
-abstract: "Oi"
+abstract: "Este protocolo está em contínuo aprimoramento. É sempre bom reler-lo para ficar por dentro do que mudou."
+
 abstract-title: "About"
 
 # Formato
@@ -100,9 +101,77 @@ geometry:
 
 ## Lançamento na água
 
+-   Tudo pronto! Vamos lançar pra água!
+
+-   Precisa de pelo menos duas pessoas, uma para lançar e outra para safar o cabo. Bom mesmo é três, porque fica um atento as anotações e coleta do ponto no GPS (protocolo a criar)
+
+-   Apoie o BRUV no bordo, metade das pernas dentro, metade fora, com a isca virada para o mar.
+
+    ::: {.callout-warning appearance="simple"}
+    Não solte na popa, ao menos que o motor da embarcação esteja desligado, pois corre risco de enroscar no hélice.
+    :::
+
+-   Em caso de embarcação em movimento, solte o mais vertical e rápido possível, evitando assim muita derivação.
+
+-   Solte-o e a medida que ganha profundidade realiza alguns puxões para ganhar prumo.
+
+-   Se puxar demais ou entrar na água em uma posição ruim, o sistema bruv ficara de ponta cabeçã ou tompará para frente.
+
+-   Já aconteceu de o sistema cair em pé, mas de alguma maneira tobar para trás apos muitos minutos em posição correta. Acredito que tenha sido o cabo curto demais em relação a ondulação da maré, mas é preciso verificar mais.
+
+-   Quando sentir que a sonda chegou ao fundo, lançe o cabo restante, com a bóia de sinalização.
+
+    ::: {.callout-caution appearance="simple"}
+    Não esqueça de marcar o ponto no GPS! É para cada lançamento!
+    :::
+
 ## Que informações anotar?
 
+::: {.callout-important appearance="simple"}
+Leve sua prancheta ou caderneta de campo!
+:::
+
+-   Data
+
+-   Local
+
+-   Participantes
+
+-   Hora de lançamento
+
+-   Hora de retirada
+
+-   Ponto GPS
+
+-   Profundidade
+
+-   ID do BRUV (B1, B2 ou B3)
+
 ## Remoção da água
+
+-   Enquanto um dos integrantes puxa o sistema BRUV da água, o outro deve ir recolhendo a corda do convez.
+
+-   Uma vez embarcado o equipamento:
+
+    -   Anote a hora de retirada;
+
+    -   Retire a bóia de sinalização;
+
+    -   Solte e recolha o cabo;
+
+    -   Registre a profundidade e retorne o ponteiro do profundímetro para a marcação de zero;
+
+    -   Retire a haste que sustenta o cano da isca e dispense o material na água;
+
+    -   Passe uma água no cano da isca para retirar o excesso de peixe morto;
+
+    -   Caso não vá mais utilizar os BRUVs, desmonte e guarde-os nas bolsas de transporte;
+
+    -   Caso ainda vá utilizar, deixe-os montados, sem a haste da isca e de forma organizada, em algum local do convez de modo a permitir a circulação da tripulação.
+
+::: {.callout-caution appearance="simple"}
+Ao guardar os BRUVs na bolsa de transporte, tenha especial cuidado com as lentes, de modo a evitar arranhões, pois estes interferem na análise das imagens.
+:::
 
 # Pós-Campo
 
