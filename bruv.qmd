@@ -7,7 +7,7 @@ author:
   affiliation: 
     name: Instituto Meros do Brasil
     url: https://merosdobrasil.org/
-abstract: "Este protocolo está em contínuo aprimoramento. É sempre bom reler-lo para ficar por dentro do que mudou."
+abstract: "Este protocolo está em contínuo aprimoramento. É sempre recomendável relê-lo para se manter atualizado sobre as mudanças."
 
 abstract-title: "About"
 
