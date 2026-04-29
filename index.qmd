@@ -4,6 +4,8 @@ copyright: "©2026, GuidoGrimaldi. All rights reserved."
 license: CC BY-NC-SA
 page-layout: article
 
+
+
 # Fonte ---------------------------
 fontfamily: baskervald
 fontsize: 12pt

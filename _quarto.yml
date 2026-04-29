@@ -25,18 +25,11 @@ website:
           - text: "Plano de Emergência"
             href: emergence.qmd
 
+      - text: "Diretrizes do Mergulho"
+        href:
+
       - text: "Pesquisa"
         href: https://guidogrimaldi.shinyapps.io/PesquisaMerosSC/
-
-      - text: "Biblioteca Mero"
-        menu:
-          - text: "1. Sobre"
-            href: sobre.qmd
-          - text: "2. Política de Uso"
-            href: uso.qmd
-          - text: "3. Política de Propriedade Intelectual"
-            href: intelectual-prop.qmd
-
 
     right:
       - icon: envelope

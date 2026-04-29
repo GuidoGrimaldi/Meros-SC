@@ -11,7 +11,8 @@ author:
 
 abstract: "Essa é uma adaptação da documentação original baseada em minhas percepções e interpretações. Novas secções foram inseridas e reordenadas buscando facilitar o entendimento dos conceitos."
 abstract-title: "About"
-
+respect-user-color-scheme: true
+description: "Completed"
 page-layout: article
 
 # Fonte ---------------------------
