@@ -19,5 +19,5 @@ execute:
 ```
 
 ::: callout-important
-Imprima e plastifique este plano para levar sempre
+Imprima e plastifique este plano para levar sempre!
 :::

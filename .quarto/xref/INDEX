@@ -38,5 +38,14 @@
   "quick-cal.qmd": {
     "quick-cal.html": "ac5b1f35",
     "quick-cal.tex": "2942e32e"
+  },
+  "sci-dive.qmd": {
+    "sci-dive.html": "adecf41e",
+    "sci-dive.tex": "acc458ce",
+    "sci-dive.docx": "b9687bf3"
+  },
+  "fishermans.qmd": {
+    "fishermans.html": "6c583606",
+    "fishermans.tex": "10ab87ad"
   }
 }

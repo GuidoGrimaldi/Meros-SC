@@ -1,0 +1,150 @@
+---
+title: "Relato de Pescadores acerca do Peixe Mero"
+subtitle: "Dossiê Santa Catarina"
+date: "last-modified"
+
+author: 
+  name: Supervisor de Pesquisa SC
+  email: pesquisasc@merosdobrasil.org
+  affiliation: 
+    name: Intituto Meros do Brasil
+    url: https://merosdobrasil.org/
+    
+
+# Formato
+format:
+  html:
+    toc-title: "Índice"
+    toc: true
+    toc-location: right
+    number-depth: 2
+    toc-depth: 2
+    number-sections: false
+    smooth-scroll: true
+  
+  pdf:
+    documentclass: scrreprt
+    papersize: letter
+
+execute: 
+  freeze: auto
+---
+
+# Metadados
+
+> Drive: [Pescadores SC](https://drive.google.com/drive/folders/145bO_HQio9_79Fi8COghIIWsvV-Rpilc?usp=sharing)
+>
+> Cadastros: [Planilha](https://docs.google.com/spreadsheets/d/1xExljsTCQFjQuItwG4HyON44BD0Xa8mwFnwQpfk7BY4/edit?usp=sharing)
+
+# Histórico
+
+19/05/2026:
+
+-   Contato de Dolito e Beto Caveira repassado pelo Leco.
+
+-   Leco ficou de estabelecer o 1° contato.
+
+-   Contato de Marcelo e Rodrigo repassado por Henrique
+
+20/05/2026:
+
+-   Contato de Cacá repassado por Fernanda.
+-   1° contato com Seu Cacá (via WhatsApp).
+
+21/05/2026:
+
+-   1° contato com Rodrigo (via WhatsApp).
+
+02/07/2026:
+
+-   Ida a Tapera para conhecer o Seu João.
+
+# Pescadores
+
+## Rodrigo
+
+Nome completo: Rodrigo
+
+Apelido:
+
+Idade:
+
+Local: São José
+
+Profissão: Pescador
+
+Sobre:
+
+## Seu Cacá
+
+Nome completo:
+
+Apelido: Cacá
+
+Idade: 66 anos (?)
+
+Local: Barra Velha
+
+Profissão: Prof. Escola do Mar
+
+Sobre:
+
+## Seu João
+
+Nome completo: João
+
+Apelido:
+
+Idade:
+
+Filhos: Andrei
+
+Local: Tapera, Ilha de Santa Catarina
+
+Endereço: Rua do Sol Nascente, 251, Tapera, Florianópolis-SC, 88049-110.
+
+Ponto de referência: Portão Sul da Base Aérea.
+
+Profissão:
+
+Sobre:
+
+# Relatos
+
+> Os relatos aqui descritos foram transcritos a partir de mensagens de áudio trocadas via WhatsApp com a Supervisão de Pesquisa SC do PMB, por meio da ferramenta de inteligência artificial "ViraTexto" da Blip (<https://www.blip.ai/>). Os eventuais erros gramaticais provenientes do processo de transcrição não foram corrigidos. Os destaques em negrito representam pontos de interesses e foram feitos manualmente pela própria supervisão.
+
+## Pescador Rodrigo
+
+> Conversa do dia: **21/05/26**
+>
+> Áudio Drive: **Rodrigo_SaoJose_20260521_1617h \| Rodrigo_SaoJose_20260521_1744h**
+
+"*Opa, boa tarde. Nós podemos marcar sim para a gente bater um papo aí sim, sem ploblema. Eh **faz algum tempoaté que não pego nenhum** \[mero\], mas às vezes, **dependendo do local que a gente pesca, às vezes ocorre de vim uns pequenos,** né? os filhotes no caso. Mas há relato também dos grandes, né? Aqui na nossa região, próximo a ponte de Florianópolis, mas a gente pode marcar de bater um papo sim.*"
+
+"*...então eh fotografico \[registros fotográficos\] a gente não tem nada. Eu posso ver com o pessoal mais antigo aqui de repente se tem alguma coisa, mas a princípio, de relatos sei dos meus, né? **Eu já peguei alguns exemplares**, e a gente é claro tem consciência de soltar a gente....eu nmunca capturei alguns...e**u sempre dei sorte de eles ainda estarem vivos, né? para fazer a soltura**. E é isso, geralmente **a gente pega aqui ele pequeno ali coisa de 6 a 8 kilos.** A galera já pegou bem maiores ali né? **Nas duas pontes ali de Floripa né?** Eu moro ali na parte continental de Floripa, ali em Coqueiros, né? Err e**ntão, antigamente sim, tinha varios relatos de meros grandes, gigante até por volta e meia a gente encontra algum morto, né?** a gente **ja encontrou no mar exemplares mortos com mais de 100 kilos**, então são coisas assim.*"
+
+> Conversa do dia: **02/06/26**
+>
+> Áudio Drive: **Rodrigo_SaoJose_20260602_0743h \| Rodrigo_SaoJose_20260602_0744h**
+>
+> Indagado sobre: <https://ndmais.com.br/seguranca/peixe-gigante-e-encontrado-na-beira-mar-norte/>
+
+"*Sim, teve um que eles até tiveram que carregar com uma reta escavadeira, não sei se foi esse. Eu lembro que teve esse aí sim. Inclusive **foi um amigo nosso que encontrou**, tinha uns 200 e poucos quilos.*"
+
+"*Isso mesmo me lembro desse aí sim me lembro desse e **já teve outros anteriores a esse** que o pessoal comenta também tem um rapaz que mora aí até até se tu quiser de repente passar ali tentar conversar tem o seu Hermes seu **Hermes ele tem rancho embaixo da da ponte né ponte auxílio luz** ali no caso do lado do continente **ele deve ter bastante história com mero** porque ele mora bem ali no **local onde aparece de vez em quando esses boiando né.***"
+
+## Seu Cacá
+
+> Conversa do dia: **20/05/26**
+>
+> Áudio Drive: **SeuCaca_BarraVelha_20260520_1654h**
+
+"*Então, boa tarde, como vai? Tudo bem, Guido? Então, é um prazer fazer parte desse grupo. Eu tenho uma relação muito forte, como eu já coloquei aí no grupo, uma relação muito forte com o mar, né? Eu sou **neto de pescadores, filhos de pescador**, e me criei num ambiente de mar, né? Então, assim, desde pequeno, muito pequeno, assim, foi muito forte, né? Infelizmente eu tive essa fase minha, né? Em que eu **arpoei muitos meros** aí, né? A nossa região aqui na época tinha meros. **Eu, com meus irmãos, a gente aprendeu a fazer caça submarino muito cedo, né?** Então, já com meus **15, 16 anos, 14 anos**, eu ia lá pra fora, pras **lajes, pros parcéis** lá. E a gente matava os meros. Era uma covardia, um peixe que ele basicamente não tinha medo de seres humanos, ele encostava muito perto da gente, e era muito fácil arpoar. Então infelizmente eu repensei minha prática, eu mudei completamente não só com relação aos meros, eu **não faço mais caça submarino**, o meu equipamento de mergulho já está com meus irmãos. **Os meus irmãos também se sensibilizaram sobre essa questão**, eles hoje mergulham ainda mais para peixes de passagem, como sororoca, robalo, robalão, e **é claro que não arpam mais meros** como no passado, até porque também já está proibido a pesca do mero, é uma covardia. E que bom que existe uma ong, eu acredito que é uma ong que tenta repolvoar as águas com o mero, é uma ação muito importante. E por isso que eu fiquei assim com vontade mesmo de entrar no grupo, interagir com o grupo, e de repente passar as minhas experiências de vivências de mar é interessante.*"
+
+> Conversa do dia: **17/06/26**
+>
+> Áudio Drive: **SeuCaca_BarraVelha_20260617_2131h**
+
+"*Então, boa noite Guido. A Escola do Mar está à disposição aí, e a hora que o amigo quiser vir aqui, conhecer Baja Velha, a gente tem uma articulação muito forte com os pescadores locais aqui, a gente trabalha muito com as saberes tradicionais da pesca, modalidade de pesca, tipos de embarcação, e inclusive a Escola do Mar está sediada aqui na **Colônia dos Pescadores**, e a gente tem esses contatos, esse efetivamente, que fazem **relatos, mapear locais onde frequentemente aparecem meros**, inclusive agora recentemente, como eu coloquei as imagens, eu cheguei a matar meros **na minha juventude e com meus irmãos**, a gente fazia casa submarina, eu já há muito tempo não faço mais problemas. Eu, nos tímpanos, quase perdi a audição por conta de mergulho, mas os meus irmãos continuam a fazer caça submarina, né, e é óbvio que hoje eles dão **um arpão mais médio**, né, nenhum, e aqui nós temos **um garoto que tá mergulhando muito aqui,o Gézer** mata muito robalão, peixe de passagem e mata também muito sororoca e tal, e **o Gézer me falou que ter visto em alguns locais específicos aqui meros muito grande, ele disse que talvez por conta da proibição da pesca desse peixe, as lajes, aí os parcéis, eles estão sendo repouvoados por esse peixe, né, que bom, né,** que bom que ele tem essa consciência, inclusive ele me relatou **que a vistão muito grande aqui na próxima**. **A laje do Giudo,** essa laje é bem, ela é muito extensa, apesar de começar muito próximo da praia, ela avança, mara dentro, e lá no ponto extremo dessa laje, que já é bem, chega aí a dez metros, doze metros, **ele relatou que ter visto um mero muito grande lá, né?** Então, existem outros relatos aí também, e de pessoas que também viram mero, né? Mas hoje eu acho que existe uma consciência coletiva, a maioria do pessoal ainda que faz caça submarina, já tem essa consciência, né? Porque, como eu te falei, você sabe muito bem disso, que os meros, eles são os peixes assim, bem, com relação ao ser humano, ele se aproxima muito, né? Ele não tem muito medo, então ele é um alvo muito fácil, né? Para parpoar, porque ele é muito grande e não tem nem como errar no mero, né? Então, mas essa consciência. Consciências, a gente não tem nenhum caso, né? Nenhum caso, por exemplo, de alguém que tem arpoado mero aquele, tem muitos, muita gente que faz caso submarino, eu conheço a maioria deles, né? M**as que bom que já existe essa consciência, né? Eventualmente, alguns meros, eles chegam a ser pescado**, porque ele entra no **arrasto de camarão,** né? **Nós tivemos um caso aqui que um pescador matou um bem grande aqui, algum tempo atrás aí, mas ele foi de forma intencional, aliás, foi por acaso, né?** Porque no saco da rede de camarão, no arrasto de fundo, entrou um mero ali e então quando ele trouxe pra cima, né? O peixe já tava, o peixe já tava basicamente morto, né? Então não teve como devolver as águas e **tal, e no final tiveram que consumir com.** Aproveitar o mero, né? Consumê-lo. Mas é isso aí, as informações, a gente, como eu te falei, estamos muito articulados aqui com a pesca e com os pescadores e o que a gente puder ser útil aí para os méros do Brasil, com certeza a gente se coloca à disposição aí. Um abraço, amigo.*"
+
+# Registros Históricos

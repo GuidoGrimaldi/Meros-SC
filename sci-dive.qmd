@@ -1,0 +1,104 @@
+---
+# Metadados
+
+title: "Diretrizes para o Mergulho Científico"
+subtitle: "Diretrizes do Mergulho Científico no âmbito PMB-SC"
+author: 
+  name: Supervisor de Pesquisa SC
+  email: pesquisasc@merosdobrasil.org
+  affiliation: 
+    name: Intituto Meros do Brasil
+    url: https://merosdobrasil.org/
+
+abstract: "Diretrizes para a prática e logística de operações de mergulho científico em projetos de pesquisa socio-ambientais"
+abstract-title: "About"
+respect-user-color-scheme: true
+date: 2026-05-01
+description: "Status: Documento em construção"
+
+copyright: "©2026, GuidoGrimaldi. All rights reserved."
+license: CC BY-NC-SA
+page-layout: article
+
+
+# Fonte ---------------------------
+fontfamily: baskervald
+fontsize: 12pt
+
+# Formato
+format:
+  html:
+    toc-title: "Índice"
+    toc: true
+    toc-location: right
+    number-depth: 2
+    toc-depth: 2
+    number-sections: true
+    smooth-scroll: true
+  
+  pdf:
+    documentclass: scrreprt
+  
+  docx:
+    reference-doc: custom-reference-doc.docx
+
+
+# Opções de execução --------------
+execute: 
+  warning: false
+  freeze: auto
+
+# Layout da página ----------------
+geometry: 
+  - margin = 1in
+---
+
+# DIRETRIZ GERAL
+
+I.  A segurança e a salvaguarda da vida deve sempre estar acima dos objetivos das operações.
+
+II. As atividades de mergulho científico só devem ser realizadas por um mínimo de dois mergulhadores devidamente credenciados.
+
+III. A equipe de trabalho deve se organizar em sistema de dupla, eventualmente trio.
+
+IV. A equipe de trabalho deve permanecer coesa durante o mergulho, mantendo-se sempre o contato visual com os demais mergulhadores.
+
+V.  Pelos menos um dos membros das duplas deve ter consigo, obrigatoriamente, os seguintes equipamentos:
+
+    i.  Deco Maker (ou "Salsição");
+
+    ii. Carretilha 30m;
+
+    iii. Dive Alert (ou apito de superfície);
+
+    iv. Computador de mergulho.
+
+    v.  Faca
+
+    Parágrafo único: É recomendavel o uso de bússola.
+
+VI. Em caso de perda do contato visual, busque
+
+VII. 
+
+VIII. com os demais mergulhadores, deve-se soar o aviso de emergência do mergulho (batidas intermitentes no cilindro com auxílio de algum material duro)
+
+IX. deve ocorrer exclusivamente com mergulho deve ser realizado por ao menos dois (02) mergulhadores devidamente certificados, conforme a regra norteadora da atividade.
+
+X.  
+
+XI. 
+
+Briefing
+
+## Cargos
+
+Atribuições dos Mergulhadores
+
+Regras gerais de condutas nas operações de mergulho cientifico
+
+Rol de Mergulhadores
+
+# ANEXOS
+
+## Check list

@@ -402,7 +402,15 @@ Perceba que isso que falo não está expresso nas duas ultimas fotos anteriores,
     Cada ponto 3D projeta um conjunto de linha (x, y, z) (ou um feixe/ pacote de raios) em direção às diferentes câmeras.
     :::
 
-2.  Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto. Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.
+2.  Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto.
+
+    ![](images/clipboard-2851610986.png)
+
+3.  Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.
+
+    ![](images/clipboard-2208317373.png)
+
+4.  Clique em *Acepted results*.
 
 ## Glossário
 
