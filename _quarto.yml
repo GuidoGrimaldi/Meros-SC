@@ -9,26 +9,24 @@ website:
     left:
       - text: "Equipe"
         href: index.qmd
-      - text: "Manuais"
+
+      - text: "Stero-BRUV"
         menu:
-          - text: "SeaGIS CAL"
+          - text: "Protocolo de Campo"
+            href: bruv.qmd
+          - text: "Guia Rápido | Calibração"
+            href: quick-cal.qmd
+          - text: "Manual SeaGIS | Calibração"
             href: seagis-cal.qmd
           - text: "EventMeasure"
             href: eventmeasure.qmd
-          - text: "CAL Quick Guide"
-            href: quick-cal.qmd
 
-      - text: "Protocolos"
+      - text: "Mergulho Científico"
         menu:
-          - text: "BRUV/ Campo"
-            href: bruv.qmd
+          - text: "Nossas Diretrizes"
+            href: sci-dive.qmd
           - text: "Plano de Emergência"
             href: emergence.qmd
-
-      - text: "Diretrizes"
-        menu:
-          - text: "Mergulho Científico"
-            href: sci-dive.qmd
 
       - text: "Pesquisa"
         href: https://guidogrimaldi.shinyapps.io/PesquisaMerosSC/
