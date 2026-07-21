@@ -1,0 +1,12 @@
+name: meros_sc
+title: Meros SC
+username: guidogrimaldi
+account: guidogrimaldi
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 019f8149-6e8d-7760-bb9e-5409f12b9cf2
+bundleId:
+url: https://connect.posit.cloud/guidogrimaldi/content/019f8149-6e8d-7760-bb9e-5409f12b9cf2
+version: 1
+asMultiple: FALSE
+asStatic: TRUE

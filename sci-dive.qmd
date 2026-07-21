@@ -55,13 +55,13 @@ geometry:
 
 # DIRETRIZ GERAL
 
-I.  A segurança e a salvaguarda da vida deve sempre estar acima dos objetivos das operações.
+I.  A segurança e a salvaguarda da vida deve estar sempre acima dos objetivos das operações de mergulho e pesquisa.
 
-II. As atividades de mergulho científico só devem ser realizadas por um mínimo de dois mergulhadores devidamente credenciados.
+II. As atividades de mergulho científico só devem ser realizadas por um mínimo de dois mergulhadores devidamente credenciados, conforme a regra norteadora da atividade.
 
 III. A equipe de trabalho deve se organizar em sistema de dupla, eventualmente trio.
 
-IV. A equipe de trabalho deve permanecer coesa durante o mergulho, mantendo-se sempre o contato visual com os demais mergulhadores.
+IV. A equipe de trabalho deve permanecer coesa durante o mergulho, buscando manter sempre o contato visual com os demais mergulhadores.
 
 V.  Pelos menos um dos membros das duplas deve ter consigo, obrigatoriamente, os seguintes equipamentos:
 
@@ -77,17 +77,29 @@ V.  Pelos menos um dos membros das duplas deve ter consigo, obrigatoriamente, os
 
     Parágrafo único: É recomendavel o uso de bússola.
 
-VI. Em caso de perda do contato visual, busque
+VI. Em caso de desorientação e perda de contato com seu dupla, busque por alguns minutos, fazendo soar o **aviso de** **emergência** do mergulho autônomo (batidas intermitentes no cilindro com auxílio de algum material duro).
 
-VII. 
+VII. Caso não encontre o mesmo após procedimento anterior, suba a superfície, seguindo os requisitos e limites de segurança estabelecidos pela sua profundidade e tempo de mergulho ou avisos do computador de mergulho.
 
-VIII. com os demais mergulhadores, deve-se soar o aviso de emergência do mergulho (batidas intermitentes no cilindro com auxílio de algum material duro)
+VIII. Aguarde que seu dupla, após realizar os procedimentos aqui estabelecidos, resurja na superfície.
 
-IX. deve ocorrer exclusivamente com mergulho deve ser realizado por ao menos dois (02) mergulhadores devidamente certificados, conforme a regra norteadora da atividade.
+IX. Caso o mesmo não aparece após uns 10 minutos, retorne ao barco de apoio e aguarde-o na embarcação.
 
-X.  
+X.  Transcorrido o tempo de mergulho e retorno das demais duplas, aguarde mais alguns minutos. Verifique se o tempo de fundo planejado para o mergulho ainda
 
 XI. 
+
+XII.  e dê início ao Plano de Emergência para Desaparecimento de Dupla.
+
+XIII. 
+
+# Planos de Emergência
+
+## Acidente Ocular
+
+## Desaparecimento de Dupla
+
+## 
 
 Briefing
 
