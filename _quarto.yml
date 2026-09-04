@@ -51,6 +51,7 @@ format:
       - cerulean
       - brand
     css: styles.css
+    respect-user-color-scheme: true
   pdf:
     documentclass: scrreprt
 

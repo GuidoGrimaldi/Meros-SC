@@ -7,8 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Pesquisa Meros SC">
+<meta name="description" content="Status: Completed">
 
-<title>Projeto Meros do Brasil – Pesquisa Meros SC</title>
+<title>BRUV: Guia rápido de campo – Pesquisa Meros SC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -100,47 +101,40 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manuais" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Manuais</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stero-bruv" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stero-BRUV</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-manuais">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stero-bruv">    
+        <li>
+    <a class="dropdown-item" href="./bruv.html">
+ <span class="dropdown-text">Protocolo de Campo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quick-cal.html">
+ <span class="dropdown-text">Guia Rápido | Calibração</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./seagis-cal.html">
- <span class="dropdown-text">SeaGIS CAL</span></a>
+ <span class="dropdown-text">Manual SeaGIS | Calibração</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./eventmeasure.html">
  <span class="dropdown-text">EventMeasure</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./quick-cal.html">
- <span class="dropdown-text">CAL Quick Guide</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Protocolos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mergulho-científico" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Mergulho Científico</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mergulho-científico">    
         <li>
-    <a class="dropdown-item" href="./bruv.html">
- <span class="dropdown-text">BRUV/ Campo</span></a>
+    <a class="dropdown-item" href="./sci-dive.html">
+ <span class="dropdown-text">Nossas Diretrizes</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./emergence.html">
  <span class="dropdown-text">Plano de Emergência</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-diretrizes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Diretrizes</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-diretrizes">    
-        <li>
-    <a class="dropdown-item" href="./sci-dive.html">
- <span class="dropdown-text">Mergulho Científico</span></a>
   </li>  
     </ul>
   </li>
@@ -175,22 +169,37 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Conteúdo</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#procedimentos-pré-campo" id="toc-procedimentos-pré-campo" class="nav-link active" data-scroll-target="#procedimentos-pré-campo"><span class="header-section-number">1</span> Procedimentos Pré-Campo</a></li>
-  <li><a href="#procedimentos-de-campo" id="toc-procedimentos-de-campo" class="nav-link" data-scroll-target="#procedimentos-de-campo"><span class="header-section-number">2</span> Procedimentos de Campo</a></li>
-  <li><a href="#pós-campo" id="toc-pós-campo" class="nav-link" data-scroll-target="#pós-campo"><span class="header-section-number">3</span> Pós-Campo</a></li>
+  <li><a href="#procedimentos-de-campo" id="toc-procedimentos-de-campo" class="nav-link" data-scroll-target="#procedimentos-de-campo"><span class="header-section-number">2</span> Procedimentos de Campo</a>
+  <ul class="collapse">
+  <li><a href="#preparação-para-o-lançamento" id="toc-preparação-para-o-lançamento" class="nav-link" data-scroll-target="#preparação-para-o-lançamento"><span class="header-section-number">2.1</span> Preparação para o lançamento</a></li>
+  <li><a href="#lançamento-na-água" id="toc-lançamento-na-água" class="nav-link" data-scroll-target="#lançamento-na-água"><span class="header-section-number">2.2</span> Lançamento na água</a></li>
+  <li><a href="#que-informações-anotar" id="toc-que-informações-anotar" class="nav-link" data-scroll-target="#que-informações-anotar"><span class="header-section-number">2.3</span> Que informações anotar?</a></li>
+  <li><a href="#remoção-da-água" id="toc-remoção-da-água" class="nav-link" data-scroll-target="#remoção-da-água"><span class="header-section-number">2.4</span> Remoção da água</a></li>
+  </ul></li>
+  <li><a href="#pós-campo" id="toc-pós-campo" class="nav-link" data-scroll-target="#pós-campo"><span class="header-section-number">3</span> Pós-Campo</a>
+  <ul class="collapse">
+  <li><a href="#lavagem" id="toc-lavagem" class="nav-link" data-scroll-target="#lavagem"><span class="header-section-number">3.1</span> Lavagem</a></li>
+  <li><a href="#cartões-de-memória-baterias" id="toc-cartões-de-memória-baterias" class="nav-link" data-scroll-target="#cartões-de-memória-baterias"><span class="header-section-number">3.2</span> Cartões de memória &amp; Baterias</a></li>
+  </ul></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="bruv.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="bruv.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projeto Meros do Brasil</h1>
-<p class="subtitle lead">BRUV: Guia rápido de campo.</p>
+<h1 class="title">BRUV: Guia rápido de campo</h1>
+<p class="subtitle lead">Projeto Meros do Brasil</p>
 </div>
 
+<div>
+  <div class="description">
+    Status: Completed
+  </div>
+</div>
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
@@ -218,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
   <div class="abstract">
     <div class="block-title">About</div>
-    Este protocolo está em contínuo aprimoramento. É sempre recomendável relê-lo para se manter atualizado sobre as mudanças.
+    Leia sempre antes de ir a campo para revisar os procedimentos.
   </div>
 </div>
 
@@ -243,27 +252,33 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Monte os pés do BRUV.</p></li>
 <li><p>Prepare a haste da isca com o cano de armazenamento.</p></li>
-<li><div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
+<li><div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p><strong>Não adicione a isca ainda, para não ficar pingando no barco. Deixe para pôr no último momento.</strong></p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Não adicione a isca ainda, para não ficar pingando no barco. Deixe para pôr no último momento.</strong></p>
 </div>
 </div></li>
 <li><p>Libere o cabo vermelho em comformidade com a profudidade local estimada. Ex: para 15m de profundidade, libere 17 braças ( 1 braça ~1.5m).</p></li>
 <li><p>Amare a <strong>ponta solta</strong> do cabo de lançamento (<strong>corda vermelha</strong>) na argola da bóia de meia água do BRUV.</p></li>
 <li><p>Amarre a bóia de sinalização de superfície (<strong>bóia laranja</strong>) ao cabo de lançamento.</p></li>
-<li><div class="callout callout-style-simple callout-caution no-icon">
-<div class="callout-body d-flex">
+<li><div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
+<i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>NÃO passe o cabo SOMENTE no D-ring plástico da bóia de sinalização, Passe também por dentro do tirante horizontal da bóia como backup de segurança para caso do D-ring quebre.</p>
+<div class="callout-title-container flex-fill">
+Caution
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>NÃO</strong> passe o cabo <strong>SOMENTE</strong> no D-ring plástico da bóia de sinalização, Passe também por dentro do tirante horizontal da bóia como backup de segurança para caso do D-ring quebre.</p>
 </div>
 </div></li>
 <li><p>Retire ambas as câmeras e ligue-as (<strong>Pressione o botão lateral</strong>).</p></li>
@@ -286,14 +301,17 @@ Tip
 </div></li>
 <li><p>Devolva as câmaras aos seus RESPECTIVOS cases.</p></li>
 <li><p><strong>Cuidado para não por de cabeça para baixo!</strong></p></li>
-<li><div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
+<li><div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Se atente as marcações no bruv, elas devem coincidir. Lembre-se <strong>vermelho</strong> é bombordo (esquerda) e <strong>verde</strong> é boreste (direita).</p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Se atente as marcações no bruv, elas devem coincidir. Lembre-se <strong>vermelho</strong> é bombordo (esquerda) e <strong>verde</strong> é boreste (direita).</p>
 </div>
 </div></li>
 <li><p>Adicione a isca ao cano e acople a haste da isca no BRUV.</p></li>
@@ -319,14 +337,17 @@ Caution
 <li><p>Tudo pronto! Vamos lançar pra água!</p></li>
 <li><p>Precisa de pelo menos duas pessoas, uma para lançar e outra para safar o cabo. Bom mesmo é três, porque fica um atento as anotações e coleta do ponto no GPS (protocolo a criar)</p></li>
 <li><p>Apoie o BRUV no bordo, metade das pernas dentro, metade fora, com a isca virada para o mar.</p>
-<div class="callout callout-style-simple callout-warning">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Não solte na popa, ao menos que o motor da embarcação esteja desligado, pois corre risco de enroscar no hélice.</p>
+<div class="callout-title-container flex-fill">
+Warning
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Não solte na popa, ao menos que o motor da embarcação esteja desligado, pois corre risco de enroscar no hélice.</p>
 </div>
 </div></li>
 <li><p>Em caso de embarcação em movimento, solte o mais vertical e rápido possível, evitando assim muita derivação.</p></li>
@@ -334,28 +355,34 @@ Caution
 <li><p>Se puxar demais ou entrar na água em uma posição ruim, o sistema bruv ficara de ponta cabeçã ou tompará para frente.</p></li>
 <li><p>Já aconteceu de o sistema cair em pé, mas de alguma maneira tobar para trás apos muitos minutos em posição correta. Acredito que tenha sido o cabo curto demais em relação a ondulação da maré, mas é preciso verificar mais.</p></li>
 <li><p>Quando sentir que a sonda chegou ao fundo, lançe o cabo restante, com a bóia de sinalização.</p>
-<div class="callout callout-style-simple callout-caution">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Não esqueça de marcar o ponto no GPS! É para cada lançamento!</p>
+<div class="callout-title-container flex-fill">
+Caution
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Não esqueça de marcar o ponto no GPS! É para cada lançamento!</p>
 </div>
 </div></li>
 </ul>
 </section>
 <section id="que-informações-anotar" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="que-informações-anotar"><span class="header-section-number">2.3</span> Que informações anotar?</h2>
-<div class="callout callout-style-simple callout-important">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Leve sua prancheta ou caderneta de campo!</p>
+<div class="callout-title-container flex-fill">
+Important
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Leve sua prancheta ou caderneta de campo!</p>
 </div>
 </div>
 <ul>
@@ -385,14 +412,17 @@ Caution
 <li><p>Caso ainda vá utilizar, deixe-os montados, sem a haste da isca e de forma organizada, em algum local do convez de modo a permitir a circulação da tripulação.</p></li>
 </ul></li>
 </ul>
-<div class="callout callout-style-simple callout-caution">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Ao guardar os BRUVs na bolsa de transporte, tenha especial cuidado com as lentes, de modo a evitar arranhões, pois estes interferem na análise das imagens.</p>
+<div class="callout-title-container flex-fill">
+Caution
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ao guardar os BRUVs na bolsa de transporte, tenha especial cuidado com as lentes, de modo a evitar arranhões, pois estes interferem na análise das imagens.</p>
 </div>
 </div>
 </section>
@@ -443,14 +473,17 @@ Tip
 </div>
 </div></li>
 <li><p>Guarde a bateria no case de campo no compartimento “A carregar”.</p>
-<div class="callout callout-style-simple callout-tip">
-<div class="callout-body d-flex">
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p><strong>Facilite. Deixe as baterias já carregadas e prontas para o próximo campo.</strong></p>
+<div class="callout-title-container flex-fill">
+Tip
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Facilite. Deixe as baterias já carregadas e prontas para o próximo campo.</strong></p>
 </div>
 </div></li>
 </ul>
@@ -459,7 +492,7 @@ Tip
 </section>
 </section>
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a><div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>©2026 Projeto Meros do Brasil. All rights reserved.</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

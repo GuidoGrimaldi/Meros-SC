@@ -1,17 +1,49 @@
 ---
-title: "Guia Rápido CAL/ SeaGIS"
-
+title: "BRUV: Guia de Calibração"
+subtitle: "Projeto Meros do Brasil"
 author: 
-  name: Supervisor de Pesquisa SC
+  name: Pesquisa Meros SC
   email: pesquisasc@merosdobrasil.org
   affiliation: 
-    name: Intituto Meros do Brasil
+    name: Instituto Meros do Brasil
     url: https://merosdobrasil.org/
-    
+
+description: "Status: Completed"
+
+abstract-title: "About"
+abstract: "Este guia rápido foi criado como parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração. Para uso consulte os termos."
+
+copyright: "©2026 Projeto Meros do Brasil. All rights reserved."
+license: CC BY-NC-SA
+
+# Formato
+format:
+  html:
+    toc-title: "Conteúdo"
+    toc: true
+    toc-location: right
+    toc-expand: true
+    toc-depth: 2
+    number-sections: true
+    page-layout: article
+
+  pdf:
+    documentclass: scrreprt
+  docx:
+    reference-doc: custom-reference-doc.docx
+
+# Fonte ---------------------------
+fontfamily: baskervald
+fontsize: 12pt
+
+# Opções de execução --------------
 execute: 
+  warning: false
   freeze: auto
 
-abstract: "Este Guia Rápido foi criado parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração."
+# Layout da página ----------------
+geometry: 
+  - margin = 1in
 ---
 
 ## Organize-se!
@@ -116,15 +148,15 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
 ## Explore mais!
 
--   Se for em *Camera \| Left/Right \| Edit parameters*, você terá acesso as características ópticas da câmara.
+- Se for em *Camera \| Left/Right \| Edit parameters*, você terá acesso as características ópticas da câmara.
 
-    ![](images/clipboard-175649103.png)
+  ![](images/clipboard-175649103.png)
 
--   Essas informações são importantes quando se trabalha cientificamente com a visão.
+- Essas informações são importantes quando se trabalha cientificamente com a visão.
 
-    ![](images/clipboard-1832882555.png)
+  ![](images/clipboard-1832882555.png)
 
--   É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.
+- É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.
 
 ## Sincronizando Câmeras
 
@@ -147,21 +179,27 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 5.  É para esse momento que serve o bater palmas ou os dedos (movimentos de *clap*). Servindo de claquete para marcar o início da tomada, para gerarmos oo sincronismo audiovisual entre imagem e som.
 
     ::: {.callout-warning appearance="simple"}
-    Antenção! Aviso das Galáxias!
+    ATENÇÃO, AVISO DAS GALÁXIAS!
 
-    PRESTE MUITA ATENÇÃO A ESSE MOVIMENTO. ELE É UM MOVIMENTO FUNDAMENTAL PARA SINCRONIZAÇÃO DA FOTOGRAMETRIA.
+    NUNCA ESQUEÇA DE REALIZAR O "CLAP" ANTES DE LANÇAR OS BRUVS!
 
-    PODEMOS INVIABILIZAR TODA A AMOSTRAGEM E DESPEDIÇAR TODO O ESFORÇO DE CAMPO SE NÃO CONSEGUIRMOS SINCRONIZAR AS CÂMERAS.
+    Trata-se de um esquecimento comum durante as operações de campo, pois a dinâmica da atividade embarcada associada a um conjunto de passos que precisam ser seguidos antes do lançamento, nos leva a esquecer dos procedimentos mais simples.
 
-    PERCEBERÁ QUE A AUSÊNCIA DESSE MOVIMENTO NA CALIBRAÇÃO DESPENDIRÁ DE SUA PARTE MUITO MAIS CAPRICHO E TEMPO PARA REALIZAR SEU TRABALHO.
+    A realização dessa operação é fundamental para a sincronização posterior das câmeras dentro do programa de fotogrametria, seja para tomada de medida ou na etapa de calibração.
 
-    ESSE É UM ERRO COMUM DURANTE AS OPERAÇÕES DE CAMPO, POIS A UMA SERIES DE PASSOS QUE PRECISA SER SEGUIDOS E ACABAMOS POR NOS ESQUECER DOS MAIS SIMPLES.
+    A não realização ou esquecimento dessa etapa pode inviabilizar toda a amostragem do dia, desperdiçando assim nosso esforço de campo, financeiro e físico.
 
-    PORTANTO, NUNCA ESQUEÇA DE REALIZAR SEU CLAP ANTES DE LANÇAR OS BRUVS
+    Ainda que possível realizar a sincronização na ausência deste movimento, a operação será muito mais trabalhosa, despedindo muito mais capricho e tempo para a realização de uma simple etapa.
 
-    SUGIRO ATÉ QUE DESENVOLVA UM PRÓPRIO. BUSQUE MOVIMENTOS RÁPIDOS E PRECISOS, MAS LEMBRE-SE DOS DIFERENTES ÂNGULOS DAS CÂMERAS, VOCÊ PODE ACABAR TAPANDO A VISUALIZAÇÃO DE UMA DELAS. POR ISSO MESMO IREI PRATICAR A UTILIZAÇÃO DO CLAP CLAP INVEZ DO CLAP PARA SABER SE É MELHOR, POIS ASSIM TEMOS DUAS CHANCES.
+    Atente-se que por se tratar de um sistema de **stereo**-BRUV, com **câmeras em diferentes ângulos**, você pode acabar obstruindo a visualização de uma delas a depender da sua posição em relação a elas.
 
-    A DICA É CARANGUEJO. 🦀
+    **Se faz necessário que ambas as câmeras registre o movimento "clap".**
+    :::
+
+    ::: {.callout-tip appearance="simple"}
+    **A dica é utilizar movimentos rápidos e precisos.**
+
+    **Sugiro o movimento de pinçar os dedos, como um caranguejo, batendo de forma rápida o polegar contra o indicador várias vezes seguidas de modo a aumentarmos a chance de captura limpa.**
     :::
 
 6.  Uma nova tela abrirá:

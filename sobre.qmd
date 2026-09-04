@@ -25,22 +25,22 @@ Consolidar-se **colaborativamente** como um repositório virtual estratégico pa
 
 ## Valores
 
--   Honestidade
+- Honestidade
 
--   Solidariedade
+- Solidariedade
 
--   Responsabilidade
+- Responsabilidade
 
--   Justiça
+- Justiça
 
--   Transparência
+- Transparência
 
--   Reprodutibilidade
+- Reprodutibilidade
 
 ## Princípios
 
--   Princípio Ético-Legal: Respeito aos direitos autorais, às licenças de uso, à propriedade intelectual e às normas acadêmicas vigentes.
+- Princípio Ético-Legal: Respeito aos direitos autorais, às licenças de uso, à propriedade intelectual e às normas acadêmicas vigentes.
 
--   Princípio Colaborativo: Fomento à cooperação entre pesquisadores, projetos e instituições e redes acadêmicas, estimulando a produção e validação coletiva do conhecimento.
+- Princípio Colaborativo: Fomento à cooperação entre pesquisadores, projetos e instituições e redes acadêmicas, estimulando a produção e validação coletiva do conhecimento.
 
--   Princípio da Reprodutibilidade: Comprometimento em assegurar que dados, métodos, códigos, protocolos e procedimentos técnicos sejam documentados de forma completa, transparente e acessível, permitindo a verificação independente, a replicação dos resultados momentos e a validação das conclusões por terceiros qualificados.
+- Princípio da Reprodutibilidade: Comprometimento em assegurar que dados, métodos, códigos, protocolos e procedimentos técnicos sejam documentados de forma completa, transparente e acessível, permitindo a verificação independente, a replicação dos resultados momentos e a validação das conclusões por terceiros qualificados.

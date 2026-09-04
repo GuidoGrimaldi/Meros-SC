@@ -1,7 +1,7 @@
 ---
 # Metadados
-title: "SeaGIS-CAL-Guide PT/BR"
-subtitle: "Guia do Usuário SeaGIS-CAL"
+title: "Guia do Usuário SeaGIS-CAL"
+subtitle: "SeaGIS-CAL-Guide PT/BR"
 author: 
   name: Supervisor de Pesquisa SC
   email: pesquisasc@merosdobrasil.org
@@ -12,8 +12,11 @@ author:
 abstract: "Essa é uma adaptação da documentação original baseada em minhas percepções e interpretações. Novas secções foram inseridas e reordenadas buscando facilitar o entendimento dos conceitos."
 abstract-title: "About"
 respect-user-color-scheme: true
-description: "Completed"
+description: "Incompleted"
 page-layout: article
+
+copyright: "©2026 Projeto Meros do Brasil. All rights reserved."
+license: CC BY-NC-SA
 
 # Fonte ---------------------------
 fontfamily: baskervald
@@ -29,6 +32,11 @@ format:
     toc-depth: 2
     number-sections: true
     smooth-scroll: true
+  
+  pdf:
+    documentclass: scrreprt
+  docx:
+    reference-doc: custom-reference-doc.docx
 
 
 # Opções de execução --------------

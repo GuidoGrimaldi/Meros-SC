@@ -1,25 +1,23 @@
 ---
 # Metadados
-
 title: "Diretrizes para o Mergulho Científico"
-subtitle: "Diretrizes do Mergulho Científico no âmbito PMB-SC"
+subtitle: "Projeto Meros do Brasil"
+
 author: 
-  name: Supervisor de Pesquisa SC
+  name: Pesquisa Meros SC
   email: pesquisasc@merosdobrasil.org
   affiliation: 
     name: Intituto Meros do Brasil
     url: https://merosdobrasil.org/
 
-abstract: "Diretrizes para a prática e logística de operações de mergulho científico em projetos de pesquisa socio-ambientais"
-abstract-title: "About"
-respect-user-color-scheme: true
+description: "Status: Em construção"
 date: 2026-05-01
-description: "Status: Documento em construção"
 
-copyright: "©2026, GuidoGrimaldi. All rights reserved."
+abstract-title: "About"
+abstract: "Diretrizes para a prática e logística de operações de mergulho científico no âmbito PMB-SC"
+
+copyright: "©2026 Projeto Meros do Brasil. All rights reserved."
 license: CC BY-NC-SA
-page-layout: article
-
 
 # Fonte ---------------------------
 fontfamily: baskervald
@@ -87,27 +85,141 @@ IX. Caso o mesmo não aparece após uns 10 minutos, retorne ao barco de apoio e 
 
 X.  Transcorrido o tempo de mergulho e retorno das demais duplas, aguarde mais alguns minutos. Verifique se o tempo de fundo planejado para o mergulho ainda
 
-XI. 
+XI. e dê início ao Plano de Emergência para Desaparecimento de Dupla.
 
-XII. e dê início ao Plano de Emergência para Desaparecimento de Dupla.
-
-XIII. 
-
-# Planos de Emergência
-
-## Acidente Ocular
-
-## Desaparecimento de Dupla
-
-## 
-
-Briefing
-
-## Cargos
+XII. 
 
 Atribuições dos Mergulhadores
 
 Regras gerais de condutas nas operações de mergulho cientifico
+
+# PLANO DE EMERGÊNCIA
+
+## O que fazer em caso de Irritação Ocular?
+
+- **Lave com soro ou água imediatamente:** *Irrigue o olho afetado com soro fisiológico 0,9% ou água limpa e fresca por alguns minutos para remover os resíduos de areia ou sal.*
+
+- **Não esfregue!** *Esfregar os olhos pode causar arranhões na córnea por abrasão e piorar a inflamação.*
+
+- **Use colírio lubrificante:** *Aplique colírios lubrificantes sem conservantes para ajudar a restaurar a camada protetora da lágrima.*
+
+- **Retire lentes de contato:** *Se você estava mergulhando com lentes de contato, remova-as imediatamente, pois elas retêm microrganismos e materiais irritantes.* Lembre-se, não se deve mergulhar de lente de contato.
+
+- **Faça um compressa fria:** Coloque uma compressa limpa com água fria (ou soro gelado) sobre os olhos fechados para aliviar o ardor e o vermelhidão.
+
+### **Quando acionar o Plano de Emergência?**
+
+Peça ajuda, comunique a equipe de terra e avise o contato de emergência, direcionando-o a um pronto-socorro oftalmológico, se apresentar algum dos seguintes sinais de alerta:
+
+- Dor ocular intensa ou contínua.
+
+- Visão turva, embaçada ou perda de nitidez.
+
+- Sensação persistente de corpo estranho ou "areia" que não passa.
+
+- Sensibilidade extrema à luz (fotofobia) ou vermelhidão que piora com o tempo.
+
+- Secreção amarelada ou esverdeada saindo do olho.
+
+- Sangramento ou Lesão ocular.
+
+## O que fazer em caso de Desaparecimento de Dupla?
+
+### 1. Fase de Busca Subaquática (01 minuto)
+
+- **Pare, respire e estabilize:** Interrompa seu deslocamento imediatamente, controle sua flutuabilidade e cheque seu suprimento de ar.
+
+- **Busca visual de 360°:** Ainda parado, olhe ao seu redor, para cima e para baixo. Tente identificar colunas de bolhas do regulador da dupla.
+
+- **Use a lanterna:** Se a visibilidade estiver baixa, balance a lanterna para os lados para tentar chamar a atenção ou ver o reflexo dos equipamentos dela.
+
+- **Bata no cilindro:** Use uma ferramenta, pedra ou a faca de mergulho para produzir um som metálico no cilindro, chamando a atenção da dupla.
+
+- **Busque por 1 minuto!**
+
+### 2. Fase de Subida e Reagrupamento
+
+- **Subida controlada:** Passado 1 minuto sem contato, inicie a subida respeitando a velocidade segura.
+
+- **Não esqueça a Parada de Segurança:** Realize a parada de segurança, **apenas se** você tiver ar suficiente, não estiver em situação de pânico e não houver suspeita de acidente grave com a dupla. Caso contrário, suba direto mantendo o controle.
+
+- **Olhe para cima:** Durante a subida, continue olhando ao redor e para a superfície. A dupla pode ter subido antes de você.
+
+### **3. Fase de Superfície e Resgate**
+
+- **Infle o colete:** Ao chegar à superfície, infle totalmente o seu colete equilibrador para garantir flutuabilidade positiva.
+
+- **Sinalize a embarcação:** Avise imediatamente o barco de apoio acenando os braços levantados ou use apito ou agite sinalizador visual (salsichão).
+
+- **Grite o nome para a embarcação:** Muitas vezes, o sumiço ocorre porque ela subiu direto.
+
+- Se a dupla não estiver na superfície, **acione o Plano de Emergência**
+
+### **4. Acionamento do Plano de Emergência**
+
+- **Alerta geral:** Avise ao capitão da embarcação para que registre a última posição conhecida. Marque no GPS e anote as referências visuais da costa. Se possível, lançe uma poita com bóia de sinalização de superfície.
+
+- **Inicie um busca de resgate:** Se tiver mergulhadores em superfície, inicie um mergulho de resgate, seguindo um padrão de busca.
+
+- **Peça socorro:** Acione imediatamente as autoridades locais (**Corpo de Bombeiros / Salvamento Marítimo pelo telefone 193** ou a Capitania dos Portos).
+
+- **Prepare o oxigênio:** Deixe o kit de oxigênio medicinal de emergência pronto no barco para o momento em que a dupla for encontrada.
+
+## O que dizer ao ligar na Emergência?
+
+*- Oi! Eu sou* **\<Seu Nome\>** *e estou informando um acidente de mergulho.*
+
+*- A vítima encontra-se* **\<Estado da Vítima\>** *e precisa ser levada urgentemente para uma câmara hiperbárica.*
+
+*- Estamos no(a):* **\<Local Exato\>**
+
+*- Peço que anotem esse número* **\<Seu Celular\>** *para que possam recuperar o contato se precisarem*
+
+::: callout-important
+Responda todas as perguntas e permaneça na linha até que o operador do SME desligue.
+:::
+
+::: callout-warning
+Não use o atemdimento via WhatsApp, LIGUE!!!
+:::
+
+::: callout-tip
+Se necessário, utilize o rádio pelo canal 16 VHF.
+:::
+
+## Relatório de Acidente
+
+Ao preparar o seu relatório de acidente busque responder as seguintes perguntas:
+
+- Como você soube que havia algum problema?
+
+- Onde estava a vítima (profundidade, localização, etc.)?
+
+- O equipamento da vítima estava fora do lugar ou diferente do normal (regulador fora da boca, etc.)?
+
+- Você respondeu a emergência rapidamente?
+
+- O que você fez ao responder à situação de emergência?
+
+- Você foi capaz de identificar a pessoa que ajudou?
+
+- O que você, pessoalmente, viu acontecer?
+
+- Quais os primeiros socorros que foram administrados?
+
+- Foi necessário utilizar oxigênio de emergência? A vítima estava consciente ou inconsciente? Ela estava ou não ventilando?
+
+- O SME foi chamado? Quando? Quando eles responderam? O que você viu o SME fazer?
+
+- O equipamento da vítima foi recuperado? Se sim, e se você verificou pessoalmente, ele estava funcionando corretamente e qual é a quantidade de ar que havia no cilindro?
+
+::: callout-tip
+Preencha o relatório de acidentes o mais breve possível, enquanto os eventos ainda estão frescos em sua memória.
+:::
+
+::: callout-important
+Lembre-se de anotar as horas e informações dos acontecimentos em sua caderneta de mergulho.
+:::
 
 Rol de Mergulhadores
 

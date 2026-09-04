@@ -1,12 +1,14 @@
 ---
-title: "Projeto Meros do Brasil"
-subtitle: "EventMeasure Guide pt/br"
+title: "BRUV: EventMeasure Guide pt/br"
+subtitle: "Projeto Meros do Brasil"
 author: 
-  name: "Supervisão de Pesquisa SC"
+  name: "Pesquisa Meros SC"
   email: pesquisasc@merosdobrasil.org
   affiliation: 
     name: Intituto Meros do Brasil
     url: https://merosdobrasil.org/
+
+description: "Status: incompleted"
 
 format:
   html:
@@ -17,6 +19,11 @@ format:
     toc-depth: 3
     number-sections: true
     smooth-scroll: true
+  
+  pdf:
+    documentclass: scrreprt
+  docx:
+    reference-doc: custom-reference-doc.docx
 
 execute: 
   freeze: auto
@@ -24,17 +31,17 @@ execute:
 
 # Termos & Conceitos
 
--   **Arquivo de atributo** (*Attribute file*): é o arquivo que armazena os atributos (variáveis descritivas) associados às medições.
+- **Arquivo de atributo** (*Attribute file*): é o arquivo que armazena os atributos (variáveis descritivas) associados às medições.
 
--   **Arquivo de espécie** (*Species file*): é um **arquivo de referência** usado pelo software *EventMeasure* para definir e padronizar as espécies ou categorias biológicas que podem ser registradas durante as medições.
+- **Arquivo de espécie** (*Species file*): é um **arquivo de referência** usado pelo software *EventMeasure* para definir e padronizar as espécies ou categorias biológicas que podem ser registradas durante as medições.
 
--   **Arquivos de imagem** (*Image files*): São os arquivos de imagem ou vídeos brutos que você irá analisar.
+- **Arquivos de imagem** (*Image files*): São os arquivos de imagem ou vídeos brutos que você irá analisar.
 
--   **Arquivo de medição** (*Measurement file*): é o **arquivo central do projeto** no EventMeasure. Ele funciona como um contêiner de dados, onde ficam armazenadas todas as informações produzidas durante a análise de imagens ou vídeos.
+- **Arquivo de medição** (*Measurement file*): é o **arquivo central do projeto** no EventMeasure. Ele funciona como um contêiner de dados, onde ficam armazenadas todas as informações produzidas durante a análise de imagens ou vídeos.
 
--   **Imagens de referência** (*Reference images*): São imagens criadas pelo EventMeasure ou importadas externamentos de parceiros que servem como padrão de comparação durante as medições, não é um dado de medição em si.
+- **Imagens de referência** (*Reference images*): São imagens criadas pelo EventMeasure ou importadas externamentos de parceiros que servem como padrão de comparação durante as medições, não é um dado de medição em si.
 
--   **Profundidade de Implantação** (*Depth of deployment*): profundidade à qual o equipamento/ sistema de operação foi colocado ou utilizado na água.
+- **Profundidade de Implantação** (*Depth of deployment*): profundidade à qual o equipamento/ sistema de operação foi colocado ou utilizado na água.
 
 # Guia Rápido
 
@@ -101,7 +108,7 @@ O arquivo de medição possui 12 campos de informações associados a ele. Esses
 Os quatro primeiros campos de informação têm nomes fixos: **OpCode** (Código da Operação), **TapeReader**, **Depth** (Profundidade) e **Comment** (Comentário). Os 8 campos de informação restantes podem ser configurados pelo usuário para armazenar informações personalizadas.
 
 | Information field | Default name | Use |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | 1 | OpCode | Identificador único para este conjunto de medições, geralmente associado a uma implantação/ lançamento de câmera. |
 | 2 | TapeReader | Nome da pessoa que realiza as medições. |
 | 3 | Depth | Profundidade de implantação. |
@@ -127,33 +134,33 @@ Observe que é obrigatório inserir valores para OpCode e TapeReader antes que o
 
 Um novo arquivo de medição pode ser criado usando o comando de menu *Measurement \| New measurement file*. Criar um novo arquivo de medição irá:
 
--   Excluir todas as medições atuais.
+- Excluir todas as medições atuais.
 
--   Limpar os valores dos campos de informação (os nomes dos campos de informação permanecem inalterados).
+- Limpar os valores dos campos de informação (os nomes dos campos de informação permanecem inalterados).
 
--   Limpar o nome do arquivo de medição.
+- Limpar o nome do arquivo de medição.
 
--   Limpar o diretório de imagens atual.
+- Limpar o diretório de imagens atual.
 
--   Limpar a imagem atualmente exibida.
+- Limpar a imagem atualmente exibida.
 
--   Limpar qualquer definição de sequência de vídeo.
+- Limpar qualquer definição de sequência de vídeo.
 
--   Limpar quaisquer definições de período.
+- Limpar quaisquer definições de período.
 
 Se estiver utilizando **medição estéreo**, a criação de um novo arquivo de medição irá:
 
--   Excluir todas as medições de comprimento atuais.
+- Excluir todas as medições de comprimento atuais.
 
--   Excluir todas as medições atuais de pontos 3D.
+- Excluir todas as medições atuais de pontos 3D.
 
--   Limpar a imagem da câmera direita atualmente exibida.
+- Limpar a imagem da câmera direita atualmente exibida.
 
--   Limpar qualquer definição de sequência de vídeo da câmera direita.
+- Limpar qualquer definição de sequência de vídeo da câmera direita.
 
--   Limpar as informações de calibração da câmera.
+- Limpar as informações de calibração da câmera.
 
--   Desmarcar o bloqueio estéreo (*Stereo Lock*).
+- Desmarcar o bloqueio estéreo (*Stereo Lock*).
 
 Todas as demais configurações do programa permanecem inalteradas (por exemplo, os nomes atuais dos campos de informação, cabeçalhos de atributos, cores e os arquivos atuais de espécies e atributos).
 
@@ -183,19 +190,19 @@ O *EventMeasure* utiliza um *arquivo de espécies* para associar combinações d
 
 Cada linha do arquivo de espécies pode conter, de forma opcional, informações de comprimento e contagem:
 
--   Comprimento mínimo
+- Comprimento mínimo
 
--   Comprimento máximo.
+- Comprimento máximo.
 
--   Comprimento médio.
+- Comprimento médio.
 
--   Desvio-padrão do comprimento.
+- Desvio-padrão do comprimento.
 
--   Contagem máxima.
+- Contagem máxima.
 
--   Contagem média.
+- Contagem média.
 
--   Desvio-padrão da contagem.
+- Desvio-padrão da contagem.
 
 Essas informações adicionais são usadas para **verificar medições de comprimento quanto a erros grosseiros** durante o processo de medição e para a **geração de relatórios estatísticos** (@sec-count-statistic e @sec-length-statistic). **As unidades dos dados de comprimento devem corresponder àquelas utilizadas na calibração do sistema de câmeras** (essas serão as mesmas unidades que o *EventMeasure* utiliza para relatar medições tridimensionais e, geralmente, são **milímetros**).
 
@@ -219,13 +226,13 @@ A janela do editor de atributos pode ser redimensionada. Ao redimensioná-la ver
 
 Para editar os atributos de um **ponto/caixa delimitadora**, **comprimento** ou **ponto 3D** existente na visualização padrão de imagem única:
 
--   Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão esquerdo do mouse**. Isso exibirá a janela do editor de atributos.
+- Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão esquerdo do mouse**. Isso exibirá a janela do editor de atributos.
 
--   Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão direito do mouse**. Um menu pop-up será exibido; selecione **Edit attributes** e a janela do editor de atributos será aberta.
+- Clique sobre ou próximo ao ponto, ao ponto de canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão direito do mouse**. Um menu pop-up será exibido; selecione **Edit attributes** e a janela do editor de atributos será aberta.
 
 No **modo de medição estéreo**, o botão esquerdo do mouse é utilizado para realizar medições de comprimento e pontos 3D. Portanto:
 
--   Clique sobre ou próximo ao ponto, ao canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão direito do mouse**. Um menu pop-up será exibido; selecione **Edit attributes** e a janela do editor de atributos será aberta.
+- Clique sobre ou próximo ao ponto, ao canto de uma caixa delimitadora ou ao ponto associado a uma medição de comprimento com o **botão direito do mouse**. Um menu pop-up será exibido; selecione **Edit attributes** e a janela do editor de atributos será aberta.
 
 No modo de medição estéreo, também é possível editar os atributos das medições na **imagem da direita** usando o mesmo método (clique com o botão direito do mouse sobre ou próximo a um ponto de medição e selecione **Edit attributes** no menu pop-up).
 
@@ -233,11 +240,11 @@ Também é possível editar os atributos de uma medição a partir da **janela D
 
 Se você estiver adicionando novos **pontos/caixas delimitadoras**, **pontos 3D** ou **comprimentos**, a janela do editor de atributos será exibida com valores padrão para alguns campos:
 
--   **Number:** 1
+- **Number:** 1
 
--   **Stage:** AD
+- **Stage:** AD
 
--   **Activity:** Passing
+- **Activity:** Passing
 
 A janela será exibida com o campo **Species** destacado. Na maioria dos casos, você já saberá a espécie e poderá começar a digitar o nome da espécie (dica: digite a primeira ou as duas primeiras letras de **Species** e depois abra a lista para ver espécies semelhantes e fazer a seleção). Quando a seleção de **Species** for concluída, o EventMeasure utiliza automaticamente os dados do arquivo de espécies para tentar completar **Family** e **Genus**. Se **Family** e **Genus** puderem ser completados automaticamente de forma única, seus valores serão exibidos; caso contrário, o EventMeasure preencherá a caixa **Genus** com um conjunto reduzido de valores possíveis. Selecione o **Genus** e o **Family** será preenchido.
 

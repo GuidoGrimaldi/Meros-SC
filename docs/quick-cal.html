@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Supervisor de Pesquisa SC">
+<meta name="author" content="Pesquisa Meros SC">
+<meta name="description" content="Status: Completed">
 
-<title>Guia Rápido CAL/ SeaGIS – Pesquisa Meros SC</title>
+<title>BRUV: Guia de Calibração – Pesquisa Meros SC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-870b6070356b2f6ba798b4fc2bd491a6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7a81ce7734a0974cc35de15b4406bdce.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -100,47 +101,40 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Equipe</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-manuais" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Manuais</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stero-bruv" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stero-BRUV</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-manuais">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stero-bruv">    
+        <li>
+    <a class="dropdown-item" href="./bruv.html">
+ <span class="dropdown-text">Protocolo de Campo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./quick-cal.html">
+ <span class="dropdown-text">Guia Rápido | Calibração</span></a>
+  </li>  
         <li>
     <a class="dropdown-item" href="./seagis-cal.html">
- <span class="dropdown-text">SeaGIS CAL</span></a>
+ <span class="dropdown-text">Manual SeaGIS | Calibração</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./eventmeasure.html">
  <span class="dropdown-text">EventMeasure</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="./quick-cal.html">
- <span class="dropdown-text">CAL Quick Guide</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-protocolos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Protocolos</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mergulho-científico" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Mergulho Científico</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-protocolos">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mergulho-científico">    
         <li>
-    <a class="dropdown-item" href="./bruv.html">
- <span class="dropdown-text">BRUV/ Campo</span></a>
+    <a class="dropdown-item" href="./sci-dive.html">
+ <span class="dropdown-text">Nossas Diretrizes</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./emergence.html">
  <span class="dropdown-text">Plano de Emergência</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-diretrizes" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Diretrizes</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-diretrizes">    
-        <li>
-    <a class="dropdown-item" href="./sci-dive.html">
- <span class="dropdown-text">Mergulho Científico</span></a>
   </li>  
     </ul>
   </li>
@@ -172,28 +166,46 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-cal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Conteúdo</h2>
+   
+  <ul class="collapse">
+  <li><a href="#organize-se" id="toc-organize-se" class="nav-link active" data-scroll-target="#organize-se"><span class="header-section-number">1</span> Organize-se!</a></li>
+  <li><a href="#explore-mais" id="toc-explore-mais" class="nav-link" data-scroll-target="#explore-mais"><span class="header-section-number">2</span> Explore mais!</a></li>
+  <li><a href="#sincronizando-câmeras" id="toc-sincronizando-câmeras" class="nav-link" data-scroll-target="#sincronizando-câmeras"><span class="header-section-number">3</span> Sincronizando Câmeras</a></li>
+  <li><a href="#começando-os-trabalhos" id="toc-começando-os-trabalhos" class="nav-link" data-scroll-target="#começando-os-trabalhos"><span class="header-section-number">4</span> Começando os trabalhos</a></li>
+  <li><a href="#mudando-as-cores" id="toc-mudando-as-cores" class="nav-link" data-scroll-target="#mudando-as-cores"><span class="header-section-number">5</span> Mudando as cores</a></li>
+  <li><a href="#finalizando-os-trabalhos" id="toc-finalizando-os-trabalhos" class="nav-link" data-scroll-target="#finalizando-os-trabalhos"><span class="header-section-number">6</span> Finalizando os trabalhos</a></li>
+  <li><a href="#glossário" id="toc-glossário" class="nav-link" data-scroll-target="#glossário"><span class="header-section-number">7</span> Glossário</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-cal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="quick-cal.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Guia Rápido CAL/ SeaGIS</h1>
+<h1 class="title">BRUV: Guia de Calibração</h1>
+<p class="subtitle lead">Projeto Meros do Brasil</p>
 </div>
 
+<div>
+  <div class="description">
+    Status: Completed
+  </div>
+</div>
 
 <div class="quarto-title-meta-author">
   <div class="quarto-title-meta-heading">Author</div>
   <div class="quarto-title-meta-heading">Affiliation</div>
   
     <div class="quarto-title-meta-contents">
-    <p class="author">Supervisor de Pesquisa SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+    <p class="author">Pesquisa Meros SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
   </div>
   <div class="quarto-title-meta-contents">
         <p class="affiliation">
             <a href="https://merosdobrasil.org/">
-            Intituto Meros do Brasil
+            Instituto Meros do Brasil
             </a>
           </p>
       </div>
@@ -208,8 +220,8 @@ ul.task-list li input[type="checkbox"] {
   
 <div>
   <div class="abstract">
-    <div class="block-title">Abstract</div>
-    Este Guia Rápido foi criado parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração.
+    <div class="block-title">About</div>
+    Este guia rápido foi criado como parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração. Para uso consulte os termos.
   </div>
 </div>
 
@@ -217,8 +229,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="organize-se" class="level2">
-<h2 class="anchored" data-anchor-id="organize-se">Organize-se!</h2>
+<section id="organize-se" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="organize-se"><span class="header-section-number">1</span> Organize-se!</h2>
 <ol type="1">
 <li><p>Crie um novo diretório (pasta) para armazenar seus projetos de calibração.</p>
 <p><img src="images/clipboard-2973557940.png" class="img-fluid"></p></li>
@@ -325,8 +337,8 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <p><img src="images/clipboard-3162917403.png" class="img-fluid"></p></li>
 </ol>
 </section>
-<section id="explore-mais" class="level2">
-<h2 class="anchored" data-anchor-id="explore-mais">Explore mais!</h2>
+<section id="explore-mais" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="explore-mais"><span class="header-section-number">2</span> Explore mais!</h2>
 <ul>
 <li><p>Se for em <em>Camera | Left/Right | Edit parameters</em>, você terá acesso as características ópticas da câmara.</p>
 <p><img src="images/clipboard-175649103.png" class="img-fluid"></p></li>
@@ -335,8 +347,8 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <li><p>É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.</p></li>
 </ul>
 </section>
-<section id="sincronizando-câmeras" class="level2">
-<h2 class="anchored" data-anchor-id="sincronizando-câmeras">Sincronizando Câmeras</h2>
+<section id="sincronizando-câmeras" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="sincronizando-câmeras"><span class="header-section-number">3</span> Sincronizando Câmeras</h2>
 <ol type="1">
 <li><p>Plug o pen-drive no USB.</p></li>
 <li><p>Abra o programa CAL no seu computador (Downloads: <a href="https://www.seagis.com.au/download.php" class="uri">https://www.seagis.com.au/download.php</a>)</p></li>
@@ -363,14 +375,25 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Antenção! Aviso das Galáxias!</p>
-<p>PRESTE MUITA ATENÇÃO A ESSE MOVIMENTO. ELE É UM MOVIMENTO FUNDAMENTAL PARA SINCRONIZAÇÃO DA FOTOGRAMETRIA.</p>
-<p>PODEMOS INVIABILIZAR TODA A AMOSTRAGEM E DESPEDIÇAR TODO O ESFORÇO DE CAMPO SE NÃO CONSEGUIRMOS SINCRONIZAR AS CÂMERAS.</p>
-<p>PERCEBERÁ QUE A AUSÊNCIA DESSE MOVIMENTO NA CALIBRAÇÃO DESPENDIRÁ DE SUA PARTE MUITO MAIS CAPRICHO E TEMPO PARA REALIZAR SEU TRABALHO.</p>
-<p>ESSE É UM ERRO COMUM DURANTE AS OPERAÇÕES DE CAMPO, POIS A UMA SERIES DE PASSOS QUE PRECISA SER SEGUIDOS E ACABAMOS POR NOS ESQUECER DOS MAIS SIMPLES.</p>
-<p>PORTANTO, NUNCA ESQUEÇA DE REALIZAR SEU CLAP ANTES DE LANÇAR OS BRUVS</p>
-<p>SUGIRO ATÉ QUE DESENVOLVA UM PRÓPRIO. BUSQUE MOVIMENTOS RÁPIDOS E PRECISOS, MAS LEMBRE-SE DOS DIFERENTES ÂNGULOS DAS CÂMERAS, VOCÊ PODE ACABAR TAPANDO A VISUALIZAÇÃO DE UMA DELAS. POR ISSO MESMO IREI PRATICAR A UTILIZAÇÃO DO CLAP CLAP INVEZ DO CLAP PARA SABER SE É MELHOR, POIS ASSIM TEMOS DUAS CHANCES.</p>
-<p>A DICA É CARANGUEJO. 🦀</p>
+<p>ATENÇÃO, AVISO DAS GALÁXIAS!</p>
+<p>NUNCA ESQUEÇA DE REALIZAR O “CLAP” ANTES DE LANÇAR OS BRUVS!</p>
+<p>Trata-se de um esquecimento comum durante as operações de campo, pois a dinâmica da atividade embarcada associada a um conjunto de passos que precisam ser seguidos antes do lançamento, nos leva a esquecer dos procedimentos mais simples.</p>
+<p>A realização dessa operação é fundamental para a sincronização posterior das câmeras dentro do programa de fotogrametria, seja para tomada de medida ou na etapa de calibração.</p>
+<p>A não realização ou esquecimento dessa etapa pode inviabilizar toda a amostragem do dia, desperdiçando assim nosso esforço de campo, financeiro e físico.</p>
+<p>Ainda que possível realizar a sincronização na ausência deste movimento, a operação será muito mais trabalhosa, despedindo muito mais capricho e tempo para a realização de uma simple etapa.</p>
+<p>Atente-se que por se tratar de um sistema de <strong>stereo</strong>-BRUV, com <strong>câmeras em diferentes ângulos</strong>, você pode acabar obstruindo a visualização de uma delas a depender da sua posição em relação a elas.</p>
+<p><strong>Se faz necessário que ambas as câmeras registre o movimento “clap”.</strong></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>A dica é utilizar movimentos rápidos e precisos.</strong></p>
+<p><strong>Sugiro o movimento de pinçar os dedos, como um caranguejo, batendo de forma rápida o polegar contra o indicador várias vezes seguidas de modo a aumentarmos a chance de captura limpa.</strong></p>
 </div>
 </div>
 </div></li>
@@ -417,8 +440,8 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <li><p>Aperte <em>Close player and update position</em> e perceba que ambas as câmeras irão atualizar para o frame em questão. Isso se deve por termos selecionado o botão <em>Lock</em>.</p></li>
 </ol>
 </section>
-<section id="começando-os-trabalhos" class="level2">
-<h2 class="anchored" data-anchor-id="começando-os-trabalhos">Começando os trabalhos</h2>
+<section id="começando-os-trabalhos" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="começando-os-trabalhos"><span class="header-section-number">4</span> Começando os trabalhos</h2>
 <ol type="1">
 <li><p>Agora, vamos começar marcar os pontos. Comece pelo frame da câmera esquerda. Este processo precisara se feitos em ambas as câmeras (02) para cada sequência de frame (20), no mínimo (20*2=40), seguindo o esquema de ponto, <strong>conforme o modelo do seu cubo de calibração</strong> (Ex: Cubo 142, abaixo):</p>
 <p><img src="images/clipboard-2197934981.png" class="img-fluid"></p></li>
@@ -517,8 +540,8 @@ Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso 
 <p><img src="images/clipboard-1918781238.png" class="img-fluid"></p></li>
 </ol>
 </section>
-<section id="mudando-as-cores" class="level2">
-<h2 class="anchored" data-anchor-id="mudando-as-cores">Mudando as cores</h2>
+<section id="mudando-as-cores" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="mudando-as-cores"><span class="header-section-number">5</span> Mudando as cores</h2>
 <p>Você pode mudar as cores dos pontos, já que a cor dos pontos não residuais (pontos azuis) é de difícil distinção no fundo azul da piscina. Isso irá ajudar a minimizar os erros. Se quiser mudar, vá em <em>Ajustement</em> &gt; <em>Point colors…</em></p>
 <p><img src="images/clipboard-3756644147.png" class="img-fluid"></p>
 <p>Uma pequena janela se abrirá mostrando as cores padrões:</p>
@@ -530,8 +553,8 @@ Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso 
 <p>Depois:</p>
 <p><img src="images/clipboard-4114342458.png" class="img-fluid"></p>
 </section>
-<section id="finalizando-os-trabalhos" class="level2">
-<h2 class="anchored" data-anchor-id="finalizando-os-trabalhos">Finalizando os trabalhos</h2>
+<section id="finalizando-os-trabalhos" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="finalizando-os-trabalhos"><span class="header-section-number">6</span> Finalizando os trabalhos</h2>
 <ol type="1">
 <li>Ao final do processo de medição (marcações de pontos), você deverá ter um total de 40 images (20 câmera esquerda e 20 câmera direita). Você poder ver isso na própria tela principal do programa, onde há um campo descrito como <em>Images measured:</em></li>
 </ol>
@@ -570,8 +593,8 @@ Perceba que isso que falo não está expresso nas duas ultimas fotos anteriores,
 <li><p>Isso impõe condições matemáticas ao <em>bundle adjustment</em> que obrigam os pares de imagens (esquerda/direita) a manter a mesma orientação relativa ao longo de todo conjunto de imagens, forçando consistência na geometria relativa entre as duas câmeras (par estéreo).</p></li>
 <li><p>Se esse for seu caso (Stereo-Bruvs), feito isso, seguimos para o ajuste de feixe.</p></li>
 </ol>
-<section id="ajuste-do-feixe" class="level3">
-<h3 class="anchored" data-anchor-id="ajuste-do-feixe">Ajuste do Feixe</h3>
+<section id="ajuste-do-feixe" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="ajuste-do-feixe"><span class="header-section-number">6.1</span> Ajuste do Feixe</h3>
 <ol type="1">
 <li><p>Após concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando <em>Adjustment</em> | <em>Compute bundle adjustment…</em></p>
 <p><img src="images/clipboard-959548070.png" class="img-fluid"></p>
@@ -597,8 +620,8 @@ Note
 </ol>
 </section>
 </section>
-<section id="glossário" class="level2">
-<h2 class="anchored" data-anchor-id="glossário">Glossário</h2>
+<section id="glossário" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="glossário"><span class="header-section-number">7</span> Glossário</h2>
 <p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.</p>
 
 
@@ -611,7 +634,7 @@ Note
 <li id="fn1"><p>Ressecção: É uma processo/ técnica da visão computacional e fotogrametria utilizada para determinar a posição e orientação da câmera no espaço a partir de pontos conhecidos no mundo (objeto).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2"><p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
-</section></div></main> <!-- /main -->
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-copyright"><h2 class="anchored quarto-appendix-heading">Copyright</h2><div class="quarto-appendix-contents"><div>©2026 Projeto Meros do Brasil. All rights reserved.</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

@@ -1,6 +1,6 @@
 ---
-title: "Relato de Pescadores acerca do Peixe Mero"
-subtitle: "Dossiê Santa Catarina"
+title: "Gigantes do Mar"
+subtitle: "Conhecimento Tradicional da Pesca de Meros em SC"
 date: "last-modified"
 
 author: 
@@ -40,24 +40,28 @@ execute:
 
 19/05/2026:
 
--   Contato de Dolito e Beto Caveira repassado pelo Leco.
+- Contato de Dolito e Beto Caveira repassado pelo Leco.
 
--   Leco ficou de estabelecer o 1° contato.
+- Leco ficou de estabelecer o 1° contato.
 
--   Contato de Marcelo e Rodrigo repassado por Henrique
+- Contato de Marcelo e Rodrigo repassado por Henrique
 
 20/05/2026:
 
--   Contato de Cacá repassado por Fernanda.
--   1° contato com Seu Cacá (via WhatsApp).
+- Contato de Cacá repassado por Fernanda.
+- 1° contato com Seu Cacá (via WhatsApp).
 
 21/05/2026:
 
--   1° contato com Rodrigo (via WhatsApp).
+- 1° contato com Rodrigo (via WhatsApp).
 
 02/07/2026:
 
--   Ida a Tapera para conhecer o Seu João.
+- Ida a Tapera para conhecer o Seu João.
+
+22/07/2026:
+
+- Ida a Barra Velha para conhecer o Seu Cacá.
 
 # Pescadores
 
@@ -77,17 +81,21 @@ Sobre:
 
 ## Seu Cacá
 
-Nome completo:
+Nome completo: José Carlos Fagundes
 
-Apelido: Cacá
+Apelido: Cacá ou Carlinhos.
 
-Idade: 66 anos (?)
+Nascimento: 14 de Agosto de 1959
 
-Local: Barra Velha
+Idade: 67 anos
 
-Profissão: Prof. Escola do Mar
+Local: Barra Velha - SC
 
-Sobre:
+Profissão: Prof. de História da Escola do Mar
+
+Escolaridade: Superior Completo
+
+SOBRE: Antigo caçador subaquático, nascido e criado em Barra Velha, à norte de Florianópolis, litoral setentrional de Santa Catarina. Atualmente, Seu Cacá, também conhecido por Carlinhos de Itajuba (bairro de Barra Velha) é professor de história da Escola do Mar. Além de professor, é surfista. Começou a mergulhar e caçar em 1972, quando tinha 13 anos. Caçava com seus dois irmãos <!--# Cesar e ??? -->. Além de mero, caçavam sargo, robalão, paru, sargo de beiço. Abandonou a prática por incômodo nos tímpano, algo comum entre mergulhadores, seus irmão continuaram. Sua última pescaria foi em 2016, portanto 44 anos de caça. Contudo, já não capturava mais meros desde a Portaria MMA de 2002. Nunca chegou a ler os detalhes. Acredita que o maior exemplar pescado foi um mero de 80kg, em 1985. Disse que com a proibição a caça possou a ser direcionada a espécies vágeis e de passagem, como sororoca, ... <!--# Resgatar essa informação -->. Hoje repudia a prática, confia que a relação harmônica do ser humano com a natureza é fundamental para o *equilíbrio* do planeta. Reconhece também que a caça de meros era uma prática muito desleal e convarde, visto são animais muito ingênuos, além de bondosos e curiosos. Não oferece dificuldade nenhum ao caçador, além da infantil "glória" de se pescar um peixe de grande porte. É claro, que também tinha o valor econômico relacionado, visto que carne de garoupa sempre foi vista com bons olhos em restaurantes da cidade. A venda foi direcionada especialmente para esse setor. Seu irmão César relata a influência do paladar estrageiro pelo sabor do peixe (Ver o relato de César), que era muito comun em ensopados. Reconhece que os meros estão retornando aos antigos e atuais locais de pesca, encarando como um ponto positivo. A presença de numerosas lajes e parcéis próximo a costa é uma possível causa, além das águas turvas em boa parte do ano. Prováveis lajes com meros são: Laje Grande, Laje do Serro e Laje do Jack.
 
 ## Seu João
 
@@ -95,7 +103,9 @@ Nome completo: João
 
 Apelido:
 
-Idade:
+Idade: 78 anos
+
+Nascimento: 17 de Junho de 1950
 
 Filhos: Andrei
 
@@ -107,7 +117,9 @@ Ponto de referência: Portão Sul da Base Aérea.
 
 Profissão:
 
-Sobre:
+Sobre: Começou a pescar aos onze anos de idade a convite do seu irmão. Viuvo a sete anos. Tá na tapera a 42 anos, chegou em 1984 (tinha 34 anos). Nasceu no estreito, depois foi trabalhar em santos, criciuma
+
+Possuia um rancho embaixo da ponte, depois passou para os filhos, que continuaram pescando na região. Os filhos brigaram e um dele permaneceu no rancho (adriano) o outro (andrei) ganhou um espaço em seu terreno para construir sua casa. Possui 04 filhos, adriano mora lá no estreito, outro na armação (trabalha mais de pedreiro, mas tbm pesca uma vez ou putra) e dois mora com ele, sendo uma moça (aide) (pesca mais no costão).
 
 # Relatos
 
