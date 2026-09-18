@@ -10,6 +10,9 @@ website:
       - text: "Equipe"
         href: index.qmd
 
+      - text: "Pesquisa"
+        href: https://guidogrimaldi.shinyapps.io/PesquisaMerosSC/
+
       - text: "Stero-BRUV"
         menu:
           - text: "Protocolo de Campo"
@@ -27,9 +30,6 @@ website:
             href: sci-dive.qmd
           - text: "Plano de Emergência"
             href: emergence.qmd
-
-      - text: "Pesquisa"
-        href: https://guidogrimaldi.shinyapps.io/PesquisaMerosSC/
 
     right:
       - icon: envelope
@@ -52,7 +52,5 @@ format:
       - brand
     css: styles.css
     respect-user-color-scheme: true
-  pdf:
-    documentclass: scrreprt
 
 editor: visual
