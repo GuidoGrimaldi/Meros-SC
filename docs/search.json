@@ -305,7 +305,7 @@
     "href": "quick-cal.html#explore-mais",
     "title": "BRUV: Guia de Calibração",
     "section": "2 Explore mais!",
-    "text": "2 Explore mais!\n\nSe for em Camera | Left/Right | Edit parameters, você terá acesso as características ópticas da câmara.\n\nEssas informações são importantes quando se trabalha cientificamente com a visão.\n\nÉ importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa."
+    "text": "2 Explore mais!\n\nSe for em Camera | Left/Right | Edit parameters, você terá acesso as características ópticas da câmera.\n\nEssas informações são importantes quando se trabalha cientificamente com a visão.\n\nÉ importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representam o estado exato dos algorítimos utilizados nos cálculos realizados pelo programa."
   },
   {
     "objectID": "quick-cal.html#sincronizando-câmeras",
@@ -333,14 +333,14 @@
     "href": "quick-cal.html#finalizando-os-trabalhos",
     "title": "BRUV: Guia de Calibração",
     "section": "6 Finalizando os trabalhos",
-    "text": "6 Finalizando os trabalhos\n\nAo final do processo de medição (marcações de pontos), você deverá ter um total de 40 images (20 câmera esquerda e 20 câmera direita). Você poder ver isso na própria tela principal do programa, onde há um campo descrito como Images measured:\n\n\n\n\n\n\n\nEstando tudo certo, iremos partir para o ajuste do feixe2 ou bundle adjustment.\nMas antes é importante saber que você pode ajustar os parâmentros do ajuste (bundle adjustment) no menu Adjustment | Adjustment setting…\n\nAcho que o mais importante aqui é avisar ao programa que estamos utilizando um sistema estéreo (Stereo-BRUV) e, portanto, exigir dele um restrição estéreo (stereo constraint)\n\n\n\n\n\n\nSe você não sabe se o BRUV que está utilizando é estéreo, assista esse pequeno vídeo para noções basicas de fotogrametria: https://www.youtube.com/watch?v=BZdzyzMjAjc\n\n\n\nClicando em Adjustment | Adjustment setting, abrirá um a janela (Adjustment and photogrammetry settings) contendo uma tabela com quatro colunas:\n\nPerceba que essa tabela possui quatro seções:\n\nNa seção roxa ou 3° seção (Stereo constraints), temos na primeira linha (Use stereo constraint) como padrão (default), False.\n\n::: {.callout-warning appearance=\"simple\"}\nPerceba que isso que falo não está expresso nas duas ultimas fotos anteriores, pois já havia realizado a mudança quando realizei o recorte, mas mantive para me poupar trabalho.\n:::\n\nSelecione a célula da coluna Data e mude para True (escreva!).\n\nIsso impõe condições matemáticas ao bundle adjustment que obrigam os pares de imagens (esquerda/direita) a manter a mesma orientação relativa ao longo de todo conjunto de imagens, forçando consistência na geometria relativa entre as duas câmeras (par estéreo).\nSe esse for seu caso (Stereo-Bruvs), feito isso, seguimos para o ajuste de feixe.\n\n\n6.1 Ajuste do Feixe\n\nApós concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando Adjustment | Compute bundle adjustment…\n\n\n\n\n\n\n\nNote\n\n\n\nO QUE É “FEIXE” (BUNDLE)?\nCada ponto 3D projeta um conjunto de linha (x, y, z) (ou um feixe/ pacote de raios) em direção às diferentes câmeras.\n\n\nSe você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto.\n\nSe o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.\n\nClique em Acepted results."
+    "text": "6 Finalizando os trabalhos\n\nAo final do processo de medição (marcações de pontos), você deverá ter um total de 40 images (20 câmera esquerda e 20 câmera direita). Você poder ver isso na própria tela principal do programa, onde há um campo descrito como Images measured:\n\n\n\n\n\n\n\nEstando tudo certo, iremos partir para o ajuste do feixe2 ou bundle adjustment.\nMas antes é importante saber que você pode ajustar os parâmentros do ajuste (bundle adjustment) no menu Adjustment | Adjustment setting…\n\nAcho que o mais importante aqui é avisar ao programa que estamos utilizando um sistema estéreo (Stereo-BRUV) e, portanto, exigir dele um restrição estéreo (stereo constraint)\n\n\n\n\n\n\nSe você não sabe se o BRUV que está utilizando é estéreo, assista esse pequeno vídeo para noções basicas de fotogrametria: https://www.youtube.com/watch?v=BZdzyzMjAjc\n\n\n\nClicando em Adjustment | Adjustment setting, abrirá um a janela (Adjustment and photogrammetry settings) contendo uma tabela com quatro colunas:\n\nPerceba que essa tabela possui quatro seções:\n\nNa seção roxa ou 3° seção (Stereo constraints), temos na primeira linha (Use stereo constraint) como padrão (default), False.\n\n::: {.callout-warning appearance=\"simple\"}\nPerceba que isso que falo não está expresso nas duas ultimas fotos anteriores, pois já havia realizado a mudança quando realizei o recorte, mas mantive para me poupar trabalho.\n:::\n\nSelecione a célula da coluna Data e mude para True (escreva!).\n\nIsso impõe condições matemáticas ao bundle adjustment que obrigam os pares de imagens (esquerda/direita) a manter a mesma orientação relativa ao longo de todo conjunto de imagens, forçando consistência na geometria relativa entre as duas câmeras (par estéreo).\nSe esse for seu caso (Stereo-Bruvs), feito isso, seguimos para o ajuste de feixe.\n\n\n6.1 Ajuste do Feixe\n\nApós concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando Adjustment | Compute bundle adjustment…\n\n\n\n\n\n\n\nNote\n\n\n\nO QUE É “FEIXE” (BUNDLE)?\nCada ponto 3D projeta um conjunto de linha (x, y, z) (ou um feixe/ pacote de raios) em direção às diferentes câmeras.\n\n\nSe você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto.\n\nSe o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar no manual. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita na seção Falha de ajustes com um cubo de calibração SeaGIS.\n\nUma vez analisado os resultados e apurado as mensagens warning, clique em Acepted results. (Por sua conta em risco).\n\nSalvamento Arquivo\n\nFeito isso, agora vamos salvar o arquivo.\nClique em Measurement | Write measurement file…\n\nRenomeie o arquivo conforme exemplo abaixo e salve no diretório de trabalho.\n\nParabéns, você concluío!"
   },
   {
     "objectID": "quick-cal.html#glossário",
     "href": "quick-cal.html#glossário",
     "title": "BRUV: Guia de Calibração",
-    "section": "7 Glossário",
-    "text": "7 Glossário\nAjuste do Feixe: Tradução livre de Bundle Adjustement, termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção."
+    "section": "11 Glossário",
+    "text": "11 Glossário\nAjuste do Feixe: Tradução livre de Bundle Adjustement, termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção."
   },
   {
     "objectID": "quick-cal.html#footnotes",
@@ -502,5 +502,40 @@
     "title": "SeaGis-CAL-Guide PT/BR",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nPortanto, 10 mícrons se a unidade de espaço do objeto for em centímetros (1 cm = 10000 mícrons).↩︎\nPortanto, 10 mícrons se a unidade de espaço do objeto for em centímetros (1 cm = 10000 mícrons).↩︎"
+  },
+  {
+    "objectID": "reports.html",
+    "href": "reports.html",
+    "title": "Error_Report",
+    "section": "",
+    "text": "O erro foi encontrado na transição da sequência esquematica de rotação do cubo de calibração.\n\nFoi omitida as sequências de calibração anteriores a rotação:\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "quick-cal.html#detectando-erros",
+    "href": "quick-cal.html#detectando-erros",
+    "title": "BRUV: Guia de Calibração",
+    "section": "7 Detectando Erros",
+    "text": "7 Detectando Erros\nÉ muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é “saltar” uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de “erro de transição”."
+  },
+  {
+    "objectID": "quick-cal.html#erro-de-transição",
+    "href": "quick-cal.html#erro-de-transição",
+    "title": "BRUV: Guia de Calibração",
+    "section": "8 Erro de Transição",
+    "text": "8 Erro de Transição\nO erro de transição pode ou não comprometer todo o processo de calibração do sistema stereo-bruv. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro."
+  },
+  {
+    "objectID": "quick-cal.html#error-report",
+    "href": "quick-cal.html#error-report",
+    "title": "BRUV: Guia de Calibração",
+    "section": "9 Error Report",
+    "text": "9 Error Report\n\nDurante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “Dia-Bruv-Processo-Referência-Frame-Erro”, por exemplo:\n\n\n\nDepois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o “error” na posição que seria seguida, conforme abaixo:\n\n\n\nRenomei a imagem com: data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame. Exemplo: 261009_B1_1440_E_3787.\nTransfira a imagem salva para o drive do projeto.\nNo nosso caso é: Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros\nAgora realize o Error Report. Utilize o modelo report.qmd.\nModelo html:\n\nModelo pdf:\nOu construa o seu, o importante é conter"
+  },
+  {
+    "objectID": "quick-cal.html#section",
+    "href": "quick-cal.html#section",
+    "title": "BRUV: Guia de Calibração",
+    "section": "10 ",
+    "text": "10"
   }
 ]

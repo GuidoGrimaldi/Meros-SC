@@ -1,0 +1,24 @@
+---
+title: "Error_Report"
+subtitle: "CAL_B1_1440_E_3787"
+author: "Guido Grimaldi"
+date: 10/09/2026
+date-format: "DD/MM/YYYY"
+
+
+format:
+  html:
+    theme:
+      - cerulean
+      - brand
+  pdf:
+    documentclass: scrartcl
+---
+
+O erro foi encontrado na transição da sequência esquematica de rotação do cubo de calibração.
+
+![](images/clipboard-872593028.png)
+
+Foi omitida as sequências de calibração anteriores a rotação:
+
+![](images/261009_B1_1449_E_3787.png)

@@ -23,7 +23,7 @@ format:
     toc: true
     toc-location: right
     toc-expand: true
-    toc-depth: 2
+    toc-depth: 3
     number-sections: true
     page-layout: article
 
@@ -148,7 +148,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
 ## Explore mais!
 
-- Se for em *Camera \| Left/Right \| Edit parameters*, você terá acesso as características ópticas da câmara.
+- Se for em *Camera \| Left/Right \| Edit parameters*, você terá acesso as características ópticas da câmera.
 
   ![](images/clipboard-175649103.png)
 
@@ -156,7 +156,7 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 
   ![](images/clipboard-1832882555.png)
 
-- É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.
+- É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representam o estado exato dos algorítimos utilizados nos cálculos realizados pelo programa.
 
 ## Sincronizando Câmeras
 
@@ -444,11 +444,65 @@ Perceba que isso que falo não está expresso nas duas ultimas fotos anteriores,
 
     ![](images/clipboard-2851610986.png)
 
-3.  Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.
+3.  Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar no manual. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita na seção **Falha de ajustes com um cubo de calibração SeaGIS**.
 
     ![](images/clipboard-2208317373.png)
 
-4.  Clique em *Acepted results*.
+4.  Uma vez analisado os resultados e apurado as mensagens *warning,* clique em *Acepted results*. (Por sua conta em risco).
+
+Salvamento Arquivo
+
+1.  Feito isso, agora vamos salvar o arquivo.
+
+2.  Clique em *Measurement* \| *Write measurement file...*
+
+    ![](images/clipboard-768242398.png)
+
+3.  Renomeie o arquivo conforme exemplo abaixo e salve no diretório de trabalho.
+
+    ![](images/clipboard-3631012630.png)
+
+4.  Parabéns, você concluío!
+
+## Detectando Erros
+
+É muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é "saltar" uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de "erro de transição".
+
+## Erro de Transição
+
+O erro de transição pode ou não comprometer todo o processo de calibração do sistema *stereo-bruv*. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro.
+
+## Error Report
+
+1.  Durante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: "*Dia-Bruv-Processo-Referência-Frame-Erro*", por exemplo:
+
+![](images/WhatsApp Image 2026-10-09 at 10.21.58.jpeg)
+
+2.  Depois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o "error" na posição que seria seguida, conforme abaixo:
+
+![](images/261009_B1_1449_E_3787.png)
+
+3.  Renomei a imagem com: *data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame.* Exemplo: **261009_B1_1440_E_3787**.
+
+4.  Transfira a imagem salva para o drive do projeto.
+
+5.  No nosso caso é: **Pesquisa SC \> Calibragem-CALProgram-SeaGIS \>Erros**
+
+6.  Agora realize o *Error* *Report.* Utilize o modelo *report.qmd.*
+
+7.  Modelo html:
+
+    ![](images/clipboard-3282701280.png)
+
+8.  Modelo pdf:
+
+    ![](images/clipboard-2551310356.png)
+
+9.  Ou construa o seu, o importante é conter uma **imagem da tela de trabalho** no momento da detecção do erro e outra **imagem do guia de acompanhamento** das transições esquemáticas.
+
+10. Não esqueça de datar e assinar seu nome.
+
+11. Envie o relatório ao seu coordenador.
 
 ## Glossário
 

@@ -50,5 +50,9 @@
   "fishermans.qmd": {
     "fishermans.html": "6c583606",
     "fishermans.tex": "10ab87ad"
+  },
+  "reports.qmd": {
+    "reports.html": "16a01831",
+    "reports.tex": "3c696f90"
   }
 }

@@ -169,14 +169,21 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
     <h2 id="toc-title">Conteúdo</h2>
    
-  <ul class="collapse">
+  <ul>
   <li><a href="#organize-se" id="toc-organize-se" class="nav-link active" data-scroll-target="#organize-se"><span class="header-section-number">1</span> Organize-se!</a></li>
   <li><a href="#explore-mais" id="toc-explore-mais" class="nav-link" data-scroll-target="#explore-mais"><span class="header-section-number">2</span> Explore mais!</a></li>
   <li><a href="#sincronizando-câmeras" id="toc-sincronizando-câmeras" class="nav-link" data-scroll-target="#sincronizando-câmeras"><span class="header-section-number">3</span> Sincronizando Câmeras</a></li>
   <li><a href="#começando-os-trabalhos" id="toc-começando-os-trabalhos" class="nav-link" data-scroll-target="#começando-os-trabalhos"><span class="header-section-number">4</span> Começando os trabalhos</a></li>
   <li><a href="#mudando-as-cores" id="toc-mudando-as-cores" class="nav-link" data-scroll-target="#mudando-as-cores"><span class="header-section-number">5</span> Mudando as cores</a></li>
-  <li><a href="#finalizando-os-trabalhos" id="toc-finalizando-os-trabalhos" class="nav-link" data-scroll-target="#finalizando-os-trabalhos"><span class="header-section-number">6</span> Finalizando os trabalhos</a></li>
-  <li><a href="#glossário" id="toc-glossário" class="nav-link" data-scroll-target="#glossário"><span class="header-section-number">7</span> Glossário</a></li>
+  <li><a href="#finalizando-os-trabalhos" id="toc-finalizando-os-trabalhos" class="nav-link" data-scroll-target="#finalizando-os-trabalhos"><span class="header-section-number">6</span> Finalizando os trabalhos</a>
+  <ul class="collapse">
+  <li><a href="#ajuste-do-feixe" id="toc-ajuste-do-feixe" class="nav-link" data-scroll-target="#ajuste-do-feixe"><span class="header-section-number">6.1</span> Ajuste do Feixe</a></li>
+  </ul></li>
+  <li><a href="#detectando-erros" id="toc-detectando-erros" class="nav-link" data-scroll-target="#detectando-erros"><span class="header-section-number">7</span> Detectando Erros</a></li>
+  <li><a href="#erro-de-transição" id="toc-erro-de-transição" class="nav-link" data-scroll-target="#erro-de-transição"><span class="header-section-number">8</span> Erro de Transição</a></li>
+  <li><a href="#error-report" id="toc-error-report" class="nav-link" data-scroll-target="#error-report"><span class="header-section-number">9</span> Error Report</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">10</span> </a></li>
+  <li><a href="#glossário" id="toc-glossário" class="nav-link" data-scroll-target="#glossário"><span class="header-section-number">11</span> Glossário</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-cal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="quick-cal.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -340,11 +347,11 @@ A criação de um novo projeto inicia um processo de assistente do próprio prog
 <section id="explore-mais" class="level2" data-number="2">
 <h2 data-number="2" class="anchored" data-anchor-id="explore-mais"><span class="header-section-number">2</span> Explore mais!</h2>
 <ul>
-<li><p>Se for em <em>Camera | Left/Right | Edit parameters</em>, você terá acesso as características ópticas da câmara.</p>
+<li><p>Se for em <em>Camera | Left/Right | Edit parameters</em>, você terá acesso as características ópticas da câmera.</p>
 <p><img src="images/clipboard-175649103.png" class="img-fluid"></p></li>
 <li><p>Essas informações são importantes quando se trabalha cientificamente com a visão.</p>
 <p><img src="images/clipboard-1832882555.png" class="img-fluid"></p></li>
-<li><p>É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representa o estado exato dos algorítimos dos calculos realizados pelo programa.</p></li>
+<li><p>É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representam o estado exato dos algorítimos utilizados nos cálculos realizados pelo programa.</p></li>
 </ul>
 </section>
 <section id="sincronizando-câmeras" class="level2" data-number="3">
@@ -614,14 +621,55 @@ Note
 </div></li>
 <li><p>Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto.</p>
 <p><img src="images/clipboard-2851610986.png" class="img-fluid"></p></li>
-<li><p>Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita em Ajustes com falha em um cubo de calibração SeaGIS.</p>
+<li><p>Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar no manual. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita na seção <strong>Falha de ajustes com um cubo de calibração SeaGIS</strong>.</p>
 <p><img src="images/clipboard-2208317373.png" class="img-fluid"></p></li>
-<li><p>Clique em <em>Acepted results</em>.</p></li>
+<li><p>Uma vez analisado os resultados e apurado as mensagens <em>warning,</em> clique em <em>Acepted results</em>. (Por sua conta em risco).</p></li>
+</ol>
+<p>Salvamento Arquivo</p>
+<ol type="1">
+<li><p>Feito isso, agora vamos salvar o arquivo.</p></li>
+<li><p>Clique em <em>Measurement</em> | <em>Write measurement file…</em></p>
+<p><img src="images/clipboard-768242398.png" class="img-fluid"></p></li>
+<li><p>Renomeie o arquivo conforme exemplo abaixo e salve no diretório de trabalho.</p>
+<p><img src="images/clipboard-3631012630.png" class="img-fluid"></p></li>
+<li><p>Parabéns, você concluío!</p></li>
 </ol>
 </section>
 </section>
-<section id="glossário" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="glossário"><span class="header-section-number">7</span> Glossário</h2>
+<section id="detectando-erros" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="detectando-erros"><span class="header-section-number">7</span> Detectando Erros</h2>
+<p>É muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é “saltar” uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de “erro de transição”.</p>
+</section>
+<section id="erro-de-transição" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="erro-de-transição"><span class="header-section-number">8</span> Erro de Transição</h2>
+<p>O erro de transição pode ou não comprometer todo o processo de calibração do sistema <em>stereo-bruv</em>. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro.</p>
+</section>
+<section id="error-report" class="level2" data-number="9">
+<h2 data-number="9" class="anchored" data-anchor-id="error-report"><span class="header-section-number">9</span> Error Report</h2>
+<ol type="1">
+<li>Durante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “<em>Dia-Bruv-Processo-Referência-Frame-Erro</em>”, por exemplo:</li>
+</ol>
+<p><img src="images/WhatsApp Image 2026-10-09 at 10.21.58.jpeg" class="img-fluid"></p>
+<ol start="2" type="1">
+<li>Depois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o “error” na posição que seria seguida, conforme abaixo:</li>
+</ol>
+<p><img src="images/261009_B1_1449_E_3787.png" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><p>Renomei a imagem com: <em>data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame.</em> Exemplo: <strong>261009_B1_1440_E_3787</strong>.</p></li>
+<li><p>Transfira a imagem salva para o drive do projeto.</p></li>
+<li><p>No nosso caso é: <strong>Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros</strong></p></li>
+<li><p>Agora realize o <em>Error</em> <em>Report.</em> Utilize o modelo <em>report.qmd.</em></p></li>
+<li><p>Modelo html:</p>
+<p><img src="images/clipboard-3282701280.png" class="img-fluid"></p></li>
+<li><p>Modelo pdf:</p></li>
+<li><p>Ou construa o seu, o importante é conter</p></li>
+</ol>
+</section>
+<section id="section" class="level2" data-number="10">
+<h2 data-number="10" class="anchored" data-anchor-id="section"><span class="header-section-number">10</span> </h2>
+</section>
+<section id="glossário" class="level2" data-number="11">
+<h2 data-number="11" class="anchored" data-anchor-id="glossário"><span class="header-section-number">11</span> Glossário</h2>
 <p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.</p>
 
 

@@ -1,0 +1,472 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrreprt}
+\usepackage{xcolor}
+\usepackage[margin = 1in]{geometry}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage[]{baskervald}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={BRUV: Guia rápido de campo},
+  pdfauthor={Pesquisa Meros SC},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{BRUV: Guia rápido de campo}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Projeto Meros do Brasil}
+\author{Pesquisa Meros SC}
+\date{}
+\begin{document}
+\maketitle
+\begin{abstract}
+Leia sempre antes de ir a campo para revisar os procedimentos.
+\end{abstract}
+
+
+\chapter{Procedimentos Pré-Campo}\label{procedimentos-pruxe9-campo}
+
+\begin{itemize}
+\item
+  Verificar carga das baterias.
+\item
+  Verificar armazenamento dos cartões de memória.
+\item
+  Verificar funcionamento das câmeras.
+\item
+  Verificar preseça de todos os componentes e peças do \emph{BRUV}.
+\item
+  Verificar presença de todas as porcas para ajuste das .
+\end{itemize}
+
+\chapter{Procedimentos de Campo}\label{procedimentos-de-campo}
+
+\section{Preparação para o
+lançamento}\label{preparauxe7uxe3o-para-o-lanuxe7amento}
+
+\begin{itemize}
+\item
+  Monte os pés do BRUV.
+\item
+  Prepare a haste da isca com o cano de armazenamento.
+\item
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, opacityback=0]
+
+  \textbf{Não adicione a isca ainda, para não ficar pingando no barco.
+  Deixe para pôr no último momento.}
+
+  \end{tcolorbox}
+\item
+  Libere o cabo vermelho em comformidade com a profudidade local
+  estimada. Ex: para 15m de profundidade, libere 17 braças ( 1 braça
+  \textasciitilde1.5m).
+\item
+  Amare a \textbf{ponta solta} do cabo de lançamento (\textbf{corda
+  vermelha}) na argola da bóia de meia água do BRUV.
+\item
+  Amarre a bóia de sinalização de superfície (\textbf{bóia laranja}) ao
+  cabo de lançamento.
+\item
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Caution}, colframe=quarto-callout-caution-color-frame, arc=.35mm, colbacktitle=quarto-callout-caution-color!10!white, opacityback=0]
+
+  \textbf{NÃO} passe o cabo \textbf{SOMENTE} no D-ring plástico da bóia
+  de sinalização, Passe também por dentro do tirante horizontal da bóia
+  como backup de segurança para caso do D-ring quebre.
+
+  \end{tcolorbox}
+\item
+  Retire ambas as câmeras e ligue-as (\textbf{Pressione o botão
+  lateral}).
+\item
+  Conecte a câmera ao celular \textbf{via bluetooth} (Ver Quick GoPro
+  App.)
+\item
+  \textbf{Formate os cartões de memória}.
+\item
+  Ponha para gravar.
+\item
+  Verifique se de fato está gravando.
+\item
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, opacityback=0]
+
+  Veja o monitor. Quando está gravando, a GoPro emite um luz vermelha
+  intermitente.
+
+  \end{tcolorbox}
+\item
+  Devolva as câmaras aos seus RESPECTIVOS cases.
+\item
+  \textbf{Cuidado para não por de cabeça para baixo!}
+\item
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, opacityback=0]
+
+  Se atente as marcações no bruv, elas devem coincidir. Lembre-se
+  \textbf{vermelho} é bombordo (esquerda) e \textbf{verde} é boreste
+  (direita).
+
+  \end{tcolorbox}
+\item
+  Adicione a isca ao cano e acople a haste da isca no BRUV.
+\item
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Caution}, colframe=quarto-callout-caution-color-frame, arc=.35mm, colbacktitle=quarto-callout-caution-color!10!white, opacityback=0]
+
+  Quando for conectar a haste da isca, tenha cuidado com a bóia de meia
+  água do BRUV. Está deve passar por fora da haste. Lembre-se de
+  levantá-la antes de fixar a haste.
+
+  \end{tcolorbox}
+\item
+  VERIFIQUE SE O PROFUDIMETRO ESTA MARCANDO 0m. Caso não esteja, retorne
+  o ponteiro a marcação inicial.
+\end{itemize}
+
+\section{Lançamento na água}\label{lanuxe7amento-na-uxe1gua}
+
+\begin{itemize}
+\item
+  Tudo pronto! Vamos lançar pra água!
+\item
+  Precisa de pelo menos duas pessoas, uma para lançar e outra para safar
+  o cabo. Bom mesmo é três, porque fica um atento as anotações e coleta
+  do ponto no GPS (protocolo a criar)
+\item
+  Apoie o BRUV no bordo, metade das pernas dentro, metade fora, com a
+  isca virada para o mar.
+
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-warning-color}{\faExclamationTriangle}\hspace{0.5em}{Warning}, colframe=quarto-callout-warning-color-frame, arc=.35mm, colbacktitle=quarto-callout-warning-color!10!white, opacityback=0]
+
+  Não solte na popa, ao menos que o motor da embarcação esteja
+  desligado, pois corre risco de enroscar no hélice.
+
+  \end{tcolorbox}
+\item
+  Em caso de embarcação em movimento, solte o mais vertical e rápido
+  possível, evitando assim muita derivação.
+\item
+  Solte-o e a medida que ganha profundidade realiza alguns puxões para
+  ganhar prumo.
+\item
+  Se puxar demais ou entrar na água em uma posição ruim, o sistema bruv
+  ficara de ponta cabeçã ou tompará para frente.
+\item
+  Já aconteceu de o sistema cair em pé, mas de alguma maneira tobar para
+  trás apos muitos minutos em posição correta. Acredito que tenha sido o
+  cabo curto demais em relação a ondulação da maré, mas é preciso
+  verificar mais.
+\item
+  Quando sentir que a sonda chegou ao fundo, lançe o cabo restante, com
+  a bóia de sinalização.
+
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Caution}, colframe=quarto-callout-caution-color-frame, arc=.35mm, colbacktitle=quarto-callout-caution-color!10!white, opacityback=0]
+
+  Não esqueça de marcar o ponto no GPS! É para cada lançamento!
+
+  \end{tcolorbox}
+\end{itemize}
+
+\section{Que informações anotar?}\label{que-informauxe7uxf5es-anotar}
+
+\begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-important-color}{\faExclamation}\hspace{0.5em}{Important}, colframe=quarto-callout-important-color-frame, arc=.35mm, colbacktitle=quarto-callout-important-color!10!white, opacityback=0]
+
+Leve sua prancheta ou caderneta de campo!
+
+\end{tcolorbox}
+
+\begin{itemize}
+\item
+  Data
+\item
+  Local
+\item
+  Participantes
+\item
+  Hora de lançamento
+\item
+  Hora de retirada
+\item
+  Ponto GPS
+\item
+  Profundidade
+\item
+  ID do BRUV (B1, B2 ou B3)
+\end{itemize}
+
+\section{Remoção da água}\label{remouxe7uxe3o-da-uxe1gua}
+
+\begin{itemize}
+\item
+  Enquanto um dos integrantes puxa o sistema BRUV da água, o outro deve
+  ir recolhendo a corda do convez.
+\item
+  Uma vez embarcado o equipamento:
+
+  \begin{itemize}
+  \item
+    Anote a hora de retirada;
+  \item
+    Retire a bóia de sinalização;
+  \item
+    Solte e recolha o cabo;
+  \item
+    Registre a profundidade e retorne o ponteiro do profundímetro para a
+    marcação de zero;
+  \item
+    Retire a haste que sustenta o cano da isca e dispense o material na
+    água;
+  \item
+    Passe uma água no cano da isca para retirar o excesso de peixe
+    morto;
+  \item
+    Caso não vá mais utilizar os BRUVs, desmonte e guarde-os nas bolsas
+    de transporte;
+  \item
+    Caso ainda vá utilizar, deixe-os montados, sem a haste da isca e de
+    forma organizada, em algum local do convez de modo a permitir a
+    circulação da tripulação.
+  \end{itemize}
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-caution-color}{\faFire}\hspace{0.5em}{Caution}, colframe=quarto-callout-caution-color-frame, arc=.35mm, colbacktitle=quarto-callout-caution-color!10!white, opacityback=0]
+
+Ao guardar os BRUVs na bolsa de transporte, tenha especial cuidado com
+as lentes, de modo a evitar arranhões, pois estes interferem na análise
+das imagens.
+
+\end{tcolorbox}
+
+\chapter{Pós-Campo}\label{puxf3s-campo}
+
+\section{Lavagem}\label{lavagem}
+
+\begin{itemize}
+\item
+  Lave toda a estrutura dos bruvs com água doce.
+\item
+  Faça com que a água entre nos tubos dos pés.
+\end{itemize}
+
+\section{Cartões de memória \&
+Baterias}\label{cartuxf5es-de-memuxf3ria-baterias}
+
+\begin{itemize}
+\item
+  Retire a bateria da câmera, isso facilita o acesso ao cartão de
+  memória.
+\item
+  Retire o cartão de memória da câmera.
+\item
+  \textbf{Copie} todos os arquivos do cartão para o \textbf{drive
+  externo} do Meros SC (Ver Transferindo arquivos ao HD.
+\end{itemize}
+
+\begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, opacityback=0]
+
+\textbf{Faça o quanto antes! Não deixe para fazer depois, pois terá
+dificuldade de se lembrar dos metadados de campo.}
+
+\end{tcolorbox}
+
+\begin{itemize}
+\item
+  \textbf{NÃO formate os cartões pelo computador.} Isso deve ser feito
+  via celular (Ver: Quick GoPro App).
+\item
+  Devolva os cartões as suas respectivas câmeras (Ver Foto).
+
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, opacityback=0]
+
+  A dica é fazer este processo individualmente para cada BRUV. Escolha
+  um dos lados para começar (E/D), depois realize cada etapa desta seção
+  na câmera escolhida e só após concluido o passo-a-passo, siga para o
+  outro lado. Assim você não irá se perder e cometer erros no trato das
+  informações.
+
+  \end{tcolorbox}
+\item
+  Guarde a bateria no case de campo no compartimento ``A carregar''.
+
+  \begin{tcolorbox}[enhanced jigsaw, breakable, rightrule=.15mm, colback=white, bottomrule=.15mm, opacitybacktitle=0.6, left=2mm, coltitle=black, leftrule=.75mm, toptitle=1mm, toprule=.15mm, bottomtitle=1mm, titlerule=0mm, title=\textcolor{quarto-callout-tip-color}{\faLightbulb}\hspace{0.5em}{Tip}, colframe=quarto-callout-tip-color-frame, arc=.35mm, colbacktitle=quarto-callout-tip-color!10!white, opacityback=0]
+
+  \textbf{Facilite. Deixe as baterias já carregadas e prontas para o
+  próximo campo.}
+
+  \end{tcolorbox}
+\end{itemize}
+
+
+
+
+\end{document}
