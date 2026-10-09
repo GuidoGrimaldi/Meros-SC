@@ -476,7 +476,7 @@ O erro de transição pode ou não comprometer todo o processo de calibração d
 
 1.  Durante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: "*Dia-Bruv-Processo-Referência-Frame-Erro*", por exemplo:
 
-![](images/WhatsApp Image 2026-10-09 at 10.21.58.jpeg)
+![](images/WhatsApp%20Image%202026-10-09%20at%2010.21.58.jpeg)
 
 2.  Depois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o "error" na posição que seria seguida, conforme abaixo:
 
