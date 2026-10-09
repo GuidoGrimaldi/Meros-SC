@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.8.27" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta name="author" content="Pesquisa Meros SC" />
+<meta name="description" content="Status: Completed" />
+
+<title>BRUV: Guia de Calibração – Pesquisa Meros SC</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<!-- htmldependencies:E3FAD763 -->
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="/index.html" class="navbar-brand navbar-brand-logo">
+    <img src="/meroiconwhite.png" alt="" class="navbar-logo light-content" />
+    <img src="/meroiconwhite.png" alt="" class="navbar-logo dark-content" />
+    </a>
+    <a class="navbar-brand" href="/index.html">
+    <span class="navbar-title">Pesquisa Meros SC</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/index.html"> 
+<span class="menu-text">Equipe</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://guidogrimaldi.shinyapps.io/PesquisaMerosSC/"> 
+<span class="menu-text">Pesquisa</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stero-bruv" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
+ <span class="menu-text">Stero-BRUV</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stero-bruv">    
+        <li>
+    <a class="dropdown-item" href="/bruv.html">
+ <span class="dropdown-text">Protocolo de Campo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/quick-cal.html">
+ <span class="dropdown-text">Guia Rápido | Calibração</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/seagis-cal.html">
+ <span class="dropdown-text">Manual SeaGIS | Calibração</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/eventmeasure.html">
+ <span class="dropdown-text">EventMeasure</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-mergulho-científico" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
+ <span class="menu-text">Mergulho Científico</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-mergulho-científico">    
+        <li>
+    <a class="dropdown-item" href="/sci-dive.html">
+ <span class="dropdown-text">Nossas Diretrizes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/emergence.html">
+ <span class="dropdown-text">Plano de Emergência</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:pesquisasc@merosdobrasil.org"> <i 
+  class="bi bi-envelope" 
+  role="img" 
+>
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://merosdobrasil.org/"> <i 
+  class="bi bi-globe" 
+  role="img" 
+>
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">BRUV: Guia de Calibração</h1>
+<p class="subtitle lead">Projeto Meros do Brasil</p>
+</div>
+
+<div>
+  <div class="description">
+    Status: Completed
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Pesquisa Meros SC <a href="mailto:pesquisasc@merosdobrasil.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://merosdobrasil.org/">
+            Instituto Meros do Brasil
+            </a>
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">About</div>
+    Este guia rápido foi criado como parte do Projeto Meros do Brasil para direcionar a calibração do nosso sistema Stereo-BRUV. Portanto, cada BRUV representa um set up de duas câmeras, uma esquerda e outra direita, de mesmo modelo e configuração. Para uso consulte os termos.
+  </div>
+</div>
+
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Conteúdo</h2>
+   
+  <ul>
+  <li><a href="#organize-se" id="toc-organize-se"><span class="header-section-number">1</span> Organize-se!</a></li>
+  <li><a href="#explore-mais" id="toc-explore-mais"><span class="header-section-number">2</span> Explore mais!</a></li>
+  <li><a href="#sincronizando-câmeras" id="toc-sincronizando-câmeras"><span class="header-section-number">3</span> Sincronizando Câmeras</a></li>
+  <li><a href="#começando-os-trabalhos" id="toc-começando-os-trabalhos"><span class="header-section-number">4</span> Começando os trabalhos</a></li>
+  <li><a href="#mudando-as-cores" id="toc-mudando-as-cores"><span class="header-section-number">5</span> Mudando as cores</a></li>
+  <li><a href="#finalizando-os-trabalhos" id="toc-finalizando-os-trabalhos"><span class="header-section-number">6</span> Finalizando os trabalhos</a>
+  <ul>
+  <li><a href="#ajuste-do-feixe" id="toc-ajuste-do-feixe"><span class="header-section-number">6.1</span> Ajuste do Feixe</a></li>
+  </ul></li>
+  <li><a href="#detectando-erros" id="toc-detectando-erros"><span class="header-section-number">7</span> Detectando Erros</a></li>
+  <li><a href="#erro-de-transição" id="toc-erro-de-transição"><span class="header-section-number">8</span> Erro de Transição</a></li>
+  <li><a href="#error-report" id="toc-error-report"><span class="header-section-number">9</span> Error Report</a></li>
+  <li><a href="#glossário" id="toc-glossário"><span class="header-section-number">10</span> Glossário</a></li>
+  </ul>
+</nav>
+<section id="organize-se" class="level2" data-number="1">
+<h2 data-number="1"><span class="header-section-number">1</span> Organize-se!</h2>
+<ol type="1">
+<li><p>Crie um novo diretório (pasta) para armazenar seus projetos de calibração.</p>
+<p><img src="images/clipboard-2973557940.png" class="img-fluid" /></p></li>
+<li><p>Dentro desta pasta, crie novos diretório (multiplas pastas) para cada configuração de BRUV. Estas distinções se baseiam principalmente na resolução da câmera utilizada e no campo de visão (<em>Field of View</em>).</p></li>
+</ol>
+<p><img src="images/clipboard-387526838.png" class="img-fluid" /></p>
+<ol start="3" type="1">
+<li><p>Dentro das respectivas pastas de BRUV, <strong>cole</strong> os respectivos os arquivos de vídeo (<strong>.MP4</strong>). Lembre-se, serão dois, um da câmera esquerda (E) e outro da câmera direita (D).</p>
+<p><img src="images/clipboard-2873460924.png" class="img-fluid" /></p>
+<p><img src="images/clipboard-328657837.png" class="img-fluid" /></p></li>
+</ol>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Para facilitar, <strong>renomei</strong> os arquivos de vídeo (.MP4) conforme a <strong>ID do BRUV</strong>, o <strong>lado da câmera</strong> e a <strong>resolução</strong> utilizada, seguindo nescessáriamente esta ordem. Ao final, <strong>mantenha o nome do arquivo original</strong> gerado pela câmera. Não utilize espaços nem caracteres especiais.</p>
+<p>Ex: B2_D_2160_GX010364 (<em>bruvID_lado_resolucao_nome original</em>).</p>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
+<li><p>Na mesma pasta de trabalho, adicione também a <strong>cópia</strong> do arquivo de calibração do cubo (<strong>.PtsCAL</strong>).</p>
+<p><img src="images/clipboard-1271673136.png" class="img-fluid" /></p>
+<p><img src="images/clipboard-3344884228.png" class="img-fluid" /></p></li>
+</ol>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>O arquivo de calibração do cubo (<strong>.PtsCAL</strong>) variam de acordo com o modelo de cubo de calibração utilizado. Estes arquivos são fornecidos pela SeaGIS no momento da compra. Se necessário, contacte a representação da empresa.</p>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
+<li><p>Além disso, adicione o arquivo de parâmetros da câmera (<strong>.CamCAL</strong>), conforme modelo e configuração empregada. Estes arquivos são fornecidos pela SeaGIS, no site: <a href="https://www.seagis.com.au/download.php" class="uri">https://www.seagis.com.au/download.php</a>.</p>
+<p><img src="images/clipboard-1271673136.png" class="img-fluid" /></p>
+<p><img src="images/clipboard-742698619.png" class="img-fluid" /></p></li>
+<li><p>Ao final, você terá, normalmente, 04 (quatro) arquivos:</p></li>
+</ol>
+<pre><code>-   Vídeo da Câmera Esquerda (.MP4);
+
+-   Vídeo da Câmera Direita (.MP4);
+
+-   Arquivo de calibração do cubo (.PtsCAL), conforme modelo.
+
+-   Arquivo de parâmetros da câmera (.CamCAL), conforme modelo e resolução.</code></pre>
+<ol start="7" type="1">
+<li><p>Com o PEN-DRIVE fornecido pela SeaGIS conectado ao seu computador, inicie o programa de calibração CAL (Downloads: <a href="https://www.seagis.com.au/download.php" class="uri">https://www.seagis.com.au/download.php</a>)</p></li>
+<li><p>No CAL, crie um novo projeto através do menu: <em>Project | New project</em></p>
+<p><img src="images/clipboard-3423544538.png" class="img-fluid" /></p></li>
+<li><p>Você será solicitado para salvar quaisquer dados não salvos associados ao projeto atual. Insira um nome para o arquivo do projeto (por exemplo, <strong>“<strong><em>ProjCAL_B2_2160</em></strong>”</strong>) e salve o arquivo do projeto no diretório que você acabou de criar para este projeto.</p></li>
+</ol>
+<pre><code>![](images/clipboard-1271673136.png)
+
+![](images/clipboard-3448108106.png)
+
+::: {.callout-note appearance=&quot;simple&quot;}
+A criação de um novo projeto inicia um processo de assistente do próprio programa que irá solicitar a configuração do restante do projeto. Basta seguir as instruções, lembrando que todos os arquivos estão localizados no mesmo diretório, e que o CAL usará, por padrão, o diretório onde o novo arquivo de projeto foi criado.
+:::</code></pre>
+<ol start="10" type="1">
+<li><p>Carregue os arquivos de parâmetro da câmera esquerda e direita (<strong>.CamCAL</strong>), conforme solicitado.</p>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Atenção! É um mesmo arquivo (<strong>.CamCAL</strong>) para ambas as câmeras, pois utilizamos em cada lado do BRUV câmeras de mesmo modelo e mesma configuração.</p>
+</div>
+</div>
+</div></li>
+<li><p>Carregue o arquivo do cubo de calibração (<strong>.PtsCAL</strong>), conforme solicitado.</p></li>
+<li><p>Defina o diretório de imagens conforme solicitado.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p><strong>O diretório de imagens é automaticamente definido como o mesmo diretório do arquivo do projeto</strong>; portanto, se todos os arquivos da calibração estiverem em um único diretório, basta verificar e clicar em <strong>OK</strong>.</p>
+</div>
+</div>
+</div></li>
+<li><p>O programe pedirá para que salve o novo arquivo de medições (<strong>.ObsCAL</strong>) que será atrelado ao projeto. <strong>Basta atribuir um nome a esse arquivo</strong> (por exemplo, <strong>“<strong><em>MeasureCAL_B2_2160</em></strong>”</strong>). Este arquivo será o local onde as medições da calibração serão armazenadas.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>O programa também irá gerar um arquivo de <em>backup</em> automático das medições (<strong>.ObsCAL_AUTO</strong>).</p>
+</div>
+</div>
+</div>
+<p><img src="images/clipboard-1271673136.png" class="img-fluid" /></p>
+<p><img src="images/clipboard-3041673086.png" class="img-fluid" /></p></li>
+<li><p>Carregue o arquivo de vídeo da câmera <strong>ESQUERDA</strong>. Ele será automaticamente adicionado à configuração da sequência de filmes. Caso existam mais arquivos de vídeo na sequência, eles podem ser adicionados nesse momento (ver <strong>Sequências de filmes</strong>). Em seguida, clique em <strong>OK</strong>.</p></li>
+<li><p>Carregue o arquivo de vídeo da câmera <strong>DIREITA</strong>. Idem.</p></li>
+<li><p>A janela <em>Current project files</em> (<em>Arquivos do projeto atual</em>) será exibida. <strong>Todos os campos devem estar preenchidos</strong> e todos os itens listados devem estar no <strong>mesmo diretório</strong>. Clique em <em>Close dialog</em> (<em>Fechar diálogo</em>).</p>
+<p><img src="images/clipboard-3162917403.png" class="img-fluid" /></p></li>
+</ol>
+</section>
+<section id="explore-mais" class="level2" data-number="2">
+<h2 data-number="2"><span class="header-section-number">2</span> Explore mais!</h2>
+<ul>
+<li><p>Se for em <em>Camera | Left/Right | Edit parameters</em>, você terá acesso as características ópticas da câmera.</p>
+<p><img src="images/clipboard-175649103.png" class="img-fluid" /></p></li>
+<li><p>Essas informações são importantes quando se trabalha cientificamente com a visão.</p>
+<p><img src="images/clipboard-1832882555.png" class="img-fluid" /></p></li>
+<li><p>É importante sempre anotar a versão do programa. Essas informações devem constar na seção de métodos de possíveis manuscritos acadêmicos, pois representam o estado exato dos algorítimos utilizados nos cálculos realizados pelo programa.</p></li>
+</ul>
+</section>
+<section id="sincronizando-câmeras" class="level2" data-number="3">
+<h2 data-number="3"><span class="header-section-number">3</span> Sincronizando Câmeras</h2>
+<ol type="1">
+<li><p>Plug o pen-drive no USB.</p></li>
+<li><p>Abra o programa CAL no seu computador (Downloads: <a href="https://www.seagis.com.au/download.php" class="uri">https://www.seagis.com.au/download.php</a>)</p></li>
+</ol>
+<p><img src="images/clipboard-316596302.png" class="img-fluid" /></p>
+<ol start="3" type="1">
+<li><p>Se você já tinha um projeto salvo, o programa abrirá automaticamente nele. Ele sempre reinicia no último projeto que você trabalhou.</p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Acho que dá para mudar isso nas configurações, é bom rever manual!</p>
+</div>
+</div>
+</div></li>
+<li><p>Agora a gente vai sincronizar a câmera. Para isso clique em <em>Play movie</em> na câmera <strong>esquerda</strong></p>
+<p><img src="images/clipboard-1011136995.png" class="img-fluid" /></p></li>
+<li><p>É para esse momento que serve o bater palmas ou os dedos (movimentos de <em>clap</em>). Servindo de claquete para marcar o início da tomada, para gerarmos oo sincronismo audiovisual entre imagem e som.</p>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>ATENÇÃO, AVISO DAS GALÁXIAS!</p>
+<p>NUNCA ESQUEÇA DE REALIZAR O “CLAP” ANTES DE LANÇAR OS BRUVS!</p>
+<p>Trata-se de um esquecimento comum durante as operações de campo, pois a dinâmica da atividade embarcada associada a um conjunto de passos que precisam ser seguidos antes do lançamento, nos leva a esquecer dos procedimentos mais simples.</p>
+<p>A realização dessa operação é fundamental para a sincronização posterior das câmeras dentro do programa de fotogrametria, seja para tomada de medida ou na etapa de calibração.</p>
+<p>A não realização ou esquecimento dessa etapa pode inviabilizar toda a amostragem do dia, desperdiçando assim nosso esforço de campo, financeiro e físico.</p>
+<p>Ainda que possível realizar a sincronização na ausência deste movimento, a operação será muito mais trabalhosa, despedindo muito mais capricho e tempo para a realização de uma simple etapa.</p>
+<p>Atente-se que por se tratar de um sistema de <strong>stereo</strong>-BRUV, com <strong>câmeras em diferentes ângulos</strong>, você pode acabar obstruindo a visualização de uma delas a depender da sua posição em relação a elas.</p>
+<p><strong>Se faz necessário que ambas as câmeras registre o movimento “clap”.</strong></p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p><strong>A dica é utilizar movimentos rápidos e precisos.</strong></p>
+<p><strong>Sugiro o movimento de pinçar os dedos, como um caranguejo, batendo de forma rápida o polegar contra o indicador várias vezes seguidas de modo a aumentarmos a chance de captura limpa.</strong></p>
+</div>
+</div>
+</div></li>
+<li><p>Uma nova tela abrirá:</p>
+<p><img src="images/clipboard-1263872465.png" class="img-fluid" /></p></li>
+<li><p>Aumente o <em>Rate</em> para 5 (ou mude de acordo com a distância).</p>
+<p><img src="images/clipboard-2924529957.png" class="img-fluid" /></p></li>
+<li><p>Aperte <em>Playback</em> ▶️</p></li>
+<li><p>Agora busque o momento sublime do <em>clap</em> (ou <em>clap clap</em>).</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Não use a barra de rolagem do vídeo. Até dá para usar de forma grosseira para tentar chegar o mais perto do momento clap. Assim, que você tentar, verá que ela não tem movimentos preciso e atrapalha mais do que ajuda.</p>
+</div>
+</div>
+</div></li>
+<li><p>Quando passar ou estiver próximo, <em>Pause!</em></p></li>
+<li><p>Use o <em>Frame stepping</em> para avançar ou retroceder no momento antecessor ao <em>clap</em>.</p>
+<p><img src="images/clipboard-10482523.png" class="img-fluid" /></p></li>
+<li><p>Agora reduza o <em>Rate</em> para 1 e vá avançando no <em>Frame stepping</em> até o momento <em>clap</em> e clique em <em>Close player and update position</em>.</p>
+<p><img src="images/clipboard-3408781496.png" class="img-fluid" /></p></li>
+<li><p>Agora faça o mesmo para a câmera da direita. Aperte <em>Play movie</em>.</p>
+<p><img src="images/clipboard-1804368135.png" class="img-fluid" /></p></li>
+<li><p>Encontre o momento <em>clap</em> e cliquei em <em>Close player and update position</em></p>
+<p><img src="images/clipboard-3998749045.png" class="img-fluid" /></p></li>
+<li><p>Agora sim, começaremos os trabalhos.</p></li>
+<li><p>Ative o botão <em>Lock</em></p>
+<p><img src="images/clipboard-3929359159.png" class="img-fluid" /></p></li>
+<li><p>Aperte <em>Play movie</em> na câmera esquerda, abrirá a janela do <em>Movie player control</em>. Aumente o <em>Rate</em> (ex: 3) e clique em <em>Playback</em> ▶️. Pause no momento que antecede os movimentos sequenciais (são 20 ao todo) que o quadrado de calibração precisa fazer para calibrar (Ver manual).</p>
+<p><img src="images/clipboard-2925575631.png" class="img-fluid" /></p>
+<div class="callout callout-style-simple callout-caution">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Perceba que na situação ilustrativa acima, o quadro de calibração se encontra relativamente distante em relação as câmeras. É preciso buscar um melhor enquadramento.</p>
+</div>
+</div>
+</div></li>
+<li><p>Aperte <em>Close player and update position</em> e perceba que ambas as câmeras irão atualizar para o frame em questão. Isso se deve por termos selecionado o botão <em>Lock</em>.</p></li>
+</ol>
+</section>
+<section id="começando-os-trabalhos" class="level2" data-number="4">
+<h2 data-number="4"><span class="header-section-number">4</span> Começando os trabalhos</h2>
+<ol type="1">
+<li><p>Agora, vamos começar marcar os pontos. Comece pelo frame da câmera esquerda. Este processo precisara se feitos em ambas as câmeras (02) para cada sequência de frame (20), no mínimo (20*2=40), seguindo o esquema de ponto, <strong>conforme o modelo do seu cubo de calibração</strong> (Ex: Cubo 142, abaixo):</p>
+<p><img src="images/clipboard-2197934981.png" class="img-fluid" /></p></li>
+<li><p>Começe pelo ponto 100, que enontra-se justo acima da linha de referência. Depois siga para o 101, 102, 103 e 104, estes são os <strong>pontos de</strong> <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> (<em>ressection points</em>). A partir daí, 110 em diante. Você perceberar que essa sequência já está pre programada dentro do programa.</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Utilize o material de apoio que eleboramos para você não se perder, tanto na sequência do quadrado como na posição dos pontos (POR LINK).</p>
+</div>
+</div>
+</div></li>
+<li><p>Um dica é apertar <em>Ctrl</em> no teclado e avançar com o mouse para frente, isso irá dar zoom.</p>
+<p><img src="images/clipboard-308469490.png" class="img-fluid" /></p>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>É, não dá para usar a bala de rolagem do mouse.</p>
+</div>
+</div>
+</div></li>
+<li><p>Aperte <em>Shift</em> e um pequeno quadrado irá aparecer, este é o <strong>Centroíde.</strong></p>
+<p><img src="images/WhatsApp%20Image%202026-02-24%20at%2010.27.30.jpeg" class="img-fluid" /></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>O centróide serve como um alvo que facilita a realização da medida. Realizar a medida via centróide é 10x melhor do que realizar apenas clicando diretamente (<em>point and click).</em></p>
+</div>
+</div>
+</div></li>
+<li><p>Ainda com o <em>Shift</em> pressionado, aponte a flecha do mouse no centro e clique com o botão esquerdo do mouse para marcar um ponto.</p>
+<p><img src="images/clipboard-3599675830.png" class="img-fluid" /></p></li>
+<li><p>Marque os pontos ressecionáis (conforme já mencionado anteriormente).</p></li>
+<li><p>Em um determinado momento o CAL irá tentar plotar os demais pontos automáticamente.</p>
+<p><img src="images/clipboard-444453288.png" class="img-fluid" /></p>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Ele acertará muitos e errará outros tantos. Alguns ele não irá encontrar, em especial os do segundo plano (200, 201…). Independente disso você terá que verificar e corrigir cada um deles pontualmente.</p>
+</div>
+</div>
+</div></li>
+<li><p>Pontos ressecionáis (100,101,102,103 e 104) verdes indicam que foram bem calibrados.</p>
+<p><img src="images/clipboard-1275978551.png" class="img-fluid" /></p></li>
+<li><p>Quantos mais pontos verdes em cada frame, melhor!</p></li>
+<li><p>Se o ponto gerado pelo CAL cair no lugar errado, delete.</p>
+<p><img src="images/clipboard-1478588733.png" class="img-fluid" /></p></li>
+<li><p>Ponha o cursor do mouse sobre o ponto e clique com o botão direito do mouse.</p>
+<p><img src="images/clipboard-1315559121.png" class="img-fluid" /></p></li>
+<li><p>Plote você manualmente. Zoom in (Ctrl+mouse) &gt; Centroiding (Shift) &gt; Point (mouse esquerdo)</p></li>
+<li><p>Provavelmente sairá outra numeração que não a correta. <img src="images/clipboard-3014583428.png" class="img-fluid" /></p></li>
+<li><p>Clique com o botão direito do mouse sobre ele e renomei para a numeração que você achar que é. Aperte *OK*.</p>
+<p><img src="images/clipboard-3952036695.png" class="img-fluid" /></p></li>
+<li><p>Tente encontrar o máximo de pontos que conseguir. As informações ficaram registradas abaixo da tela esquerda:</p>
+<p><img src="images/clipboard-1103650313.png" class="img-fluid" /></p></li>
+<li><p>Quanto mais pontos (<em>No. points</em>) encontrar, mais preciso será a calibração, em teoria.</p></li>
+</ol>
+<pre><code>::: {.callout-tip appearance=&quot;simple&quot;}
+Particurlamente, busco frames que me permitam acima de 70 pontos. Contudo, caso o frame em questão não atinja tal valor, siga com a calibração até o fim e caso não alcance uma boa precisão ao final, busque novos frames que permita acima de 70 ponto, para cada posição do cubo. 
+:::</code></pre>
+<ol start="17" type="1">
+<li><p>Pontos ressectíveis vermelhos é um mau sinal. Quanto maior o número deles pior.</p>
+<p><img src="images/clipboard-2138859243.png" class="img-fluid" /></p></li>
+<li><p>Após realizar a marcação de ambos os frames (Esquerda e Direita), siga para uma nova posição do cubo, conforme traz o manual de calibração:</p>
+<p><img src="images/clipboard-2299725427.png" class="img-fluid" /></p></li>
+<li><p>Para isso, aperte mais uma vez o botão <em>Play movie</em> e a janela do <em>Movie player control</em>, aperte <em>Playback</em> ▶️ para o video seguir seu curso. Aperte <em>Pause</em> quando o cubo estiver na próxima posição da sequência de calibração e aperte <em>Close players and update position</em>.</p>
+<div class="callout callout-style-simple callout-important">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Pause no ângulo que maximize a exposição dos pontos do plano posterior (201, 202…), evitando que as barras do primeiro plano se sobreponha as pontos do segundo plano. Contudo, em alguma das câmera sempre haverá algum ponto que será coberto.</p>
+</div>
+</div>
+</div>
+<p><img src="images/clipboard-2605035701.png" class="img-fluid" /><img src="images/clipboard-3247803596.png" class="img-fluid" /></p></li>
+<li><p>Remarque todos os pontos mais uma vez (Esquerda e Direita) e repita a operação para toda a sequência de posições do cubo. 😅</p></li>
+<li><p>Um dica para não se perder no processo é ir marcando as posições do cubo que já foram realizadas, conforme abaixo:</p>
+<p><img src="images/clipboard-44037176.png" class="img-fluid" /></p></li>
+<li><p>Tenho esse arquivo (.ppt) disponível para ser compartilhado no drive do PMB.</p></li>
+<li><p>As linhas pretas representam a linha branca de referência do cubo. Por exemplo, a imagem abaixo representa a quarta linha da segunda coluna do esquema de calibração ilustrado acima.</p>
+<p><img src="images/clipboard-1368029145.png" class="img-fluid" /></p></li>
+<li><p>Atenção! Durante as operações de piscina, o operador do cubo e o supervisor da operação precisam tem muito cuidado durante o manuseio do cubo para que as mão do operador não cubram algum dos pontos do cubo. Conforme aconteceu abaixo, onde a mão direita do operador está encobrindo o ponto 240:</p>
+<p><img src="images/clipboard-1918781238.png" class="img-fluid" /></p></li>
+</ol>
+</section>
+<section id="mudando-as-cores" class="level2" data-number="5">
+<h2 data-number="5"><span class="header-section-number">5</span> Mudando as cores</h2>
+<p>Você pode mudar as cores dos pontos, já que a cor dos pontos não residuais (pontos azuis) é de difícil distinção no fundo azul da piscina. Isso irá ajudar a minimizar os erros. Se quiser mudar, vá em <em>Ajustement</em> &gt; <em>Point colors…</em></p>
+<p><img src="images/clipboard-3756644147.png" class="img-fluid" /></p>
+<p>Uma pequena janela se abrirá mostrando as cores padrões:</p>
+<p><img src="images/clipboard-3887801960.png" class="img-fluid" /></p>
+<p>Clique em <em>Point colour, no residual</em> e altere para a cor que desejar (ex: amarelo):</p>
+<p><img src="images/clipboard-2013230235.png" class="img-fluid" /></p>
+<p>Antes:</p>
+<p><img src="images/clipboard-168867011.png" class="img-fluid" /></p>
+<p>Depois:</p>
+<p><img src="images/clipboard-4114342458.png" class="img-fluid" /></p>
+</section>
+<section id="finalizando-os-trabalhos" class="level2" data-number="6">
+<h2 data-number="6"><span class="header-section-number">6</span> Finalizando os trabalhos</h2>
+<ol type="1">
+<li>Ao final do processo de medição (marcações de pontos), você deverá ter um total de 40 images (20 câmera esquerda e 20 câmera direita). Você poder ver isso na própria tela principal do programa, onde há um campo descrito como <em>Images measured:</em></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img src="images/WhatsApp%20Image%202026-03-19%20at%2009.56.23.jpeg" class="img-fluid quarto-figure quarto-figure-center" /></p>
+</figure>
+</div>
+<ol start="2" type="1">
+<li><p>Estando tudo certo, iremos partir para o <strong>ajuste do feixe</strong><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> ou <em>bundle adjustment.</em></p></li>
+<li><p>Mas antes é importante saber que você pode ajustar os parâmentros do ajuste (<em>bundle adjustment</em>) no menu <em>Adjustment | Adjustment setting…</em></p>
+<p><img src="images/clipboard-554416799.png" class="img-fluid" /></p></li>
+<li><p>Acho que o mais importante aqui é avisar ao programa que estamos utilizando um sistema estéreo (<em>Stereo</em>-BRUV) e, portanto, exigir dele um restrição estéreo (<em>stereo constraint</em>)</p>
+<div class="callout callout-style-simple callout-tip">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-body-container">
+<p>Se você não sabe se o BRUV que está utilizando é estéreo, assista esse pequeno vídeo para noções basicas de fotogrametria: <a href="https://www.youtube.com/watch?v=BZdzyzMjAjc" class="uri">https://www.youtube.com/watch?v=BZdzyzMjAjc</a></p>
+</div>
+</div>
+</div></li>
+<li><p>Clicando em <em>Adjustment | Adjustment setting</em>, abrirá um a janela (<em>Adjustment and photogrammetry settings)</em> contendo uma tabela com quatro colunas:</p>
+<p><img src="images/clipboard-1526197752.png" class="img-fluid" /></p></li>
+<li><p>Perceba que essa tabela possui quatro seções:</p>
+<p><img src="images/image.png" class="img-fluid" /></p></li>
+<li><p>Na seção roxa ou 3° seção (<em>Stereo constraints</em>), temos na primeira linha (<em>Use stereo constraint)</em> como padrão (<em>default</em>), <em>False.</em></p></li>
+</ol>
+<pre><code>::: {.callout-warning appearance=&quot;simple&quot;}
+Perceba que isso que falo não está expresso nas duas ultimas fotos anteriores, pois já havia realizado a mudança quando realizei o recorte, mas mantive para me poupar trabalho.
+:::</code></pre>
+<ol start="8" type="1">
+<li><p>Selecione a célula da coluna <em>Data</em> e mude para <strong><em>True</em></strong> (escreva!).</p>
+<p><img src="images/image%20(1).png" class="img-fluid" /></p></li>
+<li><p>Isso impõe condições matemáticas ao <em>bundle adjustment</em> que obrigam os pares de imagens (esquerda/direita) a manter a mesma orientação relativa ao longo de todo conjunto de imagens, forçando consistência na geometria relativa entre as duas câmeras (par estéreo).</p></li>
+<li><p>Se esse for seu caso (Stereo-Bruvs), feito isso, seguimos para o ajuste de feixe.</p></li>
+</ol>
+<section id="ajuste-do-feixe" class="level3" data-number="6.1">
+<h3 data-number="6.1"><span class="header-section-number">6.1</span> Ajuste do Feixe</h3>
+<ol type="1">
+<li><p>Após concluir todas as medições (marcações de pontos), calcule o ajuste do feixe usando <em>Adjustment</em> | <em>Compute bundle adjustment…</em></p>
+<p><img src="images/clipboard-959548070.png" class="img-fluid" /></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class='callout-icon'></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O QUE É “FEIXE” (<em>BUNDLE</em>)?</p>
+<p>Cada ponto 3D projeta um conjunto de linha (x, y, z) (ou um feixe/ pacote de raios) em direção às diferentes câmeras.</p>
+</div>
+</div></li>
+<li><p>Se você receber uma mensagem de aviso sobre medições de distância excluídas ou baixa precisão relativa, ignore-a por enquanto.</p>
+<p><img src="images/clipboard-2851610986.png" class="img-fluid" /></p></li>
+<li><p>Se o ajuste falhar, consulte os motivos pelos quais um ajuste de feixe pode falhar no manual. Se ainda estiver com dificuldades para obter resultados que não convergem, tente uma solução apenas com a face frontal, descrita na seção <strong>Falha de ajustes com um cubo de calibração SeaGIS</strong>.</p>
+<p><img src="images/clipboard-2208317373.png" class="img-fluid" /></p></li>
+<li><p>Uma vez analisado os resultados e apurado as mensagens <em>warning,</em> clique em <em>Acepted results</em>. (Por sua conta em risco).</p></li>
+</ol>
+<p>Salvamento Arquivo</p>
+<ol type="1">
+<li><p>Feito isso, agora vamos salvar o arquivo.</p></li>
+<li><p>Clique em <em>Measurement</em> | <em>Write measurement file…</em></p>
+<p><img src="images/clipboard-768242398.png" class="img-fluid" /></p></li>
+<li><p>Renomeie o arquivo conforme exemplo abaixo e salve no diretório de trabalho.</p>
+<p><img src="images/clipboard-3631012630.png" class="img-fluid" /></p></li>
+<li><p>Parabéns, você concluío!</p></li>
+</ol>
+</section>
+</section>
+<section id="detectando-erros" class="level2" data-number="7">
+<h2 data-number="7"><span class="header-section-number">7</span> Detectando Erros</h2>
+<p>É muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é “saltar” uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de “erro de transição”.</p>
+</section>
+<section id="erro-de-transição" class="level2" data-number="8">
+<h2 data-number="8"><span class="header-section-number">8</span> Erro de Transição</h2>
+<p>O erro de transição pode ou não comprometer todo o processo de calibração do sistema <em>stereo-bruv</em>. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro.</p>
+</section>
+<section id="error-report" class="level2" data-number="9">
+<h2 data-number="9"><span class="header-section-number">9</span> Error Report</h2>
+<ol type="1">
+<li>Durante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “<em>Dia-Bruv-Processo-Referência-Frame-Erro</em>”, por exemplo:</li>
+</ol>
+<p><img src="images/WhatsApp%20Image%202026-10-09%20at%2010.21.58.jpeg" class="img-fluid" /></p>
+<ol start="2" type="1">
+<li>Depois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o “error” na posição que seria seguida, conforme abaixo:</li>
+</ol>
+<p><img src="images/261009_B1_1449_E_3787.png" class="img-fluid" /></p>
+<ol start="3" type="1">
+<li><p>Renomei a imagem com: <em>data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame.</em> Exemplo: <strong>261009_B1_1440_E_3787</strong>.</p></li>
+<li><p>Transfira a imagem salva para o drive do projeto.</p></li>
+<li><p>No nosso caso é: <strong>Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros</strong></p></li>
+<li><p>Agora realize o <em>Error</em> <em>Report.</em> Utilize o modelo <em>report.qmd.</em></p></li>
+<li><p>Modelo html:</p>
+<p><img src="images/clipboard-3282701280.png" class="img-fluid" /></p></li>
+<li><p>Modelo pdf:</p>
+<p><img src="images/clipboard-2551310356.png" class="img-fluid" /></p></li>
+<li><p>Ou construa o seu, o importante é conter uma <strong>imagem da tela de trabalho</strong> no momento da detecção do erro e outra <strong>imagem do guia de acompanhamento</strong> das transições esquemáticas.</p></li>
+<li><p>Não esqueça de datar e assinar seu nome.</p></li>
+<li><p>Envie o relatório ao seu coordenador.</p></li>
+</ol>
+</section>
+<section id="glossário" class="level2" data-number="10">
+<h2 data-number="10"><span class="header-section-number">10</span> Glossário</h2>
+<p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.</p>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Pesquisa Meros SC</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">Pesquisa Meros SC</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RXF1aXBl">Equipe</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UGVzcXVpc2E=">Pesquisa</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9ndWlkb2dyaW1hbGRpLnNoaW55YXBwcy5pby9QZXNxdWlzYU1lcm9zU0Mv">https://guidogrimaldi.shinyapps.io/PesquisaMerosSC/</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6U3Rlcm8tQlJVVg==">Stero-BRUV</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UHJvdG9jb2xvIGRlIENhbXBv">Protocolo de Campo</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2JydXYuaHRtbA==">/bruv.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6R3VpYSBSw6FwaWRvIHwgQ2FsaWJyYcOnw6Nv">Guia Rápido | Calibração</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3F1aWNrLWNhbC5odG1s">/quick-cal.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TWFudWFsIFNlYUdJUyB8IENhbGlicmHDp8Ojbw==">Manual SeaGIS | Calibração</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NlYWdpcy1jYWwuaHRtbA==">/seagis-cal.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RXZlbnRNZWFzdXJl">EventMeasure</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2V2ZW50bWVhc3VyZS5odG1s">/eventmeasure.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TWVyZ3VsaG8gQ2llbnTDrWZpY28=">Mergulho Científico</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6Tm9zc2FzIERpcmV0cml6ZXM=">Nossas Diretrizes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3NjaS1kaXZlLmh0bWw=">/sci-dive.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UGxhbm8gZGUgRW1lcmfDqm5jaWE=">Plano de Emergência</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2VtZXJnZW5jZS5odG1s">/emergence.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6bWFpbHRvOnBlc3F1aXNhc2NAbWVyb3Nkb2JyYXNpbC5vcmc=">mailto:pesquisasc@merosdobrasil.org</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6aHR0cHM6Ly9tZXJvc2RvYnJhc2lsLm9yZy8=">https://merosdobrasil.org/</span></p>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWxlZnQtaHR0cHM6Ly9naXRodWIuY29tL0d1aWRvR3JpbWFsZGk=">
+<p>Created by Guido Grimaldi, PhD.</p>
+</div>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="Zm9vdGVyLWNlbnRlcg==">
+<p>© 2026 Projeto Meros do Brasil.</p>
+</div>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">BRUV: Guia de Calibração – Pesquisa Meros SC</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">BRUV: Guia de Calibração – Pesquisa Meros SC</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">BRUV: Guia de Calibração – Pesquisa Meros SC</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">Pesquisa Meros SC</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Status: Completed</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Status: Completed</span></p>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Ressecção: É uma processo/ técnica da visão computacional e fotogrametria utilizada para determinar a posição e orientação da câmera no espaço a partir de pontos conhecidos no mundo (objeto).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://github.com/GuidoGrimaldi">
+ Created by Guido Grimaldi, PhD.
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <div class='footer-contents'>© 2026 Projeto Meros do Brasil.</div>  
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

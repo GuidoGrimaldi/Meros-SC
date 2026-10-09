@@ -339,8 +339,8 @@
     "objectID": "quick-cal.html#glossário",
     "href": "quick-cal.html#glossário",
     "title": "BRUV: Guia de Calibração",
-    "section": "11 Glossário",
-    "text": "11 Glossário\nAjuste do Feixe: Tradução livre de Bundle Adjustement, termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção."
+    "section": "8 Glossário",
+    "text": "8 Glossário\nAjuste do Feixe: Tradução livre de Bundle Adjustement, termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção."
   },
   {
     "objectID": "quick-cal.html#footnotes",
@@ -515,7 +515,7 @@
     "href": "quick-cal.html#detectando-erros",
     "title": "BRUV: Guia de Calibração",
     "section": "7 Detectando Erros",
-    "text": "7 Detectando Erros\nÉ muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é “saltar” uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de “erro de transição”."
+    "text": "7 Detectando Erros\nÉ muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é “saltar” uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de “erro de transição”.\n\n7.1 Erro de Transição\nO erro de transição pode ou não comprometer todo o processo de calibração do sistema stereo-bruv. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro.\n\n\n7.2 Error Report\n\nDurante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “Dia-Bruv-Processo-Referência-Frame-Erro”, por exemplo:\n\n\n\nDepois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o “error” na posição que seria seguida, conforme abaixo:\n\n\n\nRenomei a imagem com: data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame. Exemplo: 261009_B1_1440_E_3787.\nTransfira a imagem salva para o drive do projeto.\nNo nosso caso é: Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros\nAgora realize o Error Report. Utilize o modelo report.qmd (disponível no meu GitHub).\nModelo html:\n\nModelo pdf:\n\nOu construa o seu, o importante é conter uma imagem da tela de trabalho no momento da detecção do erro e outra imagem do guia de acompanhamento das transições esquemáticas.\nNão esqueça de datar e assinar seu nome.\nEnvie o relatório ao seu coordenador."
   },
   {
     "objectID": "quick-cal.html#erro-de-transição",
@@ -529,7 +529,7 @@
     "href": "quick-cal.html#error-report",
     "title": "BRUV: Guia de Calibração",
     "section": "9 Error Report",
-    "text": "9 Error Report\n\nDurante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “Dia-Bruv-Processo-Referência-Frame-Erro”, por exemplo:\n\n\n\nDepois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o “error” na posição que seria seguida, conforme abaixo:\n\n\n\nRenomei a imagem com: data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame. Exemplo: 261009_B1_1440_E_3787.\nTransfira a imagem salva para o drive do projeto.\nNo nosso caso é: Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros\nAgora realize o Error Report. Utilize o modelo report.qmd.\nModelo html:\n\nModelo pdf:\nOu construa o seu, o importante é conter"
+    "text": "9 Error Report\n\nDurante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “Dia-Bruv-Processo-Referência-Frame-Erro”, por exemplo:\n\n\n\nDepois faça salve uma imagem (.png) do slide de referência em uso adicionando o título de referência e o “error” na posição que seria seguida, conforme abaixo:\n\n\n\nRenomei a imagem com: data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame. Exemplo: 261009_B1_1440_E_3787.\nTransfira a imagem salva para o drive do projeto.\nNo nosso caso é: Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros\nAgora realize o Error Report. Utilize o modelo report.qmd.\nModelo html:\n\nModelo pdf:\n\nOu construa o seu, o importante é conter uma imagem da tela de trabalho no momento da detecção do erro e outra imagem do guia de acompanhamento das transições esquemáticas.\nNão esqueça de datar e assinar seu nome.\nEnvie o relatório ao seu coordenador."
   },
   {
     "objectID": "quick-cal.html#section",

@@ -179,11 +179,12 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#ajuste-do-feixe" id="toc-ajuste-do-feixe" class="nav-link" data-scroll-target="#ajuste-do-feixe"><span class="header-section-number">6.1</span> Ajuste do Feixe</a></li>
   </ul></li>
-  <li><a href="#detectando-erros" id="toc-detectando-erros" class="nav-link" data-scroll-target="#detectando-erros"><span class="header-section-number">7</span> Detectando Erros</a></li>
-  <li><a href="#erro-de-transição" id="toc-erro-de-transição" class="nav-link" data-scroll-target="#erro-de-transição"><span class="header-section-number">8</span> Erro de Transição</a></li>
-  <li><a href="#error-report" id="toc-error-report" class="nav-link" data-scroll-target="#error-report"><span class="header-section-number">9</span> Error Report</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><span class="header-section-number">10</span> </a></li>
-  <li><a href="#glossário" id="toc-glossário" class="nav-link" data-scroll-target="#glossário"><span class="header-section-number">11</span> Glossário</a></li>
+  <li><a href="#detectando-erros" id="toc-detectando-erros" class="nav-link" data-scroll-target="#detectando-erros"><span class="header-section-number">7</span> Detectando Erros</a>
+  <ul class="collapse">
+  <li><a href="#erro-de-transição" id="toc-erro-de-transição" class="nav-link" data-scroll-target="#erro-de-transição"><span class="header-section-number">7.1</span> Erro de Transição</a></li>
+  <li><a href="#error-report" id="toc-error-report" class="nav-link" data-scroll-target="#error-report"><span class="header-section-number">7.2</span> Error Report</a></li>
+  </ul></li>
+  <li><a href="#glossário" id="toc-glossário" class="nav-link" data-scroll-target="#glossário"><span class="header-section-number">8</span> Glossário</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="quick-cal.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li><li><a href="quick-cal.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
     </div>
@@ -639,13 +640,12 @@ Note
 <section id="detectando-erros" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="detectando-erros"><span class="header-section-number">7</span> Detectando Erros</h2>
 <p>É muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é “saltar” uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de “erro de transição”.</p>
-</section>
-<section id="erro-de-transição" class="level2" data-number="8">
-<h2 data-number="8" class="anchored" data-anchor-id="erro-de-transição"><span class="header-section-number">8</span> Erro de Transição</h2>
+<section id="erro-de-transição" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="erro-de-transição"><span class="header-section-number">7.1</span> Erro de Transição</h3>
 <p>O erro de transição pode ou não comprometer todo o processo de calibração do sistema <em>stereo-bruv</em>. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro.</p>
 </section>
-<section id="error-report" class="level2" data-number="9">
-<h2 data-number="9" class="anchored" data-anchor-id="error-report"><span class="header-section-number">9</span> Error Report</h2>
+<section id="error-report" class="level3" data-number="7.2">
+<h3 data-number="7.2" class="anchored" data-anchor-id="error-report"><span class="header-section-number">7.2</span> Error Report</h3>
 <ol type="1">
 <li>Durante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: “<em>Dia-Bruv-Processo-Referência-Frame-Erro</em>”, por exemplo:</li>
 </ol>
@@ -658,18 +658,19 @@ Note
 <li><p>Renomei a imagem com: <em>data ao contrário (ano/mês/dia), referência do bruv, resolução do bruv, posição do bruv e frame.</em> Exemplo: <strong>261009_B1_1440_E_3787</strong>.</p></li>
 <li><p>Transfira a imagem salva para o drive do projeto.</p></li>
 <li><p>No nosso caso é: <strong>Pesquisa SC &gt; Calibragem-CALProgram-SeaGIS &gt;Erros</strong></p></li>
-<li><p>Agora realize o <em>Error</em> <em>Report.</em> Utilize o modelo <em>report.qmd.</em></p></li>
+<li><p>Agora realize o <em>Error</em> <em>Report.</em> Utilize o modelo <em>report.qmd</em> (disponível no meu GitHub)<em>.</em></p></li>
 <li><p>Modelo html:</p>
 <p><img src="images/clipboard-3282701280.png" class="img-fluid"></p></li>
-<li><p>Modelo pdf:</p></li>
-<li><p>Ou construa o seu, o importante é conter</p></li>
+<li><p>Modelo pdf:</p>
+<p><img src="images/clipboard-2551310356.png" class="img-fluid"></p></li>
+<li><p>Ou construa o seu, o importante é conter uma <strong>imagem da tela de trabalho</strong> no momento da detecção do erro e outra <strong>imagem do guia de acompanhamento</strong> das transições esquemáticas.</p></li>
+<li><p>Não esqueça de datar e assinar seu nome.</p></li>
+<li><p>Envie o relatório ao seu coordenador.</p></li>
 </ol>
 </section>
-<section id="section" class="level2" data-number="10">
-<h2 data-number="10" class="anchored" data-anchor-id="section"><span class="header-section-number">10</span> </h2>
 </section>
-<section id="glossário" class="level2" data-number="11">
-<h2 data-number="11" class="anchored" data-anchor-id="glossário"><span class="header-section-number">11</span> Glossário</h2>
+<section id="glossário" class="level2" data-number="8">
+<h2 data-number="8" class="anchored" data-anchor-id="glossário"><span class="header-section-number">8</span> Glossário</h2>
 <p>Ajuste do Feixe: Tradução livre de <em>Bundle Adjustement,</em> termo utilizado na área de fotogrametria e visão computacional que se refere a um processo de otimização matemática para melhorar a reconstrução 3D de uma cena a partir de multiplas imagens. Tecnicamente, é um problema de mínimos quadrados não lineares, onde minimiza-se o erro da reprojeção.</p>
 
 

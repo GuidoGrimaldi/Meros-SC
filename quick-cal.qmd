@@ -468,11 +468,11 @@ Salvamento Arquivo
 
 É muito comum, por falta de conhecimento e prática ou até total desconhecimento do que está sendo feito, erros de atenção. O mais comum dele é "saltar" uma das sequências de transição do cubo de calibração (Ver Item 21). A esse tipo de erro, eu chamo de "erro de transição".
 
-## Erro de Transição
+### Erro de Transição
 
 O erro de transição pode ou não comprometer todo o processo de calibração do sistema *stereo-bruv*. Isso vai depender se ao final do processo de ajuste de feixe teremos um ajuste bem sucedido ou não (Item 2, Ajuste de Feixe). Vai depender do operador descidir proceguir ou não com os trabalhos para verificar se vai ser valido ou não. A depender da quantidade de sequência omitida não vale a pena continuar, e será nescessário retornar a piscina e refazer todo o processo do começo. Por isso preste atenção e não erre. Na seção seguinte, veremos o que fazer quando deterctar um erro.
 
-## Error Report
+### Error Report
 
 1.  Durante os trabalhos, quando você se deparar com um erro, pause seu trabalho e anote em sua carderneta pessoal as seguintes informações: "*Dia-Bruv-Processo-Referência-Frame-Erro*", por exemplo:
 
@@ -488,7 +488,7 @@ O erro de transição pode ou não comprometer todo o processo de calibração d
 
 5.  No nosso caso é: **Pesquisa SC \> Calibragem-CALProgram-SeaGIS \>Erros**
 
-6.  Agora realize o *Error* *Report.* Utilize o modelo *report.qmd.*
+6.  Agora realize o *Error* *Report.* Utilize o modelo *report.qmd* (disponível no meu GitHub)*.*
 
 7.  Modelo html:
 
